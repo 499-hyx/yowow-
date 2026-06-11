@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-edu-rush-20260606",
+  "track_id": "education-yowow",
+  "platform_id": "xiaohongshu",
+  "positioning_id": "expert",
+  "relevance_score": 9.2,
+  "naturalness_score": 8.8,
+  "recommendation": "strong_pick",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "家长又在吵『要不要使劲推孩子抢跑』。",
+      "real_problem": "拼命刷题换来的领先，遇到没见过的新题型还成不成立，谁也没底。",
+      "track_relation": "比起多抢一年进度，更值钱的是孩子会不会把学过的用到陌生问题上——这是 AI 时代真正的竞争力。",
+      "product_value_support": "用孩子真实提问案例，展示『把一道难题讲成一次提问』比多做十道更有用（博士方法论背书）。",
+      "platform_expression": "小红书拆解体『抢跑一年，不如练会这件事』，给可照做的提问步骤。",
+      "naturalness_note": "直接回应抢跑焦虑，落到能力主张，自然不牵强。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "晒课表的和晒放养的吵成两派。",
+      "real_problem": "家长都想要一个简单答案：到底推还是不推。",
+      "track_relation": "家长认知升级：难的不是选边站，是让孩子把基础能力迁到新场景——推或放都只是手段。",
+      "product_value_support": "亲子提问实录示范：同一道题，怎么问能让孩子自己找到方法。",
+      "platform_expression": "观点体『推还是放养？你可能问错了问题』。",
+      "naturalness_note": "把二选一焦虑转成能力视角，贴合专家型冷静口吻。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "家长担心孩子『只会背、不会想』。",
+      "real_problem": "怕孩子是会背标准答案，一换问法就不会。",
+      "track_relation": "会提问比会答更重要：让孩子在新题前先会拆、会问，而不是等现成答案。",
+      "product_value_support": "脑科学依据 + 提问实录，给『遇到不会的先问三句』的方法。",
+      "platform_expression": "清单体『孩子遇到不会的，先问这 3 句』。",
+      "naturalness_note": "落到日常可操作的提问动作，平台传得开。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "抢跑还是放养：比进度更值钱的能力",
+    "title": "抢跑一年，不如练会这件事👀",
+    "body_or_script": "『要不要使劲推』这件事，我纠结过很久。\n\n后来想明白一点：抢跑抢来的那点领先，遇到一道没见过的新题型，可能一下就没了。能稳住的孩子，靠的不是多做了多少题，而是会把学过的东西，用到没见过的问题上。\n\n所以我现在更在意的不是进度，而是他遇到不会的时候，第一反应是什么。是等我给答案，还是自己先拆一拆、问几句。\n\n方法其实很朴素：同一道难题，别急着讲，先问他三句——『它在问什么？』『像你做过的哪道？』『还能怎么试？』。问得多了，他自己就敢上手陌生题。\n\n你家是推的多还是放得多？评论区聊聊，我把这套『提问三句』放在下面👇"
+  },
+  "external_terms_check": true
+}

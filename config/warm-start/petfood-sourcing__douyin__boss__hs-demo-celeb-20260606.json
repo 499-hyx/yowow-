@@ -1,0 +1,15 @@
+{
+  "hotspot_id": "hs-demo-celeb-20260606",
+  "track_id": "petfood-sourcing",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "relevance_score": 1.6,
+  "naturalness_score": 2.3,
+  "recommendation": "skip",
+  "forced_flag": true,
+  "skip_reason": "韩庚鹿晗朝鲜族服饰同框是明星情怀向热点，跟宠物口粮只能靠『明星养宠 / 同款』硬扯，桥要绕很远，发出去像生蹭流量、伤号，已帮买家跳过。",
+  "bridge_paths": [],
+  "chosen_path_id": null,
+  "content": null,
+  "external_terms_check": true
+}

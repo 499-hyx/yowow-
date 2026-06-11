@@ -1,0 +1,24 @@
+{
+  "account_id": "acct-petfood-douyin-boss",
+  "tenant_id": "tenant-petfood-demo",
+  "display_name": "宠物口粮 · 抖音老板号",
+  "track_id": "petfood-sourcing",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "overrides": {
+    "extra_forbidden_terms": [
+      "进口神话",
+      "包活到老",
+      "毒粮"
+    ],
+    "tone_note": "老板口吻，直接、不绕弯，敢下判断，少形容词",
+    "banned_topics": [
+      "宠物医疗诊断",
+      "极限低价对比"
+    ]
+  },
+  "daily_quota": 3,
+  "status": "active",
+  "created_at": "2026-06-08T00:00:00Z",
+  "last_used_at": "2026-06-08T00:00:00Z"
+}

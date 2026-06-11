@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-edu-focus-20260606",
+  "track_id": "education-yowow",
+  "platform_id": "xiaohongshu",
+  "positioning_id": "expert",
+  "relevance_score": 8.6,
+  "naturalness_score": 8.4,
+  "recommendation": "strong_pick",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "家长抱怨孩子『写三分钟玩橡皮』。",
+      "real_problem": "孩子能刷视频几小时，却写作业坐不住——不是不会专注，是不会主动专注。",
+      "track_relation": "能被吸引不等于能主动投入；让孩子学会在没人喂内容时自己启动，是 AI 时代的关键学习能力。",
+      "product_value_support": "用亲子提问实录，把『启动困难』拆成一个个小问题，孩子更容易自己进入状态（脑科学依据）。",
+      "platform_expression": "小红书拆解体『孩子不是不专注，是不会自己开始』。",
+      "naturalness_note": "从被动注意到主动维持，正落在能力主张上。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "短视频被指『偷走专注力』。",
+      "real_problem": "孩子习惯被动接收强刺激，遇到平淡、要动脑的任务就逃。",
+      "track_relation": "会提问比会答更重要：用提问把无聊任务变得有钩子，孩子才愿意主动想。",
+      "product_value_support": "孩子真实提问案例：一道枯燥题，怎么问能让他有兴趣往下做。",
+      "platform_expression": "清单体『让孩子主动开始的 3 个提问』。",
+      "naturalness_note": "把专注问题转成提问习惯，可操作、平台友好。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "家长怀疑『是不是我没教好』。",
+      "real_problem": "家长把专注力差归到孩子或自己身上，反而更焦虑。",
+      "track_relation": "家长认知升级：专注是可以陪着练的，关键是陪孩子建立自己启动的节奏（人机结合地用工具辅助）。",
+      "product_value_support": "博士方法论背书，给一段『陪练启动』的对话模板。",
+      "platform_expression": "观点体『别急着说孩子不专注』，温和给方法。",
+      "naturalness_note": "缓解家长自责，贴合同路家长分享口吻。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "专注力差：孩子不是不会专注，是不会主动开始",
+    "title": "孩子写作业坐不住？先看这一点✍️",
+    "body_or_script": "能刷视频两小时不动，一写作业就三分钟坐不住——这画面太熟悉了。\n\n但我后来发现，这不一定是专注力差。刷视频是被动被吸引，写作业是要自己主动投入，这是两回事。孩子卡住的，常常是『开始』那一下。\n\n所以与其催『快点专注』，不如帮他把『开始』变简单。我会先陪他问三句：『这题第一步做什么？』『最快能写完的是哪一行？』『先做哪个你最不抗拒？』。把启动拆小，他更容易自己进去。\n\n慢慢地，不用我催，他也能自己起步——在没人喂内容的时候自己投入，这才是往后最顶用的本事。\n\n你家孩子卡在『开始』还是『坚持』？评论区聊聊👇"
+  },
+  "external_terms_check": true
+}

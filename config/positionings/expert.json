@@ -1,0 +1,8 @@
+{
+  "positioning_id": "expert",
+  "positioning_name": "专家型",
+  "credibility_source": "知识权威 / 方法论",
+  "voice": "冷静、有依据、讲原理，不情绪化",
+  "preferred_formats": ["拆解", "原理讲清", "结构化清单"],
+  "avoid": ["过度煽情", "无依据断言", "网络梗堆砌"]
+}

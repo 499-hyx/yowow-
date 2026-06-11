@@ -1,0 +1,66 @@
+{
+  "account_id": "acct-razor-douyin-boss",
+  "tenant_id": "tenant-razor-demo",
+  "display_name": "剃须刀 · 抖音老板号",
+  "track_id": "razor-personalcare",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "status": "active",
+  "platform_name": "抖音",
+  "positioning_name": "老板型",
+  "track_name": "男士个护 · 剃须刀",
+  "created_at": "2026-06-06T00:00:00Z",
+  "memory_updated_at": null,
+  "memory": {
+    "business": "男士剃须刀及男士个护产品的销售",
+    "audience": "20-45 岁注重形象与效率的男性，及为他们选购的伴侣",
+    "product_value": "出门前几分钟就能拿到的确定的体面感与效率",
+    "anxiety_anchors": [
+      "出门前来不及收拾",
+      "胡茬显得邋遢没精神",
+      "重要场合怕状态差",
+      "精致好像只属于女性",
+      "买过踩雷不敢再选"
+    ],
+    "proof_assets": [
+      "工厂生产实拍",
+      "刀片/电机参数",
+      "真实使用对比",
+      "用户上脸测评"
+    ],
+    "commercial_goal": [
+      "直接带货",
+      "品牌心智",
+      "引流获客"
+    ],
+    "content_style": "老板口吻，直接、不绕弯，少形容词",
+    "extra_external_vocab": [],
+    "extra_forbidden_terms": [
+      "飞科",
+      "吉列",
+      "智商税"
+    ],
+    "banned_topics": [
+      "医美",
+      "极限低价对比"
+    ],
+    "understood": {
+      "business_understood": "男士剃须刀及男士个护产品的销售",
+      "goal_understood": "直接带货、品牌心智、引流获客",
+      "external_vocab": [
+        "男性体面感",
+        "日常效率",
+        "自我管理",
+        "出门前的确定性",
+        "精致不是女性专属"
+      ],
+      "forbidden_terms": [
+        "供应链黑话",
+        "内部参数代号",
+        "飞科",
+        "吉列",
+        "智商税"
+      ]
+    }
+  }
+}

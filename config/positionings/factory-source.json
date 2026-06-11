@@ -1,0 +1,8 @@
+{
+  "positioning_id": "factory-source",
+  "positioning_name": "工厂源头型",
+  "credibility_source": "供应链实证 / 生产现场",
+  "voice": "实在、用事实和过程说话，少修辞",
+  "preferred_formats": ["实拍过程", "成本与品质拆解", "源头对比"],
+  "avoid": ["空谈概念", "不给实物证据", "过度包装"]
+}

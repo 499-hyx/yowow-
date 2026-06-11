@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-edu-phone-20260606",
+  "track_id": "education-yowow",
+  "platform_id": "xiaohongshu",
+  "positioning_id": "expert",
+  "relevance_score": 9.0,
+  "naturalness_score": 8.6,
+  "recommendation": "strong_pick",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "家长群又在问『几岁给手机、每天能看多久』。",
+      "real_problem": "家长真正怕的不是时长，是没人盯着时孩子管不住自己、被算法牵着走。",
+      "track_relation": "真正的底气不是断网，是孩子能在一堆吸引里自己看清『我现在该做什么』——这正是 AI 时代最该练的学习能力。",
+      "product_value_support": "用亲子提问实录示范：与其没收手机，不如带孩子拆『这条为什么让我停不下来』，把判断力练出来（有脑科学依据支撑）。",
+      "platform_expression": "小红书封面『几岁给手机？我后来不纠结时长了』，正文给 3 句可照着说的话。",
+      "naturalness_note": "热点真实问题（数字诱惑下的自我边界）直接落到能力主张，不绕。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "『短视频刷不停』被反复吐槽。",
+      "real_problem": "孩子习惯了被喂现成内容，遇到要自己想的事就卡壳。",
+      "track_relation": "会提问比会答更重要——让孩子从『被喂』转成『会问』，是面对陌生问题的底层能力。",
+      "product_value_support": "用孩子真实提问案例，演示怎么把刷到的一条变成一次亲子提问。",
+      "platform_expression": "清单体『把刷视频变成练提问的 3 句话』，可收藏照做。",
+      "naturalness_note": "从被动消费到主动提问，是赛道核心能力的自然入口。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "家长晒『我家断网 / 我家不管』两极。",
+      "real_problem": "家长在管死和放任之间反复横跳，缺的是第三条路。",
+      "track_relation": "家长认知升级：不是管时间，是陪孩子一起把工具用明白、建立自己的边界（人机结合）。",
+      "product_value_support": "博士方法论背书 + 亲子提问实录，给一段『边界对话』模板。",
+      "platform_expression": "观点体『管手机管到崩溃？换个思路』，结尾轻互动。",
+      "naturalness_note": "把家长从管控者转成同行者，贴合温和分享口吻。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "手机时间管控：与其卡时长，不如练孩子的判断力",
+    "title": "几岁给手机？我后来不盯时长了📱",
+    "body_or_script": "你是不是也在群里看过无数遍：『几岁给手机、每天看多久』。\n\n我后来不太纠结时长了。真正让我担心的，从来不是他看了 40 分钟还是 1 小时，而是——没人盯着的时候，他能不能自己停下来。\n\n断网、没收，短期有用，但孩子只是被你管着，不是自己会管。换个思路：和他一起拆一条让他停不下来的视频，问他『它是怎么让你一直想看的？』。一次次问下来，他慢慢能在被吸引的时候，自己看清『我现在该做的是什么』。\n\n会自己判断，比被管住更重要。这也是往后他面对一堆没见过的信息时，最顶用的本事。\n\n你家是几岁给的手机？评论区聊聊，我把那几句『提问模板』整理在下面👇"
+  },
+  "external_terms_check": true
+}

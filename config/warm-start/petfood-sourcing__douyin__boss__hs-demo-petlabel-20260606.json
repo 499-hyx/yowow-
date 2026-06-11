@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-demo-petlabel-20260606",
+  "track_id": "petfood-sourcing",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "relevance_score": 8.9,
+  "naturalness_score": 8.8,
+  "recommendation": "strong_pick",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "养宠人开始互相教『主粮配料表第一位要看是不是肉』，看成分火了。",
+      "real_problem": "大家不是想当专家，是怕花了钱还喂错、伤了当家人的猫狗。",
+      "track_relation": "宠物食品好不好，就藏在配料表和来源里——这正是养宠人自己能看懂、能掌控的部分。",
+      "product_value_support": "把配料第一位、原料从哪来、检测报告摆出来，让人不用赌运气就能喂得安心。",
+      "platform_expression": "老板口吻直给：『选粮别看广告，先翻到配料表第一行——是肉就有谱，看不懂我教你。』",
+      "naturalness_note": "热点核心（看配料表选粮）和赛道核心（配料看得懂、来源查得到）是同一件事，几乎无缝。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "评论区都在问『这粮配料表能信吗、第一位写肉是不是文字游戏』。",
+      "real_problem": "信息不对称——看不懂成分表的排列规则，容易被『肉』的字面话术带过去。",
+      "track_relation": "把配料表怎么看、含量怎么排讲清楚，是源头敢被人盯着看的底气。",
+      "product_value_support": "用工厂实拍和检测报告对上配料表，证明写出来的就是袋子里的，少踩一次雷。",
+      "platform_expression": "『一句话教你识破配料表文字游戏，看这三个位置就够了。』",
+      "naturalness_note": "接的是『识别真假信息』，仍在『看得懂成分』赛道核心内，自然。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "越来越多人说『不再冲网红粮的牌子，改看成分和复购』。",
+      "real_problem": "为牌子和广告多花的钱，不一定花在毛孩子的碗里。",
+      "track_relation": "把钱花在查得到的原料和品质上，比花在牌子上更让养宠人安心。",
+      "product_value_support": "源头同样的料、价格更实在，把省下的牌子溢价换成看得见的用料。",
+      "platform_expression": "落点给行动：『别冲牌子，先看配料表和复购率，再决定喂不喂。』",
+      "naturalness_note": "效率 / 性价比角度，略轻但钩子实用，仍自然。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "选猫狗主粮，别看广告先翻配料表第一行",
+    "title": "买宠物粮别再冲牌子了，先翻到配料表第一行看一眼",
+    "body_or_script": "（前3秒）现在养宠的都学聪明了——选主粮不看广告，先翻到配料表第一行。\n（冲突）为啥？因为袋子正面印得再好看，都不如配料表第一位写的是肉还是谷物实在。你喂的是毛孩子，不是那张包装。\n（展开）我做这行实话讲：配料表是按含量从多到少排的，第一位是肉，基本盘就稳；写一堆谷物和『肉粉』打头，再贵也别急着信。来源查得到、检测报告对得上配料表，才算靠谱。\n（落点）所以买之前就看三点：配料表第一位、原料从哪来、有没有能对上的检测。对得上，它就值这个钱。\n（行动）评论区发出你家正在喂的牌子，我帮你看配料表第一行写的是啥。"
+  },
+  "external_terms_check": true
+}

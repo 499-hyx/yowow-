@@ -1,0 +1,16 @@
+{
+  "platform_id": "youtube",
+  "platform_name": "YouTube",
+  "content_form": "中长视频口播/实拍（Shorts 可做引流）",
+  "distribution_logic": "推荐 + 搜索长尾双驱动，点击率与观看时长决定推荐量，老视频可持续带流量",
+  "hook": {
+    "window": "前 30 秒 + 封面标题",
+    "principle": "开头点明视频回答什么问题，给观众留下来的理由，靠内容密度而非剪辑刺激"
+  },
+  "title_logic": "面向搜索意图：把观众会搜的问题写进标题，封面突出关键词",
+  "length_norm": "3-10 分钟，结构：问题→展开→结论；Shorts 60 秒内单点直给",
+  "rewards": ["观看时长", "订阅转化", "搜索长尾流量", "评论互动"],
+  "penalizes": ["开头铺垫过长", "标题与内容不符", "纯搬运"],
+  "conversion_path": "描述区链接 + 置顶评论 + 频道页承接",
+  "expression_rules": ["讲清来龙去脉", "适合系列化沉淀", "结尾引导订阅与下一条", "字幕完整"]
+}

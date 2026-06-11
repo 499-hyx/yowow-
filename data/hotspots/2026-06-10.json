@@ -1,0 +1,88 @@
+[
+  {
+    "hotspot_id": "hs-demo-petlabel-20260606",
+    "date": "2026-06-06",
+    "source_skill": "doctor-hotspot-briefing",
+    "title": "『看配料表第一位』成养宠人选粮共识，社交平台互教看成分上热门",
+    "summary": "越来越多养宠人开始互相科普『主粮配料表第一位应是肉而不是谷物』，看成分、查来源正取代看广告成为选口粮的默认动作，相关笔记与讨论持续走高。",
+    "phenomenon": "养宠社群里『教你看配料表』『第一位是不是肉』类内容大量出现并被反复转发。",
+    "spread_emotion": "怕踩雷又想对毛孩子负责，从『看牌子、看广告』转向『看成分、看来源』。",
+    "people_involved": [
+      "新手养宠人",
+      "资深铲屎官",
+      "宠物博主",
+      "做宠物食品的人"
+    ],
+    "conflict_point": "广告话术 / 网红光环 vs 配料表里查得到的真东西。",
+    "fact_structure": "信息不对称（看不懂成分）× 踩雷焦虑（怕伤毛孩子）× 自我科普（看配料表第一位）上升。",
+    "candidate_problem_dimensions": [
+      "看不懂成分只能赌运气",
+      "怕买到劣质的伤了家人",
+      "要真东西不要广告话术",
+      "花对钱比花贵钱更安心"
+    ],
+    "heat_score_10": 7.0,
+    "platforms": [
+      "小红书",
+      "抖音",
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-demo-nike-20260606",
+    "date": "2026-06-06",
+    "source_skill": "doctor-hotspot-briefing",
+    "title": "耐克大中华区连续第七季度下滑,市值蒸发约 315 亿美元",
+    "summary": "耐克大中华区收入同比下降约 10%,为连续第七个季度负增长,市值大幅缩水,引发对『为大牌 logo 买单是否还值』的广泛讨论。",
+    "phenomenon": "曾经最硬的运动大牌耐克在中国连续七个季度下滑,市值蒸发数百亿美元。",
+    "spread_emotion": "唱衰大牌 + 讨论『为 logo 溢价买单过时了吗』,国货与性价比意识抬头。",
+    "people_involved": [
+      "普通消费者",
+      "国货支持者",
+      "性价比人群",
+      "做品牌/做工厂的人"
+    ],
+    "conflict_point": "大牌光环 vs 实际体验;为牌子付费 vs 为真东西付费。",
+    "fact_structure": "品牌惯性消退(连跌7季)× 消费者祛魅 × 性价比/源头意识上升。",
+    "candidate_problem_dimensions": [
+      "大牌溢价是否还值得",
+      "消费者要真东西不要标签",
+      "品牌惯性正在失效",
+      "花对钱比花贵钱更安心(踩雷焦虑)"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "微博",
+      "抖音",
+      "财经媒体"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-demo-celeb-20260606",
+    "date": "2026-06-06",
+    "source_skill": "entertainment-ip-radar",
+    "title": "韩庚鹿晗朝鲜族服饰同框,被称『SM 师兄弟世纪合体』",
+    "summary": "韩庚与鹿晗在综艺收官站罕见同框,身穿朝鲜族服饰互动,粉丝情怀刷屏。",
+    "phenomenon": "两位前 SM 艺人多年后综艺同框,粉丝集体怀旧。",
+    "spread_emotion": "情怀、怀旧、粉丝狂欢。",
+    "people_involved": [
+      "粉丝",
+      "综艺观众",
+      "怀旧人群"
+    ],
+    "conflict_point": "时间流逝 vs 情怀重燃。",
+    "fact_structure": "明星同框 × 粉丝情怀 × 综艺话题。",
+    "candidate_problem_dimensions": [
+      "怀旧情绪",
+      "粉丝身份认同"
+    ],
+    "heat_score_10": 8.2,
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "source_url": null
+  }
+]

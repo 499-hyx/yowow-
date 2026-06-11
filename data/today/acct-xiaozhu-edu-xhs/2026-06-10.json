@@ -1,0 +1,188 @@
+{
+  "account": {
+    "account_id": "acct-xiaozhu-edu-xhs",
+    "tenant_id": "tenant-xiaozhu",
+    "display_name": "小猪 · 教育小红书号",
+    "track_id": "education-yowow",
+    "platform_id": "xiaohongshu",
+    "positioning_id": "expert",
+    "status": "active"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-edu-rush-20260606",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "家长又在吵『要不要使劲推孩子抢跑』。",
+            "real_problem": "拼命刷题换来的领先，遇到没见过的新题型还成不成立，谁也没底。",
+            "track_relation": "比起多抢一年进度，更值钱的是孩子会不会把学过的用到陌生问题上——这是 AI 时代真正的竞争力。",
+            "product_value_support": "用孩子真实提问案例，展示『把一道难题讲成一次提问』比多做十道更有用（博士方法论背书）。",
+            "platform_expression": "小红书拆解体『抢跑一年，不如练会这件事』，给可照做的提问步骤。",
+            "naturalness_note": "直接回应抢跑焦虑，落到能力主张，自然不牵强。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "晒课表的和晒放养的吵成两派。",
+            "real_problem": "家长都想要一个简单答案：到底推还是不推。",
+            "track_relation": "家长认知升级：难的不是选边站，是让孩子把基础能力迁到新场景——推或放都只是手段。",
+            "product_value_support": "亲子提问实录示范：同一道题，怎么问能让孩子自己找到方法。",
+            "platform_expression": "观点体『推还是放养？你可能问错了问题』。",
+            "naturalness_note": "把二选一焦虑转成能力视角，贴合专家型冷静口吻。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "家长担心孩子『只会背、不会想』。",
+            "real_problem": "怕孩子是会背标准答案，一换问法就不会。",
+            "track_relation": "会提问比会答更重要：让孩子在新题前先会拆、会问，而不是等现成答案。",
+            "product_value_support": "脑科学依据 + 提问实录，给『遇到不会的先问三句』的方法。",
+            "platform_expression": "清单体『孩子遇到不会的，先问这 3 句』。",
+            "naturalness_note": "落到日常可操作的提问动作，平台传得开。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "抢跑还是放养：比进度更值钱的能力",
+          "title": "抢跑一年，不如练会这件事👀",
+          "body_or_script": "『要不要使劲推』这件事，我纠结过很久。\n\n后来想明白一点：抢跑抢来的那点领先，遇到一道没见过的新题型，可能一下就没了。能稳住的孩子，靠的不是多做了多少题，而是会把学过的东西，用到没见过的问题上。\n\n所以我现在更在意的不是进度，而是他遇到不会的时候，第一反应是什么。是等我给答案，还是自己先拆一拆、问几句。\n\n方法其实很朴素：同一道难题，别急着讲，先问他三句——『它在问什么？』『像你做过的哪道？』『还能怎么试？』。问得多了，他自己就敢上手陌生题。\n\n你家是推的多还是放得多？评论区聊聊，我把这套『提问三句』放在下面👇"
+        },
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-edu-phone-20260606",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "家长群又在问『几岁给手机、每天能看多久』。",
+            "real_problem": "家长真正怕的不是时长，是没人盯着时孩子管不住自己、被算法牵着走。",
+            "track_relation": "真正的底气不是断网，是孩子能在一堆吸引里自己看清『我现在该做什么』——这正是 AI 时代最该练的学习能力。",
+            "product_value_support": "用亲子提问实录示范：与其没收手机，不如带孩子拆『这条为什么让我停不下来』，把判断力练出来（有脑科学依据支撑）。",
+            "platform_expression": "小红书封面『几岁给手机？我后来不纠结时长了』，正文给 3 句可照着说的话。",
+            "naturalness_note": "热点真实问题（数字诱惑下的自我边界）直接落到能力主张，不绕。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "『短视频刷不停』被反复吐槽。",
+            "real_problem": "孩子习惯了被喂现成内容，遇到要自己想的事就卡壳。",
+            "track_relation": "会提问比会答更重要——让孩子从『被喂』转成『会问』，是面对陌生问题的底层能力。",
+            "product_value_support": "用孩子真实提问案例，演示怎么把刷到的一条变成一次亲子提问。",
+            "platform_expression": "清单体『把刷视频变成练提问的 3 句话』，可收藏照做。",
+            "naturalness_note": "从被动消费到主动提问，是赛道核心能力的自然入口。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "家长晒『我家断网 / 我家不管』两极。",
+            "real_problem": "家长在管死和放任之间反复横跳，缺的是第三条路。",
+            "track_relation": "家长认知升级：不是管时间，是陪孩子一起把工具用明白、建立自己的边界（人机结合）。",
+            "product_value_support": "博士方法论背书 + 亲子提问实录，给一段『边界对话』模板。",
+            "platform_expression": "观点体『管手机管到崩溃？换个思路』，结尾轻互动。",
+            "naturalness_note": "把家长从管控者转成同行者，贴合温和分享口吻。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "手机时间管控：与其卡时长，不如练孩子的判断力",
+          "title": "几岁给手机？我后来不盯时长了📱",
+          "body_or_script": "你是不是也在群里看过无数遍：『几岁给手机、每天看多久』。\n\n我后来不太纠结时长了。真正让我担心的，从来不是他看了 40 分钟还是 1 小时，而是——没人盯着的时候，他能不能自己停下来。\n\n断网、没收，短期有用，但孩子只是被你管着，不是自己会管。换个思路：和他一起拆一条让他停不下来的视频，问他『它是怎么让你一直想看的？』。一次次问下来，他慢慢能在被吸引的时候，自己看清『我现在该做的是什么』。\n\n会自己判断，比被管住更重要。这也是往后他面对一堆没见过的信息时，最顶用的本事。\n\n你家是几岁给的手机？评论区聊聊，我把那几句『提问模板』整理在下面👇"
+        },
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-edu-focus-20260606",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "家长抱怨孩子『写三分钟玩橡皮』。",
+            "real_problem": "孩子能刷视频几小时，却写作业坐不住——不是不会专注，是不会主动专注。",
+            "track_relation": "能被吸引不等于能主动投入；让孩子学会在没人喂内容时自己启动，是 AI 时代的关键学习能力。",
+            "product_value_support": "用亲子提问实录，把『启动困难』拆成一个个小问题，孩子更容易自己进入状态（脑科学依据）。",
+            "platform_expression": "小红书拆解体『孩子不是不专注，是不会自己开始』。",
+            "naturalness_note": "从被动注意到主动维持，正落在能力主张上。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "短视频被指『偷走专注力』。",
+            "real_problem": "孩子习惯被动接收强刺激，遇到平淡、要动脑的任务就逃。",
+            "track_relation": "会提问比会答更重要：用提问把无聊任务变得有钩子，孩子才愿意主动想。",
+            "product_value_support": "孩子真实提问案例：一道枯燥题，怎么问能让他有兴趣往下做。",
+            "platform_expression": "清单体『让孩子主动开始的 3 个提问』。",
+            "naturalness_note": "把专注问题转成提问习惯，可操作、平台友好。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "家长怀疑『是不是我没教好』。",
+            "real_problem": "家长把专注力差归到孩子或自己身上，反而更焦虑。",
+            "track_relation": "家长认知升级：专注是可以陪着练的，关键是陪孩子建立自己启动的节奏（人机结合地用工具辅助）。",
+            "product_value_support": "博士方法论背书，给一段『陪练启动』的对话模板。",
+            "platform_expression": "观点体『别急着说孩子不专注』，温和给方法。",
+            "naturalness_note": "缓解家长自责，贴合同路家长分享口吻。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "专注力差：孩子不是不会专注，是不会主动开始",
+          "title": "孩子写作业坐不住？先看这一点✍️",
+          "body_or_script": "能刷视频两小时不动，一写作业就三分钟坐不住——这画面太熟悉了。\n\n但我后来发现，这不一定是专注力差。刷视频是被动被吸引，写作业是要自己主动投入，这是两回事。孩子卡住的，常常是『开始』那一下。\n\n所以与其催『快点专注』，不如帮他把『开始』变简单。我会先陪他问三句：『这题第一步做什么？』『最快能写完的是哪一行？』『先做哪个你最不抗拒？』。把启动拆小，他更容易自己进去。\n\n慢慢地，不用我催，他也能自己起步——在没人喂内容的时候自己投入，这才是往后最顶用的本事。\n\n你家孩子卡在『开始』还是『坚持』？评论区聊聊👇"
+        },
+        "external_terms_check": true
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-example-0001",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "热点核心是成年人出门形象与效率，与小学家长的孩子学习能力主张无自然连接，硬接需绕远，按规跳过。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      }
+    ]
+  },
+  "meta": {
+    "hs-edu-focus-20260606": {
+      "oneLiner": "家长抱怨孩子『写三分钟玩橡皮』。",
+      "reason": "这条戳的是「孩子能刷视频几小时，却写作业坐不住——不是不会专注，是不会主动专注。」，正好接你的「AI 时代学习能力、家长认知升级」，可以直接发。"
+    },
+    "hs-edu-phone-20260606": {
+      "oneLiner": "家长群又在问『几岁给手机、每天能看多久』。",
+      "reason": "这条戳的是「家长真正怕的不是时长，是没人盯着时孩子管不住自己、被算法牵着走。」，正好接你的「AI 时代学习能力、家长认知升级」，可以直接发。"
+    },
+    "hs-edu-rush-20260606": {
+      "oneLiner": "家长又在吵『要不要使劲推孩子抢跑』。",
+      "reason": "这条戳的是「拼命刷题换来的领先，遇到没见过的新题型还成不成立，谁也没底。」，正好接你的「AI 时代学习能力、家长认知升级」，可以直接发。"
+    },
+    "hs-example-0001": {
+      "oneLiner": "热点核心是成年人出门形象与效率",
+      "reason": "热点核心是成年人出门形象与效率，与小学家长的孩子学习能力主张无自然连接，硬接需绕远，按规跳过。"
+    }
+  },
+  "mode": "sample",
+  "notice": "当前为示例内容：先感受推荐和成品的样子，运营每天跑批后会替换为最新数据。",
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T00:00:00Z"
+}

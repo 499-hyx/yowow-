@@ -1,0 +1,15 @@
+{
+  "hotspot_id": "hs-example-0001",
+  "track_id": "education-yowow",
+  "platform_id": "xiaohongshu",
+  "positioning_id": "expert",
+  "relevance_score": 2.4,
+  "naturalness_score": 3.0,
+  "recommendation": "skip",
+  "forced_flag": true,
+  "skip_reason": "热点核心是成年人出门形象与效率，与小学家长的孩子学习能力主张无自然连接，硬接需绕远，按规跳过。",
+  "bridge_paths": [],
+  "chosen_path_id": null,
+  "content": null,
+  "external_terms_check": true
+}

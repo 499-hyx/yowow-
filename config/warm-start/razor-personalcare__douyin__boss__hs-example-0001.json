@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-example-0001",
+  "track_id": "razor-personalcare",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "relevance_score": 8.4,
+  "naturalness_score": 8.1,
+  "recommendation": "strong_pick",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "大家在比谁能 7 分钟出门,还要不邋遢。",
+      "real_problem": "时间太紧,收拾自己永远是第一个被牺牲的环节。",
+      "track_relation": "出门前的体面,本质是一件可以被压缩、被管理的小事——前提是工具够顺手。",
+      "product_value_support": "一把上脸快、不拉扯的剃须刀,就是把『清爽』这步从几分钟压到几十秒的确定性。",
+      "platform_expression": "开场直接抛冲突:『7 分钟出门,第一个被砍的就是脸。』然后用老板口吻给判断。",
+      "naturalness_note": "热点的真实问题(时间稀缺下的体面)直接落在产品价值(几十秒搞定清爽),不绕。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "男生晒极限流程时,刮胡子常被直接跳过或随便带过。",
+      "real_problem": "男性形象管理长期被默认『差不多就行』,于是状态忽好忽坏。",
+      "track_relation": "体面不是讲究,是稳定——每天都不掉链子,才是真的会管理自己。",
+      "product_value_support": "好工具让『稳定清爽』变成不用想的日常动作,而不是看心情。",
+      "platform_expression": "用『我招人,先看脸干不干净』这种老板视角,把日常稳定感讲成竞争力。",
+      "naturalness_note": "接的是自我管理锚点,稍偏价值观,但仍在赛道内,自然。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "评论区在吵『早起 vs 多睡十分钟』。",
+      "real_problem": "大家想要的不是早起,是同样时间里把自己弄得更像样。",
+      "track_relation": "不在睡懒觉和体面之间二选一,是效率工具该解决的事。",
+      "product_value_support": "把刮胡子这步提速,省下的就是那十分钟觉。",
+      "platform_expression": "落点给行动:『想多睡十分钟,先把最慢那步换掉。』",
+      "naturalness_note": "效率角度,稍轻,但钩子强,适合抖音。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "7 分钟出门,第一个被砍的为什么总是脸",
+    "title": "7 分钟出门,你砍掉的不该是这步",
+    "body_or_script": "（前3秒）7 分钟出门,我跟你讲,大多数人第一个砍的就是刮胡子。\n（冲突）但你想想,迟到顶多被说一句,一脸胡茬去见客户、去开会,那是直接掉分。\n（展开）我做这行这么多年,看人先看脸干不干净。不是要你多讲究,是要你天天都不掉链子。\n（落点）真没时间,就把最慢那步换掉——一把上脸快、不拉扯的,几十秒搞定。把省下的时间拿去多睡会儿,它不香吗。\n（行动）评论区告诉我,你早上第一个砍的是哪步。"
+  },
+  "external_terms_check": true
+}

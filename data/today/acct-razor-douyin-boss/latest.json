@@ -1,0 +1,505 @@
+{
+  "account": {
+    "account_id": "acct-razor-douyin-boss",
+    "tenant_id": "tenant-razor-demo",
+    "display_name": "剃须刀 · 抖音老板号",
+    "track_id": "razor-personalcare",
+    "platform_id": "douyin",
+    "positioning_id": "boss",
+    "status": "active"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-20260611-005",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "假性毛囊炎、内生发被专业圈重新讨论，强调减少毛发再刺入、顺毛剃、剃前软化剃后抗炎。",
+            "real_problem": "高频剃须的男人刮完脸又红又长小疙瘩、反复留印，却以为是自己皮肤差、忍忍就过去。",
+            "track_relation": "这正是出门前的确定性——一张不发炎、不带红疙瘩的干净脸，是男性体面感的底线。",
+            "product_value_support": "把剃须做成『剃前软化＋剃中润滑＋剃后舒缓』三段式，减少毛发倒扎，就是产品要替用户解决的事。",
+            "platform_expression": "抖音老板口播：前3秒甩结论『不是刀的事，是你把毛剃断还是剃服』，再拆三步。",
+            "naturalness_note": "PFB 本身就是剃须直接造成的，桥几乎不用搭。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "专业建议把『剃干净』改成『减少再刺入』。",
+            "real_problem": "男人觉得红一片、有疙瘩=显脏显糙，约会面试都心虚。",
+            "track_relation": "干净体面是可控的自我管理，不该靠运气。",
+            "product_value_support": "三段式剃须方案把『刮完发炎』变成『刮完清爽』，体面感落到产品上。",
+            "platform_expression": "口播用对立：『你以为刮得越狠越干净，其实越狠越发炎』。",
+            "naturalness_note": "红肿—体面感的连接对老板号很顺。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "把剃须从一刀了事，升级成一套有顺序的流程。",
+            "real_problem": "多数男人没有『剃须流程』概念，闭眼干刮。",
+            "track_relation": "自我管理的颗粒度——把每天必做的事做对，就是效率。",
+            "product_value_support": "产品提供顺序化的剃须解法，正是在卖『把流程做对』。",
+            "platform_expression": "口播落点给行动：今晚刮脸前先做这一步。",
+            "naturalness_note": "稍偏教育，但仍自然。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "刮完脸红肿长疙瘩，不是刀的事，是毛被剃断又倒扎回皮肤",
+          "title": "刮完脸一片红、还冒小疙瘩？不是你皮肤差，是你把胡子'剃断'了",
+          "body_or_script": "【0-3秒 钩子】别再骂剃须刀了——刮完脸又红又长小疙瘩，十有八九不是刀的问题，是你把胡子剃断、让它倒扎回了皮肤里。\n【3-12秒 冲突】很多兄弟觉得刮得越狠越干净，使劲逆着刮。结果呢？毛被齐根削断、回头扎进肉里，发红、起脓点、留印，越刮越糟。\n【12-35秒 展开】记住三步：第一，剃前用热毛巾或泡沫把胡子泡软，别干刮；第二，顺着毛流方向剃，别来回拉锯；第三，剃完别拍酒精味的须后水，给一层舒缓修护的。\n【35-45秒 落点+行动】一张不发红、不带疙瘩的干净脸，才是男人出门前的底气。今晚刮之前，先把第一步做了，三天就看得出区别。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      },
+      {
+        "hotspot_id": "hs-20260611-002",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "『皮肤屏障受损』成为护肤通用解释，大家都在说『我屏障坏了』。",
+            "real_problem": "男人刮完脸又干又紧又刺痛，以为是刀钝或皮肤天生敏感。",
+            "track_relation": "其实剃须是每天在物理刮角质，是最容易被忽视的『拆屏障』动作——关系到出门前那张脸稳不稳。",
+            "product_value_support": "产品的剃后修护正是在补回被刮掉的那层，把『刮完刺痛』变『刮完服帖』。",
+            "platform_expression": "抖音老板口播：『你以为剃须刀不好，其实每天刮脸在拆你的皮肤砖墙』。",
+            "naturalness_note": "剃须=物理破坏屏障，连接非常实。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "白皮书把敏感泛红干痒统一归到屏障话语。",
+            "real_problem": "刮完脸泛红、起皮，用什么都吸收不进去。",
+            "track_relation": "男性体面感首先是张稳定不闹脾气的脸。",
+            "product_value_support": "修护型剃须方案稳住屏障，体面感才稳定。",
+            "platform_expression": "口播用比喻：角质层像砖墙，剃须刀是天天在抠砖缝。",
+            "naturalness_note": "比喻自然好懂。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "护理纠偏：少做减法、别过度清洁。",
+            "real_problem": "男人爱用强力控油洁面+用力搓，叠加剃须双重伤。",
+            "track_relation": "自我管理是把每天的小动作做对，而不是猛堆产品。",
+            "product_value_support": "产品主张温和不过度，正好接住。",
+            "platform_expression": "口播落点：别再搓了，给行动清单。",
+            "naturalness_note": "略偏护肤大盘，但能收回剃须。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "刮完脸干紧刺痛，不是皮肤娇气，是剃须在拆你的皮肤屏障",
+          "title": "刮完脸又干又刺痛？别怪皮肤敏感，是剃须刀在拆你的'砖墙'",
+          "body_or_script": "【0-3秒 钩子】刮完脸那种又干又紧、抹啥都刺痛的感觉——不怪你皮肤娇气，是剃须每天在拆你脸上的一堵墙。\n【3-12秒 冲突】你的角质层就像一堵砖墙，挡水、防刺激。剃须刀刮过去，削掉胡子的同时也刮走了最外面那层砖。天天刮、用力刮，墙就越来越薄。\n【12-35秒 展开】墙一薄，水分跑得快、外界一刺激就泛红，这才是『越刮越敏感』的真相。所以刮完别只想着清爽，关键补回那层——剃后给一道有修护成分的，把砖缝填回去。\n【35-45秒 落点+行动】男人的体面，是一张稳定、不闹脾气的脸。从今天起，把『剃完修护』当成和刷牙一样的固定动作。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      },
+      {
+        "hotspot_id": "hs-20260611-003",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "『后天性敏感族』流行，很多人意识到敏感是被错误护理养出来的。",
+            "real_problem": "原本糙汉皮，剃着剃着变得一刮就红、一吹风就痒。",
+            "track_relation": "男人的敏感肌，常常是高频硬剃自己养出来的——这关系到能不能稳定体面出门。",
+            "product_value_support": "温和不过度的剃须方案，正是把『养敏感』倒过来。",
+            "platform_expression": "抖音老板口播：『男人的敏感肌，多半是自己硬剃出来的』。",
+            "naturalness_note": "剃须是养敏感的一个真实动作，但话题主战场在护肤大盘，需把角度收回剃须。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "强功效叠太多透支耐受。",
+            "real_problem": "男人要么不管、要么一上来就猛货。",
+            "track_relation": "自我管理讲究分寸，不是越多越好。",
+            "product_value_support": "产品主打刚好够用的温和方案。",
+            "platform_expression": "口播用对立：护肤不是堆得越狠越男人。",
+            "naturalness_note": "能接但稍泛。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "清洁这步最容易忽视地伤皮。",
+            "real_problem": "刮前用强碱皂洗、刮后不管。",
+            "track_relation": "出门前的确定性来自稳定流程。",
+            "product_value_support": "产品给温和清洁＋剃后修护的固定动作。",
+            "platform_expression": "口播给三件别再做的事。",
+            "naturalness_note": "可收回剃须。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "男人的敏感肌，多半是高频硬剃自己养出来的",
+          "title": "以前糙汉皮，现在一刮就红？你的敏感肌是自己'硬剃'出来的",
+          "body_or_script": "【0-3秒 钩子】你有没有发现，以前怎么造都没事的脸，这两年一刮就红、一吹风就痒？不是变娇气了，是被你自己养出来的。\n【3-12秒 冲突】敏感很多时候是后天养的。天天逆着干刮、刮完用味儿冲的须后水、再叠一堆猛货——皮肤的耐受就这么一点点被透支掉。\n【12-35秒 展开】反过来也能养回去：剃须别贪狠，泡软顺刮；刮完给温和的修护，别上来就刺激；产品别堆，够用就好。\n【35-45秒 落点+行动】把脸养稳，比你换十把刀都管用。先从这周开始，刮完只做一件事：温和修护。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      },
+      {
+        "hotspot_id": "hs-20260611-104",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "全网在吐槽朋友圈没有活人感，人设管理让人疲惫。",
+            "real_problem": "男人也活在『发什么都像人设管理』的累里，体面成了演给别人看的工程。",
+            "track_relation": "真正的体面感不是人设，是给自己的确定性——没人看也要做对的日常。",
+            "product_value_support": "刮干净脸不是为了发朋友圈，是为了自己照镜子时那一下踏实——产品卖的就是这种『为自己做』的日常确定性。",
+            "platform_expression": "抖音老板口播：『朋友圈可以不发，脸不能不刮——一个是演给别人，一个是给自己』。",
+            "naturalness_note": "从人设疲劳反打『为自己的体面』，连接成立但需收住别讲成社交学。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "大家怀念发疯文学时代的真实。",
+            "real_problem": "男人不知道哪些事是『装』哪些是『真需要』。",
+            "track_relation": "把表面功夫和真实自我管理分开，是男人的清醒。",
+            "product_value_support": "剃须是少数『不为表演也值得做好』的事，产品帮他把这件事做对。",
+            "platform_expression": "口播对立开场：你可以不营业，但别不体面。",
+            "naturalness_note": "稍鸡汤，控制时长。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "平台展示文化让人疲惫。",
+            "real_problem": "晨间流程被忽视，反正没人看。",
+            "track_relation": "出门前的确定性是私人的，不依赖观众。",
+            "product_value_support": "三段式剃须流程=给自己的早晨仪式。",
+            "platform_expression": "口播给晨间清单收尾。",
+            "naturalness_note": "可执行性强。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "朋友圈可以没有活人感，但你的脸得有",
+          "title": "全网都在装？没关系，刮脸这件事，是男人少数不用演的真实",
+          "body_or_script": "【0-3秒 钩子】都在说朋友圈没活人感了——发什么都像营业。但兄弟，有一件事你演不了：你的脸。\n【3-12秒 冲突】人设可以包装，滤镜可以加，但你早上照镜子那一眼，骗不了自己。胡子拉碴出门，再好的人设也是虚的。\n【12-35秒 展开】所以我说，别管朋友圈发不发，把不用演的事做好：剃前泡软、顺毛刮、刮完修护。这三步没人给你点赞，但你自己知道——今天这张脸，是踏实的。\n【35-45秒 落点】体面不是演给别人，是给自己的确定性。明早刮脸的时候，想想这句话。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      },
+      {
+        "hotspot_id": "hs-20260611-107",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "肥胖新标准让大家陷入『我到底算不算胖』的自测焦虑。",
+            "real_problem": "男人被各种新标准追着跑：体重、腰围、发际线，越测越慌。",
+            "track_relation": "与其被标准吓，不如抓住每天可控的小事——自我管理是颗粒度，不是指标焦虑。",
+            "product_value_support": "剃须是男人每天最可控的自我管理动作之一，产品让这件可控的事有确定结果。",
+            "platform_expression": "抖音老板口播：『标准年年变，但有些事你今天就能做对』。",
+            "naturalness_note": "从指标焦虑反打可控日常，自然度中上，别贪健康科普的场。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "新标准引入腰围、脂肪分布等多维指标。",
+            "real_problem": "男人健康管理无从下手，索性摆烂。",
+            "track_relation": "把大目标拆成每天的小动作才是真管理。",
+            "product_value_support": "晨间剃须流程就是最容易坚持的第一个小动作。",
+            "platform_expression": "口播给『从明早开始的三件小事』清单。",
+            "naturalness_note": "落点实。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "标准变化引发『被定义』的抗拒。",
+            "real_problem": "男人讨厌被指标审判但又在意状态。",
+            "track_relation": "状态好不好，自己脸上最诚实。",
+            "product_value_support": "刮干净的脸是状态最直接的可视化。",
+            "platform_expression": "口播用镜子开场制造画面。",
+            "naturalness_note": "稍套路。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "标准年年变，可控的事今天就能做对",
+          "title": "肥胖标准又改了？兄弟，与其焦虑指标，不如先管好今天能管的",
+          "body_or_script": "【0-3秒 钩子】肥胖标准又更新了，BMI 说了不算，还要看腰围、看脂肪分布——兄弟们直接测懵了。\n【3-12秒 冲突】我说句实话：标准年年变，你年年慌，最后什么也没改。真正的自我管理，不是追着指标跑，是抓住今天就能做对的事。\n【12-35秒 展开】比如明早这十分钟：好好刮个脸，泡软、顺刮、修护。这事不用等体检报告，做完立刻见效——镜子里那张干净的脸就是结果。\n【35-45秒 落点】大目标会变，小动作不骗人。先把每天可控的做对，状态是攒出来的。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      },
+      {
+        "hotspot_id": "hs-20260611-001",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "FDA 批新防晒成分，媒体把防晒升级成防炎症、防色沉、防早衰。",
+            "real_problem": "男人刮完脸那块发红，晒一晒更容易留下暗印、显老，自己却没在意。",
+            "track_relation": "剃须后那块最脆弱的皮，恰恰最该防护——这关系到脸看起来干净还是显糙显老。",
+            "product_value_support": "剃后修护＋日常防护的组合，正是在替用户守住那块刚刮过的皮。",
+            "platform_expression": "抖音老板口播：『刮完脸那块红，最怕你接着出门晒太阳』。",
+            "naturalness_note": "防晒本体偏泛流量，靠『剃后红斑→留印显老』这一步收回剃须，角度别贪。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "防晒话题大热。",
+            "real_problem": "男人普遍不防晒，觉得是女生的事。",
+            "track_relation": "精致不是女性专属，体面是中性的。",
+            "product_value_support": "产品把防护讲成男人也该有的基本动作。",
+            "platform_expression": "口播打破刻板：防晒不分男女。",
+            "naturalness_note": "能接但容易飘成泛防晒内容。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "看不见的轻炎症也会留痕。",
+            "real_problem": "刮完红、刷酸后红，都不当回事。",
+            "track_relation": "自我管理是连看不见的损耗也管住。",
+            "product_value_support": "产品主张剃后那段的守护。",
+            "platform_expression": "口播用『看不见的留印』制造好奇。",
+            "naturalness_note": "概念稍抽象。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "刮完脸那块红，最怕接着晒——剃须人更该认真防护",
+          "title": "刮完脸直接出门晒太阳？那块红，正在悄悄给你留印、显老",
+          "body_or_script": "【0-3秒 钩子】刮完脸那块还红着，你转头就出门晒太阳？这一下，可能正在悄悄给你留印、催你显老。\n【3-12秒 冲突】最近防晒被重新讨论：晒太阳的伤害不只是晒黑，是反复的轻炎症会留下暗沉、加速松垮。而你刚刮过的那块皮，恰恰是最脆、最经不起晒的。\n【12-35秒 展开】所以剃须人比谁都该管这一段：刮完先给一层舒缓修护，让那块红先稳下来；白天出门，再给基础防护别让它白白受晒。\n【35-45秒 落点+行动】防护不分男女，干净体面的脸是管出来的。明天刮完，记得别让那块红直接去晒。"
+        },
+        "external_terms_check": true,
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss"
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-20260611-004",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "护肤日是泛泛的全民科普，流量大但跟剃须刀生意关系弱；而且『剃须破坏皮肤防线』这个角度，已经被屏障那条更自然地讲掉了，再蹭就是凑数。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-101",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "亲子金融话题，流量大但跟剃须刀生意没有自然关系。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-102",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "高考考场话题，和男士个护接不上，蹭了显得莫名其妙。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-103",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "阶层与躺平的争论场，接到剃须要绕几个大弯，属于硬蹭。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-105",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "女生穿搭工具梗，主场不在男士个护，强接会显得蹭女性流量。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-106",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "生菜寄生虫的食品安全恐慌，跟剃须没有自然桥。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-108",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "电商维权大讨论，作为老板你可能有共鸣，但跟剃须刀产品价值接不上，做人设杂谈可以、进推荐不行。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-109",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "奋斗与生活的打工人对线，话题大但落不到你的产品上，蹭了就是凑热闹。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-110",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "全球就业对账，离男士个护太远。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-111",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "海外洗脑梗，和生意没有任何自然连接。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      },
+      {
+        "hotspot_id": "hs-20260611-112",
+        "track_id": "razor-personalcare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "海外怀旧梗，同上。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true
+      }
+    ]
+  },
+  "meta": {
+    "hs-20260611-001": {
+      "oneLiner": "FDA 20 多年来首次新批化学防晒成分 bemotrizinol，防晒话题重回台前",
+      "reason": "剃须后发红是轻炎症、会留印还会让局部显老，能接到『防色沉防早衰』；但热点本体是防晒大新闻，偏泛流量，接剃须要走一步,角度别贪。"
+    },
+    "hs-20260611-002": {
+      "oneLiner": "《国人皮肤屏障健康精准分型修护白皮书》发布，把『屏障受损』讲成六重屏障分型",
+      "reason": "剃须本身就是每天在刮角质、拆皮肤屏障；大家都在聊『屏障受损』，你正好能把『刮完干红刺痛』翻译成屏障问题，自然接到剃后修护。"
+    },
+    "hs-20260611-003": {
+      "oneLiner": "芙丽芳丝『肌源氨基酸』发布会提出『后天性敏感族』，敏感是被养出来的",
+      "reason": "『敏感是后天养出来的』里，高频硬剃就是养出敏感的动作之一；能接，但话题主战场在护肤大盘，得把角度收回到剃须才不飘。"
+    },
+    "hs-20260611-004": {
+      "oneLiner": "全国护肤日权威报道：皮肤是『物理屏障+免疫前哨』，慢性炎症被点名",
+      "reason": "护肤日是泛泛的全民科普，流量大但跟剃须刀生意关系弱；而且『剃须破坏皮肤防线』这个角度，已经被屏障那条更自然地讲掉了，再蹭就是凑数。"
+    },
+    "hs-20260611-005": {
+      "oneLiner": "军队人群假性毛囊炎激光脱毛新文献 + ASLMS 年会，PFB 管理被重新讨论",
+      "reason": "刮完脸又红又长小疙瘩、反复留印，就是高频剃须的人天天碰到的事，这条等于直接在讲你客户的脸——不用绕。"
+    },
+    "hs-20260611-101": {
+      "oneLiner": "家长故意弄脏孩子征信防网贷，是保护还是毁未来",
+      "reason": "亲子金融话题，流量大但跟剃须刀生意没有自然关系。"
+    },
+    "hs-20260611-102": {
+      "oneLiner": "考过的才知道 25 分钟有多极限：高考考场集体复盘",
+      "reason": "高考考场话题，和男士个护接不上，蹭了显得莫名其妙。"
+    },
+    "hs-20260611-103": {
+      "oneLiner": "家里有钱就不上班，舒舒服服爽一辈子有啥错",
+      "reason": "阶层与躺平的争论场，接到剃须要绕几个大弯，属于硬蹭。"
+    },
+    "hs-20260611-104": {
+      "oneLiner": "为什么朋友圈现在没有活人感了",
+      "reason": "大家在吵『人设管理太累、不敢真实』，你正好能讲：男人的体面不是给别人看的人设，是给自己的确定性——刮干净脸出门，是为自己做的事。"
+    },
+    "hs-20260611-105": {
+      "oneLiner": "微信折叠发图被女生改造成一周穿搭电子衣柜",
+      "reason": "女生穿搭工具梗，主场不在男士个护，强接会显得蹭女性流量。"
+    },
+    "hs-20260611-106": {
+      "oneLiner": "生菜党天塌了：烤肉还敢包生菜吗",
+      "reason": "生菜寄生虫的食品安全恐慌，跟剃须没有自然桥。"
+    },
+    "hs-20260611-107": {
+      "oneLiner": "我到底算不算胖？BMI 说了不算了",
+      "reason": "男人也在被新标准戳『我到底算不算胖』——能接到你常讲的自我管理：与其被标准吓，不如把每天可控的小事做对，剃须就是其中一件。注意别贪健康科普的场。"
+    },
+    "hs-20260611-108": {
+      "oneLiner": "190 块榴莲仅退款，商家硬刚到底值不值",
+      "reason": "电商维权大讨论，作为老板你可能有共鸣，但跟剃须刀产品价值接不上，做人设杂谈可以、进推荐不行。"
+    },
+    "hs-20260611-109": {
+      "oneLiner": "奋斗和生活，普通人真的不能都要吗",
+      "reason": "奋斗与生活的打工人对线，话题大但落不到你的产品上，蹭了就是凑热闹。"
+    },
+    "hs-20260611-110": {
+      "oneLiner": "X 自动翻译后的全球大对账：原来全世界都在找工作没人回",
+      "reason": "全球就业对账，离男士个护太远。"
+    },
+    "hs-20260611-111": {
+      "oneLiner": "Cheesy Michael, open up the door：TikTok 荒诞室友梗",
+      "reason": "海外洗脑梗，和生意没有任何自然连接。"
+    },
+    "hs-20260611-112": {
+      "oneLiner": "LarpTubers：假装自己是 2010 年代油管博主",
+      "reason": "海外怀旧梗，同上。"
+    }
+  },
+  "mode": "live",
+  "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
+  "date": "2026-06-11",
+  "generated_at": "2026-06-11T09:28:11"
+}

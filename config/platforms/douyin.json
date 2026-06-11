@@ -1,0 +1,16 @@
+{
+  "platform_id": "douyin",
+  "platform_name": "抖音",
+  "content_form": "短视频口播脚本",
+  "distribution_logic": "强算法推荐，完播率与互动率决定流量池层层放大",
+  "hook": {
+    "window": "前 3 秒",
+    "principle": "用反差/冲突/直接结论开场，先抛钩子再展开，绝不铺垫"
+  },
+  "title_logic": "口语强钩子，制造好奇或对立，配合字幕首句",
+  "length_norm": "15-60 秒，脚本分镜：钩子→冲突→展开→落点→行动",
+  "rewards": ["高完播", "评论争议", "转发", "强情绪"],
+  "penalizes": ["开场慢", "信息密度低", "口播平淡", "违禁词"],
+  "conversion_path": "主页 + 购物车挂载 + 评论区引导 + 私信",
+  "expression_rules": ["短句口语", "一句一个信息点", "字幕同步", "节奏快，留钩子在结尾"]
+}

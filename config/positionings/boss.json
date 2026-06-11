@@ -1,0 +1,8 @@
+{
+  "positioning_id": "boss",
+  "positioning_name": "老板型",
+  "credibility_source": "一线经验 / 决策视角",
+  "voice": "直接、有主见、讲取舍，敢下判断",
+  "preferred_formats": ["观点", "判断", "踩坑复盘"],
+  "avoid": ["学术腔", "犹豫不决", "纯科普无立场"]
+}

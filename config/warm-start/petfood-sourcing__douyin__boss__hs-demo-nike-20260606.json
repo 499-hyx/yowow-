@@ -1,0 +1,47 @@
+{
+  "hotspot_id": "hs-demo-nike-20260606",
+  "track_id": "petfood-sourcing",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "relevance_score": 6.8,
+  "naturalness_score": 6.6,
+  "recommendation": "maybe",
+  "forced_flag": false,
+  "skip_reason": null,
+  "bridge_paths": [
+    {
+      "path_id": "p1",
+      "phenomenon": "耐克连跌七个季度，评论区都在说『不想再为一个标多花钱』。",
+      "real_problem": "大家要的是真东西、真好用，而不是牌子带来的心理安慰。",
+      "track_relation": "养宠一个道理：网红粮好不好，跟牌子大不大没多大关系，得看配料和来源。",
+      "product_value_support": "把钱花在查得到的原料和品质上，而不是花在那个标上——源头同样的料、价格更实在。",
+      "platform_expression": "老板口吻直给：『大牌都祛魅了，给毛孩子选粮更别只认牌子。』",
+      "naturalness_note": "热点核心（为牌子买单祛魅）和赛道核心（别为牌子溢价、看配料来源）方向一致，接得上，但要从人转到宠物，略隔一层。"
+    },
+    {
+      "path_id": "p2",
+      "phenomenon": "曾经最稳的大牌也会连跌、被换掉。",
+      "real_problem": "牌子大不等于一直对，谁不进步谁出局。",
+      "track_relation": "宠物食品也在洗牌，老牌子不代表更适合你家猫狗的肠胃。",
+      "product_value_support": "用配料表和真实饲喂反馈说话，让养宠人自己判断，而不是听名气。",
+      "platform_expression": "『我做这行，看的是猫狗吃得好不好，不是看谁名气大。』",
+      "naturalness_note": "接『品牌惯性失效』，略偏观点，但仍落在『看实际不看名气』的赛道内。"
+    },
+    {
+      "path_id": "p3",
+      "phenomenon": "评论区在吵国货和性价比。",
+      "real_problem": "买东西最怕踩雷，花对钱比花贵钱更让人安心。",
+      "track_relation": "买宠物粮最怕踩雷，把配料来源讲清楚就是帮人买对、不买贵。",
+      "product_value_support": "把『怎么不踩雷』讲清楚，本身就是源头的底气。",
+      "platform_expression": "落点给行动：『别为牌子多掏钱，先看配料表这三点再买。』",
+      "naturalness_note": "效率 / 安心角度钩子实用，但这条热点本身不是宠物话题，整体只能算可发。"
+    }
+  ],
+  "chosen_path_id": "p1",
+  "content": {
+    "topic": "大牌都祛魅了，给毛孩子选粮更别只认牌子",
+    "title": "耐克都连跌七个季度了，你还在为牌子给猫狗买粮?",
+    "body_or_script": "（前3秒）耐克在中国连跌七个季度，大家突然想明白：不想再为一个标多花钱了。\n（冲突）给猫狗选粮更是这样。你买的是配料表里那点真东西，不是包装上的网红名字。\n（展开）我做这行实话讲，很多网红粮贵的那部分，贵在投流和名气，不在猫狗的碗里。源头同样的料、同样的工艺，价格能差一截。\n（落点）所以别先认牌子，买之前就看三点：配料表第一位、原料从哪来、有没有真实饲喂反馈。对得上，它就是好粮。\n（行动）评论区告诉我，你家上一袋粮是冲牌子买的，还是看配料买的?"
+  },
+  "external_terms_check": true
+}

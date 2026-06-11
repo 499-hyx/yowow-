@@ -1,0 +1,371 @@
+[
+  {
+    "hotspot_id": "hs-20260611-101",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "家长故意弄脏孩子征信防网贷，是保护还是毁未来",
+    "summary": "家长故意让刚成年的孩子征信逾期，理由是防止他以后乱借网贷。短视频播放破百万，评论区父母、年轻人、法律从业者大量对线。",
+    "phenomenon": "『先把孩子征信弄脏能防网贷吗』成为亲子圈争议爆点，大量父母现身说法讲自己的恐惧与做法。",
+    "spread_emotion": "对网贷的深度恐惧 vs 对家长越界控制的愤怒；普通家庭面对金融规则的不安全感。",
+    "people_involved": [
+      "父母",
+      "刚成年的年轻人",
+      "法律从业者",
+      "金融博主"
+    ],
+    "conflict_point": "父母的风险控制，能不能凌驾于成年子女的信用权利之上。",
+    "fact_structure": "网贷恐惧（真实）× 征信规则认知不足 × 亲子控制边界争议。",
+    "candidate_problem_dimensions": [
+      "网贷恐惧",
+      "成年边界与亲子控制",
+      "普通家庭金融知识匮乏",
+      "替孩子做主的代价"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "抖音",
+      "微博"
+    ],
+    "source_url": "https://www.ctdsb.net/c1716_202606/2768885.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-102",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "考过的才知道 25 分钟有多极限：高考考场集体复盘",
+    "summary": "高考后考生和过来人围绕 25 分钟做完大题、换答题卡等极限经历集体复盘，火的是大量『我当年也这样』的第一人称共鸣。微博热榜约 30 万热度，B站高考吐槽大会约 293 万浏览。",
+    "phenomenon": "考后『考场 PTSD』式分享刷屏，过来人隔代共鸣，形成跨年龄的集体回忆现场。",
+    "spread_emotion": "时间压迫的窒息感、渡劫式自嘲、青春创伤的集体释放。",
+    "people_involved": [
+      "应届考生",
+      "考过的人",
+      "家长",
+      "老师"
+    ],
+    "conflict_point": "高考是公平筛选，还是把普通孩子逼到极限的压力机器。",
+    "fact_structure": "极限考试体验（普遍）× 自嘲式表达（低门槛）× 代际共鸣（扩圈）。",
+    "candidate_problem_dimensions": [
+      "升学焦虑",
+      "时间压迫与心态崩溃",
+      "青春创伤共鸣",
+      "命运分流的紧张"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "微博",
+      "B站",
+      "抖音"
+    ],
+    "source_url": "https://tophub.today/n/KqndgxeLl9"
+  },
+  {
+    "hotspot_id": "hs-20260611-103",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "家里有钱就不上班，舒舒服服爽一辈子有啥错",
+    "summary": "一对夫妻靠双方父母支持过『啃老式全职带娃』生活并拍成日常视频，引发『有条件为什么不舒服活』vs『阶层托举包装成生活方式』的大争论。热榜约 35 万热度。",
+    "phenomenon": "晒『不上班的舒服生活』的视频被全网围观审判，评论区变成阶层与工作意义的辩论场。",
+    "spread_emotion": "羡慕与刺痛并存：『不是不想躺，是我家没这个条件』。",
+    "people_involved": [
+      "全职带娃夫妻",
+      "打工人",
+      "宝妈",
+      "父母辈"
+    ],
+    "conflict_point": "反内卷自由到底是个人选择，还是资源不平等的炫耀。",
+    "fact_structure": "个体生活方式展示 × 阶层差距可视化 × 工作意义追问。",
+    "candidate_problem_dimensions": [
+      "阶层差距刺痛",
+      "工作意义怀疑",
+      "家庭托举依赖",
+      "育儿成本与躺平欲望"
+    ],
+    "heat_score_10": 7.8,
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "source_url": "https://www.sina.cn/news/detail/5308544083296656.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-104",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "为什么朋友圈现在没有活人感了",
+    "summary": "全平台用户集体吐槽朋友圈、小红书、抖音越来越像展示橱窗而不是生活现场：不是没人生活了，是大家不敢真实表达。热榜约 39 万热度，多平台同步出现。",
+    "phenomenon": "『没有活人感』成为跨平台自我指涉式讨论：用户在社交平台上讨论为什么不敢在社交平台说真话。",
+    "spread_emotion": "表达欲被压抑的闷、对从前发疯文学时代的怀旧、人设管理的疲惫。",
+    "people_involved": [
+      "打工人",
+      "宝妈",
+      "学生",
+      "自由职业者"
+    ],
+    "conflict_point": "熟人社交到底该真实，还是该安全、体面、可控。",
+    "fact_structure": "同事客户入侵私域 × 人设管理疲劳 × 表达安全感下降。",
+    "candidate_problem_dimensions": [
+      "社交安全感",
+      "表达欲与隐私边界",
+      "工作侵入生活",
+      "互联网怀旧"
+    ],
+    "heat_score_10": 8.1,
+    "platforms": [
+      "微博",
+      "小红书",
+      "抖音"
+    ],
+    "source_url": "https://www.sina.cn/news/detail/5308605793311449.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-105",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "微信折叠发图被女生改造成一周穿搭电子衣柜",
+    "summary": "微信折叠发图功能被用户二创成穿搭排版工具：上衣裤子鞋包折成一组像电子衣柜。强迫症、通勤党、穿搭博主跟风，热榜约 23 万。",
+    "phenomenon": "一个被认为鸡肋的功能被用户自发改造出新用法并形成跟风模板。",
+    "spread_emotion": "秩序感的爽、『功能被用户救活』的幽默、晒图欲。",
+    "people_involved": [
+      "通勤女生",
+      "穿搭博主",
+      "强迫症用户",
+      "产品圈"
+    ],
+    "conflict_point": "功能到底是鸡肋，还是被用户二创成生活工具。",
+    "fact_structure": "官方功能 × 用户挪用 × 模板化跟风传播。",
+    "candidate_problem_dimensions": [
+      "穿搭决策疲劳",
+      "秩序感与整理欲",
+      "审美展示欲"
+    ],
+    "heat_score_10": 6.8,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": "https://www.sina.cn/news/detail/5308546038368528.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-106",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "生菜党天塌了：烤肉还敢包生菜吗",
+    "summary": "显微镜下生菜、寄生虫风险内容引发生菜恐慌，热搜约 63 万热度。减脂党、烤肉党、科普党对线：必要提醒还是制造食物恐惧。",
+    "phenomenon": "『爱吃生菜的人天塌了』刷屏，大量用户晒『我已经把生菜扔了』，科普号下场拉锯。",
+    "spread_emotion": "恶心+恐慌+不甘心（烤肉没生菜没灵魂），混合对惊吓式健康内容的反感。",
+    "people_involved": [
+      "减脂党",
+      "烤肉爱好者",
+      "科普博主",
+      "家庭做饭的人"
+    ],
+    "conflict_point": "食品安全提醒和惊吓式健康内容之间的边界。",
+    "fact_structure": "视觉冲击内容 × 真实健康风险 × 饮食习惯被动摇。",
+    "candidate_problem_dimensions": [
+      "食品安全焦虑",
+      "减脂饮食依赖",
+      "外食不信任",
+      "健康信息真假难辨"
+    ],
+    "heat_score_10": 7.4,
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "source_url": "https://weibo.com/a/hot/633f7ad5a78af279_0.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-107",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "我到底算不算胖？BMI 说了不算了",
+    "summary": "新版肥胖判断标准（加入腰围、脂肪分布、腰高比）被用户转成自测焦虑，健身人群和上班族争论：更科学还是又一套身材 KPI。",
+    "phenomenon": "标准更新被大众转译成『到底怎样才算胖』的全民自测与吐槽。",
+    "spread_emotion": "刚建立的身材自信被新标准击碎的烦躁，对被定义的抗拒。",
+    "people_involved": [
+      "减肥人群",
+      "健身党",
+      "普通上班族",
+      "医学科普号"
+    ],
+    "conflict_point": "健康风险筛查和身材焦虑制造之间的冲突。",
+    "fact_structure": "权威标准变更 × 全民自测行为 × 身材焦虑放大。",
+    "candidate_problem_dimensions": [
+      "体重管理焦虑",
+      "外貌焦虑",
+      "被标准定义的抗拒",
+      "健康风险担忧"
+    ],
+    "heat_score_10": 6.9,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": "https://weibo.com/a/hot/2f0c38602a679c6c_0.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-108",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "190 块榴莲仅退款，商家硬刚到底值不值",
+    "summary": "商家为 190 元榴莲的仅退款跨城维权（报警、起诉、调解），最终买家家属道歉赔偿。网友吵的是：消费者保护有没有被滥用、商家能不能靠较真拿回尊严。",
+    "phenomenon": "个案长成平台规则大讨论，『190 买榴莲，5000 维规矩』式总结被大量转发。",
+    "spread_emotion": "对较真者的敬佩 + 对规则被钻空子的愤怒 + 普通人维权代价的无奈。",
+    "people_involved": [
+      "小商家",
+      "电商消费者",
+      "平台从业者",
+      "法律博主"
+    ],
+    "conflict_point": "保护消费者，还是纵容恶意薅商家羊毛。",
+    "fact_structure": "平台规则漏洞 × 个体维权高成本 × 公平感诉求。",
+    "candidate_problem_dimensions": [
+      "电商信任危机",
+      "平台规则公平",
+      "普通人维权成本",
+      "占便宜与道德边界"
+    ],
+    "heat_score_10": 8.3,
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "source_url": "https://finance.sina.cn/2026-06-11/detail-iniazpqr3991755.d.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-109",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "奋斗和生活，普通人真的不能都要吗",
+    "summary": "宁德时代董事长谈『奋斗还是生活』后评论区变成打工人对线：老板说奋斗是竞争力，员工问奋斗的收益归谁。",
+    "phenomenon": "企业家言论被打工人接管，演变成收益分配与生活权利的大讨论。",
+    "spread_emotion": "『老板奋斗是套现，员工奋斗是加班』式的清醒愤怒，夹杂对高薪的渴望。",
+    "people_involved": [
+      "打工人",
+      "企业管理者",
+      "应届生",
+      "宝妈"
+    ],
+    "conflict_point": "企业需要奋斗，员工要生活，收益分配是否对等。",
+    "fact_structure": "企业家叙事 × 打工人清醒话语 × 收入分配追问。",
+    "candidate_problem_dimensions": [
+      "收入与回报焦虑",
+      "身体透支",
+      "家庭时间被挤压",
+      "阶层回报怀疑"
+    ],
+    "heat_score_10": 7.0,
+    "platforms": [
+      "微博"
+    ],
+    "source_url": "https://www.sina.cn/news/detail/5308608812157374.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-110",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "X 自动翻译后的全球大对账：原来全世界都在找工作没人回",
+    "summary": "X 上线 Grok 自动翻译后，中文用户刷到大量外国普通人的抱怨：投简历没人回、被家里骂不想工作。『全球人民大对账』在中文圈持续扩散。",
+    "phenomenon": "语言墙被翻译拆掉，各国年轻人的痛苦被互相看见，形成跨国共鸣式刷屏。",
+    "spread_emotion": "『不是我们惨，是全世界同款惨』的奇异安慰感 + 全球连接的新鲜感。",
+    "people_involved": [
+      "X 中文用户",
+      "求职年轻人",
+      "留学生",
+      "科技博主"
+    ],
+    "conflict_point": "翻译打破信息墙让共鸣扩大，也让文化误读和情绪外溢更快。",
+    "fact_structure": "技术变化（自动翻译）× 全球就业焦虑同步 × 同温层破裂。",
+    "candidate_problem_dimensions": [
+      "就业焦虑全球化",
+      "代际压力共鸣",
+      "语言壁垒消失的冲击",
+      "信息茧房破裂"
+    ],
+    "heat_score_10": 8.5,
+    "platforms": [
+      "X",
+      "知乎",
+      "微博"
+    ],
+    "source_url": "https://www.huxiu.com/article/4863885.html"
+  },
+  {
+    "hotspot_id": "hs-20260611-111",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "Cheesy Michael, open up the door：TikTok 荒诞室友梗",
+    "summary": "TikTok 荒诞室友梗变成翻唱、混音、接龙短剧，早期视频 3 天超 220 万播放。低门槛强重复，极适合二创。暂未大规模传入中文平台。",
+    "phenomenon": "无意义但洗脑的梗引发全民翻唱接龙，参与即快乐。",
+    "spread_emotion": "荒诞解压的快乐 + 『又一个洗脑梗』的烦躁。",
+    "people_involved": [
+      "TikTok 用户",
+      "音乐二创博主",
+      "有室友的年轻人"
+    ],
+    "conflict_point": "无厘头二创的参与快乐，和烦人洗脑梗的反感。",
+    "fact_structure": "低门槛格式 × 强重复旋律 × 室友生活共鸣。",
+    "candidate_problem_dimensions": [
+      "低成本参与欲",
+      "荒诞解压",
+      "室友边界共鸣",
+      "被算法洗脑的集体体验"
+    ],
+    "heat_score_10": 7.1,
+    "platforms": [
+      "TikTok"
+    ],
+    "source_url": "https://trending.knowyourmeme.com/editorials/guides/what-is-the-cheesy-michael-song-and-where-did-it-come-from-tiktoks-viral-cheesy-michael-open-up-the-door-memes-explained"
+  },
+  {
+    "hotspot_id": "hs-20260611-112",
+    "date": "2026-06-11",
+    "source_skill": "gpt-deep-research(hotspot-broad-v2)",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "LarpTubers：假装自己是 2010 年代油管博主",
+    "summary": "TikTok 用户模仿 2010 年代 YouTuber 的语气剪辑表情，形成怀旧式 LarpTuber 合集，单条剪辑 6 天超 140 万播放。暂未大规模传入中文圈。",
+    "phenomenon": "把童年互联网审美整体复刻成新内容格式，参与者集体怀旧。",
+    "spread_emotion": "『这是我小学放学后看的互联网』的温暖 + 『别把尬也复刻回来』的嫌弃。",
+    "people_involved": [
+      "TikTok 年轻用户",
+      "内容创作者",
+      "千禧互联网一代"
+    ],
+    "conflict_point": "互联网怀旧是情绪价值，还是旧审美被算法重新收割。",
+    "fact_structure": "怀旧情绪 × 格式化模仿 × 内容疲劳反弹。",
+    "candidate_problem_dimensions": [
+      "童年互联网怀旧",
+      "身份认同",
+      "内容疲劳",
+      "审美轮回"
+    ],
+    "heat_score_10": 6.6,
+    "platforms": [
+      "TikTok"
+    ],
+    "source_url": "https://knowyourmeme.com/memes/larptubers"
+  }
+]
