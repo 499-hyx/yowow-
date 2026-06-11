@@ -1,0 +1,253 @@
+[
+  {
+    "hotspot_id": "hs-20260612-301",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "须部假性毛囊炎/内生发与红肿",
+    "scope": "track:razor-personalcare",
+    "title": "医生科普升温：刮胡流血、毛囊炎和刀片清洁的因果链",
+    "summary": "香港01 等转载皮肤科医生科普：刮胡后流血、胡周毛囊炎高发，刀片需定期更换并清洁，否则伤口易诱发感染。",
+    "phenomenon": "垂类健康内容把『刮胡-红肿-毛囊炎-刀片污染』这条链讲透，男生对号入座。",
+    "spread_emotion": "『原来不是我皮肤差』的恍然 + 对刀片卫生的后怕。",
+    "people_involved": [
+      "高频剃须男性",
+      "皮肤科医生"
+    ],
+    "conflict_point": "刮干净就行的习惯 vs 刀片卫生与方法才是因果。",
+    "fact_structure": "医生科普 × 精准痛点 × 方法可改。",
+    "candidate_problem_dimensions": [
+      "刮完红肿流血",
+      "刀片多久换",
+      "伤口感染"
+    ],
+    "heat_score_10": 5.5,
+    "platforms": [
+      "香港01",
+      "微信公众号"
+    ],
+    "source_url": "https://global.hk01.com/"
+  },
+  {
+    "hotspot_id": "hs-20260612-302",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "须部假性毛囊炎/内生发与红肿",
+    "scope": "track:razor-personalcare",
+    "title": "618『他经济』爆发：男士从剃须刀搜到修复、抗老、防晒",
+    "summary": "证券时报报道 618 男士护肤增量明显：搜索词从『剃须刀』扩展到『修复』『抗老』，男士护肤品类增速超 150%。",
+    "phenomenon": "直播间和报道把『男人开始护肤』推成现象级话题。",
+    "spread_emotion": "男性护理被正名的松动感 + 不知道从哪开始的迷茫。",
+    "people_involved": [
+      "男性消费者",
+      "直播电商",
+      "品牌方"
+    ],
+    "conflict_point": "男人只需要剃干净 vs 男人开始要求剃完不红不刺不长包。",
+    "fact_structure": "大促数据 × 消费升级 × 入口仍是剃须。",
+    "candidate_problem_dimensions": [
+      "从剃干净到剃得舒服",
+      "男士护肤怎么入门",
+      "花钱花在哪"
+    ],
+    "heat_score_10": 8.5,
+    "platforms": [
+      "证券时报",
+      "抖音",
+      "直播间"
+    ],
+    "source_url": "https://www.stcn.com/article/detail/3952093.html"
+  },
+  {
+    "hotspot_id": "hs-20260612-303",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "经皮水分流失TEWL与角质层屏障",
+    "scope": "track:razor-personalcare",
+    "title": "央视 5·25 点名『过度护肤』：层层叠加正在毁掉皮肤屏障",
+    "summary": "央视护肤日科普指出：叠加护肤、跟风网红方法、频繁去角质和医美都可能损伤屏障，造成敏感泛红。",
+    "phenomenon": "『过度护肤伤屏障』从女性护肤圈出圈，做减法成为新共识。",
+    "spread_emotion": "花了钱反而毁脸的懊恼。",
+    "people_involved": [
+      "护肤人群",
+      "皮肤科医生",
+      "央视"
+    ],
+    "conflict_point": "护肤=做加法 vs 屏障要的是做减法。",
+    "fact_structure": "央视科普 × 减法共识 × 屏障核心。",
+    "candidate_problem_dimensions": [
+      "越护越敏感",
+      "该减什么",
+      "屏障怎么修"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "央视",
+      "微博"
+    ],
+    "source_url": "https://news.cctv.com/2026/05/25/ARTIBjoSB2uDxyO98lcWLMPt260525.shtml"
+  },
+  {
+    "hotspot_id": "hs-20260612-304",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "经皮水分流失TEWL与角质层屏障",
+    "scope": "track:razor-personalcare",
+    "title": "医院护肤日义诊：屏障受损、色素、老化成咨询前三",
+    "summary": "沧州市中心医院等护肤日义诊中，群众集中咨询屏障受损、色素性皮肤病、皮肤老化、医美术后修复。",
+    "phenomenon": "线下义诊把屏障-色素-老化放进同一个问诊场景。",
+    "spread_emotion": "就医咨询的认真。",
+    "people_involved": [
+      "就诊群众",
+      "皮肤科医生"
+    ],
+    "conflict_point": "单点补水 vs 屏障是长期稳定系统。",
+    "fact_structure": "地方义诊 × 真实需求结构。",
+    "candidate_problem_dimensions": [
+      "屏障受损",
+      "色素",
+      "老化"
+    ],
+    "heat_score_10": 4.5,
+    "platforms": [
+      "医院通稿"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-305",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "亚临床慢性炎症与区域性色素沉着",
+    "scope": "track:razor-personalcare",
+    "title": "全国防晒指数地图出炉：十余省份进入强紫外线『晒黑考验』",
+    "summary": "中国天气网 6·10 发布防晒地图：6·10-12 华北黄淮新疆等地紫外线强，十余省份需加强防晒。",
+    "phenomenon": "天气类全国信息引发防晒讨论，晒黑晒斑光老化被连带科普。",
+    "spread_emotion": "怕晒黑晒老的普遍警觉。",
+    "people_involved": [
+      "全国公众",
+      "通勤族",
+      "户外工作者"
+    ],
+    "conflict_point": "防晒是女生的事 vs 强紫外线不挑性别。",
+    "fact_structure": "权威天气信息 × 全民覆盖 × 季节节点。",
+    "candidate_problem_dimensions": [
+      "晒黑晒斑",
+      "光老化",
+      "男士不防晒"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "中国天气网",
+      "微博"
+    ],
+    "source_url": "https://m.weather.com.cn/news/2026/06/4669569.shtml"
+  },
+  {
+    "hotspot_id": "hs-20260612-306",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "亚临床慢性炎症与区域性色素沉着",
+    "scope": "track:razor-personalcare",
+    "title": "防晒衣 UPF 虚标乱象被曝光：你以为被保护，其实在裸晒",
+    "summary": "澎湃调查防晒衣乱象：不标或虚标 UPF、检测报告可定制；国标要求 UPF>40 且 UVA 透过率<5% 才算防紫外线产品。",
+    "phenomenon": "消费维权报道引发『我的防晒衣是不是假的』自查潮。",
+    "spread_emotion": "被骗的愤怒 + 以为安全实则暴露的后怕。",
+    "people_involved": [
+      "消费者",
+      "商家",
+      "监管"
+    ],
+    "conflict_point": "花钱买防护的安心 vs 虚标让人持续暴露于 UVA。",
+    "fact_structure": "调查报道 × 信任崩塌 × 确定性失效。",
+    "candidate_problem_dimensions": [
+      "防护是不是真的",
+      "虚标识别",
+      "持续暴露的代价"
+    ],
+    "heat_score_10": 7.5,
+    "platforms": [
+      "澎湃",
+      "微博"
+    ],
+    "source_url": "https://m.thepaper.cn/newsDetail_forward_33277619"
+  },
+  {
+    "hotspot_id": "hs-20260612-307",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "亚临床慢性炎症与区域性色素沉着",
+    "scope": "track:razor-personalcare",
+    "title": "央视点名青少年紫外线损伤：晒多了雀斑更深、暗沉提前",
+    "summary": "央视夏季护肤内容提到青少年户外时间长，紫外线损伤是暗沉长斑的潜在原因，雀斑随日晒加深。",
+    "phenomenon": "儿童防晒讨论升温。",
+    "spread_emotion": "家长对孩子晒伤的在意。",
+    "people_involved": [
+      "家长",
+      "青少年"
+    ],
+    "conflict_point": "晒太阳健康 vs 过量紫外线留痕。",
+    "fact_structure": "央视科普 × 儿童向。",
+    "candidate_problem_dimensions": [
+      "孩子防晒",
+      "雀斑加深"
+    ],
+    "heat_score_10": 7.0,
+    "platforms": [
+      "央视"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-308",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "皮肤微生态与机会性感染",
+    "scope": "track:razor-personalcare",
+    "title": "欧洲多国报告罕见皮肤感染聚集：潮湿高温接触场景被关注",
+    "summary": "ECDC 通报法德西出现 Dermatophilus congolensis 皮肤感染聚集，与桑拿等潮湿高温接触场景相关，多为轻症。",
+    "phenomenon": "国际公卫圈关注，大众讨论度低。",
+    "spread_emotion": "专业圈的警觉。",
+    "people_involved": [
+      "公卫机构",
+      "特定人群"
+    ],
+    "conflict_point": "小众场景 vs 皮肤接触传播风险。",
+    "fact_structure": "国际通报 × 小众场景。",
+    "candidate_problem_dimensions": [
+      "皮肤接触感染",
+      "潮湿环境风险"
+    ],
+    "heat_score_10": 4.0,
+    "platforms": [
+      "ECDC"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-309",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "皮肤微生态与机会性感染",
+    "scope": "track:razor-personalcare",
+    "title": "中疾控 6 月提示：高温出游聚集场景多类感染风险上升",
+    "summary": "中疾控 6·10 发布 6 月健康提示：登革热、手足口、猴痘等风险上升，多类伴皮疹或皮肤接触暴露场景。",
+    "phenomenon": "官方提示例行传播。",
+    "spread_emotion": "常规警觉。",
+    "people_involved": [
+      "公众",
+      "疾控"
+    ],
+    "conflict_point": "夏季暴露增多 vs 皮肤防线意识不足。",
+    "fact_structure": "官方提示 × 泛健康。",
+    "candidate_problem_dimensions": [
+      "夏季皮肤暴露",
+      "感染风险"
+    ],
+    "heat_score_10": 6.0,
+    "platforms": [
+      "中疾控",
+      "微博"
+    ],
+    "source_url": null
+  }
+]

@@ -1,0 +1,438 @@
+[
+  {
+    "hotspot_id": "hs-20260612-201",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "海淀幼升小 6·11 电脑派位确认，家长彻夜研究概率",
+    "summary": "海淀区民办小学等 6 月 11 日电脑派位，家长 14:00-24:00 登录确认，核心讨论不是学校好坏，而是房产、户籍、志愿、派位概率如何重新组合。",
+    "phenomenon": "北京幼升小家长圈刷屏派位攻略与概率计算，把入学变成一场资源配置推演。",
+    "spread_emotion": "对不确定性的焦躁：明明做了所有准备，结果还是要靠摇号。",
+    "people_involved": [
+      "幼升小家长",
+      "学区房业主",
+      "教育博主"
+    ],
+    "conflict_point": "家长用确定性思维做了多年布局 vs 派位机制强制引入随机性。",
+    "fact_structure": "政策节点 × 概率决策 × 资源重组焦虑。",
+    "candidate_problem_dimensions": [
+      "学区房价值焦虑",
+      "起跑线焦虑",
+      "政策理解成本",
+      "不确定性决策没人教"
+    ],
+    "heat_score_10": 7.0,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": "https://zyk.bjhd.gov.cn/zwdt/zcjd/202604/t20260428_4813192.shtml"
+  },
+  {
+    "hotspot_id": "hs-20260612-202",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "上海暑托班开抢：名额、安全、接送全压在家长身上",
+    "summary": "上海多区暑托班进入报名节点，杨浦 6·12 预填、徐汇 55 个班上线一网通办，双职工家长争论抢名额和『托管托不托得住』。",
+    "phenomenon": "暑托班报名攻略和吐槽在家长群刷屏。",
+    "spread_emotion": "抢不到的慌 + 抢到了也不放心。",
+    "people_involved": [
+      "双职工家长",
+      "小学生",
+      "社区托管机构"
+    ],
+    "conflict_point": "家长需要看护刚需 vs 托管质量与安全的不确定。",
+    "fact_structure": "公共服务供给 × 暑期看护刚需 × 信任缺口。",
+    "candidate_problem_dimensions": [
+      "暑假无人看护",
+      "抢名额焦虑",
+      "安全担忧"
+    ],
+    "heat_score_10": 6.5,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-203",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "高考考点占用致中小学停课，孩子居家谁来管",
+    "summary": "部分地区学校因高考考点安排停课两天，要求家长监督居家安全与复习，小学家长关注大考扰动后孩子能否自主管时间。",
+    "phenomenon": "停课通知在本地家长群流转，讨论集中在请假带娃和居家失控。",
+    "spread_emotion": "临时打乱节奏的烦躁。",
+    "people_involved": [
+      "小学家长",
+      "学校"
+    ],
+    "conflict_point": "学校外部秩序撤掉两天 vs 孩子有没有自主执行力。",
+    "fact_structure": "节律扰动 × 自主性检验 × 看护压力。",
+    "candidate_problem_dimensions": [
+      "居家学习失控",
+      "家长请假冲突"
+    ],
+    "heat_score_10": 5.0,
+    "platforms": [
+      "本地家长群",
+      "微信"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-204",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "高考后 AI 志愿填报爆发：3000 所高校的信息突围战",
+    "summary": "高考结束后 AI 志愿填报工具热度暴涨，考试期间各平台禁用涉考功能也被热议。小学家长把它前置成『孩子未来要学会用 AI 还是被 AI 牵着走』。",
+    "phenomenon": "AI 填志愿教程与翻车案例同时刷屏，家长围观这场人机协作的实战演习。",
+    "spread_emotion": "对信息差的恐惧 + 对 AI 依赖的隐忧：工具这么强，判断力还要不要练？",
+    "people_involved": [
+      "高考家庭",
+      "小学家长",
+      "AI 工具厂商",
+      "教育博主"
+    ],
+    "conflict_point": "AI 能瞬间给出志愿方案 vs 目标和取舍只能自己定。",
+    "fact_structure": "AI 工具爆发 × 路径决策复杂化 × 判断力焦虑。",
+    "candidate_problem_dimensions": [
+      "AI 依赖",
+      "信息差扩大",
+      "只会用工具不会判断",
+      "升学路径太复杂"
+    ],
+    "heat_score_10": 7.0,
+    "platforms": [
+      "微博",
+      "抖音",
+      "小红书"
+    ],
+    "source_url": "https://finance.sina.com.cn/roll/2026-06-11/doc-iniayskz4137823.shtml"
+  },
+  {
+    "hotspot_id": "hs-20260612-205",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "《爸爸当家5》乐悠安抚妹妹包揽家务，5000万播放引爆『被迫懂事』之争",
+    "summary": "亲子综艺中孩子乐悠主动安抚妹妹、承担家务的片段抖音播放超 5000 万、话题阅读破亿，家长吵『孩子是不是被迫懂事』和『责任感怎么培养』。",
+    "phenomenon": "片段被大量二创转发，评论区分成『心疼』和『羡慕』两派。",
+    "spread_emotion": "心疼『过早懂事』 vs 羡慕『责任感』，背后是对自家孩子『说不动』的无力。",
+    "people_involved": [
+      "综艺观众家长",
+      "二胎家庭",
+      "育儿博主"
+    ],
+    "conflict_point": "懂事是被压出来的牺牲 vs 责任感是被需要出来的能力。",
+    "fact_structure": "真实亲子样本 × 责任感争议 × 二胎公平。",
+    "candidate_problem_dimensions": [
+      "孩子过早懂事",
+      "二胎公平",
+      "爸爸参与育儿",
+      "家务是不是情感绑架"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "抖音",
+      "微博",
+      "小红书"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-206",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "央视六一晚会：AI 伙伴、劳动、戏曲、运动装进同一套成长叙事",
+    "summary": "晚会以小树苗成长为结构，设品格/知识/健体/美育/劳动篇章，加入 AI 伙伴央宝与沉浸式互动。",
+    "phenomenon": "家长讨论点在孩子能否把分散经验整合成成长能力。",
+    "spread_emotion": "官方叙事的安心感 + 素质教育是否表演化的疑虑。",
+    "people_involved": [
+      "家长",
+      "学校",
+      "央视"
+    ],
+    "conflict_point": "多元成长叙事 vs 现实里只考语数英。",
+    "fact_structure": "官方节目 × 跨域整合 × 素质教育疑虑。",
+    "candidate_problem_dimensions": [
+      "素质教育表演化",
+      "兴趣太散",
+      "AI 替代表达"
+    ],
+    "heat_score_10": 8.0,
+    "platforms": [
+      "央视",
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-207",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "《家业》李祯凭制墨技艺重振家族：一门手艺如何撑起一场危机",
+    "summary": "古装剧《家业》围绕徽墨世家展开，李祯角色热度破亿：她把制墨的材料、工序、审美、商业判断全部用到家族危机和行业重构中。",
+    "phenomenon": "观众在微博小红书追聊李祯成长线，讨论女性承担家业与手艺的现代价值。",
+    "spread_emotion": "对『一技傍身』的向往 + 对『学的东西能不能用出去』的怀疑。",
+    "people_involved": [
+      "剧迷家长",
+      "女孩家长",
+      "非遗爱好者"
+    ],
+    "conflict_point": "学一门手艺只是手艺 vs 手艺背后的判断力可以迁出去用。",
+    "fact_structure": "热播剧情节 × 技艺迁移 × 女性成长。",
+    "candidate_problem_dimensions": [
+      "学的东西能不能解决真问题",
+      "女孩能不能扛事",
+      "传统技艺的未来"
+    ],
+    "heat_score_10": 8.5,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-208",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "《主角》：秦腔演员的长期训练与舞台成长引发成才讨论",
+    "summary": "戏曲题材剧《主角》围绕秦腔演员成长展开，戏曲演员长文推荐、观众『看哭了』，讨论长期训练如何把生活经验转成舞台表达。",
+    "phenomenon": "戏曲圈和剧迷自发安利，家长借它聊坚持与天赋。",
+    "spread_emotion": "对『十年功』的敬意 + 自家孩子坚持不了三天的挫败。",
+    "people_involved": [
+      "剧迷",
+      "戏曲从业者",
+      "家长"
+    ],
+    "conflict_point": "天赋决定论 vs 长期训练的复利。",
+    "fact_structure": "行业剧 × 长期训练 × 成才焦虑。",
+    "candidate_problem_dimensions": [
+      "坚持力",
+      "艺术训练值不值",
+      "天赋与苦练"
+    ],
+    "heat_score_10": 6.5,
+    "platforms": [
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-209",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "《低智商犯罪》爱奇艺热度破万：荒诞案件专治『聪明人套路』",
+    "summary": "黑色幽默悬疑剧热度破万、豆瓣 8.0：案件全是低级错误和动机错位，观众发现按『聪明人犯罪』的模板推理全部翻车。",
+    "phenomenon": "观众晒『又被反转打脸』，讨论为什么套路失灵。",
+    "spread_emotion": "被反转的爽 + 对自己思维定势的惊觉。",
+    "people_involved": [
+      "悬疑剧观众",
+      "年轻家长"
+    ],
+    "conflict_point": "按模板推理的聪明 vs 识别偶然性和低级错误的真判断。",
+    "fact_structure": "爆款剧 × 反套路结构 × 思维定势暴露。",
+    "candidate_problem_dimensions": [
+      "孩子信息辨别",
+      "套路化思维的危险",
+      "骗局识别"
+    ],
+    "heat_score_10": 8.5,
+    "platforms": [
+      "爱奇艺",
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-210",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "35天影视情节",
+    "scope": "track:education-yowow",
+    "title": "《凡人修仙传》年番定档：韩立从个人修炼卷入大战局",
+    "summary": "动画年番 6·13 开播，慕兰大军压境，韩立从小范围生存策略进入战争、联盟、资源博弈的大系统。",
+    "phenomenon": "书粉动画粉刷屏定档，家长一边担心沉迷一边好奇孩子为什么爱看。",
+    "spread_emotion": "期待 + 家长对爽文沉迷的警惕。",
+    "people_involved": [
+      "动画观众",
+      "小学高年级孩子",
+      "家长"
+    ],
+    "conflict_point": "个人努力的小逻辑 vs 复杂系统里的判断与协作。",
+    "fact_structure": "国漫爆款 × 系统升级叙事 × 沉迷担忧。",
+    "candidate_problem_dimensions": [
+      "普通孩子如何逆袭",
+      "竞争环境变复杂",
+      "沉迷动漫"
+    ],
+    "heat_score_10": 7.5,
+    "platforms": [
+      "B站",
+      "微博",
+      "抖音"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-212",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "手机短视频游戏沉迷：从『堵不住』到家庭规则重建",
+    "summary": "暑假临近，孩子屏幕时间争夺战话题再起：没收、断网、吼叫全失效，讨论转向『规则怎么立才有人遵守』。",
+    "phenomenon": "家长群和小红书大量『斗争失败』现身说法，求规则模板的帖子刷屏。",
+    "spread_emotion": "屡战屡败的疲惫 + 怕孩子废掉的恐惧。",
+    "people_involved": [
+      "小学家长",
+      "孩子",
+      "老人"
+    ],
+    "conflict_point": "靠权力堵 vs 靠规则和替代供给疏。",
+    "fact_structure": "暑期节点 × 普遍痛点 × 方法论真空。",
+    "candidate_problem_dimensions": [
+      "沉迷失控",
+      "亲子冲突",
+      "规则立不住",
+      "替代活动缺位"
+    ],
+    "heat_score_10": 9.2,
+    "platforms": [
+      "小红书",
+      "抖音",
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-213",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "专注力告急：AI 时代最稀缺的是长时间不被打断",
+    "summary": "关于孩子专注力和深阅读能力下滑的讨论持续：碎片内容越多，能沉浸做一件事的孩子越少。",
+    "phenomenon": "家长晒『二十分钟坐不住』，求专注力训练方法。",
+    "spread_emotion": "对孩子『静不下来』的长期焦虑。",
+    "people_involved": [
+      "家长",
+      "老师"
+    ],
+    "conflict_point": "环境越来越碎 vs 深度能力越来越值钱。",
+    "fact_structure": "常青议题 × 能力稀缺化。",
+    "candidate_problem_dimensions": [
+      "专注力下滑",
+      "深阅读消失"
+    ],
+    "heat_score_10": 8.5,
+    "platforms": [
+      "小红书",
+      "微博"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-214",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "鸡娃还是快乐教育？吵的其实是两个目标函数",
+    "summary": "常青争论再起：鸡娃派和快乐派互相指责，双方都拿『为孩子好』当依据。",
+    "phenomenon": "两派对线长帖不断，中间派家长左右摇摆。",
+    "spread_emotion": "站队的愤怒 + 摇摆的内耗。",
+    "people_involved": [
+      "鸡娃家长",
+      "快乐教育家长"
+    ],
+    "conflict_point": "短期成绩最优 vs 长期能力最优，两个目标函数被当成一个。",
+    "fact_structure": "常青争议 × 目标混淆 × 身份站队。",
+    "candidate_problem_dimensions": [
+      "教育路线焦虑",
+      "同伴压力",
+      "怕选错耽误孩子"
+    ],
+    "heat_score_10": 9.0,
+    "platforms": [
+      "微博",
+      "小红书"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-215",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "FT：雇主开始自己填补 AI 教育缺口",
+    "summary": "FT 报道企业发现毕业生 AI 能力与岗位需求脱节，开始自建培训体系填补学校教育留下的缺口。",
+    "phenomenon": "教育与职场圈转发讨论『学校教的不够用了』。",
+    "spread_emotion": "对教育系统滞后的担忧。",
+    "people_involved": [
+      "雇主",
+      "毕业生",
+      "教育者"
+    ],
+    "conflict_point": "学校按旧大纲教 vs 雇主按新现实招。",
+    "fact_structure": "大报观点 × 教育滞后 × 能力缺口。",
+    "candidate_problem_dimensions": [
+      "学校教育过时",
+      "孩子未来就业"
+    ],
+    "heat_score_10": 8.8,
+    "platforms": [
+      "FT",
+      "微信公众号"
+    ],
+    "source_url": null
+  },
+  {
+    "hotspot_id": "hs-20260612-216",
+    "date": "2026-06-12",
+    "source_skill": "gpt-deep-research+legacy-radar",
+    "source_direction": "72小时家长热点",
+    "scope": "track:education-yowow",
+    "title": "Atlantic：屏幕越泛滥，『无屏玩具』越能贩卖家长内疚",
+    "summary": "Atlantic 撰文指出无屏玩具营销正在收割家长的屏幕内疚：买『无屏』产品成了赎罪券，但孩子的真实输入质量没人管。",
+    "phenomenon": "育儿圈转发，吵『无屏是不是智商税』。",
+    "spread_emotion": "屏幕内疚 + 被营销收割的警觉。",
+    "people_involved": [
+      "家长",
+      "玩具厂商",
+      "育儿博主"
+    ],
+    "conflict_point": "为『没有屏幕』付费 vs 为『输入质量』付费。",
+    "fact_structure": "大报观点 × 屏幕焦虑 × 营销收割。",
+    "candidate_problem_dimensions": [
+      "屏幕内疚",
+      "替代品质量",
+      "为焦虑买单"
+    ],
+    "heat_score_10": 8.4,
+    "platforms": [
+      "Atlantic",
+      "小红书"
+    ],
+    "source_url": null
+  }
+]

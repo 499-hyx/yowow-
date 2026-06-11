@@ -82,10 +82,26 @@ function OutputCard({
 
       {!isSkip && ownerView && chosenPath(output) ? (
         <div className="mt-3 rounded-md bg-white/70 p-3">
-          <div className="text-xs font-medium text-[#8A877F]">选中的切入角度</div>
-          <p className="mt-1 text-sm leading-relaxed text-[#4A4A47]">
-            {displayText(chosenPath(output)?.track_relation ?? "")}
-          </p>
+          <div className="text-xs font-medium text-[#8A877F]">分析（看完整版进内容卡）</div>
+          <ul className="mt-1 space-y-1 text-sm leading-relaxed text-[#4A4A47]">
+            <li>
+              <span className="text-[#8A877F]">它暴露的现实：</span>
+              {displayText(chosenPath(output)?.real_problem ?? "")}
+            </li>
+            <li>
+              <span className="text-[#8A877F]">跟你号的关系：</span>
+              {displayText(chosenPath(output)?.track_relation ?? "")}
+            </li>
+            <li>
+              <span className="text-[#8A877F]">产品怎么接：</span>
+              {displayText(chosenPath(output)?.product_value_support ?? "")}
+            </li>
+          </ul>
+          {output.risk_note ? (
+            <p className="mt-2 rounded bg-[#FFF8EA] px-2 py-1 text-xs leading-relaxed text-[#755019]">
+              ⚠ {displayText(output.risk_note)}
+            </p>
+          ) : null}
         </div>
       ) : null}
 

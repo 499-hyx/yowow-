@@ -59,6 +59,7 @@ ADAPTATION_KEYS = {
     "chosen_path_id",
     "content",
     "external_terms_check",
+    "risk_note",   # 给老板的发布前提醒（如「争议大，交博士收口」），前端按视角展示
 }
 REC_ORDER = {"skip": 0, "maybe": 1, "strong_pick": 2}
 

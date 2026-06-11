@@ -61,6 +61,8 @@ export type AdaptationOutput = {
   chosen_path_id?: string | null;
   content?: AdaptationContent | null;
   external_terms_check?: boolean;
+  /** 给老板的发布前提醒（后台产生，前端按视角展示），如「争议大，发布前交博士收口」 */
+  risk_note?: string | null;
   // relevance_score / naturalness_score 故意不放进前端视图模型：界面绝不展示分数（I3/I4）。
 };
 

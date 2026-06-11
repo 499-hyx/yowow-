@@ -142,8 +142,17 @@ export default async function CardDetailPage({
 
       {ownerView && selectedPath ? (
         <section className="mt-4 rounded-lg border border-[#D8D3CB] bg-white p-4">
-          <div className="mb-2 text-xs font-medium text-[#8A877F]">选中的切入角度</div>
+          <div className="mb-2 text-xs font-medium text-[#8A877F]">为什么能发 · 完整分析</div>
           <PathBlock path={selectedPath} chosen ownerView />
+        </section>
+      ) : null}
+
+      {output.risk_note ? (
+        <section className="mt-4 rounded-lg border border-[#E1C58F] bg-[#FFF8EA] p-4">
+          <div className="text-xs font-medium text-[#8C6427]">⚠ 发布前提醒</div>
+          <p className="mt-1 text-sm leading-relaxed text-[#755019]">
+            {ownerView ? displayText(output.risk_note) : output.risk_note}
+          </p>
         </section>
       ) : null}
 
