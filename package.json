@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "description": "多赛道 × 多平台 × 多定位 内容桥梁系统 · 独立站（与 yowow-content-board 彻底分开）",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
