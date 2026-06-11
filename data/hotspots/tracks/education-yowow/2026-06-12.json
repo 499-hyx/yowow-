@@ -356,13 +356,13 @@
     "source_skill": "gpt-deep-research+legacy-radar",
     "source_direction": "72小时家长热点",
     "scope": "track:education-yowow",
-    "title": "鸡娃还是快乐教育？吵的其实是两个目标函数",
-    "summary": "常青争论再起：鸡娃派和快乐派互相指责，双方都拿『为孩子好』当依据。",
+    "title": "抓得紧还是放得开？吵的其实是两个目标函数",
+    "summary": "常青争论再起：高压派和快乐派互相指责，双方都拿『为孩子好』当依据。",
     "phenomenon": "两派对线长帖不断，中间派家长左右摇摆。",
     "spread_emotion": "站队的愤怒 + 摇摆的内耗。",
     "people_involved": [
-      "鸡娃家长",
-      "快乐教育家长"
+      "高压推进派家长",
+      "快乐教育派家长"
     ],
     "conflict_point": "短期成绩最优 vs 长期能力最优，两个目标函数被当成一个。",
     "fact_structure": "常青争议 × 目标混淆 × 身份站队。",
