@@ -4,8 +4,10 @@ import { notFound } from "next/navigation";
 import DateContextBar from "@/components/adaptation/DateContextBar";
 import FeedbackV1Box from "@/components/adaptation/FeedbackV1Box";
 import MemoryEditor from "@/components/adaptation/MemoryEditor";
+import SparkInbox from "@/components/adaptation/SparkInbox";
 import type { AdaptationOutput } from "@/lib/adaptation-types";
 import {
+  hotspotSourceLabel,
   isAggregatorUrl,
   loadAccountWorkbench,
   loadHotspots,
@@ -81,6 +83,7 @@ function OutputCard({
       : "border-[#A9C682] bg-[#F2F8E9]";
   const label = isSkip ? "别蹭" : output.recommendation === "maybe" ? "拍板" : "必发";
   const detailHref = date ? `/card/${accountId}/${date}/${output.hotspot_id}` : null;
+  const sourceLabel = hotspotSourceLabel(hotspot);
 
   return (
     <details id={`card-${output.hotspot_id}`} open={output.recommendation === "strong_pick"} className={`scroll-mt-4 rounded-lg border p-4 ${tone}`}>
@@ -121,6 +124,10 @@ function OutputCard({
               >
                 {isAggregatorUrl(hotspot.source_url) ? "查看聚合页（非具体报道）" : "查看原报道"} ↗
               </a>
+            ) : sourceLabel ? (
+              <span className="rounded-md border border-[#B8B5AD] bg-white px-2 py-0.5 text-xs font-medium text-[#5B5852]">
+                {sourceLabel}
+              </span>
             ) : (
               <span className="text-xs text-[#9B9892]">暂无原文链接</span>
             )}
@@ -334,6 +341,7 @@ export default async function AccountPage({
                   : "bg-[#F2F8E9] text-[#36591C]";
               const rowTitle = output.content?.title ?? hotspot?.title ?? output.hotspot_id;
               const rowNote = response?.meta?.[output.hotspot_id]?.reason ?? output.skip_reason ?? "";
+              const sourceLabel = hotspotSourceLabel(hotspot);
               return (
                 <div key={output.hotspot_id} className="flex items-center gap-2 px-3 py-1.5 text-sm hover:bg-[#FBFAF7]">
                   <span className={`w-10 shrink-0 rounded-full px-1.5 py-0.5 text-center text-xs font-medium ${rowTone}`}>
@@ -358,6 +366,8 @@ export default async function AccountPage({
                     >
                       {sourceLinkLabel(hotspot.source_url)} ↗
                     </a>
+                  ) : sourceLabel ? (
+                    <span className="shrink-0 text-xs text-[#7A7770]">{sourceLabel}</span>
                   ) : null}
                 </div>
               );
@@ -410,12 +420,13 @@ export default async function AccountPage({
 
       {selectedTab === "spark" ? (
       <section className="mt-7">
-        <div className="rounded-lg border border-dashed border-[#D8D3CB] bg-white p-5">
+        <div className="mb-4 rounded-lg border border-dashed border-[#D8D3CB] bg-white p-5">
           <h2 className="text-lg font-bold text-[#1F1F1E]">灵感收件箱</h2>
           <p className="mt-2 text-sm leading-relaxed text-[#6B6963]">
-            临时想到的选题会收在这里，处理发生在每日跑批时。提交框和状态列表会在下一步接入。
+            临时想到的选题会收在这里，处理发生在每日跑批时。
           </p>
         </div>
+        <SparkInbox accountId={account.account_id} />
       </section>
       ) : null}
 

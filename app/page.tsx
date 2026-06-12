@@ -2,7 +2,14 @@ import Link from "next/link";
 
 import DateContextBar from "@/components/adaptation/DateContextBar";
 import type { AdaptationOutput, Recommendation } from "@/lib/adaptation-types";
-import { buildDashboardSnapshot, type AccountDayResult, type MatrixCell } from "@/lib/dashboard-data";
+import {
+  buildDashboardSnapshot,
+  hotspotSourceLabel,
+  sourceLinkLabel,
+  type AccountDayResult,
+  type HotspotRecord,
+  type MatrixCell,
+} from "@/lib/dashboard-data";
 import { displayText } from "@/lib/display-text";
 
 export const revalidate = 60;
@@ -38,11 +45,22 @@ function firstOutput(result: AccountDayResult, rec: Recommendation): AdaptationO
   return all.find((output) => output.recommendation === rec) ?? null;
 }
 
-function AccountRow({ result, date }: { result: AccountDayResult; date: string | null }) {
+function AccountRow({
+  result,
+  date,
+  hotspotById,
+}: {
+  result: AccountDayResult;
+  date: string | null;
+  hotspotById: Map<string, HotspotRecord>;
+}) {
   const strong = firstOutput(result, "strong_pick");
   const maybe = firstOutput(result, "maybe");
   const skipped = firstOutput(result, "skip");
   const lead = strong ?? maybe;
+  const leadHotspot = lead ? hotspotById.get(lead.hotspot_id) : null;
+  const leadSourceUrl = leadHotspot?.source_url ?? null;
+  const leadSourceLabel = hotspotSourceLabel(leadHotspot);
   const reason = lead ? result.response?.meta?.[lead.hotspot_id]?.reason : null;
   const skipReason = skipped?.skip_reason ?? (skipped ? result.response?.meta?.[skipped.hotspot_id]?.reason : null);
 
@@ -74,6 +92,20 @@ function AccountRow({ result, date }: { result: AccountDayResult; date: string |
             <p className="mt-1 text-sm font-semibold leading-relaxed text-[#1F1F1E]">
               {displayText(lead?.content?.title ?? (lead ? result.response.meta?.[lead.hotspot_id]?.oneLiner : "今天还没选出可发内容"))}
             </p>
+            {leadSourceUrl ? (
+              <a
+                href={leadSourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1 inline-block text-xs text-[#2D5D8A] no-underline hover:underline"
+              >
+                查看{sourceLinkLabel(leadSourceUrl) === "聚合页" ? "聚合页" : "原素材"} ↗
+              </a>
+            ) : leadSourceLabel ? (
+              <span className="mt-1 inline-block rounded-full bg-[#F3F1EC] px-2 py-0.5 text-xs text-[#5B5852]">
+                {leadSourceLabel}
+              </span>
+            ) : null}
           </div>
           <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
             <div className="text-xs font-medium text-[#8A877F]">为什么能发</div>
@@ -112,6 +144,10 @@ function MatrixBadge({ cell }: { cell: MatrixCell }) {
 
 export default async function DashboardPage({ searchParams }: { searchParams?: { date?: string } }) {
   const snapshot = await buildDashboardSnapshot(searchParams?.date);
+  const hotspotById = new Map(snapshot.hotspots.map((h) => [h.hotspot_id, h]));
+  const sparkHref = snapshot.accounts[0]
+    ? `/account/${snapshot.accounts[0].account_id}${snapshot.date ? `?date=${snapshot.date}&tab=spark` : "?tab=spark"}`
+    : "/onboarding";
 
   return (
     <main className="mx-auto max-w-7xl px-4 py-6 lg:px-8">
@@ -130,12 +166,20 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
             {cnDate(snapshot.date)} · 内容决策快照
           </h1>
         </div>
-        <Link
-          href="/onboarding"
-          className="rounded-md bg-[#1F1F1E] px-4 py-2 text-sm font-medium text-white no-underline hover:bg-black"
-        >
-          新增账号
-        </Link>
+        <div className="flex flex-wrap gap-2">
+          <Link
+            href={sparkHref}
+            className="rounded-md border border-[#B8B5AD] bg-white px-4 py-2 text-sm font-medium text-[#343330] no-underline hover:bg-[#F3F1EC]"
+          >
+            + 灵感
+          </Link>
+          <Link
+            href="/onboarding"
+            className="rounded-md bg-[#1F1F1E] px-4 py-2 text-sm font-medium text-white no-underline hover:bg-black"
+          >
+            新增账号
+          </Link>
+        </div>
       </div>
 
       <section className="mt-5 grid gap-3 md:grid-cols-5">
@@ -175,7 +219,9 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
           </Link>
         </div>
         {snapshot.results.length ? (
-          snapshot.results.map((result) => <AccountRow key={result.account.account_id} result={result} date={snapshot.date} />)
+          snapshot.results.map((result) => (
+            <AccountRow key={result.account.account_id} result={result} date={snapshot.date} hotspotById={hotspotById} />
+          ))
         ) : (
           <div className="rounded-lg border border-dashed border-[#D8D3CB] bg-white p-5 text-sm text-[#6B6963]">
             暂无账号。先新增账号或放入账号 JSON。
@@ -194,7 +240,7 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
           </Link>
         </div>
         <div className="mt-3 overflow-x-auto rounded-lg border border-[#D8D3CB] bg-white">
-          <table className="min-w-full border-collapse text-sm">
+          <table className="min-w-full table-fixed border-collapse text-sm">
             <thead className="bg-[#F3F1EC] text-left text-xs text-[#6B6963]">
               <tr>
                 <th className="w-[42%] px-4 py-3 font-medium">热点</th>
@@ -208,17 +254,37 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
             <tbody>
               {snapshot.matrix.map((row) => (
                 <tr key={row.hotspot.hotspot_id} className="border-t border-[#EEEAE2] align-top">
-                  <td className="px-4 py-3">
-                    <Link
-                      href={`/hotspots/${row.hotspot.hotspot_id}?date=${snapshot.date ?? ""}`}
-                      className="font-medium text-[#2D5D8A] no-underline hover:underline"
-                    >
-                      {displayText(row.hotspot.title ?? row.hotspot.hotspot_id)}
-                    </Link>
-                    <div className="mt-1 text-xs text-[#7A7770]">热度 {row.hotspot.heat_score_10 ?? "未填"}</div>
+                  <td className="px-4 py-2">
+                    <div className="flex items-baseline gap-2">
+                      <Link
+                        href={`/hotspots/${row.hotspot.hotspot_id}?date=${snapshot.date ?? ""}`}
+                        className="min-w-0 truncate font-medium text-[#2D5D8A] no-underline hover:underline"
+                        title={displayText(row.hotspot.title ?? row.hotspot.hotspot_id)}
+                      >
+                        {displayText(row.hotspot.title ?? row.hotspot.hotspot_id)}
+                      </Link>
+                      {row.hotspot.source_url ? (
+                        <a
+                          href={row.hotspot.source_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="shrink-0 text-xs text-[#2D5D8A] no-underline hover:underline"
+                        >
+                          {sourceLinkLabel(row.hotspot.source_url)} ↗
+                        </a>
+                      ) : hotspotSourceLabel(row.hotspot) ? (
+                        <span className="shrink-0 rounded-full bg-[#F3F1EC] px-2 py-0.5 text-xs text-[#5B5852]">
+                          {hotspotSourceLabel(row.hotspot)}
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="mt-0.5 line-clamp-1 text-xs text-[#7A7770]" title={displayText(row.hotspot.summary ?? "")}>
+                      热度 {row.hotspot.heat_score_10 ?? "未填"}
+                      {row.hotspot.summary ? ` · ${displayText(row.hotspot.summary)}` : ""}
+                    </div>
                   </td>
                   {row.cells.map((cell) => (
-                    <td key={cell.account_id} className="px-3 py-3">
+                    <td key={cell.account_id} className="px-3 py-2">
                       <MatrixBadge cell={cell} />
                     </td>
                   ))}

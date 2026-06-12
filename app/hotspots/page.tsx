@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import DateContextBar from "@/components/adaptation/DateContextBar";
-import { buildDashboardSnapshot, type HotspotRecord } from "@/lib/dashboard-data";
+import { buildDashboardSnapshot, hotspotSourceLabel, sourceLinkLabel, type HotspotRecord } from "@/lib/dashboard-data";
 import { displayList, displayText } from "@/lib/display-text";
 
 export const revalidate = 60;
@@ -11,44 +11,40 @@ function compactList(items?: string[]) {
   return displayList(items).join("、");
 }
 
-function HotspotCard({ hotspot, date }: { hotspot: HotspotRecord; date: string | null }) {
+function HotspotRow({ hotspot, date }: { hotspot: HotspotRecord; date: string | null }) {
+  const sourceLabel = hotspotSourceLabel(hotspot);
   return (
-    <article className="rounded-lg border border-[#D8D3CB] bg-white p-4">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div className="min-w-0 flex-1">
+    <article className="flex items-start gap-3 px-3 py-2 hover:bg-[#FBFAF7]">
+      <span className="mt-0.5 w-9 shrink-0 rounded-md bg-[#F3F1EC] px-1 py-0.5 text-center text-xs font-bold tabular-nums text-[#5B5852]">
+        {hotspot.heat_score_10 ?? "—"}
+      </span>
+      <div className="min-w-0 flex-1">
+        <div className="flex items-baseline gap-2">
           <Link
             href={`/hotspots/${hotspot.hotspot_id}?date=${date ?? ""}`}
-            className="text-base font-bold leading-snug text-[#1F1F1E] no-underline hover:underline"
+            className="truncate text-sm font-semibold leading-snug text-[#1F1F1E] no-underline hover:underline"
+            title={displayText(hotspot.title ?? hotspot.hotspot_id)}
           >
             {displayText(hotspot.title ?? hotspot.hotspot_id)}
           </Link>
-          <p className="mt-2 text-sm leading-relaxed text-[#4A4A47]">{displayText(hotspot.summary ?? "暂无摘要。")}</p>
+          {hotspot.source_url ? (
+            <a
+              href={hotspot.source_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 text-xs text-[#2D5D8A] no-underline hover:underline"
+            >
+              {sourceLinkLabel(hotspot.source_url)} ↗
+            </a>
+          ) : sourceLabel ? (
+            <span className="shrink-0 rounded-full bg-[#F3F1EC] px-2 py-0.5 text-xs text-[#5B5852]">{sourceLabel}</span>
+          ) : null}
         </div>
-        <div className="rounded-md border border-[#E8E6E1] bg-[#FAF9F7] px-3 py-2 text-right">
-          <div className="text-xs text-[#8A877F]">热度</div>
-          <div className="text-lg font-bold text-[#1F1F1E]">{hotspot.heat_score_10 ?? "未填"}</div>
-        </div>
+        <p className="mt-0.5 line-clamp-1 text-xs leading-relaxed text-[#6B6963]" title={displayText(hotspot.summary ?? "")}>
+          {displayText(hotspot.summary ?? "暂无摘要。")}
+        </p>
       </div>
-
-      <div className="mt-3 grid gap-2 md:grid-cols-2">
-        <div className="rounded-md bg-[#FBFAF7] p-3">
-          <div className="text-xs font-medium text-[#8A877F]">现象</div>
-          <p className="mt-1 text-sm leading-relaxed text-[#4A4A47]">{displayText(hotspot.phenomenon ?? "未填")}</p>
-        </div>
-        <div className="rounded-md bg-[#FBFAF7] p-3">
-          <div className="text-xs font-medium text-[#8A877F]">传播情绪</div>
-          <p className="mt-1 text-sm leading-relaxed text-[#4A4A47]">{displayText(hotspot.spread_emotion ?? "未填")}</p>
-        </div>
-      </div>
-
-      <div className="mt-3 flex flex-wrap gap-2 text-xs">
-        <span className="rounded-full bg-[#F3F1EC] px-2 py-1 text-[#5B5852]">
-          来源方向：{displayText(hotspot.source_direction ?? "未标记")}
-        </span>
-        <span className="rounded-full bg-[#F3F1EC] px-2 py-1 text-[#5B5852]">
-          平台：{compactList(hotspot.platforms)}
-        </span>
-      </div>
+      <span className="mt-0.5 hidden shrink-0 text-xs text-[#9B9892] sm:block">{compactList(hotspot.platforms)}</span>
     </article>
   );
 }
@@ -109,9 +105,9 @@ export default async function HotspotsPage({ searchParams }: { searchParams?: { 
               {groupLabel(scope, trackNames)}
               <span className="ml-2 font-normal text-[#9B9892]">{groups.get(scope)!.length} 条</span>
             </h2>
-            <div className="space-y-3">
+            <div className="divide-y divide-[#EEEAE2] rounded-lg border border-[#D8D3CB] bg-white">
               {groups.get(scope)!.map((hotspot) => (
-                <HotspotCard key={hotspot.hotspot_id} hotspot={hotspot} date={snapshot.date} />
+                <HotspotRow key={hotspot.hotspot_id} hotspot={hotspot} date={snapshot.date} />
               ))}
             </div>
           </section>

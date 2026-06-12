@@ -43,6 +43,12 @@ export function sourceLinkLabel(url?: string | null): string {
   return isAggregatorUrl(url) ? "聚合页" : "原文";
 }
 
+export function hotspotSourceLabel(hotspot?: Pick<HotspotRecord, "source_skill" | "source_url"> | null): string | null {
+  if (!hotspot) return null;
+  if (hotspot.source_skill === "owner-spark" && !hotspot.source_url) return "自命题";
+  return hotspot.source_url ? sourceLinkLabel(hotspot.source_url) : null;
+}
+
 export function scopeTrackId(hotspot: HotspotRecord): string | null {
   const scope = hotspot.scope ?? "broad";
   return scope.startsWith("track:") ? scope.slice("track:".length) : null;

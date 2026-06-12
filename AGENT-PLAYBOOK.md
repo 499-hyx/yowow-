@@ -67,7 +67,18 @@
 - 候选同样过 `prompts/neutralize.md` 富化。
 - 写 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`，每条 `scope: "track:<track_id>"`。
 
-「抓今天的热点」= ①a + 全部赛道的 ①b；「只给 <赛道> 抓热点」= 只跑该赛道 ①b。
+「抓今天的热点」= ①a + 全部赛道的 ①b + ①c；「只给 <赛道> 抓热点」= 只跑该赛道 ①b。
+
+### 入口①c 处理灵感收件箱（owner spark）
+
+每天跑热点前，先检查 `data/spark-inbox/<account_id>/` 的 pending 条目。
+pending spark 只作为该账号赛道池的进货线索，绝不进公共池。
+- 能找到外部素材的：按入口①b 搜索与中立化后入赛道池，必须挂真实 `source_url`；
+- 纯自命题但足以支撑剖析的：允许 `source_url` 为空，标 `source_skill: "owner-spark"`；
+- 查无实据或撑不起剖析的：spark 标 rejected，写人话 `reject_reason`（铁律：缺料不捏造）。
+所有 spark 入池条目一律带 `source_direction: "owner-spark:<spark_id>"`（追溯）。
+处理完成后给 spark 盖章：`status: ingested/rejected` + `resolved_at`，
+ingested 记录关联的 `hotspot_id`。
 
 每条字段照 `config/today-hotspots.demo.json`：
 
