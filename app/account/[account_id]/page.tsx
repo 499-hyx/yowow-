@@ -8,7 +8,7 @@ import { loadAccountWorkbench, resolveDateContext } from "@/lib/dashboard-data";
 import { getDoc } from "@/lib/data-source";
 import { displayList, displayText } from "@/lib/display-text";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function listText(items?: string[]) {
   return items?.length ? displayList(items).join("、") : "未填";

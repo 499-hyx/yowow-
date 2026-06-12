@@ -5,7 +5,7 @@ import type { AdaptationOutput, Recommendation } from "@/lib/adaptation-types";
 import { buildDashboardSnapshot, type AccountDayResult, type MatrixCell } from "@/lib/dashboard-data";
 import { displayText } from "@/lib/display-text";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function cnDate(date: string | null) {
   if (!date) return "暂无日期";

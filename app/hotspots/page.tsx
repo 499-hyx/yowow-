@@ -4,7 +4,7 @@ import DateContextBar from "@/components/adaptation/DateContextBar";
 import { buildDashboardSnapshot, type HotspotRecord } from "@/lib/dashboard-data";
 import { displayList, displayText } from "@/lib/display-text";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function compactList(items?: string[]) {
   if (!items?.length) return "未填";

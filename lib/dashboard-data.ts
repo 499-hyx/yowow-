@@ -6,7 +6,7 @@ import type {
   StoredAccount,
 } from "@/lib/adaptation-types";
 import type { TodayResponse } from "@/lib/api-contracts";
-import { getDoc, listDocKeys } from "@/lib/data-source";
+import { getDoc, listDocKeys, listDocs } from "@/lib/data-source";
 import { loadDataAccounts, loadDataAccount } from "@/lib/file-data";
 
 export type HotspotRecord = {
@@ -197,8 +197,10 @@ export async function loadAccountDayResults(date: string, accountsIn?: StoredAcc
 
 export async function buildDashboardSnapshot(date?: string | null): Promise<DashboardSnapshot> {
   const dateContext = await resolveDateContext(date);
-  const hotspotData = await loadHotspots(dateContext.date);
-  const accounts = await loadDataAccounts();
+  const [hotspotData, accounts] = await Promise.all([
+    loadHotspots(dateContext.date),
+    loadDataAccounts(),
+  ]);
   const results = hotspotData.date ? await loadAccountDayResults(hotspotData.date, accounts) : [];
   const resultByAccount = new Map(results.map((result) => [result.account.account_id, result]));
 
@@ -272,24 +274,25 @@ export async function buildDashboardSnapshot(date?: string | null): Promise<Dash
 }
 
 export async function loadAccountHistory(accountId: string): Promise<AccountHistoryRow[]> {
-  const keys = (await listDocKeys("today", `${accountId}/`))
-    .map((k) => k.slice(accountId.length + 1))
-    .filter((k) => DATE_RE.test(k))
-    .sort()
-    .reverse();
-  const rows: AccountHistoryRow[] = [];
-  for (const date of keys) {
-    const response = await getDoc<TodayResponseWithMeta>("today", `${accountId}/${date}`);
+  const docs = (await listDocs<TodayResponseWithMeta>("today", `${accountId}/`))
+    .map((doc) => ({
+      date: doc.key.slice(accountId.length + 1),
+      response: doc.body,
+    }))
+    .filter((doc) => DATE_RE.test(doc.date))
+    .sort((a, b) => a.date.localeCompare(b.date))
+    .reverse()
+    .slice(0, 14);
+  return docs.map(({ date, response }) => {
     const counts = countsFor(response?.board ? response : null);
-    rows.push({
+    return {
       date,
       strong: counts.strong_pick,
       maybe: counts.maybe,
       skipped: counts.skip,
       total: counts.strong_pick + counts.maybe + counts.skip,
-    });
-  }
-  return rows;
+    };
+  });
 }
 
 export async function loadAccountWorkbench(accountId: string, date?: string | null) {

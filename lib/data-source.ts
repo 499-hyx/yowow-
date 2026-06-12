@@ -14,6 +14,7 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import { cache } from "react";
 
 import { tursoEnabled, tursoQuery } from "@/lib/turso";
 
@@ -89,15 +90,15 @@ function fsKeys(kind: DocKind, prefix?: string): string[] {
 
 // ── 统一接口 ─────────────────────────────────────────────────────────────
 
-export async function getDoc<T>(kind: DocKind, key: string): Promise<T | null> {
+export const getDoc = cache(async function getDoc<T>(kind: DocKind, key: string): Promise<T | null> {
   if (tursoEnabled()) {
     const rows = await tursoQuery("SELECT body FROM docs WHERE kind = ? AND key = ?", [kind, key]);
     return parseSafe<T>(rows[0]?.body);
   }
   return parseSafe<T>(fsGet(kind, key));
-}
+});
 
-export async function listDocKeys(kind: DocKind, prefix?: string): Promise<string[]> {
+export const listDocKeys = cache(async function listDocKeys(kind: DocKind, prefix?: string): Promise<string[]> {
   if (tursoEnabled()) {
     const rows = prefix
       ? await tursoQuery("SELECT key FROM docs WHERE kind = ? AND key LIKE ? ORDER BY key", [kind, `${prefix}%`])
@@ -105,9 +106,9 @@ export async function listDocKeys(kind: DocKind, prefix?: string): Promise<strin
     return rows.map((r) => r.key ?? "").filter(Boolean);
   }
   return fsKeys(kind, prefix);
-}
+});
 
-export async function listDocs<T>(kind: DocKind, prefix?: string): Promise<{ key: string; body: T }[]> {
+export const listDocs = cache(async function listDocs<T>(kind: DocKind, prefix?: string): Promise<{ key: string; body: T }[]> {
   if (tursoEnabled()) {
     const rows = prefix
       ? await tursoQuery("SELECT key, body FROM docs WHERE kind = ? AND key LIKE ? ORDER BY key", [kind, `${prefix}%`])
@@ -119,4 +120,4 @@ export async function listDocs<T>(kind: DocKind, prefix?: string): Promise<{ key
   return fsKeys(kind, prefix)
     .map((key) => ({ key, body: parseSafe<T>(fsGet(kind, key)) }))
     .filter((r): r is { key: string; body: T } => r.body !== null);
-}
+});

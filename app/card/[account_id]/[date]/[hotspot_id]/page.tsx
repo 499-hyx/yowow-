@@ -8,7 +8,7 @@ import { findOutput, loadHotspots, loadTodayForDate } from "@/lib/dashboard-data
 import { displayText } from "@/lib/display-text";
 import { loadDataAccount } from "@/lib/file-data";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 60;
 
 function labelFor(recommendation: Recommendation) {
   if (recommendation === "strong_pick") return "必发";
