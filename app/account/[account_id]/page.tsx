@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import DateContextBar from "@/components/adaptation/DateContextBar";
 import FeedbackV1Box from "@/components/adaptation/FeedbackV1Box";
+import MemoryEditor from "@/components/adaptation/MemoryEditor";
 import type { AdaptationOutput } from "@/lib/adaptation-types";
 import {
   isAggregatorUrl,
@@ -15,6 +16,7 @@ import {
 import { getDoc } from "@/lib/data-source";
 import { displayList, displayText } from "@/lib/display-text";
 import { memoryCompleteness } from "@/lib/memory-meta";
+import { tursoEnabled } from "@/lib/turso";
 
 export const revalidate = 60;
 
@@ -391,14 +393,7 @@ export default async function AccountPage({
           <h2 className="text-lg font-bold text-[#1F1F1E]">账号记忆</h2>
           <p className="text-sm text-[#7A7770]">这些信息决定每天怎么筛热点、怎么写口吻、哪些内容直接拦下。</p>
         </div>
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-          <MemoryBlock label="卖什么" value={displayText(account.memory.business ?? "未填")} />
-          <MemoryBlock label="卖给谁" value={displayText(account.memory.audience ?? "未填")} />
-          <MemoryBlock label="产品价值" value={displayText(account.memory.product_value ?? "未填")} />
-          <MemoryBlock label="客户焦虑" value={listText(account.memory.anxiety_anchors)} />
-          <MemoryBlock label="信任证据" value={listText(account.memory.proof_assets)} />
-          <MemoryBlock label="不能碰的词和话题" value={listText([...forbidden, ...(account.memory.banned_topics ?? [])])} />
-        </div>
+        <MemoryEditor accountId={account.account_id} initialMemory={account.memory} readOnly={tursoEnabled()} />
 
         <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
           <div className="text-xs font-medium text-[#8A877F]">搜索母题（来自赛道，改动找管理员走"重写搜索方向"）</div>
