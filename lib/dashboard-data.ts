@@ -29,6 +29,20 @@ export type HotspotRecord = {
   scope?: string;
 };
 
+// 已知聚合/榜单页域名：链接能打开，但指向滚动榜单而非该条素材的具体报道。
+// 前端据此把链接文案标成「聚合页」，不冒充原报道证据。
+const AGGREGATOR_PATTERNS = ["tophub.today", "weibo.com/a/hot", "trending.knowyourmeme.com"];
+
+export function isAggregatorUrl(url?: string | null): boolean {
+  if (!url) return false;
+  return AGGREGATOR_PATTERNS.some((p) => url.includes(p));
+}
+
+/** 原文链接文案：原报道 / 聚合页（不撒谎） */
+export function sourceLinkLabel(url?: string | null): string {
+  return isAggregatorUrl(url) ? "聚合页" : "原文";
+}
+
 export function scopeTrackId(hotspot: HotspotRecord): string | null {
   const scope = hotspot.scope ?? "broad";
   return scope.startsWith("track:") ? scope.slice("track:".length) : null;
