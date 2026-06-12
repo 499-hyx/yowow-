@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import CopyTextButton from "@/components/adaptation/CopyTextButton";
 import DateContextBar from "@/components/adaptation/DateContextBar";
 import type { AdaptationOutput, Recommendation } from "@/lib/adaptation-types";
 import {
@@ -11,6 +12,7 @@ import {
   type MatrixCell,
 } from "@/lib/dashboard-data";
 import { displayText } from "@/lib/display-text";
+import { getPipelineStatus, type PipelineStatusItem } from "@/lib/pipeline-status";
 
 export const revalidate = 60;
 
@@ -142,8 +144,29 @@ function MatrixBadge({ cell }: { cell: MatrixCell }) {
   );
 }
 
+function PipelineStatusBar({ items }: { items: PipelineStatusItem[] }) {
+  return (
+    <section className="mb-5 rounded-lg border border-[#D8D3CB] bg-white px-3 py-3">
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="mr-1 text-sm font-bold text-[#1F1F1E]">今日流水线</span>
+        {items.map((item) => (
+          <div key={item.key} className="flex flex-wrap items-center gap-1 rounded-md bg-[#FBFAF7] px-2 py-1 text-xs text-[#4A4A47]">
+            <span className={item.status === "ok" ? "font-bold text-[#5C7A2E]" : "font-bold text-[#9A4A2F]"}>
+              {item.status === "ok" ? "✓" : "✗"}
+            </span>
+            <span className="font-medium">{item.label}</span>
+            <span className="text-[#7A7770]">{item.detail}</span>
+            {item.command ? <CopyTextButton text={item.command} label="复制话术" /> : null}
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 export default async function DashboardPage({ searchParams }: { searchParams?: { date?: string } }) {
   const snapshot = await buildDashboardSnapshot(searchParams?.date);
+  const pipeline = getPipelineStatus(snapshot.date ?? undefined);
   const hotspotById = new Map(snapshot.hotspots.map((h) => [h.hotspot_id, h]));
   const sparkHref = snapshot.accounts[0]
     ? `/account/${snapshot.accounts[0].account_id}${snapshot.date ? `?date=${snapshot.date}&tab=spark` : "?tab=spark"}`
@@ -158,6 +181,7 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
         latestDate={snapshot.latestDate}
         basePath="/"
       />
+      <PipelineStatusBar items={pipeline.items} />
 
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
