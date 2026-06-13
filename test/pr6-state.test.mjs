@@ -6,6 +6,7 @@ import {
   primaryDashboardAction,
   sparkInputMode,
   sparkAdminCopy,
+  staleDataNotice,
 } from "../lib/pr6-state.mjs";
 
 test("online memory editing is replaced with an admin handoff message", () => {
@@ -74,4 +75,15 @@ test("dashboard primary action falls back to the account list without accounts",
     label: "查看账号列表",
     href: "/accounts",
   });
+});
+
+test("dashboard shows a stale-data notice when the displayed date is not today", () => {
+  assert.equal(
+    staleDataNotice({ displayedDate: "2026-06-12", today: "2026-06-13" }),
+    "今天（2026-06-13）还没有跑批，下面展示的是最近一次结果（2026-06-12）。",
+  );
+});
+
+test("dashboard does not show a stale-data notice for today's data", () => {
+  assert.equal(staleDataNotice({ displayedDate: "2026-06-13", today: "2026-06-13" }), null);
 });

@@ -13,7 +13,7 @@ import {
 } from "@/lib/dashboard-data";
 import { displayText } from "@/lib/display-text";
 import { getPipelineStatus, type PipelineStatusItem } from "@/lib/pipeline-status";
-import { primaryDashboardAction, todayInShanghai } from "@/lib/pr6-state.mjs";
+import { primaryDashboardAction, staleDataNotice, todayInShanghai } from "@/lib/pr6-state.mjs";
 
 export const revalidate = 60;
 
@@ -167,12 +167,14 @@ function PipelineStatusBar({ items }: { items: PipelineStatusItem[] }) {
 
 export default async function DashboardPage({ searchParams }: { searchParams?: { date?: string } }) {
   const snapshot = await buildDashboardSnapshot(searchParams?.date);
-  const pipeline = getPipelineStatus(snapshot.date ?? undefined);
+  const today = todayInShanghai();
+  const pipeline = getPipelineStatus(today);
   const hotspotById = new Map(snapshot.hotspots.map((h) => [h.hotspot_id, h]));
+  const staleNotice = staleDataNotice({ displayedDate: snapshot.date, today });
   const primaryAction = primaryDashboardAction({
     accounts: snapshot.accounts,
     displayedDate: snapshot.date,
-    today: todayInShanghai(),
+    today,
   });
   const sparkHref = snapshot.accounts[0]
     ? `/account/${snapshot.accounts[0].account_id}${snapshot.date ? `?date=${snapshot.date}&tab=spark` : "?tab=spark"}`
@@ -187,6 +189,11 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
         latestDate={snapshot.latestDate}
         basePath="/"
       />
+      {staleNotice ? (
+        <section className="mb-4 rounded-lg border border-[#D49A42] bg-[#FFF3D8] px-4 py-3 text-sm font-medium leading-relaxed text-[#7A4B12]">
+          {staleNotice}
+        </section>
+      ) : null}
       <PipelineStatusBar items={pipeline.items} />
 
       <div className="flex flex-wrap items-end justify-between gap-4">
