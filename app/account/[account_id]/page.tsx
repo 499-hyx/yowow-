@@ -10,14 +10,12 @@ import {
   hotspotSourceLabel,
   isAggregatorUrl,
   loadAccountWorkbench,
-  loadHotspots,
-  resolveDateContext,
   sourceLinkLabel,
   type HotspotRecord,
 } from "@/lib/dashboard-data";
-import { getDoc } from "@/lib/data-source";
 import { displayList, displayText } from "@/lib/display-text";
 import { memoryCompleteness } from "@/lib/memory-meta";
+import { withPerfSpan } from "@/lib/perf-log";
 import { memoryEditMode, sparkInputMode } from "@/lib/pr6-state.mjs";
 import { tursoEnabled } from "@/lib/turso";
 
@@ -239,19 +237,31 @@ export default async function AccountPage({
   params: { account_id: string };
   searchParams?: { date?: string; tab?: string; view?: string };
 }) {
-  const { account, date, response, counts, history } = await loadAccountWorkbench(params.account_id, searchParams?.date);
+  return withPerfSpan(`account:${params.account_id}:${normalizeTab(searchParams?.tab)}`, async () => {
+  const selectedTab = normalizeTab(searchParams?.tab);
+  const {
+    account,
+    date,
+    dateContext,
+    response,
+    runExists,
+    counts,
+    history,
+    hotspots,
+    trackDoc,
+  } = await loadAccountWorkbench(params.account_id, searchParams?.date, {
+    includeToday: selectedTab === "today",
+    includeHotspots: selectedTab === "today",
+    includeHistory: selectedTab === "history",
+    includeTrackConfig: selectedTab === "memory",
+    includeRunStatus: selectedTab !== "today",
+  });
   if (!account) notFound();
-  const dateContext = await resolveDateContext(date);
-  const { hotspots } = await loadHotspots(date);
   const hotspotById = new Map(hotspots.map((h) => [h.hotspot_id, h]));
   // B档定版：搜索母题来自赛道文件（唯一来源），不再读账号记忆副本
-  const trackDoc = account.track_id
-    ? await getDoc<Record<string, any>>("track_config", account.track_id)
-    : null;
   const trackDirections: string[] = Array.isArray(trackDoc?.bridge?.search_directions)
-    ? trackDoc!.bridge.search_directions.filter((d: unknown): d is string => typeof d === "string")
+    ? trackDoc.bridge.search_directions.filter((d: unknown): d is string => typeof d === "string")
     : [];
-  const selectedTab = normalizeTab(searchParams?.tab);
   const ownerView = searchParams?.view !== "admin";
   const completeness = memoryCompleteness(account.memory);
   const onlineDataMode = tursoEnabled();
@@ -292,8 +302,8 @@ export default async function AccountPage({
           </div>
           <div className="min-w-[220px] rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
             <div className="flex items-center gap-2 text-xs text-[#6B6963]">
-              <span className={`h-2.5 w-2.5 rounded-full ${response ? "bg-[#5C7A2E]" : "bg-[#C9A24B]"}`} />
-              {response ? "今天已跑批" : "今天未跑批"}
+              <span className={`h-2.5 w-2.5 rounded-full ${runExists ? "bg-[#5C7A2E]" : "bg-[#C9A24B]"}`} />
+              {runExists ? "今天已跑批" : "今天未跑批"}
             </div>
             <div className="mt-2 flex items-center gap-2">
               <div className="h-2 flex-1 overflow-hidden rounded bg-[#E8E6E1]">
@@ -494,4 +504,5 @@ export default async function AccountPage({
       ) : null}
     </main>
   );
+  });
 }

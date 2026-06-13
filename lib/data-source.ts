@@ -52,6 +52,12 @@ function parseSafe<T>(text: string | null | undefined): T | null {
   }
 }
 
+function parseRows<T>(rows: Record<string, string | null>[]): { key: string; body: T }[] {
+  return rows
+    .map((r) => ({ key: r.key ?? "", body: parseSafe<T>(r.body) }))
+    .filter((r): r is { key: string; body: T } => Boolean(r.key) && r.body !== null);
+}
+
 // ── 文件后端 ─────────────────────────────────────────────────────────────
 
 function fsGet(kind: DocKind, key: string): string | null {
@@ -98,6 +104,23 @@ export const getDoc = cache(async function getDoc<T>(kind: DocKind, key: string)
   return parseSafe<T>(fsGet(kind, key));
 });
 
+export const getDocs = cache(async function getDocs<T>(kind: DocKind, keys: string[]): Promise<{ key: string; body: T }[]> {
+  const uniqueKeys = Array.from(new Set(keys)).filter(Boolean);
+  if (!uniqueKeys.length) return [];
+  if (tursoEnabled()) {
+    const placeholders = uniqueKeys.map(() => "?").join(",");
+    const rows = await tursoQuery(
+      `SELECT key, body FROM docs WHERE kind = ? AND key IN (${placeholders}) ORDER BY key`,
+      [kind, ...uniqueKeys],
+    );
+    return parseRows<T>(rows);
+  }
+  return uniqueKeys
+    .map((key) => ({ key, body: parseSafe<T>(fsGet(kind, key)) }))
+    .filter((r): r is { key: string; body: T } => r.body !== null)
+    .sort((a, b) => a.key.localeCompare(b.key));
+});
+
 export const listDocKeys = cache(async function listDocKeys(kind: DocKind, prefix?: string): Promise<string[]> {
   if (tursoEnabled()) {
     const rows = prefix
@@ -106,6 +129,14 @@ export const listDocKeys = cache(async function listDocKeys(kind: DocKind, prefi
     return rows.map((r) => r.key ?? "").filter(Boolean);
   }
   return fsKeys(kind, prefix);
+});
+
+export const hasDoc = cache(async function hasDoc(kind: DocKind, key: string): Promise<boolean> {
+  if (tursoEnabled()) {
+    const rows = await tursoQuery("SELECT key FROM docs WHERE kind = ? AND key = ? LIMIT 1", [kind, key]);
+    return rows.length > 0;
+  }
+  return fsGet(kind, key) !== null;
 });
 
 export const listDocs = cache(async function listDocs<T>(kind: DocKind, prefix?: string): Promise<{ key: string; body: T }[]> {
@@ -120,4 +151,28 @@ export const listDocs = cache(async function listDocs<T>(kind: DocKind, prefix?:
   return fsKeys(kind, prefix)
     .map((key) => ({ key, body: parseSafe<T>(fsGet(kind, key)) }))
     .filter((r): r is { key: string; body: T } => r.body !== null);
+});
+
+function likeToRegExp(pattern: string): RegExp {
+  const escaped = pattern.replace(/[.+^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`^${escaped.replace(/%/g, ".*").replace(/_/g, ".")}$`);
+}
+
+export const listDocsByKeyLike = cache(async function listDocsByKeyLike<T>(
+  kind: DocKind,
+  likePattern: string,
+): Promise<{ key: string; body: T }[]> {
+  if (tursoEnabled()) {
+    const rows = await tursoQuery(
+      "SELECT key, body FROM docs WHERE kind = ? AND key LIKE ? ORDER BY key",
+      [kind, likePattern],
+    );
+    return parseRows<T>(rows);
+  }
+  const matcher = likeToRegExp(likePattern);
+  return fsKeys(kind)
+    .filter((key) => matcher.test(key))
+    .map((key) => ({ key, body: parseSafe<T>(fsGet(kind, key)) }))
+    .filter((r): r is { key: string; body: T } => r.body !== null)
+    .sort((a, b) => a.key.localeCompare(b.key));
 });

@@ -12,6 +12,7 @@ import {
   type MatrixCell,
 } from "@/lib/dashboard-data";
 import { displayText } from "@/lib/display-text";
+import { withPerfSpan } from "@/lib/perf-log";
 import { getPipelineStatus, type PipelineStatusItem } from "@/lib/pipeline-status";
 import { primaryDashboardAction, staleDataNotice, todayInShanghai } from "@/lib/pr6-state.mjs";
 
@@ -166,6 +167,7 @@ function PipelineStatusBar({ items }: { items: PipelineStatusItem[] }) {
 }
 
 export default async function DashboardPage({ searchParams }: { searchParams?: { date?: string } }) {
+  return withPerfSpan("dashboard", async () => {
   const snapshot = await buildDashboardSnapshot(searchParams?.date);
   const today = todayInShanghai();
   const pipeline = getPipelineStatus(today);
@@ -354,4 +356,5 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
       </section>
     </main>
   );
+  });
 }

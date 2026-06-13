@@ -3,6 +3,8 @@
 // 只在设置了 TURSO_DATABASE_URL + TURSO_AUTH_TOKEN 时启用；
 // 没设置时 data-source.ts 自动回落读本地文件（本地开发零配置）。
 
+import { recordTursoQuery } from "@/lib/perf-log";
+
 export function tursoEnabled(): boolean {
   return Boolean(process.env.TURSO_DATABASE_URL && process.env.TURSO_AUTH_TOKEN);
 }
@@ -10,6 +12,7 @@ export function tursoEnabled(): boolean {
 type Row = Record<string, string | null>;
 
 export async function tursoQuery(sql: string, args: (string | number)[] = []): Promise<Row[]> {
+  recordTursoQuery(sql);
   const url = (process.env.TURSO_DATABASE_URL ?? "").replace("libsql://", "https://").replace(/\/$/, "");
   const res = await fetch(`${url}/v2/pipeline`, {
     method: "POST",

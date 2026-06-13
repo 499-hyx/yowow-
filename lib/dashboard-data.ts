@@ -6,7 +6,7 @@ import type {
   StoredAccount,
 } from "@/lib/adaptation-types";
 import type { TodayResponse } from "@/lib/api-contracts";
-import { getDoc, listDocKeys, listDocs } from "@/lib/data-source";
+import { getDoc, getDocs, hasDoc, listDocKeys, listDocs, listDocsByKeyLike } from "@/lib/data-source";
 import { loadDataAccounts, loadDataAccount } from "@/lib/file-data";
 
 export type HotspotRecord = {
@@ -107,6 +107,26 @@ export type AccountHistoryRow = {
   total: number;
 };
 
+export type AccountWorkbenchIncludes = {
+  includeToday?: boolean;
+  includeHotspots?: boolean;
+  includeHistory?: boolean;
+  includeTrackConfig?: boolean;
+  includeRunStatus?: boolean;
+};
+
+export type AccountWorkbench = {
+  account: StoredAccount | null;
+  date: string | null;
+  dateContext: Awaited<ReturnType<typeof resolveDateContext>>;
+  response: TodayResponseWithMeta | null;
+  runExists: boolean;
+  counts: Record<Recommendation, number>;
+  history: AccountHistoryRow[];
+  hotspots: HotspotRecord[];
+  trackDoc: Record<string, any> | null;
+};
+
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
 export async function listHotspotDates(): Promise<string[]> {
@@ -133,19 +153,19 @@ export async function loadHotspots(date?: string | null): Promise<{ date: string
   const merged: HotspotRecord[] = [];
   const seen = new Set<string>();
 
-  // 公共池
-  const broad = await getDoc<HotspotRecord[]>("hotspots_broad", resolvedDate);
+  const [broad, trackDocs] = await Promise.all([
+    getDoc<HotspotRecord[]>("hotspots_broad", resolvedDate),
+    listDocsByKeyLike<HotspotRecord[]>("hotspots_track", `%/${resolvedDate}`),
+  ]);
+
   for (const h of Array.isArray(broad) ? broad : []) {
     if (!h?.hotspot_id || seen.has(h.hotspot_id)) continue;
     seen.add(h.hotspot_id);
     merged.push({ ...h, scope: h.scope ?? "broad" });
   }
 
-  // 各赛道定向池（当日）
-  const trackKeys = (await listDocKeys("hotspots_track")).filter((k) => k.endsWith(`/${resolvedDate}`));
-  for (const key of trackKeys) {
+  for (const { key, body: pool } of trackDocs) {
     const trackId = key.split("/")[0];
-    const pool = await getDoc<HotspotRecord[]>("hotspots_track", key);
     for (const h of Array.isArray(pool) ? pool : []) {
       if (!h?.hotspot_id || seen.has(h.hotspot_id)) continue;
       seen.add(h.hotspot_id);
@@ -202,17 +222,19 @@ export function findOutput(response: TodayResponseWithMeta | null, hotspotId: st
 
 export async function loadAccountDayResults(date: string, accountsIn?: StoredAccount[]): Promise<AccountDayResult[]> {
   const accounts = accountsIn ?? (await loadDataAccounts());
-  return Promise.all(
-    accounts.map(async (account) => {
-      const response = await loadTodayForDate(account.account_id, date);
-      return {
-        account,
-        response,
-        date: response?.date ?? (response ? date : null),
-        counts: countsFor(response),
-      };
-    }),
-  );
+  const keys = accounts.map((account) => `${account.account_id}/${date}`);
+  const docs = await getDocs<TodayResponseWithMeta>("today", keys);
+  const byKey = new Map(docs.map((doc) => [doc.key, doc.body]));
+  return accounts.map((account) => {
+    const response = byKey.get(`${account.account_id}/${date}`) ?? null;
+    const validResponse = response?.board ? response : null;
+    return {
+      account,
+      response: validResponse,
+      date: validResponse?.date ?? (validResponse ? date : null),
+      counts: countsFor(validResponse),
+    };
+  });
 }
 
 export async function buildDashboardSnapshot(date?: string | null): Promise<DashboardSnapshot> {
@@ -315,15 +337,44 @@ export async function loadAccountHistory(accountId: string): Promise<AccountHist
   });
 }
 
-export async function loadAccountWorkbench(accountId: string, date?: string | null) {
-  const account = await loadDataAccount(accountId);
-  const resolvedDate = (await resolveDateContext(date)).date;
-  const response = account && resolvedDate ? await loadTodayForDate(account.account_id, resolvedDate) : null;
+export async function loadAccountWorkbench(
+  accountId: string,
+  date?: string | null,
+  includes: AccountWorkbenchIncludes = {
+    includeToday: true,
+    includeHotspots: true,
+    includeHistory: true,
+    includeTrackConfig: true,
+    includeRunStatus: true,
+  },
+): Promise<AccountWorkbench> {
+  const [account, dateContext] = await Promise.all([
+    loadDataAccount(accountId),
+    resolveDateContext(date),
+  ]);
+  const resolvedDate = dateContext.date;
+  const todayKey = account && resolvedDate ? `${account.account_id}/${resolvedDate}` : null;
+  const [response, history, hotspotsData, trackDoc, runExists] = await Promise.all([
+    includes.includeToday && account && resolvedDate
+      ? loadTodayForDate(account.account_id, resolvedDate)
+      : Promise.resolve(null),
+    includes.includeHistory && account ? loadAccountHistory(account.account_id) : Promise.resolve([]),
+    includes.includeHotspots && resolvedDate ? loadHotspots(resolvedDate) : Promise.resolve({ date: resolvedDate, hotspots: [] }),
+    includes.includeTrackConfig && account?.track_id
+      ? getDoc<Record<string, any>>("track_config", account.track_id)
+      : Promise.resolve(null),
+    includes.includeRunStatus && todayKey ? hasDoc("today", todayKey) : Promise.resolve(false),
+  ]);
+  const validResponse = response?.board ? response : null;
   return {
     account,
     date: resolvedDate,
-    response,
-    counts: countsFor(response),
-    history: account ? await loadAccountHistory(account.account_id) : [],
+    dateContext,
+    response: validResponse,
+    runExists: Boolean(validResponse) || runExists,
+    counts: countsFor(validResponse),
+    history,
+    hotspots: hotspotsData.hotspots,
+    trackDoc,
   };
 }
