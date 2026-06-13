@@ -4,6 +4,8 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 
 import type { SparkRecord, SparkStatus } from "@/app/api/spark/route";
+import CopyTextButton from "@/components/adaptation/CopyTextButton";
+import { sparkAdminCopy } from "@/lib/pr6-state.mjs";
 
 const STATUS_LABELS: Record<SparkStatus, string> = {
   pending: "待处理",
@@ -17,7 +19,17 @@ function statusTone(status: SparkStatus): string {
   return "border-[#E1C58F] bg-[#FFF8EA] text-[#755019]";
 }
 
-export default function SparkInbox({ accountId }: { accountId: string }) {
+export default function SparkInbox({
+  accountId,
+  accountName,
+  readOnly = false,
+  readOnlyDescription,
+}: {
+  accountId: string;
+  accountName: string;
+  readOnly?: boolean;
+  readOnlyDescription?: string;
+}) {
   const [text, setText] = useState("");
   const [sparks, setSparks] = useState<SparkRecord[]>([]);
   const [message, setMessage] = useState("");
@@ -79,23 +91,48 @@ export default function SparkInbox({ accountId }: { accountId: string }) {
   return (
     <div className="space-y-5">
       <section className="rounded-lg border border-[#D8D3CB] bg-white p-4">
-        <textarea
-          value={text}
-          onChange={(event) => setText(event.target.value)}
-          className="min-h-32 w-full rounded-md border border-[#D8D3CB] bg-[#FBFAF7] p-3 text-sm leading-relaxed outline-none focus:border-[#5C7A2E]"
-          placeholder="想到什么写什么，明天跑热点时会自动带上"
-        />
-        <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
-          <p className="text-xs text-[#7A7770]">这里只负责收集，处理发生在每日跑热点时。</p>
-          <button
-            type="button"
-            onClick={() => void submit()}
-            disabled={submitting || !text.trim()}
-            className="rounded-md bg-[#1F1F1E] px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
-          >
-            {submitting ? "提交中" : "提交灵感"}
-          </button>
-        </div>
+        {readOnly ? (
+          <div className="space-y-3">
+            <p className="text-sm leading-relaxed text-[#6B6963]">
+              {readOnlyDescription ?? "线上当前不能直接提交灵感。请复制下面的话发给管理员或 agent；灵感需要管理员处理后，才会进入下一次热点筛选。"}
+            </p>
+            <textarea
+              value={text}
+              onChange={(event) => setText(event.target.value)}
+              className="min-h-28 w-full rounded-md border border-[#D8D3CB] bg-[#FBFAF7] p-3 text-sm leading-relaxed outline-none focus:border-[#5C7A2E]"
+              placeholder="把灵感写在这里，用下面的话术复制给管理员或 agent"
+            />
+            <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
+              <div className="text-xs font-medium text-[#8A877F]">复制话术</div>
+              <p className="mt-1 whitespace-pre-wrap text-sm leading-relaxed text-[#4A4A47]">
+                {sparkAdminCopy(accountName, text.trim())}
+              </p>
+              <div className="mt-2">
+                <CopyTextButton text={sparkAdminCopy(accountName, text.trim())} label="复制给管理员 / agent" />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <>
+            <textarea
+              value={text}
+              onChange={(event) => setText(event.target.value)}
+              className="min-h-32 w-full rounded-md border border-[#D8D3CB] bg-[#FBFAF7] p-3 text-sm leading-relaxed outline-none focus:border-[#5C7A2E]"
+              placeholder="想到什么写什么，明天跑热点时会自动带上"
+            />
+            <div className="mt-3 flex flex-wrap items-center justify-between gap-3">
+              <p className="text-xs text-[#7A7770]">这里只负责收集，处理发生在每日跑热点时。</p>
+              <button
+                type="button"
+                onClick={() => void submit()}
+                disabled={submitting || !text.trim()}
+                className="rounded-md bg-[#1F1F1E] px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+              >
+                {submitting ? "提交中" : "提交灵感"}
+              </button>
+            </div>
+          </>
+        )}
         {message ? <p className="mt-2 text-sm text-[#755019]">{message}</p> : null}
       </section>
 

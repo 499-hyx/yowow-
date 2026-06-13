@@ -134,10 +134,12 @@ export default function MemoryEditor({
   accountId,
   initialMemory,
   readOnly = false,
+  readOnlyMessage,
 }: {
   accountId: string;
   initialMemory: AccountMemory;
   readOnly?: boolean;
+  readOnlyMessage?: string;
 }) {
   const router = useRouter();
   const [memory, setMemory] = useState<AccountMemory>(initialMemory);
@@ -191,7 +193,7 @@ export default function MemoryEditor({
     <div className="space-y-4">
       {readOnly ? (
         <div className="rounded-lg border border-[#E0D9CE] bg-[#F8F4EE] px-4 py-3 text-sm text-[#6B6963]">
-          线上暂不支持编辑，请在本地编辑。
+          {readOnlyMessage ?? "线上当前只能查看账号定位。要修改，请把修改内容发给管理员，由管理员同步到系统，下次跑批生效。"}
         </div>
       ) : null}
       <div className="flex flex-wrap items-center gap-3 rounded-lg border border-[#E8E6E1] bg-white px-4 py-3">

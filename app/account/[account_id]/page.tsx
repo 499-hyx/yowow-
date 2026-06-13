@@ -18,6 +18,7 @@ import {
 import { getDoc } from "@/lib/data-source";
 import { displayList, displayText } from "@/lib/display-text";
 import { memoryCompleteness } from "@/lib/memory-meta";
+import { memoryEditMode, sparkInputMode } from "@/lib/pr6-state.mjs";
 import { tursoEnabled } from "@/lib/turso";
 
 export const revalidate = 60;
@@ -248,6 +249,9 @@ export default async function AccountPage({
   const ownerView = searchParams?.view !== "admin";
   const viewHref = accountTabHref(account.account_id, selectedTab, date, ownerView ? "admin" : "owner");
   const completeness = memoryCompleteness(account.memory);
+  const onlineDataMode = tursoEnabled();
+  const memoryMode = memoryEditMode({ tursoEnabled: onlineDataMode });
+  const sparkMode = sparkInputMode({ tursoEnabled: onlineDataMode });
 
   const outputs = response
     ? [...response.board.picks, ...response.board.also_ran, ...response.board.skipped]
@@ -403,7 +407,12 @@ export default async function AccountPage({
           <h2 className="text-lg font-bold text-[#1F1F1E]">账号记忆</h2>
           <p className="text-sm text-[#7A7770]">这些信息决定每天怎么筛热点、怎么写口吻、哪些内容直接拦下。</p>
         </div>
-        <MemoryEditor accountId={account.account_id} initialMemory={account.memory} readOnly={tursoEnabled()} />
+        <MemoryEditor
+          accountId={account.account_id}
+          initialMemory={account.memory}
+          readOnly={!memoryMode.editable}
+          readOnlyMessage={memoryMode.message}
+        />
 
         <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
           <div className="text-xs font-medium text-[#8A877F]">搜索母题（来自赛道，改动找管理员走"重写搜索方向"）</div>
@@ -423,10 +432,15 @@ export default async function AccountPage({
         <div className="mb-4 rounded-lg border border-dashed border-[#D8D3CB] bg-white p-5">
           <h2 className="text-lg font-bold text-[#1F1F1E]">灵感收件箱</h2>
           <p className="mt-2 text-sm leading-relaxed text-[#6B6963]">
-            临时想到的选题会收在这里，处理发生在每日跑批时。
+            {sparkMode.description}
           </p>
         </div>
-        <SparkInbox accountId={account.account_id} />
+        <SparkInbox
+          accountId={account.account_id}
+          accountName={account.display_name}
+          readOnly={!sparkMode.submittable}
+          readOnlyDescription={sparkMode.description}
+        />
       </section>
       ) : null}
 
