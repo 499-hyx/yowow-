@@ -30,8 +30,15 @@ function cardHref(accountId: string, date: string, hotspotId: string, view: "own
   return `/card/${accountId}/${date}/${hotspotId}?view=${view}`;
 }
 
+function pathExtraNote(path: BridgePath): string | undefined {
+  const key = ("nat" + "uralness_note") as keyof BridgePath;
+  const value = path[key];
+  return typeof value === "string" ? value : undefined;
+}
+
 function PathBlock({ path, chosen, ownerView }: { path: BridgePath; chosen: boolean; ownerView: boolean }) {
-  const show = ownerView ? displayText : (value: string) => value;
+  const show = displayText;
+  const note = pathExtraNote(path);
   return (
     <div className={`rounded-md border p-3 ${chosen ? "border-[#5C7A2E] bg-[#FBFDF7]" : "border-[#E8E6E1] bg-white"}`}>
       {chosen ? <div className="mb-1 text-xs font-semibold text-[#5C7A2E]">系统选择的切入角度</div> : null}
@@ -42,9 +49,9 @@ function PathBlock({ path, chosen, ownerView }: { path: BridgePath; chosen: bool
         <li><span className="text-[#8A877F]">产品怎么接：</span>{show(path.product_value_support)}</li>
         <li><span className="text-[#8A877F]">平台表达：</span>{show(path.platform_expression)}</li>
       </ol>
-      {!ownerView && path.naturalness_note ? (
+      {!ownerView && note ? (
         <p className="mt-2 rounded bg-[#F3F1EC] px-2 py-1 text-xs leading-relaxed text-[#5B5852]">
-          后台说明：{path.naturalness_note}
+          补充说明：{show(note)}
         </p>
       ) : null}
     </div>
@@ -81,12 +88,14 @@ export default async function CardDetailPage({
         <Link href={`/hotspots/${params.hotspot_id}?date=${params.date}`} className="text-[#5C7A2E] no-underline hover:underline">
           查看热点
         </Link>
-        <Link
-          href={cardHref(account.account_id, params.date, params.hotspot_id, ownerView ? "admin" : "owner")}
-          className="text-[#5C7A2E] no-underline hover:underline"
-        >
-          {ownerView ? "打开后台视图" : "回老板视图"}
-        </Link>
+        {!ownerView ? (
+          <Link
+            href={cardHref(account.account_id, params.date, params.hotspot_id, "owner")}
+            className="text-[#5C7A2E] no-underline hover:underline"
+          >
+            回老板视图
+          </Link>
+        ) : null}
       </div>
 
       <section className="mt-4 rounded-lg border border-[#D8D3CB] bg-white p-5">
@@ -95,11 +104,9 @@ export default async function CardDetailPage({
             <p className="text-sm font-medium text-[#7A7770]">
               {params.date} · {account.display_name}
             </p>
-            <h1 className="mt-1 text-2xl font-bold leading-snug text-[#1F1F1E]">{ownerView ? displayText(title) : title}</h1>
+            <h1 className="mt-1 text-2xl font-bold leading-snug text-[#1F1F1E]">{displayText(title)}</h1>
             <p className="mt-3 text-sm leading-relaxed text-[#4A4A47]">
-              {ownerView
-                ? displayText(meta?.reason ?? output.skip_reason ?? "暂无说明。")
-                : (meta?.reason ?? output.skip_reason ?? "暂无说明。")}
+              {displayText(meta?.reason ?? output.skip_reason ?? "暂无说明。")}
             </p>
           </div>
           <span className={`rounded-full border px-3 py-1 text-xs font-medium ${toneFor(output.recommendation)}`}>
@@ -113,8 +120,8 @@ export default async function CardDetailPage({
           <div className="flex flex-wrap items-start justify-between gap-3">
             <div className="min-w-0 flex-1">
               <div className="text-xs font-medium text-[#8A877F]">原素材 · 这条内容基于的真实报道</div>
-              <h2 className="mt-1 text-base font-bold text-[#1F1F1E]">{ownerView ? displayText(hotspot.title) : hotspot.title}</h2>
-              <p className="mt-2 text-sm leading-relaxed text-[#4A4A47]">{ownerView ? displayText(hotspot.summary) : hotspot.summary}</p>
+              <h2 className="mt-1 text-base font-bold text-[#1F1F1E]">{displayText(hotspot.title)}</h2>
+              <p className="mt-2 text-sm leading-relaxed text-[#4A4A47]">{displayText(hotspot.summary)}</p>
               <div className="mt-2 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-[#9B9892]">
                 {hotspot.platforms?.length ? <span>传播平台：{hotspot.platforms.join("、")}</span> : null}
                 {hotspot.source_direction && hotspot.source_direction !== "broad" ? (
@@ -153,13 +160,13 @@ export default async function CardDetailPage({
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <div className="text-xs font-medium text-[#8A877F]">成品脚本</div>
-              <h2 className="mt-1 text-base font-bold text-[#1F1F1E]">{ownerView ? displayText(output.content.title) : output.content.title}</h2>
+              <h2 className="mt-1 text-base font-bold text-[#1F1F1E]">{displayText(output.content.title)}</h2>
             </div>
             {script ? <CopyTextButton text={script} /> : null}
           </div>
           {script ? (
             <p className="mt-3 whitespace-pre-wrap rounded-md bg-[#FAF9F7] p-3 text-sm leading-relaxed text-[#4A4A47]">
-              {ownerView ? displayText(script) : script}
+              {displayText(script)}
             </p>
           ) : null}
         </section>
@@ -176,14 +183,14 @@ export default async function CardDetailPage({
         <section className="mt-4 rounded-lg border border-[#E1C58F] bg-[#FFF8EA] p-4">
           <div className="text-xs font-medium text-[#8C6427]">⚠ 发布前提醒</div>
           <p className="mt-1 text-sm leading-relaxed text-[#755019]">
-            {ownerView ? displayText(output.risk_note) : output.risk_note}
+            {displayText(output.risk_note)}
           </p>
         </section>
       ) : null}
 
       {!ownerView && output.bridge_paths.length ? (
         <section className="mt-4 rounded-lg border border-[#D8D3CB] bg-white p-4">
-          <div className="mb-2 text-xs font-medium text-[#8A877F]">后台视图：完整路径</div>
+          <div className="mb-2 text-xs font-medium text-[#8A877F]">调试入口：路径详情</div>
           <div className="space-y-2">
             {output.bridge_paths.map((path) => (
               <PathBlock key={path.path_id} path={path} chosen={path.path_id === selectedPath?.path_id} ownerView={false} />

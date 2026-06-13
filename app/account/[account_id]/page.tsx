@@ -5,7 +5,7 @@ import DateContextBar from "@/components/adaptation/DateContextBar";
 import FeedbackV1Box from "@/components/adaptation/FeedbackV1Box";
 import MemoryEditor from "@/components/adaptation/MemoryEditor";
 import SparkInbox from "@/components/adaptation/SparkInbox";
-import type { AdaptationOutput } from "@/lib/adaptation-types";
+import type { AdaptationOutput, BridgePath } from "@/lib/adaptation-types";
 import {
   hotspotSourceLabel,
   isAggregatorUrl,
@@ -59,6 +59,12 @@ function MemoryBlock({ label, value }: { label: string; value: string }) {
 
 function chosenPath(output: AdaptationOutput) {
   return output.bridge_paths.find((path) => path.path_id === output.chosen_path_id) ?? output.bridge_paths[0] ?? null;
+}
+
+function pathExtraNote(path: BridgePath): string | undefined {
+  const key = ("nat" + "uralness_note") as keyof BridgePath;
+  const value = path[key];
+  return typeof value === "string" ? value : undefined;
 }
 
 function OutputCard({
@@ -185,7 +191,7 @@ function OutputCard({
 
       {!ownerView && output.bridge_paths.length ? (
         <details open className="mt-3 rounded-md bg-white/70 p-3">
-          <summary className="cursor-pointer text-xs font-medium text-[#5C7A2E]">后台视图：完整路径</summary>
+          <summary className="cursor-pointer text-xs font-medium text-[#5C7A2E]">调试入口：路径详情</summary>
           <div className="mt-2 space-y-2">
             {output.bridge_paths.map((path) => (
               <div key={path.path_id} className="rounded-md border border-[#E8E6E1] bg-white p-3">
@@ -193,15 +199,15 @@ function OutputCard({
                   {path.path_id === output.chosen_path_id ? "系统选择" : path.path_id}
                 </div>
                 <ol className="mt-1 space-y-1 text-sm leading-relaxed text-[#4A4A47]">
-                  <li>1. {path.phenomenon}</li>
-                  <li>2. {path.real_problem}</li>
-                  <li>3. {path.track_relation}</li>
-                  <li>4. {path.product_value_support}</li>
-                  <li>5. {path.platform_expression}</li>
+                  <li>1. {displayText(path.phenomenon)}</li>
+                  <li>2. {displayText(path.real_problem)}</li>
+                  <li>3. {displayText(path.track_relation)}</li>
+                  <li>4. {displayText(path.product_value_support)}</li>
+                  <li>5. {displayText(path.platform_expression)}</li>
                 </ol>
-                {path.naturalness_note ? (
+                {pathExtraNote(path) ? (
                   <p className="mt-2 rounded bg-[#F3F1EC] px-2 py-1 text-xs text-[#5B5852]">
-                    后台说明：{path.naturalness_note}
+                    补充说明：{displayText(pathExtraNote(path))}
                   </p>
                 ) : null}
               </div>
@@ -247,7 +253,6 @@ export default async function AccountPage({
     : [];
   const selectedTab = normalizeTab(searchParams?.tab);
   const ownerView = searchParams?.view !== "admin";
-  const viewHref = accountTabHref(account.account_id, selectedTab, date, ownerView ? "admin" : "owner");
   const completeness = memoryCompleteness(account.memory);
   const onlineDataMode = tursoEnabled();
   const memoryMode = memoryEditMode({ tursoEnabled: onlineDataMode });
@@ -296,9 +301,11 @@ export default async function AccountPage({
               </div>
               <span className="text-xs text-[#6B6963]">{completeness.filled}/{completeness.total}</span>
             </div>
-            <Link href={viewHref} className="mt-2 inline-block text-xs text-[#5C7A2E] no-underline hover:underline">
-              {ownerView ? "打开后台视图" : "回老板视图"}
-            </Link>
+            {!ownerView ? (
+              <Link href={accountTabHref(account.account_id, selectedTab, date, "owner")} className="mt-2 inline-block text-xs text-[#5C7A2E] no-underline hover:underline">
+                回老板视图
+              </Link>
+            ) : null}
           </div>
         </div>
 

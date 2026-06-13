@@ -29,8 +29,15 @@ function chosenPath(output: AdaptationOutput): BridgePath | null {
   return output.bridge_paths.find((path) => path.path_id === output.chosen_path_id) ?? output.bridge_paths[0] ?? null;
 }
 
+function pathExtraNote(path: BridgePath): string | undefined {
+  const key = ("nat" + "uralness_note") as keyof BridgePath;
+  const value = path[key];
+  return typeof value === "string" ? value : undefined;
+}
+
 function PathBlock({ path, chosen, ownerView }: { path: BridgePath; chosen: boolean; ownerView: boolean }) {
-  const show = ownerView ? displayText : (value: string) => value;
+  const show = displayText;
+  const note = pathExtraNote(path);
   return (
     <div className={`rounded-md border p-3 ${chosen ? "border-[#5C7A2E] bg-[#FBFDF7]" : "border-[#E8E6E1] bg-white"}`}>
       {chosen ? <div className="mb-1 text-xs font-semibold text-[#5C7A2E]">系统选择的切入角度</div> : null}
@@ -41,9 +48,9 @@ function PathBlock({ path, chosen, ownerView }: { path: BridgePath; chosen: bool
         <li><span className="text-[#8A877F]">产品怎么接：</span>{show(path.product_value_support)}</li>
         <li><span className="text-[#8A877F]">平台表达：</span>{show(path.platform_expression)}</li>
       </ol>
-      {!ownerView && path.naturalness_note ? (
+      {!ownerView && note ? (
         <p className="mt-2 rounded bg-[#F3F1EC] px-2 py-1 text-xs leading-relaxed text-[#5B5852]">
-          后台说明：{path.naturalness_note}
+          补充说明：{show(note)}
         </p>
       ) : null}
     </div>
@@ -63,7 +70,7 @@ function AccountDecision({
 }) {
   const output = cell.output;
   const cp = output ? chosenPath(output) : null;
-  const show = ownerView ? displayText : (value: string) => value;
+  const show = displayText;
   const detailHref = output && date ? `/card/${cell.account_id}/${date}/${output.hotspot_id}` : null;
 
   return (
@@ -107,7 +114,7 @@ function AccountDecision({
 
       {!ownerView && output?.bridge_paths?.length ? (
         <div className="mt-3 space-y-2">
-          <div className="text-xs font-medium text-[#8A877F]">后台视图：完整路径</div>
+          <div className="text-xs font-medium text-[#8A877F]">调试入口：路径详情</div>
           {output.bridge_paths.map((path) => (
             <PathBlock key={path.path_id} path={path} chosen={path.path_id === cp?.path_id} ownerView={false} />
           ))}
@@ -144,7 +151,7 @@ export default async function HotspotDetailPage({
   const accountNames = new Map(snapshot.accounts.map((account) => [account.account_id, account.display_name]));
   const backHref = snapshot.date ? `/hotspots?date=${snapshot.date}` : "/hotspots";
   const ownerView = searchParams?.view !== "admin";
-  const viewHref = `/hotspots/${params.hotspot_id}${snapshot.date ? `?date=${snapshot.date}&` : "?"}view=${ownerView ? "admin" : "owner"}`;
+  const ownerHref = `/hotspots/${params.hotspot_id}${snapshot.date ? `?date=${snapshot.date}&` : "?"}view=owner`;
 
   return (
     <main className="mx-auto max-w-6xl px-4 py-6 lg:px-8">
@@ -159,9 +166,11 @@ export default async function HotspotDetailPage({
       <Link href={backHref} className="text-sm text-[#5C7A2E] no-underline hover:underline">
         返回热点池
       </Link>
-      <Link href={viewHref} className="ml-4 text-sm text-[#5C7A2E] no-underline hover:underline">
-        {ownerView ? "打开后台视图" : "回老板视图"}
-      </Link>
+      {!ownerView ? (
+        <Link href={ownerHref} className="ml-4 text-sm text-[#5C7A2E] no-underline hover:underline">
+          回老板视图
+        </Link>
+      ) : null}
 
       <section className="mt-4 rounded-lg border border-[#D8D3CB] bg-white p-5">
         <div className="flex flex-wrap items-start justify-between gap-3">

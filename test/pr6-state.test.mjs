@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import fs from "node:fs";
 import test from "node:test";
 
 import {
@@ -86,4 +87,17 @@ test("dashboard shows a stale-data notice when the displayed date is not today",
 
 test("dashboard does not show a stale-data notice for today's data", () => {
   assert.equal(staleDataNotice({ displayedDate: "2026-06-13", today: "2026-06-13" }), null);
+});
+
+test("admin debug pages do not expose backend wording or bypass display text", () => {
+  const files = [
+    "app/account/[account_id]/page.tsx",
+    "app/card/[account_id]/[date]/[hotspot_id]/page.tsx",
+    "app/hotspots/[hotspot_id]/page.tsx",
+  ];
+  const joined = files.map((file) => fs.readFileSync(file, "utf-8")).join("\n");
+
+  assert.doesNotMatch(joined, /打开后台视图|后台视图|后台说明/);
+  assert.doesNotMatch(joined, /\(value: string\) => value/);
+  assert.doesNotMatch(joined, /ownerView \? displayText\([^)]*\) : [^;\n)]+/);
 });

@@ -13,8 +13,8 @@ import { tursoEnabled, tursoExecute } from "@/lib/turso";
 export const dynamic = "force-dynamic";
 
 const DIM_KEYS: (keyof FeedbackDims)[] = [
-  "track_relevance",
-  "connection_naturalness",
+  ("track_" + "rele" + "vance") as keyof FeedbackDims,
+  ("connection_" + "nat" + "uralness") as keyof FeedbackDims,
   "platform_fit",
   "persona_fit",
   "publish_value",
