@@ -3,6 +3,7 @@ import test from "node:test";
 
 import {
   memoryEditMode,
+  primaryDashboardAction,
   sparkInputMode,
   sparkAdminCopy,
 } from "../lib/pr6-state.mjs";
@@ -33,4 +34,44 @@ test("online spark entry uses copy-to-admin handoff instead of submission", () =
 
 test("local spark entry remains submittable", () => {
   assert.equal(sparkInputMode({ tursoEnabled: false }).submittable, true);
+});
+
+test("dashboard primary action opens the first account when today data exists", () => {
+  const action = primaryDashboardAction({
+    accounts: [{ account_id: "acct-a" }],
+    displayedDate: "2026-06-13",
+    today: "2026-06-13",
+  });
+
+  assert.deepEqual(action, {
+    kind: "link",
+    label: "打开今天第一个账号",
+    href: "/account/acct-a?date=2026-06-13",
+  });
+});
+
+test("dashboard primary action copies today's todo when only old data exists", () => {
+  const action = primaryDashboardAction({
+    accounts: [{ account_id: "acct-a" }],
+    displayedDate: "2026-06-12",
+    today: "2026-06-13",
+  });
+
+  assert.equal(action.kind, "copy");
+  assert.equal(action.label, "复制今日待办话术");
+  assert.match(action.text, /今天发什么/);
+});
+
+test("dashboard primary action falls back to the account list without accounts", () => {
+  const action = primaryDashboardAction({
+    accounts: [],
+    displayedDate: null,
+    today: "2026-06-13",
+  });
+
+  assert.deepEqual(action, {
+    kind: "link",
+    label: "查看账号列表",
+    href: "/accounts",
+  });
 });

@@ -5,9 +5,10 @@ import { useState } from "react";
 type Props = {
   text: string;
   label?: string;
+  className?: string;
 };
 
-export default function CopyTextButton({ text, label = "复制脚本" }: Props) {
+export default function CopyTextButton({ text, label = "复制脚本", className }: Props) {
   const [copied, setCopied] = useState(false);
 
   async function copy() {
@@ -24,7 +25,7 @@ export default function CopyTextButton({ text, label = "复制脚本" }: Props) 
     <button
       type="button"
       onClick={() => void copy()}
-      className="rounded-md bg-[#1F1F1E] px-3 py-2 text-xs font-medium text-white hover:bg-black"
+      className={className ?? "rounded-md bg-[#1F1F1E] px-3 py-2 text-xs font-medium text-white hover:bg-black"}
     >
       {copied ? "已复制" : label}
     </button>

@@ -9,13 +9,13 @@ export const dynamic = "force-dynamic";
 export default function OnboardingPage() {
   return (
     <main className="mx-auto max-w-2xl px-4 py-16">
-      <div className="rounded-xl border border-[#E0D9CE] bg-[#F8F4EE] p-8 text-center">
-        <div className="text-3xl">{"\u{1F3D7}\uFE0F"}</div>
-        <h1 className="mt-3 text-xl font-bold text-[#1F1F1E]">新增账号请找管理员</h1>
-        <p className="mx-auto mt-3 max-w-md text-sm leading-relaxed text-[#6B6963]">
-          新账号需要先为它的赛道起草「搜索母题」并经博士定稿，才能产出可信的每日推荐——这一步在网页上做不了。
-          请联系管理员，说清楚：<b>卖什么给谁、产品最大的好、有什么证据、客户最焦虑什么、发什么平台、什么人设、什么不能碰</b>。
-          已有赛道的新账号几分钟就能开通；全新赛道需要等博士定稿后生效。
+      <div className="rounded-xl border border-[#E0D9CE] bg-[#F8F4EE] p-8">
+        <h1 className="text-xl font-bold text-[#1F1F1E]">新增账号请找管理员处理</h1>
+        <p className="mt-3 text-sm leading-relaxed text-[#6B6963]">
+          网页现在不能直接新建账号或赛道。一个账号能不能推荐得准，先取决于它所属赛道的搜索母题、表达边界和禁区是否配置好；这些需要管理员整理后同步进系统。
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-[#6B6963]">
+          请把这些信息发给管理员：卖什么给谁、产品最大的好、有什么证据、客户最焦虑什么、发什么平台、什么人设、什么不能碰。管理员处理完成后，账号会出现在账号列表里，并在下一次跑批时生效。
         </p>
         <Link
           href="/"
