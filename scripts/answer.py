@@ -154,7 +154,9 @@ def answer_step(account_id, date_str, step, *, _transport=None):
 
     system = analysis_system_prompt(account_track_id(account_id)) if step == "generate" else ""
     written = []
-    for fn in files:
+    total = len(files)
+    for index, fn in enumerate(files, start=1):
+        print(f"   [{index}/{total}] answering {fn} ...", flush=True)
         raw = call_llm(system, _read(os.path.join(prompts_dir, fn)), _transport=_transport)
         try:
             data = _pl.extract_json(raw)
@@ -162,6 +164,7 @@ def answer_step(account_id, date_str, step, *, _transport=None):
             raise SystemExit(f"{fn}: 模型回答里抽不出 JSON：{e}\n   回答开头：{raw[:200]}")
         out_name = fn[:-4] + ".json"   # match-<id>.txt -> match-<id>.json
         write_json(os.path.join(inbox, out_name), data)
+        print(f"   [{index}/{total}] wrote _inbox/{out_name}", flush=True)
         written.append(out_name)
     return written
 
