@@ -34,6 +34,7 @@ def read_json(path):
 
 def write_line(text):
     sys.stdout.write(text + "\n")
+    sys.stdout.flush()
 
 
 def split_csv(value):
@@ -68,7 +69,7 @@ def env_int(name, default, *, minimum=1):
 def retry_attempts():
     if os.environ.get("LLM_RETRY_ATTEMPTS"):
         return env_int("LLM_RETRY_ATTEMPTS", 3, minimum=1)
-    return env_int("LLM_RETRIES", 2, minimum=0) + 1
+    return env_int("LLM_RETRIES", 1, minimum=0) + 1
 
 
 def retry_delay_seconds(attempt_index):
@@ -90,19 +91,20 @@ def describe_request_error(error):
     return f"{type(error).__name__}: {error}"
 
 
-def request_json_with_retries(req, *, provider, model, endpoint, timeout):
+def request_json_with_retries(req, *, provider, model, endpoint, timeout, label=None):
     attempts = retry_attempts()
+    label_part = f" label={label}" if label else ""
     for attempt in range(1, attempts + 1):
         started = time.monotonic()
         write_line(
-            f"[llm] provider={provider} model={model} endpoint={endpoint} "
+            f"[llm]{label_part} provider={provider} model={model} endpoint={endpoint} "
             f"attempt={attempt}/{attempts} timeout={timeout}s"
         )
         try:
             with urllib.request.urlopen(req, timeout=timeout) as resp:
                 body = resp.read().decode("utf-8")
             elapsed = time.monotonic() - started
-            write_line(f"[llm] provider={provider} attempt={attempt}/{attempts} ok in {elapsed:.1f}s bytes={len(body.encode('utf-8'))}")
+            write_line(f"[llm]{label_part} provider={provider} attempt={attempt}/{attempts} ok in {elapsed:.1f}s bytes={len(body.encode('utf-8'))}")
             return json.loads(body)
         except Exception as error:
             elapsed = time.monotonic() - started
@@ -111,14 +113,14 @@ def request_json_with_retries(req, *, provider, model, endpoint, timeout):
             if retryable and attempt < attempts:
                 delay = retry_delay_seconds(attempt - 1)
                 write_line(
-                    f"[llm] provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
+                    f"[llm]{label_part} provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
                     f"{message}; retrying in {delay}s"
                 )
                 if delay:
                     time.sleep(delay)
                 continue
             write_line(
-                f"[llm] provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
+                f"[llm]{label_part} provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
                 f"{message}; no more retries"
             )
             raise
@@ -196,7 +198,7 @@ def extract_json(text):
     return json.loads(text[start:end + 1])
 
 
-def call_anthropic(system, user, transport=None):
+def call_anthropic(system, user, transport=None, *, label=None, timeout_seconds=None):
     if transport is not None:
         return transport("anthropic", system, user)
     key = os.environ.get("ANTHROPIC_API_KEY")
@@ -226,12 +228,13 @@ def call_anthropic(system, user, transport=None):
         provider="anthropic",
         model=model,
         endpoint=endpoint,
-        timeout=env_int("LLM_TIMEOUT_SECONDS", 120),
+        timeout=timeout_seconds or env_int("LLM_TIMEOUT_SECONDS", 120),
+        label=label,
     )
     return "".join(block.get("text", "") for block in data.get("content", []) if block.get("type") == "text")
 
 
-def call_openai_compatible(system, user, *, provider="openai", transport=None):
+def call_openai_compatible(system, user, *, provider="openai", transport=None, label=None, timeout_seconds=None):
     if transport is not None:
         return transport(provider, system, user)
     key = first_env("OPENAI_API_KEY", "DOUBAO_API_KEY", "ARK_API_KEY", "LLM_API_KEY", "API_KEY")
@@ -266,17 +269,18 @@ def call_openai_compatible(system, user, *, provider="openai", transport=None):
         provider=provider,
         model=model,
         endpoint=endpoint,
-        timeout=env_int("LLM_TIMEOUT_SECONDS", 120),
+        timeout=timeout_seconds or env_int("LLM_TIMEOUT_SECONDS", 120),
+        label=label,
     )
     return data["choices"][0]["message"]["content"]
 
 
-def call_llm(system, user, transport=None):
+def call_llm(system, user, transport=None, *, label=None, timeout_seconds=None):
     provider = os.environ.get("LLM_PROVIDER", "anthropic").strip().lower()
     if provider == "anthropic":
-        return call_anthropic(system, user, transport=transport)
+        return call_anthropic(system, user, transport=transport, label=label, timeout_seconds=timeout_seconds)
     if provider in ("openai", "openai-compatible", "doubao", "ark"):
-        return call_openai_compatible(system, user, provider=provider, transport=transport)
+        return call_openai_compatible(system, user, provider=provider, transport=transport, label=label, timeout_seconds=timeout_seconds)
     raise SystemExit(f"Unsupported LLM_PROVIDER: {provider}")
 
 
@@ -330,7 +334,7 @@ def build_email(run_date, boards, transport=None, use_llm=True):
     if not use_llm:
         return render_fallback_email(run_date, boards)
     system, user = build_llm_messages(run_date, boards)
-    raw = call_llm(system, user, transport=transport)
+    raw = call_llm(system, user, transport=transport, label="email-digest")
     data = extract_json(raw)
     subject = str(data.get("subject") or "").strip()
     body = str(data.get("body_text") or "").strip()

@@ -65,11 +65,11 @@ def analysis_system_prompt(track_id):
     return _read(p) if os.path.exists(p) else ""
 
 
-def call_llm(system, user, *, _transport=None):
+def call_llm(system, user, *, _transport=None, label=None):
     """调配置的 LLM，返回纯文本。_transport 仅供自测注入。"""
     if _transport is not None:
         return _transport(system, user)
-    return cron_llm_email.call_llm(system or "", user)
+    return cron_llm_email.call_llm(system or "", user, label=label)
 
 
 def answer_step(account_id, date_str, step, *, _transport=None):
@@ -90,7 +90,7 @@ def answer_step(account_id, date_str, step, *, _transport=None):
     total = len(files)
     for index, fn in enumerate(files, start=1):
         print(f"   [{index}/{total}] answering {fn} ...", flush=True)
-        raw = call_llm(system, _read(os.path.join(prompts_dir, fn)), _transport=_transport)
+        raw = call_llm(system, _read(os.path.join(prompts_dir, fn)), _transport=_transport, label=f"{step}:{fn}")
         try:
             data = _pl.extract_json(raw)
         except Exception as e:

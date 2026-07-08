@@ -43,7 +43,8 @@ LLM 超时与重试：
 
 ```bash
 export LLM_TIMEOUT_SECONDS=120       # 单次请求超时
-export LLM_RETRY_ATTEMPTS=3          # 总尝试次数
+export HOTSPOT_LLM_TIMEOUT_SECONDS=60 # 热点池生成的单次请求超时
+export LLM_RETRY_ATTEMPTS=2          # 总尝试次数
 export LLM_RETRY_BASE_SECONDS=3      # 第一次失败后的等待秒数，之后指数退避
 export LLM_RETRY_MAX_SECONDS=20      # 单次等待上限
 ```

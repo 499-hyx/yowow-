@@ -261,12 +261,16 @@ def dedupe(records):
 
 
 def ask_prompt(prompt, *, dry_run=False):
-    print(f"calling LLM for hotspot prompt: {prompt['title']}", flush=True)
+    prompt_len = len(prompt["text"])
+    print(f"calling LLM for hotspot prompt: {prompt['title']} chars={prompt_len}", flush=True)
     if dry_run:
         return []
+    timeout = cron_llm_email.env_int("HOTSPOT_LLM_TIMEOUT_SECONDS", 60)
     raw = cron_llm_email.call_llm(
         "你是热点池采集器。只输出提示词要求的 JSON，不要 Markdown，不要解释。",
         prompt["text"],
+        label=f"hotspot:{prompt['id']}",
+        timeout_seconds=timeout,
     )
     return flatten_records(raw)
 
