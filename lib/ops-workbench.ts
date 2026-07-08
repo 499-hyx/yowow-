@@ -476,7 +476,6 @@ export function renderHotspotPrompts({
   const broad = replaceAllLiteral(readText(promptPath(base, "公共热点", "平台原生全网热点.md")), {
     date: safeDate,
   });
-  const ultimatePath = promptPath(base, "公共热点", "终极雷达热点.md");
   const legacyBroadPrompts: OpsCopyPrompt[] = [
     {
       id: "platform-native",
@@ -484,13 +483,6 @@ export function renderHotspotPrompts({
       text: broad,
     },
   ];
-  if (fs.existsSync(ultimatePath)) {
-    legacyBroadPrompts.push({
-      id: "ultimate-radar",
-      title: "终极雷达热点",
-      text: replaceAllLiteral(readText(ultimatePath), { date: safeDate }),
-    });
-  }
   const broadPrompts = mergeCopyPrompts(loadHotspotSourcePrompts(base, safeDate), legacyBroadPrompts);
   const search = renderTrackSearchPrompt({ base, trackId: account.track_id, track, safeDate });
   return { account, track, broad, broadPrompts, search };

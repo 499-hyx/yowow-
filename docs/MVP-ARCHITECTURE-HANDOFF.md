@@ -292,7 +292,7 @@ scripts/sync-to-db.py --dry-run
 | 赛道热点池 | `data/hotspots/tracks/<track_id>/<date>.json` | 某赛道专属热点 |
 | match 判断提示词 | `prompts/分析提示词/热点匹配判断.md` | 改“什么算接得住、什么该 skip” |
 | generate 生成提示词 | `prompts/分析提示词/内容生成.md` | 改“怎么生成桥梁路径、标题、正文、风险提醒” |
-| 公共热点抓取提示词 | `prompts/公共热点/平台原生全网热点.md`、`prompts/公共热点/终极雷达热点.md` | 没有自动爬虫时，手工给外部 LLM 抓公共热点；前者偏平台原生讨论，后者偏范式转移级硬核情报，二者都直接输出可入池 JSON |
+| 公共热点抓取提示词 | `prompts/公共热点/平台原生全网热点.md` | 没有自动爬虫时，手工给外部 LLM 抓公共热点；提示词直接输出可入池 JSON |
 | 赛道热点搜索提示词 | `prompts/赛道热点/通用赛道热点搜索.md` 或 `prompts/赛道热点/<track_id>/热点搜索.md` | 用赛道方向抓赛道池；提示词已要求直接输出可入池 JSON |
 | 赛道专属分析提示词 | `prompts/分析提示词/<track_id>/赛道分析.md` | 手工跑 generate 时可一起贴给 LLM |
 | 跑前 / 跑后状态检查 | `scripts/status.py` | `--preflight` 跑前检查；无参数 full status 跑后验收 |

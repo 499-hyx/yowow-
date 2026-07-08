@@ -20,7 +20,7 @@ npm run test:e2e
 | `/` 今日总览 | 进入热点池 | 跳转 `/hotspots?date=...` | 路由失败由浏览器/Next 显示 |
 | `/` 今日总览 | 复制话术 | 复制当前待办话术 | 复制失败显示 `复制失败` |
 | `/ops` 每日跑批台 | 切换日期 / 账号 | 改变本次热点池、prompt、_inbox、ingest 的目标路径 | 当前需人工确认选中账号和日期；后续建议持久化到 URL 或 localStorage |
-| `/ops` 每日跑批台 | 复制热点提示词 | 复制公共热点 / 终极雷达 / 赛道热点搜索提示词 | 复制失败显示复制失败；提示词只要求输出可入池 JSON |
+| `/ops` 每日跑批台 | 复制热点提示词 | 复制公共热点 / 赛道热点搜索提示词 | 复制失败显示复制失败；提示词只要求输出可入池 JSON |
 | `/ops` 每日跑批台 | 保存全网热点 / 赛道热点 | 写入 `data/hotspots/<date>.json` 或 `data/hotspots/tracks/<track_id>/<date>.json` | JSON 格式错误、缺 `title` 会显示可读错误；缺 `hotspot_id` 时系统按日期和来源补 ID |
 | `/ops` 每日跑批台 | 生成 match 提示词 | 调用 `scripts/make-prompt.py --step match`，写入 `data/runs/<date>/<account_id>/prompts/match-*.txt` | 缺热点池、账号、配置时显示错误 |
 | `/ops` 每日跑批台 | 保存 match 回贴 | 把 GPT 返回 JSON 拆成 `_inbox/match-<hotspot_id>.json` | 如果当前账号没有对应 prompt，拒绝保存并提示切回正确账号 |

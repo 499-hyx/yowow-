@@ -36,11 +36,6 @@ function tempProject() {
     "utf-8",
   );
   fs.writeFileSync(
-    path.join(base, "prompts", "公共热点", "终极雷达热点.md"),
-    "今天是 {date}。终极雷达。",
-    "utf-8",
-  );
-  fs.writeFileSync(
     path.join(base, "prompts", "赛道热点", "通用赛道热点搜索.md"),
     "{date} / {track} / {search_brief} / {directions}",
     "utf-8",
@@ -84,9 +79,8 @@ test("ops prompt renderers expose multiple copy-ready broad prompts and track se
   assert.equal(prompts.broad.includes("2026-06-30"), true);
   assert.deepEqual(
     prompts.broadPrompts.map((item) => item.title),
-    ["平台原生全网热点", "终极雷达热点"],
+    ["平台原生全网热点"],
   );
-  assert.equal(prompts.broadPrompts[1].text.includes("终极雷达"), true);
   assert.equal(prompts.search.includes("教育赛道"), true);
   assert.equal(prompts.search.includes("家长争议"), true);
   assert.equal(Object.hasOwn(prompts, "neutralize"), false);
@@ -112,9 +106,9 @@ test("ops prefers track-specific search prompt and falls back to generic search 
   assert.equal(prompts.search.includes("教育赛道"), true);
   assert.equal(prompts.search.includes("家长争议"), true);
 
-  fs.rmSync(path.join(base, "prompts", "赛道热点", "education-yowow"), { recursive: true, force: true });
+  const fallbackBase = tempProject();
   const fallback = ops.renderHotspotPrompts({
-    base,
+    base: fallbackBase,
     date: "2026-06-30",
     accountId: "acct-xiaozhu-edu-xhs",
   });
@@ -164,7 +158,7 @@ test("ops automatically exposes enabled prompts from hotspot-sources without cod
 
   assert.deepEqual(
     prompts.broadPrompts.map((item) => item.title),
-    ["人物言论雷达", "平台原生全网热点", "终极雷达热点"],
+    ["人物言论雷达", "平台原生全网热点"],
   );
   assert.equal(prompts.broadPrompts[0].id, "people-voices");
   assert.equal(prompts.broadPrompts[0].text.includes("2026-06-30"), true);
@@ -199,7 +193,7 @@ test("hotspot-sources can register legacy broad prompt files without duplicating
 
   assert.deepEqual(
     prompts.broadPrompts.map((item) => item.id),
-    ["platform-native", "ultimate-radar"],
+    ["platform-native"],
   );
   assert.equal(prompts.broadPrompts[0].text, "今天是 2026-06-30。公共池。");
   assert.equal(prompts.broadPrompts[0].text.includes("这段说明不会进入复制提示词"), false);
@@ -207,10 +201,9 @@ test("hotspot-sources can register legacy broad prompt files without duplicating
 
 test("hotspot prompts ask LLMs to return system-ready hotspot JSON directly", () => {
   const broad = read("prompts/公共热点/平台原生全网热点.md");
-  const ultimate = read("prompts/公共热点/终极雷达热点.md");
   const search = read("prompts/赛道热点/通用赛道热点搜索.md");
 
-  for (const source of [broad, ultimate, search]) {
+  for (const source of [broad, search]) {
     assert.match(source, /"hotspot_id"/);
     assert.match(source, /"spread_emotion"/);
     assert.match(source, /"candidate_problem_dimensions"/);
@@ -279,8 +272,8 @@ test("ops saves multiple pasted hotspot JSON arrays as one combined pool", async
       ]),
       JSON.stringify([
         {
-          title: "终极雷达热点",
-          summary: "来自终极雷达热点提示词。",
+          title: "人物言论热点",
+          summary: "来自另一个公共热点提示词。",
         },
       ]),
     ].join("\n\n"),
@@ -290,7 +283,7 @@ test("ops saves multiple pasted hotspot JSON arrays as one combined pool", async
   const written = JSON.parse(fs.readFileSync(path.join(base, saved.relativePath), "utf-8"));
   assert.deepEqual(
     written.map((item) => item.title),
-    ["平台原生热点", "终极雷达热点"],
+    ["平台原生热点", "人物言论热点"],
   );
   assert.deepEqual(
     written.map((item) => item.hotspot_id),

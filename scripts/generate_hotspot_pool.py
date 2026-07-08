@@ -115,7 +115,6 @@ def registered_broad_prompts(date_str):
 
     fallback = [
         ("platform-native", "平台原生全网热点", os.path.join(PROMPTS_DIR, "公共热点", "平台原生全网热点.md")),
-        ("ultimate-radar", "终极雷达热点", os.path.join(PROMPTS_DIR, "公共热点", "终极雷达热点.md")),
     ]
     for prompt_id, title, path in fallback:
         if os.path.exists(path):
