@@ -39,6 +39,15 @@ export DOUBAO_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
 export MODEL_NAME=doubao-seed-2-0-lite-260428
 ```
 
+LLM 超时与重试：
+
+```bash
+export LLM_TIMEOUT_SECONDS=120       # 单次请求超时
+export LLM_RETRY_ATTEMPTS=3          # 总尝试次数
+export LLM_RETRY_BASE_SECONDS=3      # 第一次失败后的等待秒数，之后指数退避
+export LLM_RETRY_MAX_SECONDS=20      # 单次等待上限
+```
+
 SMTP：
 
 ```bash
@@ -106,5 +115,6 @@ PATH=/usr/local/bin:/usr/bin:/bin
 - 缺 LLM key：脚本直接失败，不伪造摘要。
 - 缺 SMTP 配置：脚本直接失败，不吞错误。
 - 热点池生成失败：脚本直接失败，不进入 match/generate。优先检查 LLM key、模型、提示词 JSON 输出；临时回退可先手工补 `data/hotspots/YYYY-MM-DD.json` 或 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`，再加 `--skip-hotspot-generation` 跑后续链路。
+- LLM 请求超时或 429/5xx：脚本会打印 provider/model/endpoint/attempt/timeout/耗时，按 `LLM_RETRY_ATTEMPTS` 自动重试；最终仍失败才退出。
 - 某账号缺 `latest.json`：邮件里会提示“今天还没有 latest.json”，不会阻断其他账号。
 - LLM 输出不是 JSON：脚本失败，避免把不可控内容发出去。

@@ -27,7 +27,6 @@ import datetime as _dt
 import json
 import os
 import sys
-import urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(HERE)
@@ -35,11 +34,10 @@ REPO_ROOT = os.path.dirname(PROJECT_ROOT)
 DATA_DIR = os.path.join(PROJECT_ROOT, "data")
 PROMPTS_DIR = os.path.join(PROJECT_ROOT, "prompts")
 
+sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(REPO_ROOT, "skills", "adaptation-engine"))
 import prompt_loader as _pl  # extract_json
-
-DEFAULT_MODEL = "claude-sonnet-4-6"
-DEFAULT_ARK_BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
+import cron_llm_email
 
 
 def _read(path):
@@ -52,14 +50,6 @@ def write_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
-
-
-def first_env(*names):
-    for name in names:
-        value = os.environ.get(name)
-        if value:
-            return value
-    return None
 
 
 def account_track_id(account_id):
@@ -76,67 +66,10 @@ def analysis_system_prompt(track_id):
 
 
 def call_llm(system, user, *, _transport=None):
-    """调 Anthropic messages API，返回纯文本。_transport 仅供自测注入。"""
+    """调配置的 LLM，返回纯文本。_transport 仅供自测注入。"""
     if _transport is not None:
         return _transport(system, user)
-    provider = os.environ.get("LLM_PROVIDER", "anthropic").strip().lower()
-    if provider in ("openai", "openai-compatible", "doubao", "ark"):
-        key = first_env("OPENAI_API_KEY", "DOUBAO_API_KEY", "ARK_API_KEY", "LLM_API_KEY", "API_KEY")
-        if not key:
-            raise SystemExit("⛔ 缺 OPENAI_API_KEY / DOUBAO_API_KEY / ARK_API_KEY / LLM_API_KEY，无法自动答题。")
-        model = os.environ.get("MODEL_NAME")
-        if not model:
-            raise SystemExit(f"⛔ 缺 MODEL_NAME，无法使用 LLM_PROVIDER={provider}。")
-        default_base = DEFAULT_ARK_BASE_URL if provider in ("doubao", "ark") else "https://api.openai.com/v1"
-        base = first_env("OPENAI_BASE_URL", "DOUBAO_BASE_URL", "ARK_BASE_URL") or default_base
-        body = {
-            "model": model,
-            "max_tokens": int(os.environ.get("LLM_MAX_TOKENS", "4096")),
-            "messages": [
-                {"role": "system", "content": system or ""},
-                {"role": "user", "content": user},
-            ],
-        }
-        req = urllib.request.Request(
-            base.rstrip("/") + "/chat/completions",
-            data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
-            headers={
-                "content-type": "application/json",
-                "authorization": f"Bearer {key}",
-            },
-        )
-        with urllib.request.urlopen(req, timeout=int(os.environ.get("LLM_TIMEOUT_SECONDS", "120"))) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
-        return data["choices"][0]["message"]["content"]
-    if provider != "anthropic":
-        raise SystemExit(f"⛔ 不支持的 LLM_PROVIDER：{provider}")
-    key = os.environ.get("ANTHROPIC_API_KEY")
-    if not key:
-        raise SystemExit(
-            "⛔ 缺 ANTHROPIC_API_KEY，无法自动答题。\n"
-            "   把 key 写进 yowow-adaptation/.env.local（ANTHROPIC_API_KEY=sk-...）或 export 后重试；\n"
-            "   或改用方案①（让 agent 当场答）/ 方案②（人工 copy-paste）。"
-        )
-    model = os.environ.get("MODEL_NAME", DEFAULT_MODEL)
-    base = os.environ.get("ANTHROPIC_BASE_URL", "https://api.anthropic.com").rstrip("/")
-    body = {
-        "model": model,
-        "max_tokens": 4096,
-        "system": system or "",
-        "messages": [{"role": "user", "content": user}],
-    }
-    req = urllib.request.Request(
-        base + "/v1/messages",
-        data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
-        headers={
-            "content-type": "application/json",
-            "x-api-key": key,
-            "anthropic-version": "2023-06-01",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=120) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
-    return "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    return cron_llm_email.call_llm(system or "", user)
 
 
 def answer_step(account_id, date_str, step, *, _transport=None):
@@ -170,7 +103,7 @@ def answer_step(account_id, date_str, step, *, _transport=None):
 
 
 def selftest():
-    print("─── answer.py --selftest ───")
+    print("--- answer.py --selftest ---")
 
     # 1) call_llm 走注入 transport，extract_json 能从带前后语的回答里抽出 JSON
     def fake(system, user):
@@ -178,26 +111,32 @@ def selftest():
     out = call_llm("sys", "user", _transport=fake)
     data = _pl.extract_json(out)
     assert data["tier"] == "skip", "JSON 抽取失败"
-    print("✅ call_llm(transport) + extract_json：能从带前后语的回答抽出 JSON")
+    print("OK call_llm(transport) + extract_json")
 
     # 2) generate 步会注入赛道分析层 system（教育赛道存在 赛道分析.md）
     sysp = analysis_system_prompt("education-yowow")
     assert sysp and ("七步" in sysp or "分析" in sysp), "未注入教育赛道 analysis system"
     assert analysis_system_prompt("不存在的赛道") == "", "未知赛道应返回空 system"
-    print("✅ generate 注入赛道 analysis system；未知赛道安全降级为空")
+    print("OK generate injects analysis system; unknown track falls back to empty")
 
     # 3) 无 key 时 call_llm 报错退出（不伪造）
-    saved = os.environ.pop("ANTHROPIC_API_KEY", None)
+    saved_provider = os.environ.get("LLM_PROVIDER")
+    saved_key = os.environ.pop("ANTHROPIC_API_KEY", None)
+    os.environ["LLM_PROVIDER"] = "anthropic"
     try:
         call_llm("s", "u")
         raise AssertionError("无 key 应当报错退出")
     except SystemExit:
-        print("✅ 无 ANTHROPIC_API_KEY 时报错退出，不伪造")
+        print("OK missing ANTHROPIC_API_KEY exits without faking output")
     finally:
-        if saved is not None:
-            os.environ["ANTHROPIC_API_KEY"] = saved
+        if saved_key is not None:
+            os.environ["ANTHROPIC_API_KEY"] = saved_key
+        if saved_provider is None:
+            os.environ.pop("LLM_PROVIDER", None)
+        else:
+            os.environ["LLM_PROVIDER"] = saved_provider
 
-    print("\n🎉 answer.py --selftest 全过")
+    print("\nanswer.py --selftest passed")
     return 0
 
 

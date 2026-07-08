@@ -12,8 +12,11 @@ import json
 import os
 import re
 import smtplib
+import socket
 import ssl
 import sys
+import time
+import urllib.error
 import urllib.request
 from email.message import EmailMessage
 
@@ -50,6 +53,75 @@ def first_env(*names):
         if value:
             return value
     return None
+
+
+def env_int(name, default, *, minimum=1):
+    raw = os.environ.get(name)
+    if raw is None or str(raw).strip() == "":
+        return default
+    try:
+        return max(minimum, int(raw))
+    except ValueError:
+        raise SystemExit(f"{name} must be an integer, got: {raw}")
+
+
+def retry_attempts():
+    if os.environ.get("LLM_RETRY_ATTEMPTS"):
+        return env_int("LLM_RETRY_ATTEMPTS", 3, minimum=1)
+    return env_int("LLM_RETRIES", 2, minimum=0) + 1
+
+
+def retry_delay_seconds(attempt_index):
+    base = env_int("LLM_RETRY_BASE_SECONDS", 3, minimum=0)
+    return min(base * (2 ** attempt_index), env_int("LLM_RETRY_MAX_SECONDS", 20, minimum=0))
+
+
+def is_retryable_error(error):
+    if isinstance(error, urllib.error.HTTPError):
+        return error.code == 429 or 500 <= error.code <= 599
+    return isinstance(error, (TimeoutError, socket.timeout, urllib.error.URLError))
+
+
+def describe_request_error(error):
+    if isinstance(error, urllib.error.HTTPError):
+        return f"HTTP {error.code} {error.reason}"
+    if isinstance(error, urllib.error.URLError):
+        return f"{type(error.reason).__name__}: {error.reason}"
+    return f"{type(error).__name__}: {error}"
+
+
+def request_json_with_retries(req, *, provider, model, endpoint, timeout):
+    attempts = retry_attempts()
+    for attempt in range(1, attempts + 1):
+        started = time.monotonic()
+        write_line(
+            f"[llm] provider={provider} model={model} endpoint={endpoint} "
+            f"attempt={attempt}/{attempts} timeout={timeout}s"
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                body = resp.read().decode("utf-8")
+            elapsed = time.monotonic() - started
+            write_line(f"[llm] provider={provider} attempt={attempt}/{attempts} ok in {elapsed:.1f}s bytes={len(body.encode('utf-8'))}")
+            return json.loads(body)
+        except Exception as error:
+            elapsed = time.monotonic() - started
+            retryable = is_retryable_error(error)
+            message = describe_request_error(error)
+            if retryable and attempt < attempts:
+                delay = retry_delay_seconds(attempt - 1)
+                write_line(
+                    f"[llm] provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
+                    f"{message}; retrying in {delay}s"
+                )
+                if delay:
+                    time.sleep(delay)
+                continue
+            write_line(
+                f"[llm] provider={provider} attempt={attempt}/{attempts} failed after {elapsed:.1f}s: "
+                f"{message}; no more retries"
+            )
+            raise
 
 
 def pick_text(pick):
@@ -138,8 +210,9 @@ def call_anthropic(system, user, transport=None):
         "system": system,
         "messages": [{"role": "user", "content": user}],
     }
+    endpoint = base + "/v1/messages"
     req = urllib.request.Request(
-        base + "/v1/messages",
+        endpoint,
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={
             "content-type": "application/json",
@@ -148,8 +221,13 @@ def call_anthropic(system, user, transport=None):
         },
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=int(os.environ.get("LLM_TIMEOUT_SECONDS", "120"))) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    data = request_json_with_retries(
+        req,
+        provider="anthropic",
+        model=model,
+        endpoint=endpoint,
+        timeout=env_int("LLM_TIMEOUT_SECONDS", 120),
+    )
     return "".join(block.get("text", "") for block in data.get("content", []) if block.get("type") == "text")
 
 
@@ -173,8 +251,9 @@ def call_openai_compatible(system, user, *, provider="openai", transport=None):
         ],
         "max_tokens": int(os.environ.get("LLM_MAX_TOKENS", "2500")),
     }
+    endpoint = base + "/chat/completions"
     req = urllib.request.Request(
-        base + "/chat/completions",
+        endpoint,
         data=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
         headers={
             "content-type": "application/json",
@@ -182,8 +261,13 @@ def call_openai_compatible(system, user, *, provider="openai", transport=None):
         },
         method="POST",
     )
-    with urllib.request.urlopen(req, timeout=int(os.environ.get("LLM_TIMEOUT_SECONDS", "120"))) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    data = request_json_with_retries(
+        req,
+        provider=provider,
+        model=model,
+        endpoint=endpoint,
+        timeout=env_int("LLM_TIMEOUT_SECONDS", 120),
+    )
     return data["choices"][0]["message"]["content"]
 
 
@@ -339,6 +423,9 @@ def selftest():
         return '```json\n{"subject":"今日测试摘要","body_text":"1 条内容需要复核"}\n```'
 
     saved_provider = os.environ.get("LLM_PROVIDER")
+    saved_attempts = os.environ.get("LLM_RETRY_ATTEMPTS")
+    saved_base_delay = os.environ.get("LLM_RETRY_BASE_SECONDS")
+    saved_urlopen = urllib.request.urlopen
     os.environ["LLM_PROVIDER"] = "anthropic"
     try:
         email = build_email("2099-01-01", boards, transport=fake)
@@ -351,13 +438,49 @@ def selftest():
         fallback = build_email("2099-01-01", boards, use_llm=False)
         assert "Demo Account" in fallback["body_text"]
         assert "需人工复核" in fallback["body_text"]
+
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *args):
+                return False
+
+            def read(self):
+                return b'{"ok": true}'
+
+        calls = []
+
+        def fake_urlopen(req, timeout):
+            calls.append(timeout)
+            if len(calls) == 1:
+                raise TimeoutError("simulated timeout")
+            return FakeResponse()
+
+        os.environ["LLM_RETRY_ATTEMPTS"] = "2"
+        os.environ["LLM_RETRY_BASE_SECONDS"] = "0"
+        urllib.request.urlopen = fake_urlopen
+        req = urllib.request.Request("https://example.invalid/v1/test", data=b"{}")
+        data = request_json_with_retries(req, provider="test", model="test-model", endpoint="https://example.invalid/v1/test", timeout=7)
+        assert data["ok"] is True
+        assert calls == [7, 7], f"unexpected retry calls: {calls}"
+
         write_line("cron_llm_email.py --selftest passed")
         return 0
     finally:
+        urllib.request.urlopen = saved_urlopen
         if saved_provider is None:
             os.environ.pop("LLM_PROVIDER", None)
         else:
             os.environ["LLM_PROVIDER"] = saved_provider
+        if saved_attempts is None:
+            os.environ.pop("LLM_RETRY_ATTEMPTS", None)
+        else:
+            os.environ["LLM_RETRY_ATTEMPTS"] = saved_attempts
+        if saved_base_delay is None:
+            os.environ.pop("LLM_RETRY_BASE_SECONDS", None)
+        else:
+            os.environ["LLM_RETRY_BASE_SECONDS"] = saved_base_delay
 
 
 def main():
