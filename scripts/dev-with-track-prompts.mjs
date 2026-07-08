@@ -7,13 +7,14 @@ import { ensureTrackPrompts, watchTrackPrompts } from "./ensure-track-prompts.mj
 
 const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.dirname(SCRIPT_DIR);
-const NEXT_BIN = path.join(ROOT, "node_modules", ".bin", "next");
+const NEXT_BIN = process.platform === "win32" ? "next.cmd" : "next";
 
 ensureTrackPrompts({ base: ROOT });
 const watcher = watchTrackPrompts({ base: ROOT });
 
 const child = spawn(NEXT_BIN, ["dev", ...process.argv.slice(2)], {
   cwd: ROOT,
+  shell: process.platform === "win32",
   env: {
     ...process.env,
     NEXT_IGNORE_INCORRECT_LOCKFILE: "1",
@@ -33,4 +34,10 @@ child.on("exit", (code, signal) => {
   watcher.close();
   if (signal) process.kill(process.pid, signal);
   process.exit(code ?? 0);
+});
+
+child.on("error", (error) => {
+  watcher.close();
+  console.error(error.message);
+  process.exit(1);
 });

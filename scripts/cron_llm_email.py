@@ -287,14 +287,28 @@ def send_email(subject, body_text):
         with smtplib.SMTP_SSL(host, port, context=ssl.create_default_context(), timeout=30) as smtp:
             if username or password:
                 smtp.login(username or "", password or "")
-            smtp.send_message(msg)
+            return smtp.send_message(msg)
     else:
         with smtplib.SMTP(host, port, timeout=30) as smtp:
             if smtp_bool("SMTP_USE_TLS", default=True):
                 smtp.starttls(context=ssl.create_default_context())
             if username or password:
                 smtp.login(username or "", password or "")
-            smtp.send_message(msg)
+            return smtp.send_message(msg)
+
+
+def smtp_test():
+    stamp = dt.datetime.now().strftime("%Y%m%d-%H%M%S")
+    subject = f"SMTP test {stamp}"
+    body = (
+        "This is a YOWOW SMTP delivery test.\n"
+        "If you received this message, SMTP authentication and basic delivery work.\n"
+        f"Timestamp: {stamp}\n"
+    )
+    refused = send_email(subject, body)
+    if refused:
+        raise SystemExit(f"SMTP refused recipients: {refused}")
+    write_line(f"SMTP test accepted by server. Search Gmail for: {subject}")
 
 
 def selftest():
@@ -353,11 +367,15 @@ def main():
     parser.add_argument("--max-picks", type=int, default=3, help="Max non-skip picks per account.")
     parser.add_argument("--dry-run", action="store_true", help="Print the email and do not send SMTP.")
     parser.add_argument("--no-llm", action="store_true", help="Render a deterministic fallback email without calling LLM.")
+    parser.add_argument("--smtp-test", action="store_true", help="Send a minimal SMTP test email without LLM or project data.")
     parser.add_argument("--selftest", action="store_true")
     args = parser.parse_args()
 
     if args.selftest:
         sys.exit(selftest())
+    if args.smtp_test:
+        smtp_test()
+        return
 
     boards = load_latest_boards(split_csv(args.accounts), max_picks_per_account=args.max_picks)
     email = build_email(args.date, boards, use_llm=not args.no_llm)
@@ -368,7 +386,9 @@ def main():
         write_line(email["body_text"])
         return
 
-    send_email(email["subject"], email["body_text"])
+    refused = send_email(email["subject"], email["body_text"])
+    if refused:
+        raise SystemExit(f"SMTP refused recipients: {refused}")
     write_line(f"Sent cron LLM email to {os.environ.get('EMAIL_TO')}")
 
 

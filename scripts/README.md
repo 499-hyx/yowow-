@@ -7,6 +7,7 @@
 | 脚本 | 用途 |
 |---|---|
 | `status.py` | 跑前 `--preflight` 和跑后 full status |
+| `generate_hotspot_pool.py` | 用 `/ops` 同源热点提示词调用 LLM，写公共热点池和赛道热点池 |
 | `make-prompt.py` | 读取账号、赛道、热点，生成 match/generate 提示词 |
 | `answer.py` | 可选：调用外部模型自动回答 prompt，写 `_inbox` |
 | `cron_llm_email.py` | 可选：给 crond 调用，读最新内容、调用 LLM 生成摘要并发邮件 |
