@@ -7,11 +7,16 @@
     "node": "20.x"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node scripts/dev-with-track-prompts.mjs",
+    "build": "node scripts/ensure-track-prompts.mjs && node scripts/next-with-env.mjs build",
+    "start": "node scripts/next-with-env.mjs start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "ensure:track-prompts": "node scripts/ensure-track-prompts.mjs",
+    "validate:configs": "node scripts/validate-configs.mjs",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "test:e2e": "playwright test",
+    "test:golden": "node --test test/p0-maintainable.test.mjs test/golden-adaptation.test.mjs"
   },
   "dependencies": {
     "next": "14.2.35",
@@ -19,6 +24,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "@types/node": "^20.19.0",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",

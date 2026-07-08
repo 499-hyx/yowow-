@@ -1,17 +1,14 @@
-// T-M4.0 · 适配系统前端共享类型（typecheck 级骨架，待部署接 API/DB）
+// 适配系统前端共享类型。
 //
-// 这里的 TS 类型是前端组件的**契约镜像**——字段以 adaptation-core/schemas/*.json 为最终真理，
-// 本文件只是把它们翻成 TS 形状给 onboarding / 今日推荐 组件用。
-// 服务端契约对应：lib/onboarding.mjs（7 问→AccountProfile）、scripts/daily_recommend.py
-// （排序+为什么推）、scripts/first_content.py（首条内容）、scripts/feedback_store.py（六维反馈）。
+// 这里的 TS 类型是页面/API/组件的契约镜像。当前 MVP 的事实源是 data/ + config/；
+// 正式安装 today/latest 只走 scripts/ingest.py。本文件不是 schema 真理源，也不包含推荐/生成逻辑。
 //
 // I3 红线：任何会渲染给用户的字符串，绝不出现内部术语/分数名。组件只展示「热点一句话 +
 // 为什么推（人话，服务端 explain_recommendation 算好）+ 推荐度」，不甩 relevance/naturalness 分。
 
 export type Recommendation = "strong_pick" | "maybe" | "skip";
-export type AccountStatus = "onboarding" | "active" | "paused";
 
-// 对外绝对禁词 + 分数名（与 daily_recommend.INTERNAL_OR_SCORE 同源）——客户端兜底自检用
+// 对外绝对禁词 + 分数名（与 config/global-gate.json 同源）——客户端兜底自检用
 // 注：「大跨度联想」按博士 2026-06 批注解禁外显，已从禁词移除。
 export const INTERNAL_OR_SCORE: string[] = [
   "远迁移", "far transfer", "OOD", "in-distribution", "范式转移",
@@ -61,8 +58,12 @@ export type AdaptationOutput = {
   chosen_path_id?: string | null;
   content?: AdaptationContent | null;
   external_terms_check?: boolean;
-  /** 给老板的发布前提醒（后台产生，前端按视角展示），如「争议大，发布前交博士收口」 */
+  /** 给老板的发布前提醒（后台产生，前端按视角展示），如「争议大，发布前确认边界」 */
   risk_note?: string | null;
+  /** 工程内测标记：非正式赛道产物带这些字段，避免被误当对外上线。 */
+  needs_human_review?: boolean;
+  formal_approval?: boolean;
+  mvp_internal_only?: boolean;
   // relevance_score / naturalness_score 故意不放进前端视图模型：界面绝不展示分数（I3/I4）。
 };
 
@@ -75,10 +76,9 @@ export type AccountProfile = {
   platform_id: string;
   positioning_id: string;
   daily_quota?: number;
-  status: AccountStatus;
 };
 
-// ── 今日板视图模型（daily_recommend.rank_and_assemble 的输出形状）──
+// ── 今日板视图模型（scripts/ingest.py 安装后的展示形状）──
 export type DailyBoard = {
   picks: AdaptationOutput[];
   also_ran: AdaptationOutput[];

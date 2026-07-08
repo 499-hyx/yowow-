@@ -1,3 +1,8 @@
+// display-text.ts — 用户可见文案的最后一道“人话化”转换。
+//
+// 目的：避免后台术语、专业缩写、内部判断词直接裸露到页面。
+// 这不是正式禁词闸门；正式安装闸门在 scripts/ingest.py。
+
 const DISPLAY_REPLACEMENTS: Array<[RegExp, string]> = [
   [/须部假性毛囊炎\s*\/\s*内生发与红肿/g, "剃须后红肿、内生发和小疙瘩"],
   [/经皮水分流失\s*TEWL\s*与角质层屏障/g, "皮肤锁水和角质层屏障"],

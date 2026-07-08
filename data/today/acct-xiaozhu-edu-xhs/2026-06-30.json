@@ -1,0 +1,1416 @@
+{
+  "account": {
+    "account_id": "acct-xiaozhu-edu-xhs",
+    "tenant_id": "tenant-xiaozhu",
+    "display_name": "小猪 · 教育小红书号",
+    "track_id": "education-yowow",
+    "platform_id": "xiaohongshu",
+    "positioning_id": "expert"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-20260630-track-001",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "未来五年教育规划把人工智能全学段教育、AI 素养和问题解决能力放进教育框架。",
+            "real_problem": "家长容易把 AI 教育简化成报课、学工具、刷项目，却不清楚孩子到底该长出什么能力。",
+            "track_relation": "这正是儿童 AI 教育账号的核心议题：小学阶段要先训练提问、推理、表达和判断。",
+            "product_value_support": "这条讲法直接支撑孩子在陌生场景重新抓结构、建立连接、迁移经验的能力。",
+            "platform_expression": "适合做小红书政策转译笔记：规划不是催你报 AI 课，而是提醒你换教育目标。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "媒体把规划重点提炼为 AI 全学段教育，家长群开始讨论 AI 课和科学素养。",
+            "real_problem": "家庭不知道该让孩子学编程、用工具，还是练通用学习能力。",
+            "track_relation": "账号可以站在专家型角度区分工具熟练、AI 素养和真实问题解决。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要，让家长看到 AI 学习不等于按钮熟练。",
+            "platform_expression": "可落成 3 层能力清单，便于收藏。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "政策文本强调科学素养、批判性思维、提出问题和解决问题。",
+            "real_problem": "很多家庭仍用旧学习方式理解新要求，把新能力做成新的机械训练。",
+            "track_relation": "儿童 AI 教育需要帮助家长完成认知升级，从标准答案导向转到问题结构导向。",
+            "product_value_support": "这条讲法支持产品价值：通过亲子提问和 AI 协作训练真实理解。",
+            "platform_expression": "适合写成“家长别误读 AI 教育”的冷静分析。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "把 AI 全学段教育转译成小学家长能做的能力准备。",
+          "title": "AI 全学段来了，小学家长先别急着报课",
+          "body_or_script": "最近《教育发展“十五五”规划》引发很多家长讨论：AI 进全学段教育，孩子是不是必须马上学 AI 课？\n\n我反而建议先冷静一点。政策真正提醒我们的，不是把孩子变成更早熟的工具使用者，而是学习能力的目标变了。\n\n小学阶段最关键的不是会点多少按钮，而是 3 件事：\n\n① 会提出问题：不是只问答案，而是问条件、原因、证据。\n② 会判断结果：AI 说得顺，不代表一定对。\n③ 会迁移经验：这次学到的方法，下次换个场景还能用。\n\n很多家长的误区，是把 AI 教育做成新的技能打卡。孩子会生成图片、会写提示语，不等于真正会学习。\n\n今天就能做一个小练习：让孩子问 AI 一个科学问题，再追问它“依据是什么”“有没有反例”“我能怎么验证”。\n\n这就是人机结合。AI 给材料，孩子练结构；AI 给答案，孩子练判断。会提问比会答更重要，这才是 AI 时代学习能力的起点。"
+        },
+        "external_terms_check": true,
+        "risk_note": "政策解读需避免夸大落地速度，不写成所有小学马上统一开设 AI 课程。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-001",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "AI 代理开始承担半小时、一小时甚至更长的人类工作，用户从提问者变成任务编排者。",
+            "real_problem": "未来稀缺的不是只会问一句 AI，而是能拆任务、设标准、看结果、做验收。",
+            "track_relation": "小学家长关心孩子未来竞争力，这个趋势能直接转译成孩子该练的任务思维。",
+            "product_value_support": "这条讲法支撑孩子在陌生目标下重新抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书强钩子：未来不是会问 AI，而是会给 AI 派任务。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "多代理协作让个人生产力从人自己干，转向人调度工具完成。",
+            "real_problem": "如果孩子只等答案，就会错过更重要的能力：定义目标和判断质量。",
+            "track_relation": "儿童 AI 教育可以从提示词教学升级为任务拆解、过程监控和结果复盘。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要，但更进一步是会追问、会验收。",
+            "platform_expression": "可做成 4 步亲子练习：目标、任务、标准、复盘。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "技术圈讨论 AI 代理进入真实工作流。",
+            "real_problem": "工作评价标准从执行速度转向任务设计、协作和责任承担。",
+            "track_relation": "小学阶段不必职业化训练，但可以从生活任务中练计划和验收。",
+            "product_value_support": "这条讲法自然支撑 YOWOW 的能力结构：孩子遇到新任务能自己组织方法。",
+            "platform_expression": "适合写成家长认知升级帖，不制造职业恐慌。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 代理时代，孩子要从问答案转向会拆任务。",
+          "title": "未来孩子不是会问 AI，而是会派任务",
+          "body_or_script": "最近 OpenAI 的 Codex 数据引发讨论：越来越多用户把半小时、一小时以上的工作交给 AI 代理。\n\n这说明 AI 的角色正在变：它不只是回答问题，而是开始承接任务。\n\n对小学家长来说，这件事真正重要的不是“孩子以后会不会被 AI 替代”，而是：孩子能不能把一个复杂目标拆成清楚的小任务。\n\n未来更重要的 4 个能力是：\n\n① 说清目标：我到底要完成什么？\n② 拆成步骤：先做什么，后做什么？\n③ 设定标准：怎样算做好？\n④ 检查结果：AI 给的东西哪里可靠，哪里要改？\n\n家长今天就能练。比如让孩子计划一次周末出游，不要直接让 AI 给路线，而是先让孩子写目标：预算、时间、成员、偏好，再请 AI 给方案，最后自己比较。\n\n这就是 AI 时代学习能力：不是把脑子交给工具，而是用工具放大自己的结构感和判断力。\n\n会提问比会答更重要；接下来，会验收比会生成更重要。"
+        },
+        "external_terms_check": true,
+        "risk_note": "OpenAI 数据来自自有平台，长任务估算不等于全部高质量完成；表达需避免推导为短期岗位恐慌。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-005",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "美国多地家长反对生成式 AI 快速进入 K-12 学校，要求更清晰的证据、边界和缓冲。",
+            "real_problem": "家长真正纠结的是：孩子需要 AI 素养，但基础思考、阅读、表达和注意力不能被过早外包。",
+            "track_relation": "这正是儿童 AI 教育的核心矛盾：不是反 AI，也不是迷信 AI，而是按阶段陪孩子用。",
+            "product_value_support": "这条讲法支撑人机结合：AI 参与学习，但孩子必须保留提问、判断和表达。",
+            "platform_expression": "适合小红书高共鸣标题：孩子用 AI，先分年龄和任务。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "学校推动 AI 工具，家长组织担心儿童成为教育科技试验对象。",
+            "real_problem": "AI 进入课堂缺少清晰边界时，家长会在落后焦虑和伤害担忧之间摇摆。",
+            "track_relation": "账号可以给小学家长一套家庭判断框架。",
+            "product_value_support": "这条讲法支撑家长认知升级：不是跟风，而是看孩子是否还在主动思考。",
+            "platform_expression": "可做成“3 种情况适合用 AI，3 种情况先不用”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "争议从要不要学 AI，升级为几岁、怎么学、凭什么学。",
+            "real_problem": "很多家庭缺少阶段性原则，把低龄儿童和高年级孩子混在一起讨论。",
+            "track_relation": "儿童 AI 教育需要按发展阶段设计亲子提问、工具使用和核验任务。",
+            "product_value_support": "这条讲法能支撑产品价值：让孩子逐步形成陌生场景下的结构感和判断力。",
+            "platform_expression": "适合专家型冷静分析，不站队不恐吓。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 进课堂争议下，家庭如何按阶段陪孩子用 AI。",
+          "title": "孩子用 AI，不是越早越好，也不是越禁越好",
+          "body_or_script": "美国一些家长反对生成式 AI 快速进课堂，担心孩子把思考过早交给工具。这个争议很有价值：问题不是要不要 AI，而是几岁、怎么用、用来做什么。\n\n我给小学家长一个简单原则：\n\n低年级先保基础：阅读、表达、计算、注意力、真实交流。AI 可以偶尔陪问答，但不要替孩子完成理解。\n\n中高年级可以练协作：让 AI 帮查资料、列角度、模拟对话，但孩子必须自己复述、比较、判断。\n\n所有年龄都要守底线：隐私信息不输入，情绪和安全问题先找可信任的大人，AI 答案必须核验。\n\n家长常见误区，是在“全禁”和“全放开”之间摇摆。\n\n真正的人机结合，是 AI 给材料，孩子练思考；AI 给建议，孩子学判断；AI 给表达样例，孩子形成自己的语言。\n\nAI 时代学习能力，不是把孩子变成工具使用高手，而是让他在工具面前依然能提出问题、讲清理由、承担选择。"
+        },
+        "external_terms_check": true,
+        "risk_note": "儿童认知影响仍需长期研究，不宜把 AI 教育简单描述为有害或必然有益。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-002",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "Gemini 把电脑操作能力内置到模型，让 AI 可以看屏幕、推理并执行跨软件操作。",
+            "real_problem": "未来孩子接触的不是单个聊天工具，而是能行动的系统，安全、权限和结果核验会更重要。",
+            "track_relation": "儿童 AI 教育不能只教孩子怎么问，还要教孩子数字安全和工具边界。",
+            "product_value_support": "这条讲法支撑孩子在复杂数字场景中重新判断规则、建立连接、迁移生活常识。",
+            "platform_expression": "适合小红书家长提醒：AI 会操作电脑后，孩子要先懂 3 个安全边界。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "AI 代理从网页演示走向桌面和真实软件环境。",
+            "real_problem": "家长容易只看到自动化便利，忽略误操作、授权和隐私风险。",
+            "track_relation": "小学阶段使用 AI 应从安全意识开始，而不是过早追求复杂自动化。",
+            "product_value_support": "这条讲法支撑人机结合：AI 能做事，但人要负责授权、检查和决定。",
+            "platform_expression": "可写成“孩子用 AI，不要轻易点授权”的实用清单。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "主流模型开始具备看、推理、行动的能力。",
+            "real_problem": "当 AI 能行动，孩子如果只会下指令，可能不知道后果如何产生。",
+            "track_relation": "儿童 AI 教育需要训练孩子从结果回看过程，理解每一步操作的风险。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要，也要会暂停、会确认、会复盘。",
+            "platform_expression": "适合做家长科普：AI 能动手后，孩子更要学会按暂停键。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 会操作电脑后，孩子更需要安全和核验意识。",
+          "title": "AI 会操作电脑后，孩子先学这 3 件事",
+          "body_or_script": "Google 让 Gemini 具备更强的电脑操作能力，这类 AI 不只是聊天，而是可能看屏幕、点按钮、跨软件完成任务。\n\n家长听到这里，别只想到“以后更方便”。对孩子来说，越能行动的 AI，越需要边界。\n\n我建议先教 3 件事：\n\n① 授权前停一下：账号、相册、文件、支付，都不能随便交给 AI。\n② 操作前说后果：点这个按钮，会不会删除、发送、购买、公开？\n③ 结果后要核验：AI 做完了，不等于做对了。\n\n这背后不是技术课，而是数字世界里的判断力。\n\n孩子未来面对的会是很多 AI 工具。真正重要的，不是他能不能喊 AI 做事，而是他能不能在陌生界面里重新抓结构：谁在请求权限？它要访问什么？我能否撤回？出错谁负责？\n\nAI 时代学习能力，一定包括安全意识。人机结合不是人让位给机器，而是人清楚地决定：什么时候让 AI 做，什么时候必须自己确认。"
+        },
+        "external_terms_check": true,
+        "risk_note": "官方能力不等于所有真实场景稳定可用，需避免夸大；注意提示注入、权限和误操作风险表述。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-011",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "英国童军新增内容创作、数字沟通和网络安全等面向 AI 与数字时代的技能徽章。",
+            "real_problem": "青少年的基础生活能力正在变化，数字安全、数字身份和负责任表达变得像传统生活技能一样重要。",
+            "track_relation": "小学家长需要把 AI 安全和数字素养放进日常亲子教育，而不是等出问题后再禁止。",
+            "product_value_support": "这条讲法支撑孩子在数字场景中抓结构、建边界、迁移生活判断。",
+            "platform_expression": "适合小红书收藏帖：AI 时代，孩子要补 4 个数字生存技能。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "非学校青少年组织也开始把 AI 和数字技能纳入能力培养。",
+            "real_problem": "AI 素养不再只是兴趣班，而是生活和学习中的通识能力。",
+            "track_relation": "儿童 AI 教育正好可以提供家庭版的阶段性陪伴方法。",
+            "product_value_support": "这条讲法支撑陪孩子用 AI：安全、表达、判断、核验一起训练。",
+            "platform_expression": "可写成“别等学校教，家里先练这些”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "技能徽章更新参考青少年意见，承认数字工具已成为生活一部分。",
+            "real_problem": "家长只讲网络危险，孩子却还需要学会有效、负责地使用工具。",
+            "track_relation": "AI 接近派立场：不是禁，而是教会孩子正确接近。",
+            "product_value_support": "这条讲法支撑人机结合和家长认知升级。",
+            "platform_expression": "适合冷静科普，不贩卖恐慌。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 与数字安全成为孩子基础生活能力。",
+          "title": "AI 时代，孩子要补 4 个数字生存技能",
+          "body_or_script": "英国童军更新技能徽章，把内容创作、数字沟通、网络安全等放进青少年能力培养里。\n\n这个信号很清楚：孩子未来的“生存技能”，不只有生火、打结、户外合作，也包括数字世界里的判断和边界。\n\n小学家长可以先教 4 件事：\n\n① 数字足迹：发出去的内容，可能被保存、截图、传播。\n② 隐私边界：真实身份、学校、地址、照片，不能随便交给平台或 AI。\n③ 内容判断：看到一段话，不先信，先问来源和证据。\n④ 负责表达：用 AI 写出来的内容，也要自己理解、自己承担。\n\n很多家长只会说“别玩手机”“别用 AI”，但孩子真正需要的是方法。\n\nAI 时代学习能力，不是远离数字世界，而是在数字世界里能重新抓结构：我在和谁互动？我留下了什么？我能不能验证？我有没有伤害别人？\n\n家长认知升级，就是从事后禁止，变成提前教会孩子判断。"
+        },
+        "external_terms_check": true,
+        "risk_note": "英国童军案例不能直接代表全球教育体系，技能徽章实际效果需要长期观察。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-006",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "学校接入大量第三方教学和管理 App，儿童和家庭敏感数据进入复杂供应链。",
+            "real_problem": "家长习惯只问 App 好不好用，却很少问它收集什么、保存多久、谁能访问。",
+            "track_relation": "儿童 AI 教育不能只谈学习效率，也要谈数字监护和隐私边界。",
+            "product_value_support": "这条讲法支撑孩子在数字场景中重新识别规则、建立安全连接、迁移隐私常识。",
+            "platform_expression": "适合小红书收藏清单：学校 App 和 AI 工具，家长要问 5 个问题。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "教育数字化便利背后出现儿童隐私和采购治理问题。",
+            "real_problem": "学校、家长和孩子都可能在效率提升中忽略数据后果。",
+            "track_relation": "小学阶段正适合建立基本数字权利意识。",
+            "product_value_support": "这条讲法能支撑陪孩子用 AI：使用工具前先看权限和信息边界。",
+            "platform_expression": "可做成家长认知升级型笔记，不恐吓但提醒。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "学校数字工具可能涉及学业、心理、支付、身份等多类信息。",
+            "real_problem": "儿童数据一旦分散，家长很难知道风险在哪里。",
+            "track_relation": "AI 时代学习能力包含信息安全和自我保护。",
+            "product_value_support": "这条讲法支撑产品价值：孩子不仅会用工具，也会判断工具是否合适。",
+            "platform_expression": "适合用“孩子上学为什么要交这么多信息”做开头。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "学校 App 与 AI 工具背后的儿童数据边界。",
+          "title": "学校 App 好不好用之外，家长还要问 5 句",
+          "body_or_script": "最近澳大利亚学校 App 的审计讨论，把一个容易被忽略的问题摆出来：教育数字化很方便，但孩子和家庭的数据，也可能被带进复杂的第三方系统。\n\n这和我们每个小学家长都有关。因为 AI 学习工具、班级 App、打卡平台越来越多。\n\n家长不能只问“好不好用”，还要问 5 句：\n\n① 它收集孩子哪些信息？\n② 是否包含照片、声音、位置、健康或家庭信息？\n③ 数据保存多久？\n④ 谁能访问？\n⑤ 不授权会不会影响正常学习？\n\n这不是反对技术，而是数字监护意识。\n\n孩子也要慢慢学会：不是所有弹窗都点同意，不是所有问题都能填真实信息，不是所有 AI 工具都适合输入私人内容。\n\nAI 时代学习能力，不只是会查资料、会生成答案，也包括在陌生数字场景里判断边界。\n\n家长认知升级，就是从“工具能不能帮我省事”，多走一步到“它会不会让孩子交出太多信息”。"
+        },
+        "external_terms_check": true,
+        "risk_note": "不同学校和应用风险差异很大，不能泛化为所有教育软件都有严重问题；报道细节需核对审计原文。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-003",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "网友把 AI 当树洞倾诉后，突然意识到内容可能触发平台审核，于是产生隐私和尴尬焦虑。",
+            "real_problem": "很多人把 AI 误认为绝对私密、绝对无后果的对象，缺少基本的数字边界意识。",
+            "track_relation": "小学家长正在让孩子接触 AI，最先要教的不是技巧，而是什么能说、什么不能说、什么需要先问大人。",
+            "product_value_support": "这条讲法能支撑孩子在陌生数字场景里重新判断规则、建立安全边界、迁移生活经验。",
+            "platform_expression": "落成小红书家长向清单：孩子用 AI 前，先教 3 条隐私边界。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "用户以为只有机器看见自己的秘密，后来发现平台治理规则可能介入。",
+            "real_problem": "人们混淆了“像朋友一样聊天”和“真实朋友关系”，把情绪托付给了不完全理解的系统。",
+            "track_relation": "孩子使用 AI 时，也容易把它当成万能朋友或无压力老师，需要家长帮孩子理解人机关系。",
+            "product_value_support": "这条讲法能自然引出人机结合：AI 可以陪练表达，但不能替代真实关系和真实判断。",
+            "platform_expression": "适合写成温和提醒型笔记：别急着禁 AI，先陪孩子认识 AI 的边界。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "评论区大量用户回忆自己曾向 AI 说过情绪、身体和关系问题。",
+            "real_problem": "普通人有强烈倾诉需求，但并不知道哪些问题适合交给 AI，哪些需要真人支持。",
+            "track_relation": "小学阶段孩子更需要学会区分问题类型：事实问题、学习问题、情绪问题和安全问题。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要，让孩子先判断问题性质，再选择工具或求助对象。",
+            "platform_expression": "可做成收藏型卡片：孩子问 AI 前，先分清 4 类问题。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "孩子用 AI 前，先建立隐私和边界意识。",
+          "title": "孩子把 AI 当树洞？先教这 3 条边界🔐",
+          "body_or_script": "最近大家讨论“把 AI 当树洞后突然社死”，本质不是反对 AI，而是很多人第一次意识到：AI 聊天不是完全没有边界的私人房间。\n\n这件事和小学家长很有关。因为孩子用 AI 时，最容易犯的错不是不会提问，而是把 AI 当成“什么都能说、什么都能信、什么都能替我决定”的对象。\n\n我会先教孩子 3 句话：\n\n① 真实姓名、学校、住址、电话，不输入。\n② 身体不舒服、被欺负、很难过，先找可信任的大人。\n③ AI 给建议，可以参考，但最后要和人讨论。\n\n这背后训练的不是防备心，而是在陌生场景重新抓结构：我面对的是什么系统？它有什么规则？我的信息会不会产生后果？\n\n家长不要只说“别用 AI”，也不要放任孩子随便聊。更好的方式，是陪孩子用 AI，把一次提问变成一次判断练习。\n\nAI 时代学习能力，不是把答案问出来，而是知道哪些问题该问 AI，哪些问题必须回到真实的人和真实的生活里。你家孩子用 AI 时，最常问哪类问题？"
+        },
+        "external_terms_check": true,
+        "risk_note": "涉及平台审核机制时，发布前需核对官方隐私规则，避免写成所有聊天都会被真人查看。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-track-004",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "《玩具总动员5》把智能平板和传统玩具的冲突放进童年故事。",
+            "real_problem": "家长担心孩子被屏幕吸走注意力，同时又离不开科技辅助学习和陪伴。",
+            "track_relation": "儿童 AI 教育可以把屏幕管理从简单禁止，转为区分被动娱乐和主动学习。",
+            "product_value_support": "这条讲法支撑孩子在不同媒介中建立连接、迁移经验，而不是被即时反馈牵着走。",
+            "platform_expression": "适合小红书暑假亲子观影切入：看完电影，和孩子聊 3 个问题。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "电影用传统玩具失宠表现数字时代童年的变化。",
+            "real_problem": "家长容易把科技和真实玩耍对立起来，却没有看到关键在互动质量。",
+            "track_relation": "AI 教育需要引导孩子从消费内容转向创造、表达和提问。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要：用 AI 不只是看结果，而是激发孩子讲故事、改故事。",
+            "platform_expression": "可写成暑假屏幕使用建议：不是全禁平板，而是让屏幕服务创造。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "暑期档亲子电影让家长重新讨论屏幕时间和真实玩耍。",
+            "real_problem": "父母常把屏幕时间只当时长管理，忽略孩子是否有主动想象、社交互动和自我调节。",
+            "track_relation": "小学阶段的 AI 使用也需要从时间限制升级到任务质量判断。",
+            "product_value_support": "这条讲法支撑产品价值：帮助孩子把观影、游戏和 AI 互动转成表达和思考。",
+            "platform_expression": "适合做成收藏型清单：屏幕使用后问孩子 4 个问题。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "借亲子电影讨论屏幕管理和主动学习。",
+          "title": "孩子总抱平板？先别只盯屏幕时间",
+          "body_or_script": "《玩具总动员5》把智能平板写成传统玩具的新对手，这个设定很容易戳中家长：孩子一拿到屏幕，就不愿意回到真实玩耍里。\n\n但我不建议把问题简单变成“屏幕一定坏”。真正要看的是：孩子在屏幕前，是被动接收，还是主动创造？\n\n同样 30 分钟，差别很大。\n\n刷短视频，是被算法牵着走；\n用 AI 改一个故事结尾，是练表达；\n看完动画后画人物关系，是抓结构；\n和家长讨论角色选择，是建立连接。\n\n所以暑假可以给孩子一个规则：屏幕之后必须有一个“输出”。可以讲给我听、画出来、改编一段、问 AI 三个问题。\n\n教育误区不是用了平板，而是让孩子只消费、不思考。\n\nAI 时代学习能力，不是远离所有工具，而是知道怎么让工具服务自己的想象、表达和判断。\n\n看完亲子电影后，你会问孩子剧情，还是只问好不好看？"
+        },
+        "external_terms_check": true,
+        "risk_note": "电影剧情不能当科学证据，讨论屏幕影响时需区分 AI 学习工具、娱乐平板和被动刷屏。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-014",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "AI 编程代理承担更多实现任务后，软件职业能力重心转向需求澄清、测试验证和系统判断。",
+            "real_problem": "写出结果变快后，真正难的是知道需求是否对、结果是否可靠、风险在哪里。",
+            "track_relation": "小学阶段的编程和 AI 学习也不应只追求做出作品，而要训练解释、测试和复盘。",
+            "product_value_support": "这条讲法支撑孩子在任务中重新抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书家长向：孩子学编程，别只看作品炫不炫。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "行业开始讨论写代码能力变便宜，验代码、看系统和负责任交付更重要。",
+            "real_problem": "很多儿童编程课只展示小程序成品，却忽略需求、测试和错误复盘。",
+            "track_relation": "儿童 AI 教育可以把编程从作品展示转向思维训练。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要：写之前问需求，写之后问验证。",
+            "platform_expression": "可写成“孩子学编程要问 4 个问题”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 生成代码更快，但是否正确、安全、满足业务仍要人负责。",
+            "real_problem": "未来孩子不能只会让 AI 生成，还要能发现漏洞、解释原因、承担修改。",
+            "track_relation": "这与小学阶段培养问题解决和结果核验直接相关。",
+            "product_value_support": "这条讲法支撑人机结合：AI 实现，人来定义、检查、复盘。",
+            "platform_expression": "适合做科技教育冷静分析，不夸大基础编码无用。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 编程代理普及后，孩子学编程要从实现转向验证。",
+          "title": "孩子学编程，别只看做出了什么",
+          "body_or_script": "最近一篇软件职业技能论文讨论：AI 代理能承担更多实现任务后，验证、系统理解和人类判断会变得更重要。\n\n放到孩子学编程上，我想提醒家长：别只看孩子做出了一个小游戏、小网页，就觉得学到位了。\n\nAI 时代，编程教育更应该问 4 件事：\n\n① 需求说清了吗？这个程序要解决什么问题？\n② 步骤能解释吗？孩子知道每部分在做什么吗？\n③ 错误能找到吗？如果运行不对，他会怎么排查？\n④ 结果能验证吗？怎样证明它真的完成了任务？\n\n家长常见误区，是只看成品炫不炫。可真正有价值的是孩子能不能讲清楚、测出来、改得动。\n\nAI 可以帮孩子写代码，但不能替孩子理解需求、发现问题、承担结果。\n\n这就是 AI 时代学习能力：用工具提高效率，同时保留自己的结构感、判断力和复盘能力。"
+        },
+        "external_terms_check": true,
+        "risk_note": "arXiv 论文尚需同行评审，不能理解为基础编码不重要；应强调实现、验证和判断都要训练。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-009",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "顶级 AI 研究者在大模型公司之间流动，行业争夺的是方向判断、实验经验和组织能力。",
+            "real_problem": "AI 降低普通执行成本后，真正稀缺的是问题选择、证据判断、长期专注和带队协作。",
+            "track_relation": "这能转译给小学家长：孩子不能只训练标准答案和执行，还要训练判断和表达。",
+            "product_value_support": "这条讲法支撑孩子面对陌生问题重新抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书家长认知升级：AI 越强，越要训练孩子的人类判断。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "AI 公司高价争夺能定义研究方向的人。",
+            "real_problem": "很多人误以为 AI 强了，人类能力都不值钱；实际上不同能力分化更明显。",
+            "track_relation": "儿童 AI 教育可以帮助家长区分可被工具替代的执行和更难替代的判断。",
+            "product_value_support": "这条讲法能支撑孩子未来竞争力：不是比 AI 快，而是比 AI 更会选择问题。",
+            "platform_expression": "可写成“别让孩子只做标准答案机器”的笔记。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "技术圈讨论 AI 能写代码，但谁决定做什么仍然很贵。",
+            "real_problem": "教育如果只奖励答题速度，会忽略问题定义和方向选择。",
+            "track_relation": "小学阶段可以从项目讨论、阅读提问和科学探究里练问题选择。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要，而且要问出值得问的问题。",
+            "platform_expression": "适合做 3 个家庭练习：选题、找证据、讲理由。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 越强，越要训练孩子的问题选择和判断力。",
+          "title": "AI 越强，孩子越不能只练标准答案",
+          "body_or_script": "最近 AI 实验室抢顶级研究者的新闻很热。很有意思：最会造 AI 的人，反而更贵了。\n\n这说明一件事：AI 能降低很多执行成本，但方向判断、问题选择、组织协作，仍然非常稀缺。\n\n放到孩子教育上，我最担心的不是孩子不会用 AI，而是孩子只会等标准答案。\n\n未来更重要的是：\n\n他能不能提出一个值得研究的问题？\n能不能判断证据靠不靠谱？\n能不能坚持把一个想法做完？\n能不能把自己的理由讲给别人听？\n\n这些能力，小学就能练。\n\n比如读完一篇文章，不只问中心思想。可以问孩子：你最想追问哪个问题？你需要什么证据？如果让 AI 帮你查，你会怎么问？查完后你信不信，为什么？\n\n这就是 AI 时代学习能力。AI 可以帮孩子找到信息，但不能替孩子选择方向。\n\n会提问比会答更重要，而更进一步，是会选问题、会看证据、会形成自己的判断。"
+        },
+        "external_terms_check": true,
+        "risk_note": "人才流动原因复杂，不能简单归因于薪酬或单一技术预期；避免放大个别明星效应。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-012",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "毕业生面对学校限制 AI、雇主要求 AI 的双重规则。",
+            "real_problem": "AI 使用能力已成基础，但真实思考、沟通和可信证明更难展示。",
+            "track_relation": "小学家长可提前理解：孩子不能只会用 AI 生成内容，还要能讲清自己的经历和判断。",
+            "product_value_support": "这条讲法支撑孩子在陌生评价场景中抓结构、建立表达、迁移经验。",
+            "platform_expression": "适合小红书家长提醒：AI 能写材料，孩子要会口头讲清楚。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "求职材料被 AI 写得越来越相似，雇主更难识别真实能力。",
+            "real_problem": "模板化表达会变便宜，真实故事、反思和沟通能力更珍贵。",
+            "track_relation": "儿童 AI 教育应从小训练孩子用自己的语言解释过程。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要，也要会复述和表达。",
+            "platform_expression": "可写成“孩子用 AI 写作文后，必须能回答 3 个问题”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "学校、招聘和平台对 AI 的规则不一致。",
+            "real_problem": "孩子未来会在多套规则之间切换，需要边界意识和自我证明能力。",
+            "track_relation": "小学阶段就要练任务说明、过程记录和结果核验。",
+            "product_value_support": "这条讲法能自然连接 AI 时代学习能力和孩子未来竞争力。",
+            "platform_expression": "适合专家型趋势分析，落脚到家庭练习。"
+          }
+        ],
+        "chosen_path_id": "p2",
+        "content": {
+          "topic": "AI 生成内容变多后，孩子更要会讲清自己的思考。",
+          "title": "AI 能写作文，孩子更要会讲过程",
+          "body_or_script": "最近有媒体讨论毕业生的 AI 双重标准：学校担心 AI 是作弊，雇主却希望新人会用 AI。更尴尬的是，很多简历和求职信被 AI 写得越来越像。\n\n这件事对小学家长很有启发：AI 能生成漂亮材料，但真正能证明孩子能力的，是他能不能讲清过程。\n\n所以孩子用 AI 写作文、做报告后，我建议一定追问 3 句：\n\n① 这段内容里，哪些是你自己的想法？\n② AI 给你的建议，你保留了什么，删掉了什么？\n③ 如果不用这段话，你还能怎么表达？\n\n这不是为难孩子，而是在保护他的真实表达。\n\n家长常见误区，是看到成品变好，就以为学习变好。可如果孩子讲不出选择和修改理由，能力并没有真正长出来。\n\nAI 时代学习能力，不是把表达变得更像模板，而是借助 AI 看见更多可能，再形成自己的语言。\n\n会提问比会答更重要；会生成之后，更要会解释、会判断、会负责。"
+        },
+        "external_terms_check": true,
+        "risk_note": "不同学校和雇主对 AI 使用规则差异很大，不宜把学生使用 AI 一概定义为作弊或偷懒。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-track-003",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "香港学与教博览首设家长高峰会，把 AI 素养、未来技能和家庭支援放进亲子教育议题。",
+            "real_problem": "AI 教育正在从学校走向家庭，但家长不知道怎样在家里陪孩子正确使用 AI。",
+            "track_relation": "这与儿童 AI 教育账号高度相关，能直接讨论亲子场景中的 AI 使用边界和能力培养。",
+            "product_value_support": "这条讲法支撑陪孩子用 AI：不是交给工具，而是用工具训练提问、判断和表达。",
+            "platform_expression": "适合写成趋势转译帖：AI 教育不只是学校的事，家里要先改 3 个习惯。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "展会集中展示 AI 教学、适性评估和未来教室。",
+            "real_problem": "行业容易把焦点放在工具展示，家长真正关心的是孩子有没有更会学习、更能自我管理。",
+            "track_relation": "账号可以区分技术热闹和孩子能力增长。",
+            "product_value_support": "这条讲法支撑产品价值：看 AI 产品不能只看功能，要看是否促成孩子主动思考。",
+            "platform_expression": "可写成家长选 AI 学习工具的 4 个问题。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 素养被和心理健康、家庭支持放在同一场景中讨论。",
+            "real_problem": "孩子用 AI 不只是学习效率问题，还涉及注意力、依赖、真实关系和自我调节。",
+            "track_relation": "儿童 AI 教育必须把工具使用放回亲子互动和生活任务中。",
+            "product_value_support": "这条讲法能自然连接人机结合：AI 能辅助演练，但孩子要回到真实表达和真实行动。",
+            "platform_expression": "适合做成“AI 进家庭后，家长别只盯成绩”的小红书笔记。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 教育从学校走向家庭后，家长该怎么陪孩子用 AI。",
+          "title": "AI 教育进家庭，家长先改 3 个习惯",
+          "body_or_script": "香港学与教博览今年首设家长高峰会，把 AI 素养、未来技能、亲子教育放在一起讨论。\n\n这个信号很明显：AI 教育已经不只是学校和老师的事，它一定会进入家庭日常。\n\n但家长最容易走偏的地方，是把 AI 当成新的“学习外包”：孩子不会，就问 AI；作业卡住，就让 AI 给答案。\n\n我更建议改 3 个习惯：\n\n① 不问“AI 答案是什么”，改问“你准备怎么问”。\n② 不看“生成得快不快”，改看“孩子能不能解释”。\n③ 不把 AI 当保姆，改成亲子一起验证。\n\n孩子真正需要的，是面对陌生问题时，能重新抓结构、建立连接、迁移经验。\n\n比如孩子问 AI 写作文，不要只看成文。可以让他追问：这个开头为什么吸引人？有没有别的写法？哪些句子像我自己的表达？\n\n这才是人机结合。AI 提供材料，孩子练判断；AI 扩展思路，家长陪他把思路落回真实表达。\n\n你家现在用 AI，是查答案多，还是一起讨论多？"
+        },
+        "external_terms_check": true,
+        "risk_note": "香港教育场景与内地政策环境不同，不能直接等同；展会信息也需避免替具体产品背书。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-007",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "高考志愿填报服务被 AI 工具改造成低成本、可规模化的家庭决策辅助。",
+            "real_problem": "信息差被压缩后，真正难的是孩子和家庭如何做价值排序、风险判断和长期取舍。",
+            "track_relation": "小学家长可提前理解：AI 能给选项，不能替孩子形成自我认知和判断力。",
+            "product_value_support": "这条讲法支撑孩子在复杂选择场景中抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书教育趋势帖：AI 志愿工具火了，给小学家长的启发。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "AI 志愿工具能快速生成报告，家长既兴奋又没底。",
+            "real_problem": "AI 给方案容易，家庭承担后果难，决策不能只看生成结果。",
+            "track_relation": "儿童 AI 教育需要强调结果核验和价值排序。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要：会问 AI，也要会追问依据和限制。",
+            "platform_expression": "可写成“重大决策用 AI 的 4 个步骤”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "高价志愿咨询的信息整合功能被 AI 大幅降低成本。",
+            "real_problem": "当信息变便宜，判断力、自我理解和家庭沟通变得更贵。",
+            "track_relation": "小学阶段就该培养孩子表达偏好、比较选择、解释理由。",
+            "product_value_support": "这条讲法自然连接孩子未来竞争力：不是等高考才开始认识自己。",
+            "platform_expression": "适合用志愿填报热度，转译成小学家庭日常练习。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 志愿填报工具火了，对小学家长的真正启发。",
+          "title": "AI 能填志愿，但不能替孩子认识自己",
+          "body_or_script": "最近 AI 志愿填报工具很火，免费生成报告、整合学校专业信息，确实降低了很多信息门槛。\n\n但这件事对小学家长的启发，不是“以后志愿不用管了”。恰恰相反：当信息越来越便宜，真正稀缺的是判断。\n\nAI 可以告诉你有哪些学校、哪些专业、往年数据怎样；但它不能替孩子回答：我重视什么？我能承受什么？我适合什么样的学习和生活？\n\n这些能力，不该等到高考后才练。\n\n小学阶段就可以从小选择开始：选兴趣班、做项目、安排暑假计划。每次都让孩子说 3 件事：\n\n我为什么想选？\n我担心什么？\n如果不如预期，我怎么调整？\n\n这就是在练面对复杂问题时重新抓结构、建立连接、迁移经验。\n\nAI 时代，会提问比会答更重要；重大选择里，会判断、会排序、会承担，比拿到一个漂亮报告更重要。"
+        },
+        "external_terms_check": true,
+        "risk_note": "不得把免费 AI 报告写成可替代官方招生章程、位次核验和专业限制判断；不同省份规则差异大。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-010",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "纳德拉提醒企业不能把学习能力外包给通用 AI，企业要有自己的数据、上下文和反馈闭环。",
+            "real_problem": "很多人以为用了 AI 就完成学习，其实真正的长期资产是复盘、沉淀和形成自己的判断框架。",
+            "track_relation": "这能直接转译给小学家长：孩子不能只把作业和思考交给 AI，要形成自己的学习闭环。",
+            "product_value_support": "这条讲法支撑孩子在不同问题里抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书标题：最危险的不是不用 AI，而是把学习外包给 AI。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "企业 AI 战略从买工具转向构建自己的学习系统。",
+            "real_problem": "家庭教育也容易把 AI 当工具采购，而忽略孩子是否有反馈和复盘。",
+            "track_relation": "儿童 AI 教育需要帮助家庭建立亲子提问、AI 协作、结果复盘的闭环。",
+            "product_value_support": "这条讲法自然支撑 YOWOW 的方法论：让孩子形成可带走的学习能力。",
+            "platform_expression": "可写成“孩子用 AI 后必须做的 1 步：复盘”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "企业可以外包任务，但不能外包学习。",
+            "real_problem": "孩子可以让 AI 辅助查资料，却不能让 AI 替自己总结、理解和判断。",
+            "track_relation": "这与陪孩子用 AI高度相关。",
+            "product_value_support": "这条讲法支撑人机结合：AI 做助手，孩子形成自己的知识结构。",
+            "platform_expression": "适合做家长认知升级内容，温和但有锋芒。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "孩子可以用 AI，但不能把学习闭环外包给 AI。",
+          "title": "最危险的不是不用 AI，是把学习外包给 AI",
+          "body_or_script": "纳德拉最近有个观点很值得家长听：企业可以外包任务，但不能外包学习。\n\n放到孩子身上，也一样。\n\n孩子可以用 AI 查资料、列思路、改表达；但如果总结、判断、复盘都交给 AI，最后留下来的只是一个答案，不是能力。\n\n我建议孩子每次用 AI 后，都补一个“自己的学习闭环”：\n\n① 我原来怎么想？\n② AI 给了什么新角度？\n③ 哪些我同意，哪些我要怀疑？\n④ 这次方法下次能用在哪里？\n\n这 4 个问题，比单纯拿到答案重要得多。\n\n家长常见误区，是看到孩子效率变高，就以为学习变好了。其实学习有没有发生，要看孩子能不能把新信息放进自己的理解里。\n\nAI 时代学习能力，不是把脑子省下来，而是把 AI 变成练思考的对手和助手。\n\n会提问比会答更重要；会复盘，才会真正拥有自己的东西。"
+        },
+        "external_terms_check": true,
+        "risk_note": "媒体转述需结合完整语境理解；不宜把企业自有模型简单理解为中小企业都要从零训练模型。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-008",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "部分志愿规划服务被曝光存在假专家、恐慌销售和用 AI 现查现念的问题。",
+            "real_problem": "AI 降低信息整合成本后，伪专业会被拆穿，家庭更需要判断依据和验证逻辑。",
+            "track_relation": "儿童 AI 教育可以把这件事转译成：孩子用 AI 也不能只听顺耳答案，要追问证据。",
+            "product_value_support": "这条讲法支撑孩子在陌生信息场景中抓结构、查来源、建立判断。",
+            "platform_expression": "适合小红书家长避坑：别被 AI 包装成专家，学会问依据。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "教育咨询行业的信息不透明被 AI 工具和媒体调查共同放大。",
+            "real_problem": "家长在焦虑时容易把高价和专业画等号，忽略可核验材料。",
+            "track_relation": "小学家长同样会面对各种 AI 课程和教育产品，需要学会判断服务质量。",
+            "product_value_support": "这条讲法支撑家长认知升级：从听话术转向看证据、看过程、看复盘。",
+            "platform_expression": "可写成“给孩子买 AI 课前，也问这 4 句”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 一边让基础建议变便宜，一边让真正专业的判断更突出。",
+            "real_problem": "家庭需要区分信息整理、经验判断和责任承担，不被包装话术牵着走。",
+            "track_relation": "儿童 AI 教育强调用 AI 辅助，而不是把判断外包。",
+            "product_value_support": "这条讲法能自然支撑人机结合和会提问比会答更重要。",
+            "platform_expression": "适合做成“AI 时代识别伪专业”的家长向内容。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 降低信息差后，家长和孩子都要学会追问依据。",
+          "title": "AI 现查现念也敢卖高价？家长要会问这 4 句",
+          "body_or_script": "高考志愿规划乱象被曝光后，很多家长最气的一点是：所谓专家，可能只是现场打开 AI 查一查，再包装成专业建议。\n\n这件事不只和高考有关。它提醒所有家长：AI 让信息整理变便宜，真正值钱的是判断、验证和责任。\n\n以后不管是志愿咨询，还是给孩子买 AI 课、学习产品，都可以问 4 句：\n\n① 依据来自哪里？\n② 规则是不是官方可查？\n③ 推荐逻辑是什么？\n④ 最坏情况和限制条件是什么？\n\n孩子用 AI 也一样。不要只看答案像不像专家，而要追问：证据是什么？有没有反例？我能怎么验证？\n\n家长常见误区，是焦虑时特别容易相信“包你稳”“不报就亏”这类话术。\n\nAI 时代学习能力，不是听谁说得更像权威，而是能把信息拆开、查来源、看逻辑、做判断。\n\n这也是陪孩子用 AI 最重要的一课：AI 可以给建议，但不能替我们负责。"
+        },
+        "external_terms_check": true,
+        "risk_note": "个案乱象不能代表全部正规志愿咨询；发布时避免攻击整个行业，需聚焦判断框架。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-003",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "研究显示 AI 暴露较高领域的初级岗位需求下降，高级岗位需求上升。",
+            "real_problem": "未来孩子可能面对的不是有没有工作，而是如何证明自己有真实项目、判断和协作能力。",
+            "track_relation": "小学家长虽然离就业远，但教育目标要从刷标准答案转向真实能力证据。",
+            "product_value_support": "这条讲法支撑孩子面对真实任务时抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书家长认知升级：别只问成绩，开始给孩子真实任务。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "AI 压缩低经验、模板化的初级任务。",
+            "real_problem": "可被模板化的能力会变便宜，能解决开放问题的人更有价值。",
+            "track_relation": "儿童 AI 教育应训练孩子用 AI 完成探索、验证和表达，而不是替代思考。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要，引导孩子做真实项目小闭环。",
+            "platform_expression": "可写成“AI 时代，孩子要多做真实小项目”的笔记。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "企业可能用 AI 减少基础执行成本。",
+            "real_problem": "孩子如果只会完成别人安排好的步骤，未来优势会变弱。",
+            "track_relation": "小学阶段可以通过生活、科学、表达项目训练目标感和责任感。",
+            "product_value_support": "这条讲法自然连接孩子未来竞争力：能定义任务、完成任务、讲清过程。",
+            "platform_expression": "适合做暑假项目建议清单。"
+          }
+        ],
+        "chosen_path_id": "p2",
+        "content": {
+          "topic": "从初级岗位被压缩，反推孩子要练真实任务能力。",
+          "title": "AI 时代，孩子别只练标准答案",
+          "body_or_script": "最近有研究讨论：AI 相关暴露度高的职业里，初级岗位需求下降更明显，高级岗位反而上升。\n\n这不该被写成吓人的就业恐慌。它真正提醒家长的是：越模板化、越只按步骤执行的能力，未来越容易被 AI 降低价值。\n\n那小学孩子该准备什么？不是提前职业化，而是多练真实任务。\n\n比如：\n\n做一次家庭旅行预算；\n采访爷爷奶奶的童年故事；\n观察一种植物 14 天并记录变化；\n用 AI 查资料，但自己做成一页说明。\n\n这些任务都不复杂，但会逼孩子练 4 件事：定目标、找资料、判断信息、讲清结果。\n\n家长常见误区，是只问“答案对不对”。真实世界更常问：“你为什么这样做？证据是什么？如果条件变了怎么办？”\n\nAI 可以帮孩子找材料、列方案、补充角度，但不能替孩子承担判断。\n\n孩子未来竞争力，不是比 AI 更像机器，而是能带着 AI 完成真实问题。"
+        },
+        "external_terms_check": true,
+        "risk_note": "研究基于瑞士市场，不能直接外推到所有国家；避免制造就业恐慌。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-track-002",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "长沙、杭州等地进入小升初和小一电脑派位节点，家长对结果充满不确定感。",
+            "real_problem": "家长长期投入想换确定性，但升学结果常由规则、资源和随机性共同决定。",
+            "track_relation": "小学家长需要看到：学校重要，但孩子可带走的通用学习能力更重要。",
+            "product_value_support": "这条讲法能支撑孩子面对新环境重新抓结构、建立连接、迁移经验。",
+            "platform_expression": "适合小红书家长情绪承接：派位前后，真正能准备的不是概率，而是适应力。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "家长群反复讨论派位规则、志愿策略和后续补录。",
+            "real_problem": "很多家庭把大量注意力放在不可控变量上，忽略可持续培养的孩子能力。",
+            "track_relation": "儿童 AI 教育可引导家长从择校焦虑转向学习力建设。",
+            "product_value_support": "这条讲法支撑产品价值：让孩子在不同学校、不同老师、不同任务里都能自我启动。",
+            "platform_expression": "可写成“派位后先做 3 件事”的实用清单。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "电脑派位让家庭感受到教育路径里的不可控。",
+            "real_problem": "家长常把不确定性解读成失败，却没把它当作训练孩子适应新环境的机会。",
+            "track_relation": "小学阶段正是培养孩子环境适应、提问求助和建立学习节奏的关键期。",
+            "product_value_support": "这条讲法能连接 AI 时代学习能力：面对未知，先找结构，再找方法。",
+            "platform_expression": "适合温和提醒型内容，避免制造择校恐慌。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "从电脑派位焦虑，转向孩子可带走的学习能力。",
+          "title": "派位焦虑背后，孩子真正要带走什么？",
+          "body_or_script": "这两天长沙、杭州等地进入小升初和小一电脑派位节点，很多家长都在等结果、算概率、看调剂。\n\n这种焦虑很真实。因为家长总希望长期投入能换来确定性，但派位提醒我们：孩子的成长环境里，总会有一些事不是家庭完全能控制的。\n\n所以我更想提醒小学家长：学校当然重要，但孩子真正能带走的，是换到任何环境里都能重新开始的能力。\n\n可以提前帮孩子练 3 件事：\n\n① 到新环境先观察规则：老师怎么讲、同学怎么合作、任务怎么交。\n② 遇到不会先描述问题：我哪里没懂、我试过什么、我需要什么帮助。\n③ 每周做一次复盘：这周我学会了什么方法，下周能用在哪里。\n\n这就是在陌生场景重新抓结构、建立连接、迁移经验。\n\nAI 也可以帮忙：让孩子把新学校可能遇到的问题列出来，一起演练怎么提问、怎么求助、怎么安排学习。\n\n我们不能替孩子控制所有结果，但可以帮他拥有进入新环境的底气。"
+        },
+        "external_terms_check": true,
+        "risk_note": "强地方热点，需注明不同城市规则不同，避免泛化为全国统一情况，也避免制造择校焦虑。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-track-006",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "暑期档多部国风动画集中预热，覆盖三国、西游、八仙和唐代探案等题材。",
+            "real_problem": "家长期待孩子通过国漫接触传统文化，但担心只看热闹，不能形成理解和表达。",
+            "track_relation": "小学家长可以把观影变成亲子提问和结构化表达练习。",
+            "product_value_support": "这条讲法支撑孩子把故事经验迁移到历史理解、价值判断和写作表达。",
+            "platform_expression": "适合暑假收藏帖：带孩子看国漫后，问 5 个问题。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "传统文化题材被重新包装成现代动画故事。",
+            "real_problem": "孩子容易记住人物和打斗，却说不清故事里的选择、冲突和时代背景。",
+            "track_relation": "儿童 AI 教育可以借 AI 帮孩子整理人物关系、追问背景、比较版本。",
+            "product_value_support": "这条讲法能支撑人机结合：AI 做资料助手，孩子做判断和表达。",
+            "platform_expression": "可写成“国漫不是看完就算，3 步变成表达素材”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "媒体和社交平台把国风动画片单放在一起比较。",
+            "real_problem": "家长选片时容易被热度带走，忽略孩子年龄、理解力和讨论空间。",
+            "track_relation": "小学阶段更适合挑能引发提问、复述和价值讨论的内容。",
+            "product_value_support": "这条讲法支撑产品价值：让孩子从观看进入思考，从素材进入表达。",
+            "platform_expression": "适合做亲子观影选择框架。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "暑假国风动画观影如何转化为孩子的理解和表达。",
+          "title": "暑假看国漫，别只问孩子好不好看",
+          "body_or_script": "今年暑期档很多国风动画预热，三国、西游、八仙、唐代探案都来了。家长当然会期待：孩子能不能顺便接触传统文化？\n\n但我想提醒一句：看了国漫，不等于理解了文化。\n\n孩子最容易记住的是人物、打斗、特效；真正需要家长带一带的，是故事结构和价值判断。\n\n看完可以问 5 个问题：\n\n① 主角真正遇到的难题是什么？\n② 他做了哪几个选择？\n③ 如果换成你，会怎么做？\n④ 这个故事和我们学过的历史或神话有什么连接？\n⑤ 能不能用 3 句话讲给没看过的人听？\n\n也可以让 AI 帮忙整理人物关系和背景资料，但不要让 AI 替孩子总结。孩子要自己讲出来。\n\n这就是把观影变成 AI 时代学习能力：抓结构、建立连接、迁移经验。\n\n国漫的价值，不只是让孩子“知道一个故事”，而是让他慢慢学会从故事里看人、看选择、看后果。"
+        },
+        "external_terms_check": true,
+        "risk_note": "部分影片仍处预热阶段，不能按已上映口碑评价；不得夸大观影带来的学习成果。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-008",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "高考志愿填报期，学生、家长和过来人围绕专业选择产生争论。",
+            "real_problem": "家庭在重大选择上缺少共同决策语言，只能在兴趣、城市、就业和分数之间反复拉扯。",
+            "track_relation": "小学家长虽然离志愿填报还远，但真正该提前培养的是孩子理解自己、理解外部世界、表达取舍的能力。",
+            "product_value_support": "这条讲法能支撑孩子在陌生选择场景里重新抓结构、建立连接、迁移经验。",
+            "platform_expression": "落成小红书家长向内容：别等高考才教孩子做选择，小学就能练。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "抖音上大量专业体验帖用第一人称讲后悔、劝退和安利。",
+            "real_problem": "很多家庭把别人的经验当确定答案，却忽略每个孩子的兴趣、能力和资源组合不同。",
+            "track_relation": "儿童 AI 教育可以训练孩子向 AI 提问、整理信息、比较证据，而不是被单一经验带着跑。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要，让孩子学会把复杂问题拆开问、交叉看。",
+            "platform_expression": "可写成“别把过来人经验当标准答案”的冷静分析帖。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "家长在志愿填报中希望用有限分数换到未来确定性。",
+            "real_problem": "未来本来不确定，过度追求一次选择的完美，会忽略孩子持续适应和自我修正能力。",
+            "track_relation": "小学阶段更适合培养孩子面对变化时的提问、复盘、表达和调整能力。",
+            "product_value_support": "这条讲法能自然连接孩子未来竞争力：不是押中一次选择，而是持续做出更好判断。",
+            "platform_expression": "适合用温和观点写成家庭教育提醒：真正该提前准备的不是专业表，而是决策能力。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "从高考志愿争吵，反推小学阶段要练的决策能力。",
+          "title": "别等高考才教孩子做选择🎓",
+          "body_or_script": "这几天高考志愿填报很热，很多家庭又开始在“城市、专业、就业、兴趣”之间争起来。\n\n这不是高考家庭才会遇到的问题。它提醒小学家长：孩子未来真正难的，不只是拿到分数，而是在信息很多、答案不唯一的时候，能说清楚自己为什么这样选。\n\n很多家长会误判，以为给孩子更多标准答案，就能减少未来风险。可志愿填报恰恰说明：真实世界里经常没有唯一正确答案，只有不同条件下的取舍。\n\n小学阶段可以先练一个小动作：每次孩子做选择，别急着替他定。问他 3 个问题：\n\n① 你最在意什么？\n② 你担心什么后果？\n③ 如果选错了，你准备怎么调整？\n\n这就是在帮孩子面对陌生问题重新抓结构、建立连接、迁移经验。\n\nAI 也可以参与：让孩子请 AI 列选择维度，但最后必须自己讲理由。会提问比会答更重要，会判断比照抄建议更重要。\n\n你家孩子做选择时，是更容易听你的，还是更容易坚持自己？"
+        },
+        "external_terms_check": true,
+        "risk_note": "涉及高考志愿时不得提供具体报考建议，不预测升学结果，只做家庭决策能力转译。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-track-005",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "亲子综艺把普通父母的疲惫、放手、试错和家庭分工拍成公共育儿样本。",
+            "real_problem": "很多父母既想给孩子最优安排，又怕一放手孩子就做不好。",
+            "track_relation": "小学阶段的 AI 学习也需要家长从包办答案转向给孩子试错和复盘空间。",
+            "product_value_support": "这条讲法支撑孩子面对问题重新抓结构、建立连接、迁移经验，而不是只等父母安排。",
+            "platform_expression": "适合做小红书亲子综艺借势：真正的放手不是不管，是会复盘。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "节目讨论从全能父母转向接纳不完美家庭。",
+            "real_problem": "家长过度追求完美，会让孩子失去承担责任和从错误中学习的机会。",
+            "track_relation": "AI 时代学习能力同样需要孩子自己提问、验证和修正，而不是家长替他把答案铺好。",
+            "product_value_support": "这条讲法能支撑会提问比会答更重要，让孩子在真实任务中练主动性。",
+            "platform_expression": "可写成“别做全能父母，做提问型父母”的笔记。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "亲子综艺呈现家庭责任、手足互动和父母情绪稳定。",
+            "real_problem": "孩子的学习责任感不只来自课堂，也来自日常生活里能否承担小任务。",
+            "track_relation": "儿童 AI 教育可把生活任务和 AI 协作结合，让孩子练计划、表达和复盘。",
+            "product_value_support": "这条讲法支撑产品价值：把生活经验迁移到学习任务和未来任务。",
+            "platform_expression": "适合做成暑假家庭任务清单，弱化营销感。"
+          }
+        ],
+        "chosen_path_id": "p2",
+        "content": {
+          "topic": "从亲子综艺的放手议题，讲提问型父母。",
+          "title": "别做全能父母，做提问型父母",
+          "body_or_script": "最近亲子综艺里的讨论很有意思：大家不再只追求全能父母、完美家庭，而是开始看见疲惫、试错和合理放手。\n\n这件事放到学习里也一样。很多家长一看孩子卡住，就忍不住接手：题我来讲，作文我来改，AI 怎么问我来写。\n\n但孩子真正需要的，不是永远有人把路铺平，而是在不会的时候能重新抓结构。\n\n你可以试着少做一步，多问三句：\n\n① 你现在卡在哪？\n② 你已经试过什么方法？\n③ 你准备怎么让 AI 帮你，而不是替你做？\n\n这不是放任，是把责任还给孩子。\n\n家长常见误区，是以为“我替他做得更快”就是帮他。其实孩子少了一次描述问题、调整策略、验证结果的机会。\n\nAI 时代学习能力，不是孩子被工具喂答案，而是孩子能带着问题使用工具，再把结果讲清楚。\n\n真正的放手，不是不管；而是从控制答案，转向陪孩子复盘过程。"
+        },
+        "external_terms_check": true,
+        "risk_note": "综艺有剪辑和节目效果，不能把节目片段当家庭教育标准答案。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-004",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "人形机器人热潮很高，但真实工业应用仍受灵巧度、稳定性和复杂环境适应限制。",
+            "real_problem": "公众容易被表演型科技吸引，却忽略真实落地需要成本、安全、维护和场景匹配。",
+            "track_relation": "小学家长可以借此训练孩子看科技新闻时分清演示、产品和真实应用。",
+            "product_value_support": "这条讲法支撑孩子从热点里抓结构、建立现实约束意识、迁移到科学判断。",
+            "platform_expression": "适合小红书科普：别让孩子只看机器人跳舞，要问 4 个真实问题。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "机器人销售大量用于科研、教育、测试和展示场景。",
+            "real_problem": "“看起来像人”不等于“能稳定干活”，形象相似容易遮蔽任务能力。",
+            "track_relation": "儿童 AI 教育可以训练孩子从外观判断转向功能判断。",
+            "product_value_support": "这条讲法支撑会提问比会答更重要：看到新科技先问它解决什么问题。",
+            "platform_expression": "可写成科技启蒙笔记：孩子看机器人视频后问这几句。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "产业叙事、资本热度和技术瓶颈同时存在。",
+            "real_problem": "孩子需要学会在兴奋和怀疑之间保持证据意识，而不是一味追热点或一味否定。",
+            "track_relation": "这与 AI 时代科学素养和批判性思维相关。",
+            "product_value_support": "这条讲法能支撑家长陪孩子用 AI 查证、比较、形成判断。",
+            "platform_expression": "适合做亲子科技新闻共读模板。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "用人形机器人热潮训练孩子的科技判断力。",
+          "title": "别只让孩子看机器人跳舞🤖",
+          "body_or_script": "最近人形机器人很热，表演、走秀、比赛都很吸睛。但很多产业讨论也提醒：会表演，不等于能稳定干活。\n\n这正适合拿来做一次亲子科技启蒙。\n\n孩子看到机器人视频，通常会说“好厉害”。家长可以接着问 4 个问题：\n\n① 它真正解决了什么问题？\n② 这个动作在真实环境里能不能重复？\n③ 出错会不会有安全风险？\n④ 成本比原来的方法更低吗？\n\n这不是泼冷水，而是在训练孩子从热闹里抓结构。\n\nAI 时代，孩子会看到大量新科技：模型、机器人、智能设备。真正重要的不是追每个概念，而是能把“看起来厉害”和“真的有用”分开。\n\n家长常见误区，是只让孩子感受科技震撼，却没有带他理解现实约束。\n\n会提问比会答更重要。一个孩子如果能问出成本、稳定性、安全、场景这些问题，他就不只是科技消费者，而是在练真正的判断力。"
+        },
+        "external_terms_check": true,
+        "risk_note": "Reuters Breakingviews 带评论属性，不能把短期商业化不足写成行业无价值；避免简单说成泡沫。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-010",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "公众人物谈原生家庭后，许多人开始反思自己是否在复制上一代的表达方式。",
+            "real_problem": "父母明明想给孩子更好的教育，却常在压力下重复熟悉的控制、指责或包办。",
+            "track_relation": "小学家长面对 AI 和教育变化时，也会把旧的标准答案思维带进新工具使用。",
+            "product_value_support": "这条讲法能支撑家长认知升级：先看见自己的反应模式，才可能陪孩子建立新学习方式。",
+            "platform_expression": "适合写成温和自省型笔记：别让 AI 时代的教育，套回上一代的控制方式。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "大量网友害怕自己在关系里重复父母曾经的语言和情绪模式。",
+            "real_problem": "很多亲子冲突不是知识问题，而是父母缺少新的对话脚本。",
+            "track_relation": "儿童 AI 教育强调亲子提问，正好可以帮助家长把命令式语言改成共同探索。",
+            "product_value_support": "这条讲法支撑亲子提问：从“你怎么还不会”换成“我们怎么一起弄懂”。",
+            "platform_expression": "可做成家长可收藏的“3 句替换话术”。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "家庭旧模式会在亲密关系和养育中反复出现。",
+            "real_problem": "家长容易把自己熟悉的学习路径当成唯一正确路径，忽略孩子面对的新环境已经不同。",
+            "track_relation": "AI 时代的孩子需要在陌生场景重新抓结构，而不是只复制父母当年的学习经验。",
+            "product_value_support": "这条讲法能支撑产品价值：帮助家庭从经验复制转向能力培养。",
+            "platform_expression": "适合用家庭故事开头，转向教育方式更新。"
+          }
+        ],
+        "chosen_path_id": "p2",
+        "content": {
+          "topic": "从代际重复，转到 AI 时代亲子对话方式更新。",
+          "title": "别把上一代的话术，带进 AI 时代",
+          "body_or_script": "最近很多人在讨论：我发誓不变成父母，结果说话越来越像他们。\n\n放到教育里，这件事特别扎心。我们明明想让孩子更自由、更会思考，可一着急，出口还是那几句：你怎么还不会？你照着做不行吗？别问那么多。\n\nAI 时代，孩子真正需要的不是更快被塞进答案，而是在陌生问题里学会抓结构、找关系、讲理由。\n\n所以我建议家长先换 3 句话：\n\n把“你怎么不会”换成：你卡在哪一步？\n把“照答案写”换成：你能说说这个答案为什么成立吗？\n把“别乱问”换成：这个问题还可以怎么问 AI？\n\n这不是纵容孩子，而是在训练亲子提问。\n\n家长认知升级的第一步，不是买多少新工具，而是别把旧的控制方式装进新工具里。AI 可以帮孩子查资料、练表达、看不同角度，但真正让孩子成长的，是你和他一起复盘、一起判断、一起把经验迁移到新场景。\n\n你发现自己最容易重复父母的哪句话？"
+        },
+        "external_terms_check": true,
+        "risk_note": "涉及原生家庭和心理创伤时需避免诊断化表达，不替代专业心理咨询。",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-20260630-broad-001",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条热度虽高，但核心是消费评价和人情边界，和小学家长的 AI 学习能力问题关系很弱，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-002",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条只是轻生活习惯争论，和孩子能力结构、AI 教育或家长教育判断都接不上，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-004",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条连接像情绪硬蹭，先跳过。命中：绕很远",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": false,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-005",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是身体小习惯的健康提醒，和账号要讲的 AI 时代学习能力没有自然关系，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-006",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条主要是拟人化娱乐共鸣，虽然能触到育儿情绪，但和儿童 AI 教育及孩子能力结构的连接偏弱，容易写成泛育儿情绪稿。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "risk_note": null,
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-007",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是女性夜生活安全事件，风险高且和小学家长 AI 教育关系弱，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-009",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条热点以个体查分情绪和复读代价讨论为主，受众偏高考家庭，和小学阶段 AI 时代学习能力连接较绕，容易滑向升学焦虑。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "risk_note": null,
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-011",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条核心是旅行拍照和社交展示焦虑，和账号的孩子学习能力卖点关系太弱，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-012",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是出境旅行体验和极端天气吐槽，和小学家长的 AI 教育判断不在同一问题场，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-013",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是海外饮食健康趋势，账号若转去讲儿童学习迁移会非常绕，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-014",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条主要是海外审美风潮，和小学家长的教育焦虑和 AI 学习能力没有自然连接，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-broad-015",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是海外穿搭审美趋势，受众和账号主题都不匹配，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-013",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条对开发者很重要，但开源供应链过于技术化，小学家长难代入，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260630-ultimate-015",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条是国家级 AI 基础设施和产业政策讨论，离小学家长今天的教育决策太远，硬接会显得牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      }
+    ]
+  },
+  "meta": {
+    "hs-20260630-broad-001": {
+      "oneLiner": "免费试吃到底能不能给差评",
+      "reason": "这条热度虽高，但核心是消费评价和人情边界，和小学家长的 AI 学习能力问题关系很弱，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-002": {
+      "oneLiner": "泡面汤到底该不该倒掉",
+      "reason": "这条只是轻生活习惯争论，和孩子能力结构、AI 教育或家长教育判断都接不上，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-003": {
+      "oneLiner": "发现 AI 树洞背后可能有人审核，大家突然社死",
+      "reason": "这条能自然提醒家长：孩子把 AI 当树洞前，先要懂隐私边界、平台规则和信息安全。"
+    },
+    "hs-20260630-broad-004": {
+      "oneLiner": "对嘴喝饮料的人突然被集体嫌弃",
+      "reason": "这条连接像情绪硬蹭，先跳过。命中：绕很远"
+    },
+    "hs-20260630-broad-005": {
+      "oneLiner": "千万别随便抠肚脐，手痒党开始害怕",
+      "reason": "这条是身体小习惯的健康提醒，和账号要讲的 AI 时代学习能力没有自然关系，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-006": {
+      "oneLiner": "带娃崩溃这件事，连动物看起来都懂",
+      "reason": "这条主要是拟人化娱乐共鸣，虽然能触到育儿情绪，但和儿童 AI 教育及孩子能力结构的连接偏弱，容易写成泛育儿情绪稿。"
+    },
+    "hs-20260630-broad-007": {
+      "oneLiner": "清吧被陌生人下药，女生夜生活安全感又炸了",
+      "reason": "这条是女性夜生活安全事件，风险高且和小学家长 AI 教育关系弱，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-008": {
+      "oneLiner": "高考志愿专业怎么选，家里又开始吵",
+      "reason": "这条可以从高考志愿倒推小学阶段要培养长期选择能力，但不能做具体志愿建议。"
+    },
+    "hs-20260630-broad-009": {
+      "oneLiner": "三战高考查分大哭，复读到底值不值",
+      "reason": "这条热点以个体查分情绪和复读代价讨论为主，受众偏高考家庭，和小学阶段 AI 时代学习能力连接较绕，容易滑向升学焦虑。"
+    },
+    "hs-20260630-broad-010": {
+      "oneLiner": "我发誓不变成父母，结果越来越像他们",
+      "reason": "这条能自然接到父母如何避免复制旧教育模式，适合讲家庭互动对孩子思维方式的影响。"
+    },
+    "hs-20260630-broad-011": {
+      "oneLiner": "旅行拍照不出片，大家开始复制万能姿势",
+      "reason": "这条核心是旅行拍照和社交展示焦虑，和账号的孩子学习能力卖点关系太弱，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-012": {
+      "oneLiner": "欧洲没有空调，暑假旅行像生存挑战",
+      "reason": "这条是出境旅行体验和极端天气吐槽，和小学家长的 AI 教育判断不在同一问题场，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-013": {
+      "oneLiner": "Fibermaxxing：海外网友开始晒自己猛补纤维",
+      "reason": "这条是海外饮食健康趋势，账号若转去讲儿童学习迁移会非常绕，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-014": {
+      "oneLiner": "Y2K Tuscan mom：海外开始模仿复古厨房妈妈感",
+      "reason": "这条主要是海外审美风潮，和小学家长的教育焦虑和 AI 学习能力没有自然连接，硬接会显得牵强。"
+    },
+    "hs-20260630-broad-015": {
+      "oneLiner": "大短裤回来了，海外女生不想再被热裤绑架",
+      "reason": "这条是海外穿搭审美趋势，受众和账号主题都不匹配，硬接会显得牵强。"
+    },
+    "hs-20260630-track-001": {
+      "oneLiner": "《教育发展“十五五”规划》发布：AI全学段教育进入国家教育路线图",
+      "reason": "这条正好能讲家长最关心的事：AI 进教育后，孩子不能只学工具，更要练提问、推理和迁移能力。"
+    },
+    "hs-20260630-track-002": {
+      "oneLiner": "长沙、杭州等地小升初和小一电脑派位进入6月底落点期",
+      "reason": "这条能借派位不确定性讲孩子真正能带走的能力，但要避开具体升学预测和地方政策泛化。"
+    },
+    "hs-20260630-track-003": {
+      "oneLiner": "香港学与教博览2026首设家长高峰会，AI素养和未来技能成为亲子教育议题",
+      "reason": "这条能说明 AI 素养已经从学校议题进入家庭议题，但香港展会和行业宣传口径需要降温处理。"
+    },
+    "hs-20260630-track-004": {
+      "oneLiner": "《玩具总动员5》上映：智能平板成为传统玩具的新对手",
+      "reason": "这条用亲子电影里的平板冲突切入很自然，可以讲屏幕、真实玩耍和想象力之间的关系。"
+    },
+    "hs-20260630-track-005": {
+      "oneLiner": "亲子综艺《爸爸当家》相关讨论：从全能父母转向接纳不完美家庭",
+      "reason": "这条能从综艺里的放手和试错，讲生活责任感怎样迁移到学习韧性和自我管理。"
+    },
+    "hs-20260630-track-006": {
+      "oneLiner": "暑期档国风动画大乱斗：《三国第一部：争洛阳》《八仙！》《大圣崛起》《大唐妖探》等集中预热",
+      "reason": "这条适合讲亲子共看国风动画后，如何把热闹故事转成表达、理解和判断训练。"
+    },
+    "hs-20260630-ultimate-001": {
+      "oneLiner": "从聊天到派工：Codex 数据显示 AI 代理开始承担“半天级任务”",
+      "reason": "这条非常适合讲未来孩子的核心能力不是问 AI，而是拆任务、定标准、验结果。"
+    },
+    "hs-20260630-ultimate-002": {
+      "oneLiner": "Gemini 把“用电脑”塞进默认模型，AI 代理从网页演示走向办公桌面",
+      "reason": "这条能自然提醒家长，孩子面对的 AI 不只是聊天工具，还会操作软件，所以权限意识和结果核验会更重要。"
+    },
+    "hs-20260630-ultimate-003": {
+      "oneLiner": "AI 没有先消灭所有岗位，而是先压缩第一份办公室工作",
+      "reason": "这条能把 AI 对第一份工作的冲击，转译成小学阶段为什么要重视真实项目、表达和可证明能力。"
+    },
+    "hs-20260630-ultimate-004": {
+      "oneLiner": "中国人形机器人热潮遇到 Moravec 悖论：会表演不等于会干活",
+      "reason": "这条能讲孩子理解真实产业约束比追概念更重要，但机器人产业话题离小学家长日常稍远。"
+    },
+    "hs-20260630-ultimate-005": {
+      "oneLiner": "美国家长开始反 AI 进课堂：孩子需要 AI 素养，还是先保住思考肌肉？",
+      "reason": "这条正好能讲家长最纠结的 AI 教育边界：不是反 AI，而是分年龄保护基础思考能力。"
+    },
+    "hs-20260630-ultimate-006": {
+      "oneLiner": "学校 App 成家庭数据入口：教育数字化的隐性成本被审计报告拆开",
+      "reason": "这条能自然接到家长必须具备数字监护意识，不能只看教育 App 好不好用。"
+    },
+    "hs-20260630-ultimate-007": {
+      "oneLiner": "高考志愿填报从“专家服务”变成免费 AI 公共服务",
+      "reason": "这条能讲 AI 给选项但不能替家庭排序价值，高考场景虽远但教育决策意义很强。"
+    },
+    "hs-20260630-ultimate-008": {
+      "oneLiner": "志愿规划师打开 AI 现查现念：被 AI 降价的不是咨询，而是伪专业",
+      "reason": "这条能提醒家长识别伪专业和焦虑销售，但要避免攻击整个志愿咨询行业。"
+    },
+    "hs-20260630-ultimate-009": {
+      "oneLiner": "最会造 AI 的人反而更贵：DeepMind 明星出走暴露“人类判断”稀缺",
+      "reason": "这条可以讲 AI 时代真正稀缺的是问题选择、判断和带队能力，但 AI 实验室人才战对家长略抽象。"
+    },
+    "hs-20260630-ultimate-010": {
+      "oneLiner": "纳德拉反向提醒企业：最危险的不是没有 AI，而是把学习能力外包",
+      "reason": "这条可借企业不能外包学习，讲孩子也不能把总结和复盘外包给 AI，但商业语境需要转译。"
+    },
+    "hs-20260630-ultimate-011": {
+      "oneLiner": "英国童军 25 年来大改技能徽章：AI 安全比生火更像生存能力",
+      "reason": "这条很适合讲 AI 安全、数字足迹和网络表达正在变成青少年的基础生活能力。"
+    },
+    "hs-20260630-ultimate-012": {
+      "oneLiner": "学校说 AI 是作弊，雇主说 AI 是基本功：毕业生夹在两套规则之间",
+      "reason": "这条能讲 AI 使用规则变化下，孩子要学会证明自己的真实思考和表达，但毕业生场景离小学家长稍远。"
+    },
+    "hs-20260630-ultimate-013": {
+      "oneLiner": "开源代码库里的 AI 代理被低估 30 倍：软件供应链正在无声换手",
+      "reason": "这条对开发者很重要，但开源供应链过于技术化，小学家长难代入，硬接会显得牵强。"
+    },
+    "hs-20260630-ultimate-014": {
+      "oneLiner": "当 AI 负责实现，程序员教育的核心转向验证和判断",
+      "reason": "这条适合讲孩子学编程不能只追求做出来，还要会测试、解释和判断。"
+    },
+    "hs-20260630-ultimate-015": {
+      "oneLiner": "伦敦 AI 热潮背后没有本土大模型：主权 AI 从口号变成基础设施焦虑",
+      "reason": "这条是国家级 AI 基础设施和产业政策讨论，离小学家长今天的教育决策太远，硬接会显得牵强。"
+    }
+  },
+  "mode": "live",
+  "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T11:46:53",
+  "needs_human_review": false,
+  "formal_approval": true,
+  "mvp_internal_only": false,
+  "review_status": {
+    "needs_human_review": false,
+    "formal_approval": true,
+    "mvp_internal_only": false,
+    "track_id": "education-yowow",
+    "track_status": "approved",
+    "account_id": "acct-xiaozhu-edu-xhs"
+  }
+}

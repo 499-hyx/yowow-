@@ -1,6 +1,6 @@
 // B档（2026-06-11）：网页 onboarding API 下线。
-// 新增账号/赛道统一走 agent 流程（AGENT-PLAYBOOK.md 入口④：赛道车间 / 账号快速通道），
-// 保证每条赛道的搜索母题都经过起草→博士定稿，再进入跑批。
+// 当前 MVP 不做网页自助新增，也不做审批/权限系统。
+// 新增账号走 /onboarding 问卷生成本地 JSON，见 docs/RUNBOOK.md 的「新增账号」。
 
 export const dynamic = "force-dynamic";
 
@@ -8,7 +8,7 @@ export async function POST(): Promise<Response> {
   return Response.json(
     {
       ok: false,
-      error: "网页新增账号已下线：请联系管理员通过 agent 新增（需先为赛道起草搜索母题并经博士定稿）。",
+      error: "网页新增账号已下线：当前 MVP 直接创建 data/accounts/<account_id>.json，不走审批或权限流程。",
     },
     { status: 410 },
   );

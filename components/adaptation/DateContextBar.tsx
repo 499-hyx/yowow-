@@ -57,7 +57,10 @@ export default function DateContextBar({
         </Link>
         <Link
           href={hrefFor(basePath, latestDate, query)}
-          className="rounded-md bg-[#1F1F1E] px-3 py-1.5 text-white no-underline hover:bg-black"
+          aria-disabled={!latestDate}
+          className={`rounded-md px-3 py-1.5 text-white no-underline ${
+            latestDate ? "bg-[#1F1F1E] hover:bg-black" : "pointer-events-none bg-[#B8B5AD]"
+          }`}
         >
           回到最新
         </Link>

@@ -1,7 +1,8 @@
 {
   "track_id": "razor-personalcare",
   "track_name": "男士个护 · 剃须刀",
-  "status": "approved",
+  "status": "paused",
+  "pause_reason": "等待补齐新赛道最小配置边界，当前先以 education-yowow 作为标杆赛道跑通 daily flow。",
   "buyer": {
     "who": "剃须刀品牌方 / 工厂源头老板",
     "business": "男士剃须刀及男士个护产品的销售",
@@ -21,6 +22,59 @@
     "用户上脸测评"
   ],
   "audience": "20-45 岁注重形象与效率的男性，及为他们选购的伴侣",
+  "mvp_internal_only": true,
+  "needs_human_review": true,
+  "formal_approval": false,
+  "daily_search_question": "mvp_internal_only / needs_human_review: 过去72小时，有哪些真实公共热点可以保守地测试男士个护、日常体面、实用产品、出门效率或夏季舒适场景？只用于本地工程 MVP，不代表博士正式定稿。",
+  "track_memory": {
+    "mvp_internal_only": true,
+    "needs_human_review": true,
+    "core_concern": [
+      "男性日常体面感",
+      "出门前效率",
+      "剃须后的稳定体验",
+      "实用产品是否真正省时间",
+      "不制造外貌焦虑"
+    ],
+    "good_hotspot_signals": [
+      "能自然引出日常效率或自我管理",
+      "能讨论产品实用性而不是品牌背书",
+      "能落到出门前的确定性",
+      "适合抖音短视频用老板口吻讲清判断"
+    ],
+    "avoid": [
+      "医疗功效承诺",
+      "纯女性向话题硬蹭",
+      "极限低价比较",
+      "没有男士个护转译空间的政策或教育热点",
+      "把泛流量硬拐成剃须刀卖点"
+    ],
+    "review_note": "本字段为 single-admin internal MVP 最小可运行配置，待博士/负责人复核。"
+  },
+  "decision_layer": {
+    "mvp_internal_only": true,
+    "needs_human_review": true,
+    "strong_pick": "热点能自然连接到男性日常体面、出门效率、实用产品选择或剃须体验，且不需要医疗承诺。",
+    "maybe": "热点有生活方式或产品实用性角度，但剃须刀连接需要克制表达，发布前应人工复核。",
+    "skip": "热点虽有流量，但与男士个护关系弱，必须硬蹭才接得上。"
+  },
+  "analysis_layer": {
+    "mvp_internal_only": true,
+    "needs_human_review": true,
+    "name": "razor_personalcare_internal_mvp_analysis",
+    "framework": [
+      "热点事实",
+      "普通用户正在关心什么",
+      "是否能自然落到男性日常体面或效率",
+      "是否能支撑产品价值而不是品牌背书",
+      "是否存在医疗、外貌焦虑或硬蹭风险",
+      "适合抖音老板型账号的保守表达"
+    ],
+    "review_note": "仅用于工程 fresh-run，正式方法论仍需博士/负责人确认。"
+  },
+  "output_channels": [
+    "acct-razor-douyin-boss"
+  ],
   "anxiety_anchors": [
     "出门前来不及收拾",
     "胡茬显得邋遢没精神",

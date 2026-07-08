@@ -19,7 +19,7 @@ export type PipelineStatus = {
 type AccountRecord = {
   account_id?: string;
   display_name?: string;
-  status?: string;
+  created_at?: string;
 };
 
 type TrackRecord = {
@@ -68,6 +68,13 @@ function todayString(): string {
   return new Date().toISOString().slice(0, 10);
 }
 
+function accountExistsOnDate(account: AccountRecord, date: string): boolean {
+  if (!account.created_at) return true;
+  const createdDate = account.created_at.slice(0, 10);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(createdDate)) return true;
+  return createdDate <= date;
+}
+
 export function getPipelineStatus(date: string = todayString(), base = process.cwd()): PipelineStatus {
   const items: PipelineStatusItem[] = [];
   const broadPath = path.join(base, "data", "hotspots", `${date}.json`);
@@ -98,7 +105,7 @@ export function getPipelineStatus(date: string = todayString(), base = process.c
   }
 
   const accounts = listJson<AccountRecord>(path.join(base, "data", "accounts"))
-    .filter((account) => account.account_id && account.status !== "paused")
+    .filter((account) => account.account_id && accountExistsOnDate(account, date))
     .sort((a, b) => (a.display_name ?? a.account_id ?? "").localeCompare(b.display_name ?? b.account_id ?? ""));
   const missingAccounts = accounts.filter((account) => {
     return !fs.existsSync(path.join(base, "data", "today", account.account_id!, `${date}.json`));

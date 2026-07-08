@@ -349,6 +349,12 @@ export default async function AccountPage({
           </div>
         </div>
 
+        {response?.needs_human_review ? (
+          <div className="mt-3 rounded-md border border-[#E1C58F] bg-[#FFF8EA] px-3 py-2 text-sm leading-relaxed text-[#6A4A12]">
+            本结果是本地工程内测产物，可用于内部同事试跑；不代表已对外上线或已写入生产同步。
+          </div>
+        ) : null}
+
         {outputs.length ? (
           <div className="mt-3 divide-y divide-[#EEEAE2] rounded-lg border border-[#D8D3CB] bg-white">
             {outputs.map((output) => {
@@ -432,7 +438,7 @@ export default async function AccountPage({
         />
 
         <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
-          <div className="text-xs font-medium text-[#8A877F]">搜索母题（来自赛道，改动找管理员走"重写搜索方向"）</div>
+          <div className="text-xs font-medium text-[#8A877F]">搜索母题（来自赛道；要改就编辑 config/tracks/&lt;track_id&gt;.json）</div>
           <div className="mt-2 flex flex-wrap gap-2">
             {(trackDirections.length ? trackDirections : ["该赛道暂未配置搜索母题"]).map((item, index) => (
               <span key={`${index}-${displayText(item)}`} className="rounded-full bg-white px-2.5 py-1 text-xs text-[#4A4A47]">

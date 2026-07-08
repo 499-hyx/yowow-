@@ -1,0 +1,67 @@
+{
+  "account_id": "acct-razor-derma-douyin-boss",
+  "tenant_id": "tenant-razor-derma",
+  "display_name": "皮肤学剃须刀 · 抖音老板号",
+  "track_id": "razor-derma-pfb",
+  "platform_id": "douyin",
+  "positioning_id": "boss",
+  "platform_name": "抖音",
+  "positioning_name": "老板型",
+  "track_name": "皮肤学剃须 · 倒生毛友好刀片",
+  "created_at": "2026-07-06T00:00:00Z",
+  "memory_updated_at": null,
+  "memory": {
+    "business": "皮肤学进步的盒式多层刀片剃须刀",
+    "audience": "有剃后红肿、倒生毛、脖颈敏感困扰的男性用户",
+    "product_value": "减少剃须拉扯和反复刺激，让易红肿、易倒生毛人群获得更舒服的日常剃须体验",
+    "anxiety_anchors": [
+      "剃完发红",
+      "倒生毛",
+      "脖子起小疙瘩",
+      "重要场合皮肤状态差"
+    ],
+    "proof_assets": [
+      "刀片结构说明",
+      "用户体验反馈",
+      "剃须前后对比",
+      "皮肤学原理说明"
+    ],
+    "commercial_goal": [
+      "直接带货",
+      "建立信任",
+      "品牌心智"
+    ],
+    "content_style": "老板口吻，直接、克制、讲原理，不做医疗承诺",
+    "extra_external_vocab": [
+      "少拉扯",
+      "剃完不容易红",
+      "减少倒生毛困扰"
+    ],
+    "extra_forbidden_terms": [
+      "根治",
+      "治愈",
+      "治疗须部假性毛囊炎",
+      "药品级",
+      "永不红肿"
+    ],
+    "banned_topics": [
+      "医疗诊断",
+      "严重皮肤病治疗",
+      "攻击竞品"
+    ],
+    "understood": {
+      "business_understood": "卖一款更关注剃须刺激和倒生毛困扰的盒式多层刀片剃须刀",
+      "goal_understood": "用皮肤学原理建立信任，并转化购买",
+      "external_vocab": [
+        "剃完不容易红",
+        "少拉扯",
+        "减少倒生毛困扰"
+      ],
+      "forbidden_terms": [
+        "根治",
+        "治愈",
+        "治疗须部假性毛囊炎"
+      ]
+    }
+  }
+}

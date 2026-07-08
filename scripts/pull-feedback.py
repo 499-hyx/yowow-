@@ -3,7 +3,7 @@
 
 用法:
   python3 scripts/pull-feedback.py             # 拉取未处理反馈 → 写本地文件并盖章 pulled_at
-  python3 scripts/pull-feedback.py --selftest  # 本地 sqlite 自测（/tmp）
+  python3 scripts/pull-feedback.py --selftest  # 本地 sqlite 自测（系统临时目录）
 
 落地位置（与网站本地模式写文件一致）:
   data/runs/<date>/<account_id>/feedback-inbox/<feedback_id>-<hotspot_id>.json
@@ -14,6 +14,7 @@ import datetime
 import json
 import os
 import sys
+import tempfile
 import urllib.request
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -66,7 +67,7 @@ def land(rows):
 def main():
     if "--selftest" in sys.argv:
         import sqlite3
-        db = "/tmp/yowow-pull-feedback-selftest.db"
+        db = os.path.join(tempfile.gettempdir(), "yowow-pull-feedback-selftest.db")
         if os.path.exists(db):
             os.remove(db)
         conn = sqlite3.connect(db)

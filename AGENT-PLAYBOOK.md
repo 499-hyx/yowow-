@@ -13,7 +13,7 @@
 3. agent 自己就是 RUNBOOK 第 3 步那个「外部 LLM」：读 `prompts/*.txt` 当场作答，回贴写进 `raw/`，由 `ingest.py` 硬门收口。
 4. 用户最终只关心三件事：**这个账号今天该发什么、为什么能发、哪些别蹭。** 每次跑完必须用人话回答这三件事。
 
-**禁用旧心智**：本目录下的任何对话和产物中，不使用「流1」「流2」「流3」「流4」「家长选题」「影视雷达」等来源视角的词。旧抓取 skill 若仍在运行，仅视为热点池的可选供货商，其产物必须经 `prompts/neutralize.md` 中立化后才能进 `data/hotspots/`，绝不直接喂给账号。
+**禁用旧心智**：本目录下的任何对话和产物中，不使用「流1」「流2」「流3」「流4」「家长选题」「影视雷达」等来源视角的词。旧抓取 skill 若仍在运行，仅视为热点池的可选供货商，其产物必须先整理成热点池标准 JSON 字段，才能进 `data/hotspots/`，绝不直接喂给账号。
 
 ---
 
@@ -38,16 +38,15 @@
 
 | 步骤 | 模板 | 谁渲染 | 渲染稿 / 回答存档 |
 |---|---|---|---|
-| 入口①a 大盘扫描（公共池） | `prompts/hotspot-broad.md` | agent 手工填占位 | `data/runs/<D>/_hotspot-pool/prompts\|raw/broad.*` |
-| 入口①b 赛道定向搜索（赛道池） | `prompts/hotspot-search.md` | agent 手工填占位 | `data/runs/<D>/_hotspot-pool/prompts\|raw/search-<track_id>.*` |
-| 入口① 中立化 | `prompts/neutralize.md` | agent 手工填占位 | `data/runs/<D>/_hotspot-pool/prompts\|raw/neutralize-<hotspot_id>.*` |
-| 入口② 筛选 match | `prompts/hotspot-match.md` | `make-prompt.py` 自动 | 提示词 `prompts/match-<hotspot_id>.txt`；待安装回贴 `_inbox/match-<hotspot_id>.json`；ingest 后归档到 `raw/` |
-| 入口② 生成 generate | `prompts/content-generate.md` | `make-prompt.py` 自动 | 提示词 `prompts/generate-<hotspot_id>.txt`；待安装回贴 `_inbox/generate-<hotspot_id>.json`；ingest 后归档到 `raw/` |
-| 入口② 人话汇总 | `prompts/daily-summary.md` | agent 手工填占位 | 可选 `data/runs/<D>/<acct>/summary.md` |
-| 入口④ 桥梁母题 | `prompts/bridge-motif.md` | agent 手工填占位 | `data/runs/<D>/_onboarding/<track_id>/prompts\|raw/motif.*` |
-| 入口④ 搜索方向（写进 tracks 文件） | `prompts/bridge-directions.md` | agent 手工填占位 | `data/runs/<D>/_onboarding/<track_id>/prompts\|raw/directions.*` |
+| 入口①a 大盘扫描（公共池） | `prompts/公共热点/平台原生全网热点.md` | agent 手工填占位 | `data/runs/<D>/_hotspot-pool/prompts\|raw/broad.*` |
+| 入口①b 赛道定向搜索（赛道池） | `prompts/赛道热点/通用赛道热点搜索.md` | agent 手工填占位 | `data/runs/<D>/_hotspot-pool/prompts\|raw/search-<track_id>.*` |
+| 入口② 筛选 match | `prompts/分析提示词/热点匹配判断.md` | `make-prompt.py` 自动 | 提示词 `prompts/match-<hotspot_id>.txt`；待安装回贴 `_inbox/match-<hotspot_id>.json`；ingest 后归档到 `raw/` |
+| 入口② 生成 generate | `prompts/分析提示词/内容生成.md` | `make-prompt.py` 自动 | 提示词 `prompts/generate-<hotspot_id>.txt`；待安装回贴 `_inbox/generate-<hotspot_id>.json`；ingest 后归档到 `raw/` |
+| 入口② 人话汇总 | `prompts/分析提示词/每日总结.md` | agent 手工填占位 | 可选 `data/runs/<D>/<acct>/summary.md` |
+| 入口④ 桥梁母题 | `prompts/新增账号与赛道接入/新赛道桥梁母题.md` | agent 手工填占位 | `data/runs/<D>/_onboarding/<track_id>/prompts\|raw/motif.*` |
+| 入口④ 搜索方向（写进 tracks 文件） | `prompts/新增账号与赛道接入/新赛道热点搜索方向.md` | agent 手工填占位 | `data/runs/<D>/_onboarding/<track_id>/prompts\|raw/directions.*` |
 
-把控点分工：**博士**改 hotspot-search / neutralize / hotspot-match / bridge-motif / bridge-directions 的可编辑区（判断口径与方法论）；**老板/运营**改 content-generate 的口吻结构区和 daily-summary 的详略口吻。模板头注说明各自的占位符与存档位置。
+把控点分工：**博士**改 hotspot-search / hotspot-match / bridge-motif / bridge-directions 的可编辑区（判断口径与方法论）；**老板/运营**改 content-generate 的口吻结构区和 daily-summary 的详略口吻。模板头注说明各自的占位符与存档位置。
 
 ---
 
@@ -58,13 +57,11 @@
 > 也是赛道池的进货渠道，**绝不入公共池**。
 
 **①a 大盘扫描 → 公共池**（每天一次）
-- 渲染 `prompts/hotspot-broad.md`（无赛道字眼，多方向扫描）作答召回。
-- 候选逐条过 `prompts/neutralize.md` 富化。
+- 渲染 `prompts/公共热点/平台原生全网热点.md`（无赛道字眼，多方向扫描）作答，直接输出热点池标准 JSON。
 - 写 `data/hotspots/YYYY-MM-DD.json`，每条 `scope: "broad"`。
 
 **①b 赛道定向搜索 → 赛道池**（每个 active 赛道各一次）
-- 读 `config/tracks/<track_id>.json` 的 `bridge.search_brief + search_directions`（status 为 approved/reference 的赛道才跑；draft 跳过）→ 渲染 `prompts/hotspot-search.md` 作答召回。
-- 候选同样过 `prompts/neutralize.md` 富化。
+- 读 `config/tracks/<track_id>.json` 的 `bridge.search_brief + search_directions` → 渲染 `prompts/赛道热点/通用赛道热点搜索.md` 作答，直接输出热点池标准 JSON。
 - 写 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`，每条 `scope: "track:<track_id>"`。
 
 「抓今天的热点」= ①a + 全部赛道的 ①b + ①c；「只给 <赛道> 抓热点」= 只跑该赛道 ①b。
@@ -73,7 +70,7 @@
 
 每天跑热点前，先检查 `data/spark-inbox/<account_id>/` 的 pending 条目。
 pending spark 只作为该账号赛道池的进货线索，绝不进公共池。
-- 能找到外部素材的：按入口①b 搜索与中立化后入赛道池，必须挂真实 `source_url`；
+- 能找到外部素材的：按入口①b 搜索格式整理后入赛道池，必须挂真实 `source_url`；
 - 纯自命题但足以支撑剖析的：允许 `source_url` 为空，标 `source_skill: "owner-spark"`；
 - 查无实据或撑不起剖析的：spark 标 rejected，写人话 `reject_reason`（铁律：缺料不捏造）。
 所有 spark 入池条目一律带 `source_direction: "owner-spark:<spark_id>"`（追溯）。
@@ -126,7 +123,7 @@ python3 scripts/ingest.py <account_id> data/runs/<D>/<account_id>/_inbox --date 
 
 **产出**：`data/today/<account_id>/YYYY-MM-DD.json` + `latest.json`（网站今日页只读这里）。
 
-**结尾人话汇总**：渲染 `prompts/daily-summary.md`（填入 latest.json），按其可编辑区要求输出固定三段：
+**结尾人话汇总**：渲染 `prompts/分析提示词/每日总结.md`（填入 latest.json），按其可编辑区要求输出固定三段：
 
 ```text
 ✅ 今天发什么：strong_pick 条目 + 一句话钩子
@@ -165,8 +162,8 @@ python3 scripts/ingest.py <account_id> data/runs/<D>/<account_id>/_inbox --date 
 
 **第 2 步 · 两个固定模板连跑**（渲染稿和回答存 `data/runs/<D>/_onboarding/<track_id>/`）：
 
-1. 渲染 `prompts/bridge-motif.md` → 起草桥梁母题（internal_lens / external_vocab / forbidden_terms / example_bridges）。
-2. 渲染 `prompts/bridge-directions.md` → 起草 3–6 条深层搜索母题（机理层、可成桥、可翻译成人话三关已固化在模板可编辑区）。
+1. 渲染 `prompts/新增账号与赛道接入/新赛道桥梁母题.md` → 起草桥梁母题（internal_lens / external_vocab / forbidden_terms / example_bridges）。
+2. 渲染 `prompts/新增账号与赛道接入/新赛道热点搜索方向.md` → 起草 3–6 条深层搜索母题（机理层、可成桥、可翻译成人话三关已固化在模板可编辑区）。
 
 两步产出**全部写进 `config/tracks/<track_id>.json`**（bridge 区 + `search_brief` + `search_directions`），`status: "draft"`。
 

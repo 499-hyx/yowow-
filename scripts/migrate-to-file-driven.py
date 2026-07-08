@@ -76,7 +76,7 @@ def gate_visible(output: dict, track: dict, extra_forbidden: list = None) -> dic
         "external_terms_check": False,
     }
 
-# ── meta（与 server-data.ts buildMeta 同逻辑）───────────────────────
+# ── meta（历史迁移用内置装配逻辑；当前今日结果以 ingest.py 为准）──────────────
 
 def build_meta(output: dict, hotspot_title: str, track: dict) -> dict:
     paths = output.get("bridge_paths", [])
@@ -107,7 +107,7 @@ def build_meta(output: dict, hotspot_title: str, track: dict) -> dict:
 
     return {"oneLiner": one_liner, "reason": reason}
 
-# ── to_board（与 server-data.ts toBoard 同逻辑）─────────────────────
+# ── to_board（历史迁移用内置装配逻辑；当前今日结果以 ingest.py 为准）───────────
 
 def to_board(outputs: list) -> dict:
     def rec_rank(r):
@@ -130,7 +130,7 @@ def to_board(outputs: list) -> dict:
         "skipped":  [strip(o) for o in skipped],
     }
 
-# ── 账号 StoredAccount 装配（与 server-data.ts loadSeedAccounts 同逻辑）──
+# ── 账号 StoredAccount 装配（历史迁移用，日常账号事实源是 data/accounts/）──
 
 def human_forbidden(terms: list) -> list:
     return [t for t in terms if not scan_internal(t)]
@@ -157,7 +157,6 @@ def build_stored_account(acct_path: Path) -> dict:
         "track_id":          acct["track_id"],
         "platform_id":       acct["platform_id"],
         "positioning_id":    acct["positioning_id"],
-        "status":            acct.get("status", "active"),
         "platform_name":     platform.get("platform_name", acct["platform_id"]),
         "positioning_name":  pos.get("positioning_name", acct["positioning_id"]),
         "track_name":        track.get("track_name"),
@@ -226,7 +225,6 @@ def build_today_response(sa: dict, today: str) -> dict:
         "track_id":       sa["track_id"],
         "platform_id":    sa["platform_id"],
         "positioning_id": sa["positioning_id"],
-        "status":         sa.get("status", "active"),
     }
 
     return {

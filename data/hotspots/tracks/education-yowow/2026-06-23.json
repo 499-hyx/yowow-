@@ -1,0 +1,89 @@
+[
+  {
+    "id": "hs-20260623-edu-001",
+    "hotspot_id": "hs-20260623-edu-001",
+    "date": "2026-06-23",
+    "source_skill": "manual-web-verified",
+    "source_direction": "education-yowow daily_search_question",
+    "scope": "track:education-yowow",
+    "title": "高考查分开启，AI 志愿填报和家庭判断力一起被推上台前",
+    "summary": "多地高考成绩从 6 月 23 日起陆续公布，高考家庭进入志愿填报窗口。围绕 AI 志愿工具、信息筛选和家庭如何做选择的讨论升温，小学家长也开始把它前置成“孩子未来要不要只会问工具”的问题。",
+    "why_now": "查分节点是升学决策最高压窗口，AI 工具正在进入真实家庭决策场景，天然引发家长对孩子判断力、提问能力和陌生问题处理能力的提前焦虑。",
+    "phenomenon": "高考查分和志愿填报启动，AI 工具被大量家庭拿来辅助理解学校、专业和路径。",
+    "spread_emotion": "一边想借工具减少信息差，一边担心孩子未来只会依赖现成答案。",
+    "people_involved": [
+      "高考家庭",
+      "小学家长",
+      "教育博主",
+      "AI 工具使用者"
+    ],
+    "conflict_point": "工具能快速给出方案 vs 真正的目标、取舍和判断仍要人自己完成。",
+    "fact_structure": "高考查分节点 × AI 志愿工具普及 × 家庭路径决策焦虑。",
+    "candidate_problem_dimensions": [
+      "AI 时代的判断力",
+      "从信息获取到问题定义",
+      "陌生场景里的经验迁移",
+      "家长如何陪孩子用工具而不是被工具牵着走"
+    ],
+    "heat_score_10": 8.6,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "微博",
+      "抖音",
+      "小红书"
+    ],
+    "source_notes": [
+      "百度热搜实时榜“今起多地高考成绩陆续公布”，2026-06-23 检索",
+      "同日高考志愿相关讨论进入家长和教育内容场景"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要做志愿填报建议。",
+      "不要夸大 AI 工具效果。",
+      "适合转译成小学家长的长期能力培养话题。"
+    ]
+  },
+  {
+    "id": "hs-20260623-edu-002",
+    "hotspot_id": "hs-20260623-edu-002",
+    "date": "2026-06-23",
+    "source_skill": "manual-web-verified",
+    "source_direction": "education-yowow daily_search_question",
+    "scope": "track:education-yowow",
+    "title": "微信大更新刷屏，孩子如何适应不断变化的数字工具",
+    "summary": "微信更新成为 6 月 23 日大盘热点。对小学家长而言，这类国民级工具变化不仅是功能新闻，也会引出孩子如何理解新工具、形成数字生活规则和自主判断的问题。",
+    "why_now": "微信更新本身是大流量话题，家长会自然关心孩子未来面对不断变化的工具时，是被动适应还是主动理解规则。",
+    "phenomenon": "国民级社交工具更新引发全民讨论和使用习惯调整。",
+    "spread_emotion": "怕跟不上变化、想快速弄懂、也担心孩子沉迷工具。",
+    "people_involved": [
+      "家长",
+      "孩子",
+      "微信用户",
+      "学校和家庭沟通场景"
+    ],
+    "conflict_point": "工具持续变化 vs 孩子是否具备理解规则、判断边界和迁移经验的能力。",
+    "fact_structure": "工具更新 × 数字生活规则变化 × 家庭媒介教育压力。",
+    "candidate_problem_dimensions": [
+      "数字工具适应力",
+      "媒介素养",
+      "规则理解",
+      "亲子沟通中的工具边界"
+    ],
+    "heat_score_10": 7.8,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "微信",
+      "微博"
+    ],
+    "source_notes": [
+      "百度热搜实时榜“微信迎来史上最大更新”，2026-06-23 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要写成微信功能教程。",
+      "避免把工具变化直接等同于教育结论。"
+    ]
+  }
+]

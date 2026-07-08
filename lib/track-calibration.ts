@@ -1,3 +1,9 @@
+// track-calibration.ts — 赛道页的只读校准视图。
+//
+// 它把热点 × 账号的结果矩阵按赛道搜索方向聚合，帮助维护者看：
+// 哪些方向容易 strong/maybe/skip，哪些热点没有覆盖。
+// 不写数据，不改变推荐结果。
+
 import type { Recommendation, StoredAccount } from "@/lib/adaptation-types";
 import { loadTrackSummaries, type TrackConfigSummary } from "@/lib/config-data";
 import {

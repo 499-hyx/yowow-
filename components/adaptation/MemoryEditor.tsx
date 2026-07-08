@@ -193,7 +193,7 @@ export default function MemoryEditor({
     <div className="space-y-4">
       {readOnly ? (
         <div className="rounded-lg border border-[#E0D9CE] bg-[#F8F4EE] px-4 py-3 text-sm text-[#6B6963]">
-          {readOnlyMessage ?? "线上当前只能查看账号定位。要修改，请把修改内容发给管理员，由管理员同步到系统，下次跑批生效。"}
+          {readOnlyMessage ?? "线上当前只能查看账号定位。要修改，请编辑本地 data/accounts/<account_id>.json；下次跑批生效。"}
         </div>
       ) : null}
       <div className="flex flex-wrap items-center gap-3 rounded-lg border border-[#E8E6E1] bg-white px-4 py-3">
@@ -221,7 +221,7 @@ export default function MemoryEditor({
                         disabled={saving}
                         className="rounded-md bg-[#1F1F1E] px-3 py-1.5 text-xs font-medium text-white disabled:opacity-50"
                       >
-                        保存
+                        {saving ? "保存中" : "保存"}
                       </button>
                       <button
                         type="button"

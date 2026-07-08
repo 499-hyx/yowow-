@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hs-20260629-edu-001",
+    "hotspot_id": "hs-20260629-edu-001",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "education-yowow daily_search_question",
+    "scope": "track:education-yowow",
+    "title": "AI 志愿填报迎来真实大考：家长到底该问工具什么",
+    "summary": "高考志愿填报窗口开启，AI 志愿填报工具被大量家庭拿来辅助理解院校、专业和就业信息。讨论焦点从“工具准不准”延伸到“家长和孩子会不会提出好问题、做出自己的取舍”。",
+    "why_now": "查分后的志愿填报是高压决策场景，AI 工具第一次大规模进入许多家庭的真实选择过程，适合转译成小学家长对孩子提问能力和判断力的提前思考。",
+    "phenomenon": "AI 志愿填报工具进入高考家庭的真实决策场景。",
+    "spread_emotion": "想靠工具减少信息差，同时害怕把人生选择完全交给答案。",
+    "people_involved": [
+      "高考家庭",
+      "小学家长",
+      "教育博主",
+      "AI 工具用户"
+    ],
+    "conflict_point": "工具能快速整理信息 vs 目标定义、取舍顺序和责任仍要人完成。",
+    "fact_structure": "高考志愿窗口 × AI 工具辅助 × 家庭判断力焦虑。",
+    "candidate_problem_dimensions": [
+      "会提问比会找答案更重要",
+      "从信息获取到问题定义",
+      "家长如何陪孩子用工具",
+      "陌生场景里的自主判断"
+    ],
+    "heat_score_10": 8.9,
+    "traffic_level": "high",
+    "platforms": [
+      "小红书",
+      "抖音",
+      "微博",
+      "教育媒体"
+    ],
+    "source_notes": [
+      "2026-06-29 检索：高考志愿填报窗口和 AI 志愿填报讨论"
+    ],
+    "source_url": "https://www.stcn.com/article/detail/3984132.html",
+    "risk_notes": [
+      "不要做具体志愿建议。",
+      "不要夸大 AI 工具效果。"
+    ]
+  },
+  {
+    "id": "hs-20260629-edu-002",
+    "hotspot_id": "hs-20260629-edu-002",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "education-yowow daily_search_question",
+    "scope": "track:education-yowow",
+    "title": "“AI脸看腻了”刷屏：孩子以后怎么判断什么是真实表达",
+    "summary": "人民网评论相关话题进入热搜后，AI 生成内容的真实感、模板化和审美疲劳被集中讨论。对小学家长来说，这不只是内容行业话题，也是在提醒孩子需要学会识别工具产物和真实表达。",
+    "why_now": "AI 内容已经渗透孩子日常能看到的短视频、图文和广告，家长会关心孩子面对海量生成内容时如何保持判断。",
+    "phenomenon": "AI 生成面孔和模板化内容引发审美疲劳与真实性讨论。",
+    "spread_emotion": "看腻、警惕、不想被模板骗，也担心孩子分不清真实与生成。",
+    "people_involved": [
+      "家长",
+      "孩子",
+      "内容创作者",
+      "平台用户"
+    ],
+    "conflict_point": "AI 能快速生成内容 vs 孩子仍要理解背后的意图、证据和表达责任。",
+    "fact_structure": "AI 内容普及 × 真实感争议 × 儿童媒介素养。",
+    "candidate_problem_dimensions": [
+      "媒介素养",
+      "真实性判断",
+      "工具边界",
+      "亲子提问"
+    ],
+    "heat_score_10": 8.2,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "人民网",
+      "小红书",
+      "微博"
+    ],
+    "source_notes": [
+      "百度热搜实时榜“人民网评 AI脸看腻了”，2026-06-29 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要把 AI 内容一概否定。",
+      "避免写成平台治理评论。"
+    ]
+  },
+  {
+    "id": "hs-20260629-edu-003",
+    "hotspot_id": "hs-20260629-edu-003",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "education-yowow daily_search_question",
+    "scope": "track:education-yowow",
+    "title": "暑期将至，孩子的数字工具使用边界又成家长难题",
+    "summary": "暑期临近，孩子使用平板、手机、AI 工具和短视频的时间管理再次成为家长讨论重点。问题不只是管多久，而是孩子能不能说清自己为什么用、怎么用、用完得到什么。",
+    "why_now": "暑期家庭陪伴和工具使用时间都会增加，家长自然会把 AI、短视频和学习工具放到同一个管理场景里讨论。",
+    "phenomenon": "暑期前后，孩子数字工具使用和家庭规则讨论升温。",
+    "spread_emotion": "怕沉迷、怕落后、想用好工具但不知道边界怎么定。",
+    "people_involved": [
+      "小学家长",
+      "孩子",
+      "老师",
+      "教育内容创作者"
+    ],
+    "conflict_point": "工具可以帮助学习和探索 vs 没有目标时很容易变成被动刷屏。",
+    "fact_structure": "暑期时间增加 × 数字工具普及 × 家庭规则重建。",
+    "candidate_problem_dimensions": [
+      "工具目标感",
+      "规则理解",
+      "亲子沟通",
+      "从被动使用到主动提问"
+    ],
+    "heat_score_10": 7.6,
+    "traffic_level": "medium",
+    "platforms": [
+      "小红书",
+      "家长社群",
+      "抖音"
+    ],
+    "source_notes": [
+      "2026-06-29 暑期前家庭教育与数字工具使用讨论整理"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要制造假期焦虑。",
+      "适合作为轻量、可操作的家庭规则话题。"
+    ]
+  }
+]

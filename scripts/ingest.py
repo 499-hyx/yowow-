@@ -36,8 +36,24 @@ _MAKE_PROMPT = os.path.join(HERE, "make-prompt.py")
 _SPEC = importlib.util.spec_from_file_location("make_prompt", _MAKE_PROMPT)
 _mp = importlib.util.module_from_spec(_SPEC)
 _SPEC.loader.exec_module(_mp)
+sys.path.insert(0, HERE)
+import mvp_policy
 
 INTERNAL_OR_SCORE = list(_mp.INTERNAL_OR_SCORE)
+
+
+def _load_forced_hints():
+    # 单一来源 = config/global-gate.json（forced_connection_hints）。读不到则回退内置清单。
+    fallback = ["硬蹭", "硬扯", "强蹭", "强行", "绕很远", "情绪硬蹭", "生蹭"]
+    try:
+        with open(os.path.join(CONFIG_DIR, "global-gate.json"), "r", encoding="utf-8") as f:
+            hints = (json.load(f) or {}).get("forced_connection_hints")
+        return list(hints) if hints else fallback
+    except Exception:
+        return fallback
+
+
+FORCED_CONNECTION_HINTS = _load_forced_hints()
 FIVE = [
     "phenomenon",
     "real_problem",
@@ -61,6 +77,13 @@ ADAPTATION_KEYS = {
     "external_terms_check",
     "risk_note",   # 给老板的发布前提醒（如「争议大，交博士收口」），前端按视角展示
 }
+
+
+def safe_relpath(path, start):
+    try:
+        return os.path.relpath(path, start)
+    except ValueError:
+        return os.path.abspath(path)
 REC_ORDER = {"skip": 0, "maybe": 1, "strong_pick": 2}
 
 
@@ -165,16 +188,22 @@ def gate_visible(output, account, *, strict=False):
     for field_value in visible_strings(output):
         internal = scan_internal(field_value)
         forbidden = scan_terms(field_value, terms)
-        if internal or forbidden:
-            words = internal + forbidden
-            msg = f"用词硬门命中：{words}；字段内容片段：{field_value[:80]}"
+        forced = scan_terms(field_value, FORCED_CONNECTION_HINTS)
+        if internal or forbidden or forced:
+            if internal or forbidden:
+                words = internal + forbidden
+                msg = f"用词硬门命中：{words}；字段内容片段：{field_value[:80]}"
+                reason = f"这条成品没过用词自检，先不给你看。命中：{'、'.join(words)}"
+            else:
+                msg = f"连接硬蹭硬门命中：{forced}；字段内容片段：{field_value[:80]}"
+                reason = f"这条连接像情绪硬蹭，先跳过。命中：{'、'.join(forced)}"
             if strict:
                 raise IngestError(msg)
             return {
                 **output,
                 "recommendation": "skip",
                 "forced_flag": True,
-                "skip_reason": f"这条成品没过用词自检，先不给你看。命中：{'、'.join(words)}",
+                "skip_reason": reason,
                 "bridge_paths": [],
                 "chosen_path_id": None,
                 "content": None,
@@ -388,7 +417,6 @@ def account_for_response(account):
         "track_id": account["track_id"],
         "platform_id": account["platform_id"],
         "positioning_id": account["positioning_id"],
-        "status": account.get("status", "active"),
     }
 
 
@@ -434,6 +462,9 @@ def skip_from_match(match, account):
 
 def assemble_today(account_id, input_path, date_str, feedback_path=None):
     account = load_account(account_id)
+    _mp.ensure_account_runnable(account)
+    track = load_track(account)
+    review = mvp_policy.track_review_status(track)
     hotspots = load_hotspots(date_str, account.get("track_id"))
     hotspot_by_id = {h["hotspot_id"]: h for h in hotspots}
     matches, generates, sources = parse_responses(input_path, account)
@@ -463,7 +494,7 @@ def assemble_today(account_id, input_path, date_str, feedback_path=None):
         outputs.append(output)
         meta[hid] = build_meta(output, hotspot_by_id[hid], account, match)
 
-    today = {
+    today = mvp_policy.annotate_today({
         "account": account_for_response(account),
         "board": to_board(outputs),
         "meta": meta,
@@ -471,13 +502,13 @@ def assemble_today(account_id, input_path, date_str, feedback_path=None):
         "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
         "date": date_str,
         "generated_at": _dt.datetime.now().isoformat(timespec="seconds"),
-    }
+    }, track, account)
     manifest = {
         "account_id": account_id,
         "date": date_str,
         "installed_at": _dt.datetime.now().isoformat(timespec="seconds"),
         "model": "（人工填写：外部 LLM 模型名）",
-        "source_files": [os.path.relpath(p, PROJECT_ROOT) for p in sources],
+        "source_files": [safe_relpath(p, PROJECT_ROOT) for p in sources],
         "hotspot_tiers": {hid: (matches.get(hid) or {}).get("tier") or generates[hid]["recommendation"] for hid in all_ids},
         "outputs": {
             "picks": [o["hotspot_id"] for o in today["board"]["picks"]],
@@ -485,6 +516,13 @@ def assemble_today(account_id, input_path, date_str, feedback_path=None):
         },
         "feedback_archived": bool(feedback_path),
         "notes": notes,
+        "needs_human_review": review["needs_human_review"],
+        "formal_approval": review["formal_approval"],
+        "mvp_internal_only": review["mvp_internal_only"],
+        "review_status": {
+            **review,
+            "account_id": account_id,
+        },
     }
     return today, manifest, sources
 
@@ -496,6 +534,7 @@ def install(account_id, input_path, date_str, feedback_path=None):
     today_dir = os.path.join(DATA_DIR, "today", account_id)
     installed_path = os.path.join(run_dir, "installed.json")
     manifest_path = os.path.join(run_dir, "manifest.json")
+    run_note_path = os.path.join(run_dir, "RUN-NOTE.md")
     dated_path = os.path.join(today_dir, f"{date_str}.json")
     latest_path = os.path.join(today_dir, "latest.json")
 
@@ -511,6 +550,10 @@ def install(account_id, input_path, date_str, feedback_path=None):
 
     write_json(installed_path, today)
     write_json(manifest_path, manifest)
+    if manifest.get("mvp_internal_only"):
+        os.makedirs(run_dir, exist_ok=True)
+        with open(run_note_path, "w", encoding="utf-8") as f:
+            f.write(mvp_policy.run_note_text(account_id, date_str, manifest.get("review_status") or {}))
     atomic_write_json(dated_path, today)
     atomic_write_json(latest_path, today)
     return today, manifest
@@ -622,11 +665,39 @@ def selftest():
         assert today["board"]["skipped"][0]["external_terms_check"] is False
         print("✅ 成品禁词命中会降级 skip，不进入 picks")
 
+        bad_forced = os.path.join(tmp, "bad-forced")
+        os.makedirs(bad_forced)
+        forced_out = json_copy(valid_fixture(hotspot_id, account))
+        forced_out["bridge_paths"][0]["track_relation"] = "这条得硬蹭才接得上。"
+        write_json(os.path.join(bad_forced, f"generate-{hotspot_id}.json"), forced_out)
+        today, _, _ = assemble_today(account_id, bad_forced, date_str)
+        assert today["board"]["skipped"][0]["hotspot_id"] == hotspot_id
+        assert today["board"]["skipped"][0]["external_terms_check"] is False
+        print("✅ 成品连接硬蹭（forced-hints）命中会降级 skip")
+
         feedback = os.path.join(tmp, "feedback.json")
         write_json(feedback, {"feedback_submitted_ids": [hotspot_id]})
         today, manifest, _ = assemble_today(account_id, raw, date_str, feedback)
         assert manifest["feedback_archived"] is True
         print("✅ --feedback 会进入 manifest 标记")
+
+        legacy_status_path = os.path.join(DATA_DIR, "accounts", "acct-selftest-legacy-status-ingest.json")
+        try:
+            legacy_account = json_copy(account)
+            legacy_account["account_id"] = "acct-selftest-legacy-status-ingest"
+            legacy_account["display_name"] = "Selftest legacy-status ingest account"
+            legacy_account["status"] = "inactive"
+            write_json(legacy_status_path, legacy_account)
+            today, manifest, _ = assemble_today("acct-selftest-legacy-status-ingest", raw, date_str)
+            assert today["account"]["account_id"] == "acct-selftest-legacy-status-ingest"
+            assert "status" not in today["account"]
+            assert "account_status" not in manifest["review_status"]
+            print("✅ 账号 status 字段会被 ingest 忽略")
+        finally:
+            try:
+                os.remove(legacy_status_path)
+            except FileNotFoundError:
+                pass
 
     print("\n🎉 ingest.py --selftest 全过")
     return 0

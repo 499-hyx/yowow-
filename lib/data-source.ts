@@ -37,7 +37,7 @@ const FS_DIRS: Record<DocKind, { dir: string; twoLevel: boolean }> = {
   hotspots_broad: { dir: "data/hotspots", twoLevel: false },
   hotspots_track: { dir: "data/hotspots/tracks", twoLevel: true },
   track_config: { dir: "config/tracks", twoLevel: false },
-  bridge_directions: { dir: "config/bridge-directions", twoLevel: false },
+  bridge_directions: { dir: "config/deprecated/bridge-directions", twoLevel: false },
   platform: { dir: "config/platforms", twoLevel: false },
   positioning: { dir: "config/positionings", twoLevel: false },
   account_profile: { dir: "config/account-profiles", twoLevel: false },

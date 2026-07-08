@@ -1,8 +1,10 @@
 node_modules
 .next
 out
+.runtime/
 .env
 .env.local
+.env.*.local
 .vercel
 *.tsbuildinfo
 next-env.d.ts
@@ -11,3 +13,6 @@ data/runs/
 data/deleted/
 __pycache__/
 *.pyc
+playwright-report/
+test-results/
+*.smoke-backup-*

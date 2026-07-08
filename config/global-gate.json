@@ -1,0 +1,24 @@
+{
+  "_note": "全局用词闸门·单一来源。内部术语/分数名 = 对外成品绝不出现的词；forced_connection_hints = 像情绪硬蹭的连接词。Python(make-prompt/ingest) 读本文件；TS(skip-gate/adaptation-types/display-text) 由 test/global-gate-parity.test.mjs 守住与本文件一致，漂移即测试失败。改禁词只改这里。",
+  "_owner": "博士 / 老板",
+  "internal_or_score": [
+    "远迁移",
+    "far transfer",
+    "OOD",
+    "in-distribution",
+    "范式转移",
+    "relevance",
+    "naturalness",
+    "相关度分",
+    "自然度分"
+  ],
+  "forced_connection_hints": [
+    "硬蹭",
+    "硬扯",
+    "强蹭",
+    "强行",
+    "绕很远",
+    "情绪硬蹭",
+    "生蹭"
+  ]
+}

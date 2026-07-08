@@ -1,0 +1,172 @@
+[
+  {
+    "id": "hs-20260629-001",
+    "hotspot_id": "hs-20260629-001",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "未来5年充电、供热、供暖将有大变化",
+    "summary": "百度热搜实时榜出现“未来5年充电供热供暖将有大变化”。围绕能源基础设施、充电便利、城市生活成本和公共服务升级的讨论升温。",
+    "why_now": "能源和城市公共服务直接影响通勤、居住与家庭日常，政策性变化容易形成跨人群讨论。",
+    "phenomenon": "能源与公共服务基础设施的中长期变化被推到大众讨论前台。",
+    "spread_emotion": "关心便利性、担心成本变化、想知道自己生活会受什么影响。",
+    "people_involved": [
+      "城市居民",
+      "新能源车用户",
+      "家庭用户",
+      "公共服务运营方"
+    ],
+    "conflict_point": "基础设施越来越智能便利 vs 普通人需要理解新规则和新成本。",
+    "fact_structure": "能源基础设施规划 × 日常生活场景 × 公共服务变化。",
+    "candidate_problem_dimensions": [
+      "城市生活适应",
+      "公共服务变化",
+      "成本与便利权衡",
+      "长期规划如何落到个人选择"
+    ],
+    "heat_score_10": 8.5,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "政务/财经媒体",
+      "微博"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-29 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "公共池只记录大盘热度，不做赛道推荐判断。",
+      "具体政策细节需以官方文件为准。"
+    ]
+  },
+  {
+    "id": "hs-20260629-002",
+    "hotspot_id": "hs-20260629-002",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "中国避暑神器在欧洲卖爆了",
+    "summary": "百度热搜实时榜出现“中国避暑神器在欧洲卖爆了”。高温天气、跨境消费和中国小家电/降温用品出海引发讨论。",
+    "why_now": "夏季高温叠加欧洲消费需求，让中国制造和实用型产品出海成为大众关注话题。",
+    "phenomenon": "高温场景下，中国降温用品在海外市场受到关注。",
+    "spread_emotion": "好奇、民族自豪、想买同款、关心极端天气下怎么过得更舒服。",
+    "people_involved": [
+      "海外消费者",
+      "中国制造企业",
+      "跨境电商卖家",
+      "普通家庭"
+    ],
+    "conflict_point": "天气越来越热 vs 用户需要更便宜、更快见效的生活解决方案。",
+    "fact_structure": "高温天气 × 实用消费品 × 中国制造出海。",
+    "candidate_problem_dimensions": [
+      "生活效率消费",
+      "极端天气适应",
+      "产品实用性",
+      "跨境消费趋势"
+    ],
+    "heat_score_10": 8.1,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "抖音",
+      "微博"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-29 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要替具体品牌背书。",
+      "避免把单一热销现象泛化成行业结论。"
+    ]
+  },
+  {
+    "id": "hs-20260629-003",
+    "hotspot_id": "hs-20260629-003",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "人民网评：AI脸，看腻了",
+    "summary": "百度热搜实时榜出现“人民网评 AI脸看腻了”。关于 AI 生成内容、审美疲劳、真实感和内容创作边界的讨论继续升温。",
+    "why_now": "AI 生成内容已经进入短视频、图文和广告场景，大众开始从新鲜转向审美疲劳和真实性追问。",
+    "phenomenon": "AI 生成面孔和模板化视觉内容被主流媒体点名讨论。",
+    "spread_emotion": "看腻、怀疑真实性、担心内容越来越像模板，也希望 AI 更有边界。",
+    "people_involved": [
+      "内容创作者",
+      "普通用户",
+      "平台运营者",
+      "品牌方"
+    ],
+    "conflict_point": "AI 降低内容生产成本 vs 用户仍然想看真实、有判断、有温度的表达。",
+    "fact_structure": "AI 内容普及 × 审美疲劳 × 真实感需求。",
+    "candidate_problem_dimensions": [
+      "工具使用边界",
+      "真实性判断",
+      "内容同质化",
+      "人和工具如何分工"
+    ],
+    "heat_score_10": 8.3,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "人民网",
+      "微博",
+      "小红书"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-29 检索；人民网评论话题"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要伪造人民网原文观点。",
+      "只作为 AI 内容使用边界的中立原料。"
+    ]
+  },
+  {
+    "id": "hs-20260629-004",
+    "hotspot_id": "hs-20260629-004",
+    "date": "2026-06-29",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "多地高考志愿填报进入关键窗口",
+    "summary": "6 月下旬至 7 月初，多省份进入高考志愿填报阶段。家庭围绕专业选择、城市选择、就业预期和工具辅助决策展开集中讨论。",
+    "why_now": "高考查分后，志愿填报是家庭决策压力最高的节点之一，天然牵动教育、就业和代际沟通。",
+    "phenomenon": "高考家庭从查分转入志愿填报和路径选择。",
+    "spread_emotion": "紧张、怕选错、怕信息差、想借助工具降低不确定性。",
+    "people_involved": [
+      "高考考生",
+      "高考家长",
+      "高中教师",
+      "志愿填报服务"
+    ],
+    "conflict_point": "信息越来越多 vs 家庭真正难的是定义目标、做取舍和承担选择。",
+    "fact_structure": "志愿填报窗口 × 专业城市选择 × 家庭重大决策。",
+    "candidate_problem_dimensions": [
+      "重大选择中的判断力",
+      "信息筛选",
+      "目标定义",
+      "家长参与边界"
+    ],
+    "heat_score_10": 8.7,
+    "traffic_level": "high",
+    "platforms": [
+      "教育媒体",
+      "小红书",
+      "抖音",
+      "微博"
+    ],
+    "source_notes": [
+      "2026-06-29 检索：多地高考志愿填报时间节点与相关讨论"
+    ],
+    "source_url": "https://www.stcn.com/article/detail/3984132.html",
+    "risk_notes": [
+      "不要提供具体志愿填报建议。",
+      "不要替任何工具或机构做效果承诺。"
+    ]
+  }
+]

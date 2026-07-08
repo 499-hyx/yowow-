@@ -1,0 +1,418 @@
+[
+  {
+    "id": "hs-20260707-broad-001",
+    "hotspot_id": "hs-20260707-broad-001",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "戒掉咖啡后，我到底是变好了还是废了",
+    "summary": "很多人在微博围绕“戒掉咖啡后我的身体变化”晒断咖啡体验，有人说睡眠好了、心慌少了，也有人说一戒就头痛、上班像断电。讨论集中在打工人、学生和长期咖啡依赖者之间。",
+    "why_now": "6月29日前后相关话题登上微博热议，正好叠加夏季熬夜、通勤、备考和上班提神需求。",
+    "phenomenon": "用户把咖啡从普通饮品讨论成一种精力管理工具，围绕戒断反应、失眠、心慌、效率展开现身说法。",
+    "spread_emotion": "焦虑、好奇、反叛和自嘲并存：想变健康，又怕没咖啡无法工作。",
+    "people_involved": [
+      "咖啡依赖的打工人",
+      "尝试控糖控咖的人",
+      "睡眠差的人"
+    ],
+    "conflict_point": "想要健康睡眠的人，和必须靠咖啡撑住工作学习的人，在“戒掉”还是“适量喝”上拧巴。",
+    "fact_structure": "微博话题页显示6月29日有代表视频与多条用户讨论，评论区出现“戒断不了”“不喝一天没精神”等第一人称表达。",
+    "candidate_problem_dimensions": [
+      "精力透支",
+      "健康焦虑",
+      "工作学习依赖外部刺激"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博 #戒掉咖啡后我的身体变化#，代表帖约4554转、454评、463赞；评论和转帖集中讨论咖啡戒断、失眠、提神。",
+    "source_notes": [
+      "微博热搜页可核验到话题、发布时间、互动量和用户原话"
+    ],
+    "source_url": "[https://weibo.com/a/hot/525e32d7dc8ccd5b_0.html?type=grab](https://weibo.com/a/hot/525e32d7dc8ccd5b_0.html?type=grab)",
+    "ugc_voice": "“我真戒断不了一点”“这玩意喝了不一定精神，不喝肯定一天没精神。”",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 6.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "健康建议需避免绝对化，具体身体问题应以医生意见为准"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-002",
+    "hotspot_id": "hs-20260707-broad-002",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "凌晨5点的咖啡店，打工人看破防了",
+    "summary": "微博上“凌晨5点的咖啡店”引发讨论，用户一边看早班咖啡店忙到冒烟，一边把它代入自己的早起上班、外卖配送和服务业劳动。有人觉得治愈，有人质疑摆拍，也有人感叹每杯咖啡背后都是另一个打工人。",
+    "why_now": "7月5日至7月6日相关视频和话题集中传播，适逢高温通勤季，早起、赶工、服务业强度容易共鸣。",
+    "phenomenon": "一个咖啡店早班视频从生活观察变成劳动强度讨论，用户开始重新看待自己每天随手下单的咖啡。",
+    "spread_emotion": "心疼、治愈、质疑摆拍和打工人互相理解交织。",
+    "people_involved": [
+      "早起上班族",
+      "咖啡店员工",
+      "外卖配送员",
+      "围观短视频用户"
+    ],
+    "conflict_point": "消费者期待一早就有咖啡，服务业劳动者承受凌晨备餐压力；同时观众又在真实记录和流量摆拍之间互相质疑。",
+    "fact_structure": "微博话题页显示7月5日、7月6日多条用户视频和评论，围绕“凌晨五点”“强度太大”“做咖啡辛苦、送咖啡辛苦、喝咖啡也辛苦”扩散。",
+    "candidate_problem_dimensions": [
+      "服务业劳动可见性",
+      "早起通勤压力",
+      "短视频真实性焦虑"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博 #凌晨5点的咖啡店#，代表帖有112转、16评、4赞；另有用户帖210转、15评、2赞；话题页出现多条第一人称和质疑帖。",
+    "source_notes": [
+      "微博话题页保留多条用户发布内容和互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/1a526f773bda8a50_0.html?type=grab](https://weibo.com/a/hot/1a526f773bda8a50_0.html?type=grab)",
+    "ugc_voice": "“平时只知道上班前下单一杯咖啡，但你见过凌晨五点的咖啡店吗？”",
+    "scan_domain": "打工人话题",
+    "heat_score_10": 6.2,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "部分用户质疑视频摆拍，需保留真实性边界"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-003",
+    "hotspot_id": "hs-20260707-broad-003",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "等退休是场巨大的骗局",
+    "summary": "微博实时热点里“等退休是场巨大的骗局”引发打工人共鸣，大家用它吐槽把人生快乐全部延后到退休并不现实。讨论者既有年轻上班族，也有临近中年、开始重新计算时间成本的人。",
+    "why_now": "7月6日相关视频进入微博实时热点，叠加年中疲惫、暑期对休假和生活质量的渴望。",
+    "phenomenon": "用户把退休从人生终点奖励，重新讨论成一种不确定承诺：现在不活，未来也未必能补回来。",
+    "spread_emotion": "疲惫、清醒、自嘲和对“延迟满足叙事”的反感。",
+    "people_involved": [
+      "年轻打工人",
+      "中年职场人",
+      "想提前规划生活的人"
+    ],
+    "conflict_point": "传统期待是努力工作到退休再享受，现实感受是身体、时间和机会可能等不到那一天。",
+    "fact_structure": "微博实时热点页7月7日显示该词条，关联7月6日用户视频，互动约1430转、328评、4064赞。",
+    "candidate_problem_dimensions": [
+      "职业倦怠",
+      "时间焦虑",
+      "人生规划不确定"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点“等退休是场巨大的骗局”，代表视频互动约1430转、328评、4064赞。",
+    "source_notes": [
+      "微博实时热点页可核验词条和互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“别再把好日子都押到退休了，谁知道那时候还有没有力气玩。”",
+    "scan_domain": "打工人话题",
+    "heat_score_10": 7,
+    "traffic_level": "high",
+    "risk_notes": [
+      "话题偏情绪表达，不宜当作政策或养老金事实判断"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-004",
+    "hotspot_id": "hs-20260707-broad-004",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "我喜欢不着急的人",
+    "summary": "“我喜欢不着急的人”出现在微博实时热点，用户把它延展成关系里的松弛感讨论：回消息不压迫、约会不催促、生活节奏不互相拖拽。它不像新闻，更像一句被大量转发的情绪标签。",
+    "why_now": "7月7日进入微博实时热点，夏季社交、恋爱综艺和情绪类短句共同推高了传播。",
+    "phenomenon": "一句关系偏好的短句被用户用来表达对慢节奏、低压相处和稳定情绪的向往。",
+    "spread_emotion": "松弛、渴望被理解、反感催促和关系压迫。",
+    "people_involved": [
+      "恋爱中的年轻人",
+      "社交疲惫者",
+      "高压工作者"
+    ],
+    "conflict_point": "一方想要效率、回应和确定性，另一方更想要不被催、不被逼、不被情绪勒索的节奏。",
+    "fact_structure": "微博实时热点页显示该词条，代表用户帖为7月7日00:18发布，互动约605转、238评、6361赞。",
+    "candidate_problem_dimensions": [
+      "亲密关系边界",
+      "情绪稳定需求",
+      "社交压力"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点“我喜欢不着急的人”，代表帖互动约605转、238评、6361赞。",
+    "source_notes": [
+      "微博实时热点页可核验词条和互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“我真的喜欢那种不催我、不逼我、慢慢来也没关系的人。”",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 6.5,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "短句类话题容易被营销号二次包装，需人工复核原帖语境"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-005",
+    "hotspot_id": "hs-20260707-broad-005",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "洪水求助帖变成全网接力",
+    "summary": "广西强降雨和内涝期间，微博出现#广西内涝求助#，用户用超话发布求助、转发定位、整理救援信息。相比官方通报，这条更像普通人把灾情、亲友位置和救援需求搬到平台上接力。",
+    "why_now": "7月6日至7月7日广西多地强降雨、内涝求助信息集中出现，微博开启相关求助超话。",
+    "phenomenon": "灾害话题从新闻通报延伸为用户发定位、求扩散、互相提醒避险的 UGC 信息流。",
+    "spread_emotion": "紧张、互助、恐惧和急迫。",
+    "people_involved": [
+      "受灾地居民",
+      "外地亲友",
+      "救援信息整理者",
+      "转发扩散网友"
+    ],
+    "conflict_point": "现实灾情变化很快，普通人需要即时求助；平台信息扩散快，但真假、重复和救援对接也容易混乱。",
+    "fact_structure": "微博实时热点显示#广西内涝求助#，微博小秘书7月6日发布求助指引，代表帖互动约10596转、673评、6054赞。",
+    "candidate_problem_dimensions": [
+      "灾害信息互助",
+      "亲友安全焦虑",
+      "平台求助秩序"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博 #广西内涝求助# 超话及实时热点，代表官方指引帖约10596转、673评、6054赞；用户可按指引发布求助。",
+    "source_notes": [
+      "微博实时热点页可核验话题、时间和互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“人在附近的帮忙看一下，这个地址还有老人小孩被困。”",
+    "scan_domain": "生活争议与站队",
+    "heat_score_10": 8.2,
+    "traffic_level": "high",
+    "risk_notes": [
+      "灾害求助信息必须避免二次传播未核实地址、电话和个人隐私"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-006",
+    "hotspot_id": "hs-20260707-broad-006",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "第一次见报仇小孩",
+    "summary": "“第一次见报仇小孩”在微博实时热点中扩散，用户把孩子的反应剪成搞笑语境，围绕“孩子记仇”“童言童行太真实”玩梗。它的传播点不是育儿知识，而是家长和围观者都能代入的家庭小冲突。",
+    "why_now": "7月7日相关用户视频进入微博实时热点，短视频里的反差行为适合被二创和评论区接梗。",
+    "phenomenon": "一个儿童日常片段被包装成“报仇小孩”梗，用户在评论区分享自家孩子类似行为。",
+    "spread_emotion": "好笑、惊讶、代入和轻微育儿焦虑。",
+    "people_involved": [
+      "家长",
+      "围观短视频用户",
+      "带娃人群"
+    ],
+    "conflict_point": "成年人期待孩子天真好哄，现实里孩子也会记得委屈、表达不满，形成反差笑点。",
+    "fact_structure": "微博实时热点页显示该词条，代表帖7月7日00:03发布，互动约625转、203评、2968赞。",
+    "candidate_problem_dimensions": [
+      "亲子沟通",
+      "儿童情绪表达",
+      "家庭日常冲突"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点“第一次见报仇小孩”，代表帖约625转、203评、2968赞。",
+    "source_notes": [
+      "微博实时热点页和发布者页面可核验时间与互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“这小孩不是不懂，他是什么都记着呢。”",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 6.4,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "涉及未成年人视频，传播时需注意隐私和避免过度解读儿童行为"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-007",
+    "hotspot_id": "hs-20260707-broad-007",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "大牌像不像把中国纹样拿去用了",
+    "summary": "微博上“LV等大牌集体撞款中国传统纹样”“LV胜诉暴露了中国文化确权时差”等话题引发争吵。普通人讨论的重点不是单个判决，而是“我小时候就见过的纹样，为什么最后变成别人说了算”。",
+    "why_now": "7月7日相关词条进入微博实时热点，传统纹样与国际品牌争议被用户转化成文化归属和日常审美记忆讨论。",
+    "phenomenon": "用户把服饰、建筑、民俗里见过的传统图案截图对比，讨论原创、借鉴、撞款和确权。",
+    "spread_emotion": "愤怒、委屈、嘲讽和文化身份焦虑。",
+    "people_involved": [
+      "普通网友",
+      "传统文化爱好者",
+      "设计从业者",
+      "消费者"
+    ],
+    "conflict_point": "普通人认为传统纹样属于公共文化记忆，现实中商业设计和法律确权却可能由更强势主体主导。",
+    "fact_structure": "微博实时热点页显示#LV等大牌集体撞款中国传统纹样#和#LV胜诉暴露了中国文化确权时差#，代表帖分别约422转、194评、4476赞及38转、55评、188赞。",
+    "candidate_problem_dimensions": [
+      "文化归属感",
+      "审美版权边界",
+      "普通人对法律确权的不信任"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点相关词条，多条媒体和用户讨论传统纹样、撞款、确权时差。",
+    "source_notes": [
+      "微博实时热点页可核验词条与互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“这纹样我奶奶家柜子上就有，怎么现在还要别人来定义像不像？”",
+    "scan_domain": "生活争议与站队",
+    "heat_score_10": 7.1,
+    "traffic_level": "high",
+    "risk_notes": [
+      "涉及法律判决和品牌争议，需避免断言侵权事实"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-008",
+    "hotspot_id": "hs-20260707-broad-008",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "厕所也能被看成 LV 风",
+    "summary": "“河南厕所 LV”出现在微博实时热点，用户围绕一个公共空间外观像奢侈品视觉符号展开玩梗。有人觉得土味幽默，有人觉得审美借鉴过度，也有人开始晒身边类似“高仿感公共装修”。",
+    "why_now": "7月7日相关词条进入微博实时热点，图片型话题适合截图、转发和评论区接龙。",
+    "phenomenon": "公共设施外观被网友用奢侈品符号重新命名，带出大众对县城审美、网红装修和符号挪用的讨论。",
+    "spread_emotion": "好笑、尴尬、猎奇和审美吐槽。",
+    "people_involved": [
+      "本地网友",
+      "围观网友",
+      "审美吐槽用户"
+    ],
+    "conflict_point": "地方空间想做出高级感或辨识度，网友却把它解读成山寨、撞脸和土味符号。",
+    "fact_structure": "微博实时热点页显示“河南厕所 LV”，代表帖7月7日发布，约212转、247评、5582赞。",
+    "candidate_problem_dimensions": [
+      "公共审美争议",
+      "地方空间网红化",
+      "符号模仿边界"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点“河南厕所 LV”，代表帖互动约212转、247评、5582赞。",
+    "source_notes": [
+      "微博实时热点页可核验词条和互动量"
+    ],
+    "source_url": "[https://weibo.com/a/hot/realtime](https://weibo.com/a/hot/realtime)",
+    "ugc_voice": "“不是，这厕所怎么一眼看过去这么贵，又这么好笑。”",
+    "scan_domain": "梗与格式",
+    "heat_score_10": 6.3,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "涉及具体地点和品牌联想，表达需避免认定商标侵权"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-009",
+    "hotspot_id": "hs-20260707-broad-009",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "Doll makeup：把自己画成玩偶脸",
+    "summary": "海外 TikTok 上玩偶妆继续升温，用户模仿 Bratz、Blythe、Barbie 式大眼、重腮红、白眼线和夸张睫毛。参与者主要是年轻女性和美妆创作者，争议集中在可爱表达、童年怀旧和过度幼态化之间。",
+    "why_now": "6月底到7月初，多家海外时尚媒体报道 TikTok 上 doll makeup 扩散，名人造型和用户仿妆共同推动。",
+    "phenomenon": "用户用短视频展示从素颜到玩偶妆的转变，妆容核心是放大眼睛、提高面中亮度、制造塑料娃娃感。",
+    "spread_emotion": "怀旧、变装兴奋、审美站队和对幼态审美的担忧。",
+    "people_involved": [
+      "TikTok 美妆用户",
+      "Gen Z 女性",
+      "怀旧玩具爱好者"
+    ],
+    "conflict_point": "一方把它看成创意仿妆和童年怀旧，另一方担心它把成人审美推向幼态和不真实。",
+    "fact_structure": "海外报道指出 doll-inspired makeup 正由 TikTok 用户仿妆推向主流，平台上大量用户围绕玩偶眼线、腮红和睫毛进行教程和挑战。",
+    "candidate_problem_dimensions": [
+      "审美焦虑",
+      "怀旧消费情绪",
+      "自我表达与凝视冲突"
+    ],
+    "happened_when": "2026-06 下旬至 2026-07 上旬",
+    "platforms": [
+      "TikTok",
+      "Instagram"
+    ],
+    "platform_evidence": "TikTok 上 doll makeup 仿妆视频扩散，海外媒体6天前报道该趋势正在主流化；中文圈暂未观察到大规模传入，只具备潜在外溢性。",
+    "source_notes": [
+      "海外媒体对 TikTok 用户仿妆趋势有集中转述"
+    ],
+    "source_url": "[https://www.teenvogue.com/story/doll-makeup-trend](https://www.teenvogue.com/story/doll-makeup-trend)",
+    "ugc_voice": "“今天不做人了，直接把自己画成小时候最想买的那个娃娃。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 6.6,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "海外趋势传入中文平台程度需后续复核；避免把个别名人造型等同于全网风潮"
+    ]
+  },
+  {
+    "id": "hs-20260707-broad-010",
+    "hotspot_id": "hs-20260707-broad-010",
+    "date": "2026-07-07",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "乱写一句话的 slogan T 恤又回来了",
+    "summary": "海外平台上 Y2K 式 slogan T 恤重新变热，用户喜欢穿带讽刺、混乱、内网梗和自嘲文字的 T 恤。它被讨论成一种反精致穿搭：不再追求干净高级，而是把态度直接写在身上。",
+    "why_now": "7月初海外时尚媒体集中报道 2026 夏季 slogan/graphic tee 回潮，TikTok 和 Instagram 穿搭内容跟进。",
+    "phenomenon": "用户晒出带夸张文字、复古图案、反鸡汤句子的 T 恤穿搭，把衣服当成社交态度和梗载体。",
+    "spread_emotion": "叛逆、幽默、反精致和求关注。",
+    "people_involved": [
+      "Gen Z 用户",
+      "复古穿搭爱好者",
+      "社交媒体穿搭博主"
+    ],
+    "conflict_point": "一方想摆脱过度精致和静奢审美，另一方觉得 slogan T 恤幼稚、廉价或太用力。",
+    "fact_structure": "海外报道提到 2026 夏季 graphic/slogan T 恤在 Gen Z 中回潮，用户更偏好幽默、混乱和个人表达，而不是品牌 logo。",
+    "candidate_problem_dimensions": [
+      "反精致审美",
+      "身份表达",
+      "社交媒体人设疲劳"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "TikTok",
+      "Instagram",
+      "X"
+    ],
+    "platform_evidence": "海外趋势报道显示 graphic/slogan T 恤正在夏季穿搭内容中升温，用户以 meme、复古语境和个人态度进行晒图。",
+    "source_notes": [
+      "海外时尚媒体对社交平台穿搭趋势有转述"
+    ],
+    "source_url": "[https://www.whowhatwear.com/fashion/trends/graphic-t-shirts-women-summer-2026](https://www.whowhatwear.com/fashion/trends/graphic-t-shirts-women-summer-2026)",
+    "ugc_voice": "“今天懒得解释我是什么人，T 恤自己会说。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 6.1,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "该趋势以海外穿搭圈为主，中文平台是否大规模跟进需继续观察"
+    ]
+  }
+]

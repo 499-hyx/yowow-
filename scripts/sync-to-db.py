@@ -4,7 +4,7 @@
 用法:
   python3 scripts/sync-to-db.py                # 同步到 Turso（需环境变量）
   python3 scripts/sync-to-db.py --dry-run      # 只列出将同步什么
-  python3 scripts/sync-to-db.py --selftest     # 本地 sqlite 自测（/tmp，不碰网络）
+  python3 scripts/sync-to-db.py --selftest     # 本地 sqlite 自测（系统临时目录，不碰网络）
 
 环境变量（远程模式必需）:
   TURSO_DATABASE_URL   形如 libsql://<db>-<org>.turso.io（脚本自动转 https）
@@ -20,6 +20,7 @@ import datetime
 import json
 import os
 import sys
+import tempfile
 import urllib.request
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -31,7 +32,7 @@ SOURCES = [
     ("hotspots_broad",     "data/hotspots",            "flat"),
     ("hotspots_track",     "data/hotspots/tracks",     "twoLevel"),
     ("track_config",       "config/tracks",            "flat"),
-    ("bridge_directions",  "config/bridge-directions", "flat"),
+    ("bridge_directions",  "config/deprecated/bridge-directions", "flat"),
     ("platform",           "config/platforms",         "flat"),
     ("positioning",        "config/positionings",      "flat"),
     ("account_profile",    "config/account-profiles",  "flat"),
@@ -141,11 +142,11 @@ def sync_remote(rows):
     print(f"✅ 已同步 {len(rows)} 份文档到 Turso（{now}）")
 
 
-# ── 自测：本地 sqlite（放 /tmp，挂载盘 sqlite 会 I/O error）──────────────
+# ── 自测：本地 sqlite（放系统临时目录，避免挂载盘 sqlite I/O error）──────────────
 
 def selftest(rows):
     import sqlite3
-    db = "/tmp/yowow-adaptation-sync-selftest.db"
+    db = os.path.join(tempfile.gettempdir(), "yowow-adaptation-sync-selftest.db")
     if os.path.exists(db):
         os.remove(db)
     conn = sqlite3.connect(db)
@@ -190,6 +191,8 @@ def main():
             print(f"{k:18s} {key}")
         print(f"共 {len(rows)} 份")
     else:
+        print("⚠️ 正式同步：将以本地 data/ + config/ 为事实源覆盖 Turso docs 镜像，并清理库里多余 key。")
+        print("   建议先运行：python3 scripts/sync-to-db.py --dry-run")
         sync_remote(rows)
 
 

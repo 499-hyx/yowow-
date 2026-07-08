@@ -30,7 +30,6 @@ function defaultAccount(accountId: string, fallback?: Partial<AccountProfile>): 
     track_id: fallback?.track_id ?? "custom",
     platform_id: fallback?.platform_id ?? "xiaohongshu",
     positioning_id: fallback?.positioning_id ?? "expert",
-    status: "active",
   };
 }
 
@@ -48,7 +47,6 @@ async function respond(
         track_id: stored.track_id,
         platform_id: stored.platform_id,
         positioning_id: stored.positioning_id,
-        status: stored.status,
       }
     : defaultAccount(accountId, reqAccount);
 

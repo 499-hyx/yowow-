@@ -46,6 +46,10 @@ export default function SparkInbox({
         return;
       }
       setSparks(body.sparks ?? []);
+      setMessage("");
+    } catch {
+      setMessage("读取失败：本地服务没有响应。");
+      setSparks([]);
     } finally {
       setLoading(false);
     }
@@ -94,13 +98,13 @@ export default function SparkInbox({
         {readOnly ? (
           <div className="space-y-3">
             <p className="text-sm leading-relaxed text-[#6B6963]">
-              {readOnlyDescription ?? "线上当前不能直接提交灵感。请复制下面的话发给管理员或 agent；灵感需要管理员处理后，才会进入下一次热点筛选。"}
+              {readOnlyDescription ?? "线上当前不能直接提交灵感。请把下面的话保存为本地灵感记录；下一次跑批前放入热点池或账号上下文。"}
             </p>
             <textarea
               value={text}
               onChange={(event) => setText(event.target.value)}
               className="min-h-28 w-full rounded-md border border-[#D8D3CB] bg-[#FBFAF7] p-3 text-sm leading-relaxed outline-none focus:border-[#5C7A2E]"
-              placeholder="把灵感写在这里，用下面的话术复制给管理员或 agent"
+              placeholder="把灵感写在这里，用下面的话术保存成本地记录"
             />
             <div className="rounded-md border border-[#E8E6E1] bg-[#FBFAF7] p-3">
               <div className="text-xs font-medium text-[#8A877F]">复制话术</div>
@@ -108,7 +112,7 @@ export default function SparkInbox({
                 {sparkAdminCopy(accountName, text.trim())}
               </p>
               <div className="mt-2">
-                <CopyTextButton text={sparkAdminCopy(accountName, text.trim())} label="复制给管理员 / agent" />
+                <CopyTextButton text={sparkAdminCopy(accountName, text.trim())} label="复制本地记录" />
               </div>
             </div>
           </div>

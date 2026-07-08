@@ -6,13 +6,21 @@
   "platform_id": "xiaohongshu",
   "positioning_id": "expert",
   "overrides": {
-    "extra_external_vocab": ["亲子提问", "陪孩子用 AI"],
-    "extra_forbidden_terms": ["内卷", "鸡娃"],
+    "extra_external_vocab": [
+      "亲子提问",
+      "陪孩子用 AI"
+    ],
+    "extra_forbidden_terms": [
+      "内卷",
+      "鸡娃"
+    ],
     "tone_note": "温和、像同路家长在分享,不说教",
-    "banned_topics": ["升学政策预测", "贩卖焦虑式对比"]
+    "banned_topics": [
+      "升学政策预测",
+      "贩卖焦虑式对比"
+    ]
   },
   "daily_quota": 3,
-  "status": "active",
   "created_at": "2026-06-06T00:00:00Z",
   "last_used_at": "2026-06-06T00:00:00Z"
 }

@@ -1,7 +1,7 @@
 {
   "track_id": "education-yowow",
   "track_name": "儿童 AI 教育（YOWOW）",
-  "status": "reference",
+  "status": "approved",
   "buyer": {
     "who": "儿童 × 游戏 × AI 提问 教育 IP 主理人",
     "business": "面向小学家长的 AI 时代学习能力内容与产品",
@@ -21,6 +21,49 @@
     "博士方法论背书"
   ],
   "audience": "小学阶段孩子的家长",
+  "daily_search_question": "过去72小时，有哪些中国小学家长感兴趣的热点，适合用认知神经科学 far transfer 的视角加以剖析？",
+  "track_memory": {
+    "core_concern": [
+      "孩子未来能力",
+      "家长教育焦虑",
+      "学习迁移能力",
+      "AI时代的认知重塑",
+      "远迁移 far transfer"
+    ],
+    "good_hotspot_signals": [
+      "能引出孩子能力结构变化",
+      "能解释家长焦虑背后的认知误区",
+      "能从社会热点转译成教育判断",
+      "适合小红书家长传播"
+    ],
+    "avoid": [
+      "纯政策汇编",
+      "纯鸡汤",
+      "硬蹭灾难",
+      "把神经科学结论说得过满",
+      "没有教育转译空间的娱乐热点"
+    ]
+  },
+  "decision_layer": {
+    "strong_pick": "热点与小学家长强相关，且能用 far transfer 或认知发展视角产生独特解释。",
+    "maybe": "热点有教育转译空间，但角度需要进一步打磨。",
+    "skip": "热点流量虽大，但与赛道弱相关或只能硬蹭。"
+  },
+  "analysis_layer": {
+    "name": "far_transfer_analysis",
+    "framework": [
+      "热点事实",
+      "家长为什么会关心",
+      "孩子能力结构问题",
+      "far transfer 视角剖析",
+      "教育误区纠偏",
+      "给家长的行动建议",
+      "与 YOWOW 教育理念的自然连接"
+    ]
+  },
+  "output_channels": [
+    "acct-xiaozhu-edu-xhs"
+  ],
   "anxiety_anchors": [
     "AI 会不会让孩子变笨",
     "标准答案还有没有用",

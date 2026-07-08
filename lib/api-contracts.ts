@@ -1,9 +1,12 @@
-// T-M4.0（部署脚手架）· 前端 ↔ 服务端 API 契约类型。
-// typecheck 级：路由桩与页面据此对齐；部署窗口把桩体换成真实实现，契约不变。
-// 服务端实现落点（部署接线）：
-//   /api/onboarding → lib/onboarding.mjs(assembleAccountProfile) + scripts/draft_track.py + scripts/first_content.py + Turso 写库
-//   /api/today      → 查 generation(按 account/当天) + scripts/daily_recommend.py(排序+explain) + scripts/content_gate.py
-//   /api/feedback   → scripts/feedback_store.py(六维落库) + scripts/feedback_reflow.py(次日生效)
+// 前端 ↔ API 响应契约类型。
+//
+// 当前 MVP 是文件驱动：
+//   /api/today      只读 data/today/<account_id>/latest.json
+//   /api/onboarding 只辅助生成 JSON 草稿，不在线保存
+//   /api/regenerate 明确拒绝在线重跑
+//   /api/feedback   写 Turso feedback_inbox 或本地 fallback
+//
+// 注意：这里是 TypeScript 类型对齐层，不是生成/安装入口。正式安装 today/latest 只走 scripts/ingest.py。
 
 import type {
   AccountMemory,
@@ -59,8 +62,20 @@ export type TodayResponse = {
   account: AccountProfile;
   board: DailyBoard;
   meta: HotspotMetaMap;
-  mode?: "live" | "sample"; // live=实时生成；sample=暖启动样板（未接生成服务）
+  mode?: "live" | "sample"; // live=跑批安装结果；sample=暖启动样板
   notice?: string;          // 人话提示横幅（可为空）
+  needs_human_review?: boolean;
+  formal_approval?: boolean;
+  mvp_internal_only?: boolean;
+  review_status?: {
+    track_id?: string;
+    track_status?: string;
+    account_id?: string;
+    needs_human_review?: boolean;
+    formal_approval?: boolean;
+    mvp_internal_only?: boolean;
+    reason?: string;
+  };
 };
 
 // POST /api/regenerate —— 单条热点重新生成（实时模式可用；样板模式诚实拒绝）

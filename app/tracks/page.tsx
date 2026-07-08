@@ -284,7 +284,7 @@ export default async function TracksPage({
           </div>
         ) : (
           <div className="rounded-lg border border-dashed border-[#D8D3CB] bg-white p-6 text-sm text-[#6B6963]">
-            这个赛道的配置文件里还没有 bridge.search_directions，先显示“待补母题”。让 agent 走「赛道车间」起草，博士定稿后生效。
+            这个赛道的配置文件里还没有 bridge.search_directions，先显示“待补母题”。在 config/tracks 里补齐搜索方向后，下次跑批生效。
           </div>
         )}
       </section>

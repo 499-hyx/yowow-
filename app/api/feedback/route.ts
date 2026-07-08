@@ -134,7 +134,7 @@ export async function POST(request: Request): Promise<Response> {
   if (!legacyBody?.output_ref?.hotspot_id || !validDims(legacyBody?.payload?.dims)) {
     return Response.json({ ok: false } satisfies FeedbackResponse, { status: 400 });
   }
-  // DEPLOY: 落 Turso feedback 表 + feedback_reflow 回流次日。
+  // 当前 MVP：反馈先进入 feedback_inbox 或本地 fallback，再由维护者回拉处理。
   const resp: FeedbackResponse = { ok: true, feedback_id: `fb-${Date.now()}` };
   return Response.json(resp);
 }

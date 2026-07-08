@@ -192,7 +192,7 @@ export default function TodayBoard({
             <span className="text-[#5C7A2E]">反馈已齐 ✓</span>
           ) : null}
           <span className="ml-auto text-xs text-[#9B9892]">
-            {mode === "sample" ? "示例数据" : mode === "live" ? "实时生成" : ""}
+            {mode === "sample" ? "示例数据" : mode === "live" ? "跑批结果" : ""}
             {generatedAt ? ` · 生成于 ${generatedAt}` : ""}
           </span>
         </div>

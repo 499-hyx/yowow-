@@ -1,0 +1,1487 @@
+[
+  {
+    "id": "hs-20260630-broad-001",
+    "hotspot_id": "hs-20260630-broad-001",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "免费试吃到底能不能给差评",
+    "summary": "一个顾客免费试吃后写差评，被店家把评价挂在店门口“避雷”，引发网友讨论免费体验是不是也有真实评价权。参与者分成“免费也能说实话”和“白吃还挑剔不厚道”两派，争论从餐饮评价延伸到人情、边界和商家服务压力。",
+    "why_now": "6 月下旬相关话题登上微博实时热点，代表帖来自媒体转述本地争议，随后评论区出现大量站队和二次吐槽。",
+    "phenomenon": "原本是一次免费试吃评价争议，平台讨论把它放大成“免费体验是否必须说好话”的日常选择题。",
+    "spread_emotion": "很多人代入消费者被公开挂出的尴尬，也有人代入小商家免费做活动却被差评的委屈，情绪集中在不公平、被羞辱和互相不体谅。",
+    "people_involved": [
+      "经常参与免费试吃或探店的普通消费者",
+      "小店经营者和理解商家成本的人",
+      "围观评价权边界的网友"
+    ],
+    "conflict_point": "消费者期待免费也能真实反馈，商家期待免费活动至少获得基本体谅；真实评价权和人情成本发生冲突。",
+    "fact_structure": "线下免费试吃活动产生差评，店家把评价公开展示，微博话题把事件转化为评价权争议，评论区围绕“免费”“差评”“挂人”形成对线。",
+    "candidate_problem_dimensions": [
+      "普通人害怕真实表达后被公开羞辱",
+      "小商家对低成本引流和差评风险的焦虑"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博话题 #免费试吃发差评被店家挂店门避雷# 在 6 月 29 日出现实时热点，代表帖和评论区围绕“免费试吃能不能差评”展开，互动量达到万级量级。",
+    "source_notes": [
+      "微博热点页与相关转述显示，该事件由扬子晚报等账号在 6 月 29 日推动讨论，后续评论中出现“试吃不满意写差评也是权利”等典型站队表达。"
+    ],
+    "source_url": "https://weibo.com/a/hot/8baf62c93266bc8c_0.html?type=grab",
+    "ugc_voice": "“免费吃也不能逼我说好吃吧？”“白吃还挑三拣四，也难怪老板破防。”",
+    "scan_domain": "生活争议与站队",
+    "heat_score_10": 7.3,
+    "traffic_level": "high",
+    "risk_notes": [
+      "需避免把单一商户争议扩大成对所有商家或消费者的定性",
+      "事实以公开转述为主，细节仍需人工核验原帖"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-002",
+    "hotspot_id": "hs-20260630-broad-002",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "泡面汤到底该不该倒掉",
+    "summary": "一条“我一直以为方便面汤是要倒掉的”的帖子，把网友分成倒汤派、喝汤派、少放料包派和看心情派。话题小但参与门槛极低，大家用童年习惯、家庭规训和健康担忧来证明自己的吃法才正常。",
+    "why_now": "6 月 29 日该话题在微博实时热点中扩散，评论区快速变成全民报数式生活习惯争论。",
+    "phenomenon": "一个关于泡面汤的微小生活习惯被平台放大成集体自曝，用户通过“我从小就是这样吃”的第一人称叙述参与。",
+    "spread_emotion": "传播情绪主要是好笑、惊讶和轻度站队，背后带着对童年饮食习惯、健康负担和家庭教育方式的比较。",
+    "people_involved": [
+      "习惯把汤倒掉的人",
+      "觉得泡面精华就在汤里的人",
+      "担心钠摄入和健康的人"
+    ],
+    "conflict_point": "一边把倒汤视为健康或家教习惯，另一边把喝汤视为完整吃泡面体验；健康正确和快乐满足发生冲突。",
+    "fact_structure": "微博用户提出“泡面汤是不是默认要倒掉”的生活疑问，评论区以个人经验作证，形成吃法派别和玩梗式对线。",
+    "candidate_problem_dimensions": [
+      "普通人对日常饮食健康风险的模糊焦虑",
+      "家庭习惯差异带来的“原来别人不是这样”的惊讶感"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博相关话题在 6 月 29 日出现实时讨论，代表帖和评论区将“倒汤派 vs 不倒汤派”变成可参与的轻争议。",
+    "source_notes": [
+      "微博热点转述显示，该话题由“从小吃泡面只吃面不喝汤”的个人说法引发，并在评论区形成倒汤派与不倒汤派对线。"
+    ],
+    "source_url": "https://weibo.com/a/hot/160858efa1506b9b_0.html?type=grab",
+    "ugc_voice": "“我以为大家都倒汤，今天才知道有人连汤都喝干净。”",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 6.7,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "这是轻生活话题，不宜包装成严肃健康结论",
+      "涉及健康判断时需避免给出医学化建议"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-003",
+    "hotspot_id": "hs-20260630-broad-003",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "发现 AI 树洞背后可能有人审核，大家突然社死",
+    "summary": "网友开始讨论自己和 AI 聊过的秘密、情绪、身体问题和尴尬问题，担心这些内容并不只是“机器知道”。评论区出现大量“我以前把它当树洞”的社死式自曝，也有人提醒平台审核机制本来就存在。",
+    "why_now": "6 月下旬微博实时热点出现“知道后台审核人员后”的相关讨论，叠加此前网友因上传私密内容触发审核的转述，引爆隐私焦虑。",
+    "phenomenon": "普通人把 AI 当成无压力树洞使用后，突然意识到内容可能触发人工审核，从而围绕隐私、羞耻和平台规则产生集中讨论。",
+    "spread_emotion": "情绪不是单纯反技术，而是“我以为只有机器看见”的错位感；大家既想继续倾诉，又害怕自己的尴尬内容被真人看见。",
+    "people_involved": [
+      "把 AI 当情绪树洞的年轻用户",
+      "用 AI 咨询身体或关系问题的人",
+      "强调平台审核规则和安全边界的人"
+    ],
+    "conflict_point": "用户期待 AI 是私密、无羞耻的倾诉对象，平台现实需要审核机制；私密感和治理规则发生冲突。",
+    "fact_structure": "个案转述引出“AI 聊天是否会被真人审核”的疑问，微博代表帖引导用户回忆自己的尴尬聊天内容，评论区转向隐私和社死焦虑。",
+    "candidate_problem_dimensions": [
+      "普通人缺少对平台审核边界的清晰认知",
+      "情绪倾诉需求与隐私安全感之间的矛盾"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博代表帖“当我知道豆包有后台审核人员”在 6 月 29 日出现高互动，相关转述称大量用户由此讨论隐私焦虑和社死恐慌。",
+    "source_notes": [
+      "微博热点页与后续解释帖显示，该讨论由 AI 聊天审核认知差引发，代表帖评论区集中表达“秘密被看见”的尴尬和隐私担忧。"
+    ],
+    "source_url": "https://weibo.com/a/hot/7d317dab9e9da93d_0.html?type=grab",
+    "ugc_voice": "“我每天跟它聊人生低谷，现在才知道可能有人看，整个人都不好了。”",
+    "scan_domain": "生活争议与站队",
+    "heat_score_10": 7.6,
+    "traffic_level": "high",
+    "risk_notes": [
+      "需区分机器审核、触发人工复核和常规人工查看，不能把所有聊天都说成被真人阅读",
+      "涉及平台隐私机制时需以官方规则和可核验材料为准"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-004",
+    "hotspot_id": "hs-20260630-broad-004",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "对嘴喝饮料的人突然被集体嫌弃",
+    "summary": "微博上“爱直接对嘴喝饮料的人天塌了”引发讨论，很多人开始自查自己喝瓶装饮料、家庭共享饮料、办公室饮料的习惯。话题本质是一个卫生边界争议：有人觉得自己喝自己的没问题，有人觉得开封后、共享场景和亲密关系里都很膈应。",
+    "why_now": "6 月 29 日相关话题出现在微博实时热点页，评论区围绕直接对嘴、细菌、共享饮料和亲密关系边界展开。",
+    "phenomenon": "一个常见喝饮料动作被重新解释为卫生风险和边界问题，用户用“我家就是这样”“我真的接受不了”的方式参与。",
+    "spread_emotion": "传播情绪集中在嫌弃、震惊和自我辩护；很多人借这个话题表达对亲密关系、家庭共用物品和办公室卫生的敏感。",
+    "people_involved": [
+      "习惯直接对瓶口喝的人",
+      "对共享饮食卫生敏感的人",
+      "情侣、家人、同事等共享饮料场景中的人"
+    ],
+    "conflict_point": "一边觉得个人饮用习惯无需上纲上线，另一边把瓶口接触视为卫生和边界风险；便利和洁癖感发生冲突。",
+    "fact_structure": "微博实时热点提出“对嘴喝饮料”的卫生提醒语境，评论区迅速转化为生活习惯自曝和人际边界吐槽。",
+    "candidate_problem_dimensions": [
+      "普通人对看不见的卫生风险高度敏感",
+      "亲密关系中个人边界和共享习惯不一致"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博实时热点页 6 月 29 日显示该话题，代表帖互动量为千到万级，评论围绕对嘴喝、共享饮料和卫生习惯展开。",
+    "source_notes": [
+      "微博实时热点列表记录了“爱直接对嘴喝饮料的人天塌了”这一话题及其互动量，时间集中在 6 月 29 日。"
+    ],
+    "source_url": "https://weibo.com/a/hot/realtime",
+    "ugc_voice": "“自己的水自己对嘴喝怎么了？”“你别拿你喝过的瓶子再给我倒就行。”",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 7.1,
+    "traffic_level": "high",
+    "risk_notes": [
+      "不宜把生活习惯争议夸大成确定疾病风险",
+      "医学或卫生结论需另行核验专业来源"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-005",
+    "hotspot_id": "hs-20260630-broad-005",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "千万别随便抠肚脐，手痒党开始害怕",
+    "summary": "“千万不要随便扣肚脐”在微博引发健康类轻恐慌，很多网友一边说自己从小就爱抠，一边担心抠出炎症或感染。话题火点在于它连接了一个人人都有、但平时不认真讨论的身体小习惯。",
+    "why_now": "6 月下旬健康提醒类内容进入微博实时热点，评论区出现大量“我刚抠完”“以后不敢了”的第一人称反馈。",
+    "phenomenon": "一个身体清洁小动作被平台内容重新标记为潜在风险，引发用户晒习惯、自查和半开玩笑式恐慌。",
+    "spread_emotion": "传播情绪是手痒、害怕和猎奇并存；大家不是在系统学习健康知识，而是在用身体经验确认“原来这个也可能出事”。",
+    "people_involved": [
+      "习惯抠肚脐的人",
+      "容易被健康提醒吓到的人",
+      "在评论区科普或纠错的人"
+    ],
+    "conflict_point": "用户期待把肚脐当成普通清洁部位随手处理，健康提醒强调脆弱和感染风险；清洁冲动和身体风险意识发生冲突。",
+    "fact_structure": "微博健康提醒内容进入热点，评论区由个体习惯自曝推动扩散，形成“我也抠过—会不会出事—以后不敢了”的传播链。",
+    "candidate_problem_dimensions": [
+      "普通人对身体小异常缺少判断标准",
+      "健康内容容易通过轻恐吓触发自查传播"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博话题 #千万不要随便扣肚脐# 在 6 月 29 日实时热点中出现，代表帖和评论区围绕肚脐清洁、感染担忧和个人习惯展开。",
+    "source_notes": [
+      "微博热点页与转述显示，该话题由健康提醒引发，评论区集中出现“很多人都有抠肚脐眼的小习惯”等自查式讨论。"
+    ],
+    "source_url": "https://weibo.com/a/hot/f5b8287432f8d25e_0.html?type=grab",
+    "ugc_voice": "“我刚抠完就刷到这个，感觉肚子已经开始不舒服了。”",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 6.2,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "涉及健康提醒时应避免制造恐慌",
+      "具体症状和处理方式不能替代医生建议"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-006",
+    "hotspot_id": "hs-20260630-broad-006",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "带娃崩溃这件事，连动物看起来都懂",
+    "summary": "“好像看到了人类带孩子崩溃的样子”借一个动物带崽场景引发共鸣，评论区大量父母、老师和围观网友把它代入现实育儿。它不是严肃育儿知识，而是用拟人化画面释放“带娃真的会崩”的集体情绪。",
+    "why_now": "6 月 29 日相关内容在微博实时热点中扩散，短视频式画面天然适合转发、配文和代入。",
+    "phenomenon": "一个动物亲子场景被网友解释成现实带娃崩溃现场，育儿情绪通过轻松梗图和视频被集体表达。",
+    "spread_emotion": "传播情绪是好笑、心酸和被理解；很多人借这个低门槛话题说出真实育儿疲惫，而不会显得过度抱怨。",
+    "people_involved": [
+      "正在带孩子的父母",
+      "带娃经验丰富的老人或老师",
+      "还没生育但围观育儿压力的年轻人"
+    ],
+    "conflict_point": "社会期待父母有耐心、温柔、稳定，现实却是重复劳动和情绪耗竭；理想亲子形象和真实带娃状态冲突。",
+    "fact_structure": "微博热点内容提供一个可拟人化的视频场景，用户通过评论把它翻译成家庭带娃经验，形成情绪共鸣和二创式转述。",
+    "candidate_problem_dimensions": [
+      "育儿劳动的隐形消耗需要被看见",
+      "父母既想爱孩子又会被高强度照护拖垮"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博热点页 6 月 29 日显示该话题，代表帖互动达到数千级，评论中大量把动物行为代入人类带娃崩溃场景。",
+    "source_notes": [
+      "微博热点和相关转述显示，该话题以“人类带孩子崩溃”的拟人化表达走红，评论区以育儿共鸣为主。"
+    ],
+    "source_url": "https://weibo.com/a/hot/bd2b2966737c011a_0.html?type=grab",
+    "ugc_voice": "“这不就是我周末一个人带娃的精神状态吗？”",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 6.5,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "该话题以拟人化娱乐表达为主，不宜当作真实动物行为科普",
+      "育儿情绪可共鸣，但避免污名化孩子或父母"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-007",
+    "hotspot_id": "hs-20260630-broad-007",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "清吧被陌生人下药，女生夜生活安全感又炸了",
+    "summary": "一名女子称在清吧被陌生人投放药物的事件引发高强度讨论，评论区的核心不是猎奇，而是女性外出、陌生人搭讪、店家责任和法律处理边界。很多人用“以后还敢不敢去”“朋友之间要不要互看杯子”来代入。",
+    "why_now": "6 月 29 日相关话题进入微博实时热点，公众对夜间社交场景安全和取证难度高度敏感，带动大量评论转发。",
+    "phenomenon": "一个夜间社交安全事件被平台讨论转化成女性自保、同伴照看、场所责任和执法尺度争议。",
+    "spread_emotion": "传播情绪以愤怒、恐惧和不信任为主；用户关心的不只是个案，而是类似场景里普通人是否能被及时保护。",
+    "people_involved": [
+      "有夜间社交经验的女性",
+      "清吧、酒吧等场所消费者",
+      "关注公共安全和法律责任的网友"
+    ],
+    "conflict_point": "个人期待公共场所基本安全，现实中陌生人接触、取证和责任划分都不确定；自由社交和安全防御之间冲突明显。",
+    "fact_structure": "事件经媒体和微博话题传播后，用户讨论从个案经过转向安全边界、违法认定、场所管理和女性外出风险。",
+    "candidate_problem_dimensions": [
+      "女性夜间社交安全感不足",
+      "突发侵害中的取证和责任认定焦虑"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博"
+    ],
+    "platform_evidence": "微博话题 #女子清吧被陌生人投放伟哥# 在 6 月 29 日出现实时热点，代表帖评论量达到高位，评论区集中质疑违法认定和场所安全。",
+    "source_notes": [
+      "微博热点页和相关报道显示，该事件在 6 月 29 日引发集中讨论，评论中出现“都下药了还不算违法”一类强烈质疑。"
+    ],
+    "source_url": "https://weibo.com/a/hot/0f5b58da89e423cf_0.html?type=grab",
+    "ugc_voice": "“连杯子都要一直看着，那出去玩还有什么安全感？”",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 8.2,
+    "traffic_level": "high",
+    "risk_notes": [
+      "涉及当事人隐私和刑民责任边界，不能擅自定性具体违法事实",
+      "表达时应避免传播可模仿的作案细节"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-008",
+    "hotspot_id": "hs-20260630-broad-008",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "高考志愿专业怎么选，家里又开始吵",
+    "summary": "高考出分和志愿填报期到来，抖音上“专业怎么选”“欢迎来到我的专业”等内容集中升温。学生、家长、过来人和在校生都在用第一人称讲城市、分数、兴趣、就业和后悔经历。",
+    "why_now": "6 月底正处于高考查分和志愿填报窗口期，抖音热榜相关话题热度达到千万级。",
+    "phenomenon": "志愿填报从专家建议变成全民经验帖，普通人用“我当年选错了”“我这个专业真实体验”参与劝退或安利。",
+    "spread_emotion": "传播情绪是焦虑、后悔、押注和求稳；一家人想在有限分数里选出未来几年甚至更久的确定性。",
+    "people_involved": [
+      "刚出分的考生",
+      "替孩子操心的家长",
+      "已经读过相关专业的大学生和毕业生"
+    ],
+    "conflict_point": "家长期待稳定和就业，学生期待兴趣和城市体验，过来人又不断用后悔经验打断选择；短期分数和长期人生想象冲突。",
+    "fact_structure": "高考时间节点推动抖音相关话题上榜，专业体验类内容与志愿建议类内容叠加，评论区形成家长、考生和过来人的多方经验场。",
+    "candidate_problem_dimensions": [
+      "家庭在重大选择上缺少共同决策语言",
+      "年轻人害怕一次填报影响长期路径"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "抖音",
+      "微博"
+    ],
+    "platform_evidence": "抖音热榜 6 月 30 日显示“高考志愿填报专业怎么选”热度约 12.20M，“欢迎来到我的专业”热度约 11.02M。",
+    "source_notes": [
+      "抖音热榜聚合页记录了 6 月 30 日志愿填报相关热度；另有热榜摘要提到专业选择需同时考虑策略、城市和兴趣。"
+    ],
+    "source_url": "https://tgmeng.com/media/douyin",
+    "ugc_voice": "“我这个分到底冲城市还是保专业？家里已经吵三天了。”",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 8.8,
+    "traffic_level": "high",
+    "risk_notes": [
+      "不能把平台经验帖当作个体志愿填报建议",
+      "不同省份、批次和分数段差异很大，需人工结合实际情况判断"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-009",
+    "hotspot_id": "hs-20260630-broad-009",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "三战高考查分大哭，复读到底值不值",
+    "summary": "一名三战高考女生查分后情绪崩溃的视频引发网友共情，评论区大量出现“我也复读过”“差几分真的会记一辈子”的经历。它击中的是努力多年后终于上岸的爽感，也让很多人重新争论复读的代价。",
+    "why_now": "6 月下旬高考查分期，查分视频天然具有强情绪冲击，容易带动考生、家长和往届生集体回忆。",
+    "phenomenon": "个人查分瞬间被平台放大为集体情绪事件，用户围绕复读、圆梦、压力和家庭支持分享自己的考试经历。",
+    "spread_emotion": "传播情绪是心疼、励志和后怕混合；大家一边被坚持打动，一边也看到多年重考背后的巨大心理成本。",
+    "people_involved": [
+      "应届和复读考生",
+      "考生家长",
+      "曾经经历升学失利的网友"
+    ],
+    "conflict_point": "社会赞美坚持和逆袭，但现实中复读伴随时间、金钱、心理和家庭关系压力；理想圆梦和现实代价发生冲突。",
+    "fact_structure": "查分视频在高考节点传播，媒体与微博话题转述个案经历，评论区由个案情绪转向复读值不值的经验讨论。",
+    "candidate_problem_dimensions": [
+      "年轻人对考试失利和人生延迟的恐惧",
+      "家庭是否支持孩子再次尝试的压力"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "platform_evidence": "微博话题 #三战高考女孩查分大哭看哭网友# 在 6 月下旬传播，相关转述提到女生三次备考和查分情绪，引发大量祝福与复读讨论。",
+    "source_notes": [
+      "微博热点页和转述报道显示，该视频发生在 6 月高考查分期，评论区以“相信相信的力量”“终将上岸”等共情表达为主。"
+    ],
+    "source_url": "https://weibo.com/a/hot/81fcd39c269bcfb5_0.html?type=grab",
+    "ugc_voice": "“差一分那种不甘心，真的只有经历过的人懂。”",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 7.1,
+    "traffic_level": "high",
+    "risk_notes": [
+      "不宜把个案包装成所有考生都该复读的榜样",
+      "涉及未成年人或年轻当事人时应减少隐私细节传播"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-010",
+    "hotspot_id": "hs-20260630-broad-010",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "我发誓不变成父母，结果越来越像他们",
+    "summary": "Papi 酱谈原生家庭创伤后，知乎和社交平台上大量普通人开始讲自己和父母的相似、反抗与重复。讨论已经从名人经历转成普通人对代际创伤、亲密关系和养育方式的自我审视。",
+    "why_now": "6 月下旬相关访谈片段和问题在知乎形成高热度，用户借公共话题讲自己的家庭经验。",
+    "phenomenon": "一个公众人物的家庭表达成为入口，普通人把讨论转向“我是不是正在复制上一代”的个人叙事。",
+    "spread_emotion": "传播情绪是委屈、恐惧和自我警醒；很多人害怕自己明明受过伤，却在关系里重复熟悉的伤害模式。",
+    "people_involved": [
+      "与父母关系紧张的年轻人",
+      "已经成家的成年人",
+      "开始反思养育方式的父母"
+    ],
+    "conflict_point": "个体期待摆脱上一代的影响，现实中语言、情绪和关系模式却不断复现；自我改造愿望和家庭惯性冲突。",
+    "fact_structure": "公众访谈触发平台问题，知乎热榜和评论区承接大量第一人称家庭故事，讨论重心从人物评价转向代际模式。",
+    "candidate_problem_dimensions": [
+      "普通人缺少处理家庭创伤的安全表达空间",
+      "亲密关系中旧模式复现带来的恐惧"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "知乎",
+      "微博"
+    ],
+    "platform_evidence": "知乎相关问题在 6 月下旬出现高热度，问题描述和回答中大量出现“不要成为父母却越来越像父母”的第一人称表达。",
+    "source_notes": [
+      "知乎问题和相关转述显示，该话题由 Papi 酱谈原生家庭经历触发，随后转向普通人的代际创伤讨论，热度达到数百万级。"
+    ],
+    "source_url": "https://www.zhihu.com/question/2054710786757595233",
+    "ugc_voice": "“我最怕的不是恨他们，而是某天发现我说话的样子越来越像他们。”",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 8,
+    "traffic_level": "high",
+    "risk_notes": [
+      "避免把复杂家庭关系简单归因于某一代人",
+      "涉及心理创伤时不应替代专业咨询判断"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-011",
+    "hotspot_id": "hs-20260630-broad-011",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "旅行拍照不出片，大家开始复制万能姿势",
+    "summary": "小红书“万能旅行拍照姿势”类内容和抖音“当我拍照一直不出片时”同步升温，用户在评论区晒失败照片、求姿势、吐槽同行拍照水平。它不是单纯旅行内容，而是普通人对“去了好地方却拍不出好照片”的焦虑。",
+    "why_now": "暑期旅行季临近，6 月底小红书旅行拍照类热词和抖音拍照失败类话题同时出现在高热榜。",
+    "phenomenon": "旅行拍照从记录变成可复制模板，用户围绕姿势、构图、显瘦、氛围感和同行配合形成大量模仿。",
+    "spread_emotion": "传播情绪是羡慕、焦虑和自嘲；大家想把旅行变成可展示的成果，又常被现实中的尴尬姿势和拍照技术打败。",
+    "people_involved": [
+      "准备暑期出游的年轻人",
+      "经常拍照不满意的人",
+      "被迫给朋友或伴侣拍照的人"
+    ],
+    "conflict_point": "用户期待旅行照片有氛围、有面子，现实中不会摆姿势、不会拍和现场拥挤；展示欲和真实能力冲突。",
+    "fact_structure": "小红书旅行拍照姿势内容上榜，抖音拍照不出片梗同步出现，两个平台共同把旅行拍照焦虑转成模板化内容。",
+    "candidate_problem_dimensions": [
+      "普通人对社交平台展示效果有压力",
+      "亲密关系和朋友出游中的拍照协作容易引发摩擦"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "小红书热榜聚合页显示“用万能旅行拍照姿势美美出片”热度约 918.6w；抖音热榜显示“当我拍照一直不出片时”热度约 7.64M。",
+    "source_notes": [
+      "小红书热榜聚合与抖音热榜聚合分别记录了旅行拍照姿势和拍照不出片话题，时间集中在 6 月底。"
+    ],
+    "source_url": "https://rebang.today/?tab=xiaohongshu",
+    "ugc_voice": "“景是真的美，人也是真的不会摆，拍完只想删相册。”",
+    "scan_domain": "梗与格式",
+    "heat_score_10": 8.4,
+    "traffic_level": "high",
+    "risk_notes": [
+      "热度来自第三方榜单聚合，需人工复核平台内原始 tag",
+      "不宜把拍照焦虑过度放大成外貌焦虑"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-012",
+    "hotspot_id": "hs-20260630-broad-012",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "欧洲没有空调，暑假旅行像生存挑战",
+    "summary": "欧洲热浪期间，中国游客和在欧华人围绕“没有空调”“酒店太热”“旅行体验崩了”集中吐槽。讨论从天气新闻转成第一人称旅行经验：有人改签逃离，有人分享降温办法，也有人反驳说不能用国内习惯要求欧洲。",
+    "why_now": "6 月下旬欧洲多地高温叠加暑期出境游，社交平台开始出现游客崩溃、改行程和吐槽住宿的内容。",
+    "phenomenon": "极端高温把原本浪漫的欧洲旅行想象拉回现实，用户围绕空调、住宿、行程和城市基础设施展开体验讨论。",
+    "spread_emotion": "传播情绪是崩溃、后悔和调侃；大家既想看美景，又被热浪、无空调和高成本打破预期。",
+    "people_involved": [
+      "正在或准备去欧洲旅行的游客",
+      "在欧洲生活的华人",
+      "关注极端天气体验的人"
+    ],
+    "conflict_point": "游客期待花钱旅行获得舒适体验，现实中遇到热浪和设施差异；旅行想象和气候现实发生冲突。",
+    "fact_structure": "欧洲热浪新闻提供背景，中文社交平台和媒体转述游客体验，讨论进一步延伸到空调文化差异和暑期旅行风险。",
+    "candidate_problem_dimensions": [
+      "普通人对极端天气下旅行不确定性的焦虑",
+      "跨文化生活设施差异带来的体验落差"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "微博",
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "相关转述称 2026 年 6 月欧洲热浪期间，中文社交平台出现游客崩溃、改签、吐槽酒店无空调等内容。",
+    "source_notes": [
+      "新浪等转述材料提到 2026 年 6 月欧洲热浪与中国游客体验崩塌，另有社媒转述把“欧洲空调”变成讨论点。"
+    ],
+    "source_url": "https://cj.sina.com.cn/articles/view/7880068208/1d5b04c7006801h8y6?froms=ggmp",
+    "ugc_voice": "“攻略做了三个月，没想到最大景点是酒店里找冷风。”",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 7.4,
+    "traffic_level": "high",
+    "risk_notes": [
+      "需避免把欧洲不同国家和城市的设施情况一概而论",
+      "极端天气事实应以气象来源二次核验"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-013",
+    "hotspot_id": "hs-20260630-broad-013",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "Fibermaxxing：海外网友开始晒自己猛补纤维",
+    "summary": "TikTok 和海外社交平台上，fibermaxxing 把“多吃膳食纤维”变成可打卡的身体实验，用户晒燕麦、豆类、蔬菜和肠胃变化。它火在健康目标很朴素，但内容表达很互联网：像挑战、像改造，也像一次关于消化系统的公开聊天。",
+    "why_now": "6 月底《纽约客》等媒体把该趋势作为当下海外健康风潮报道，说明它已从小圈层饮食建议扩散到更大范围讨论。",
+    "phenomenon": "海外用户把补纤维从营养建议包装成社交平台打卡，围绕排便、饱腹感、肠胃反应和饮食结构分享体验。",
+    "spread_emotion": "传播情绪是自我管理、轻松猎奇和身体改善期待；大家想用低门槛饮食调整换取更好的状态。",
+    "people_involved": [
+      "关注肠胃和饮食的 TikTok 用户",
+      "尝试健康打卡的年轻人",
+      "对身体变化有焦虑的人"
+    ],
+    "conflict_point": "用户期待通过简单饮食调整改善状态，现实中可能出现肠胃不适、执行困难和信息混乱；低门槛健康愿望和身体差异冲突。",
+    "fact_structure": "海外媒体报道 TikTok 上的 fibermaxxing 趋势，用户用第一人称分享补纤维食谱和身体反馈，形成健康打卡内容链。",
+    "candidate_problem_dimensions": [
+      "普通人希望用低成本方式改善身体状态",
+      "健康趋势容易在缺少个体差异判断时被过度模仿"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "TikTok",
+      "Instagram"
+    ],
+    "platform_evidence": "《纽约客》6 月底报道 fibermaxxing 趋势，提到创作者、追随者和围绕纤维摄入的社交内容扩散。",
+    "source_notes": [
+      "《纽约客》报道显示，fibermaxxing 以增加膳食纤维摄入为核心，在 TikTok 等平台通过食谱和身体反馈传播。"
+    ],
+    "source_url": "https://www.newyorker.com/magazine/2026/07/06/the-fibre-fad-keeps-on-moving",
+    "ugc_voice": "“我不是在减肥，我只是想看看多吃纤维后肚子会不会舒服一点。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 6.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "海外媒体报道可证明趋势存在，但具体平台 tag 热度需人工复核",
+      "饮食健康内容不能替代个体化医学或营养建议"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-014",
+    "hotspot_id": "hs-20260630-broad-014",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "Y2K Tuscan mom：海外开始模仿复古厨房妈妈感",
+    "summary": "TikTok 上出现 Y2K Tuscan mom aesthetic，用户模仿千禧年代、暖色厨房、复古上衣和家庭感穿搭。它看起来是审美风潮，实际在讨论“成熟、松弛、有生活感”的女性形象为什么重新有吸引力。",
+    "why_now": "6 月下旬 Teen Vogue 报道该 TikTok 风潮，说明它已从平台小众审美扩散到时尚文化讨论。",
+    "phenomenon": "海外用户把 2000 年代家庭厨房、度假感穿搭和复古女性形象重新组合成可模仿的短视频审美模板。",
+    "spread_emotion": "传播情绪是怀旧、松弛和反精致；年轻人想从过度打磨的网红审美里逃出来，寻找更生活化的风格。",
+    "people_involved": [
+      "TikTok 审美趋势参与者",
+      "喜欢复古穿搭和家居氛围的人",
+      "对过度精致审美疲劳的年轻女性"
+    ],
+    "conflict_point": "平台长期奖励精致、年轻、强视觉冲击的形象，而该趋势偏向成熟、家庭感和松弛；精致展示和生活质感发生冲突。",
+    "fact_structure": "TikTok 审美标签形成后，媒体用穿搭、厨房和复古元素解释其流行，用户通过模仿视频和穿搭内容加入。",
+    "candidate_problem_dimensions": [
+      "年轻人对过度精致审美感到疲惫",
+      "怀旧审美成为寻找安全感和生活感的方式"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "TikTok",
+      "Instagram"
+    ],
+    "platform_evidence": "Teen Vogue 6 月下旬报道 Y2K Tuscan mom aesthetic 正在 TikTok 走红，描述了相关厨房、服装和复古生活方式元素。",
+    "source_notes": [
+      "Teen Vogue 报道该趋势源于 TikTok，并把它概括为千禧年代、托斯卡纳厨房和复古妈妈感的组合。"
+    ],
+    "source_url": "https://www.teenvogue.com/story/how-to-channel-the-y2k-tuscan-mom-aesthetic-going-viral-on-tiktok",
+    "ugc_voice": "“我不想再像冷冰冰的网红图，我想像一个会在暖色厨房里倒橄榄油的人。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 6.1,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "该趋势主要来自海外审美圈，传入中文平台程度尚不明确",
+      "需避免把审美标签等同于真实年龄或家庭身份"
+    ]
+  },
+  {
+    "id": "hs-20260630-broad-015",
+    "hotspot_id": "hs-20260630-broad-015",
+    "date": "2026-06-30",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "大短裤回来了，海外女生不想再被热裤绑架",
+    "summary": "海外时尚讨论里，big shorts 被当成夏季新风潮，很多人把它理解为舒适、实穿和反紧身审美。它的争议点不在衣服本身，而在女性夏天是否必须通过更短、更紧、更显身材来证明时髦。",
+    "why_now": "6 月下旬 Marie Claire 等媒体集中讨论 summer 2026 big shorts trend，把它放在反热裤和舒适穿搭语境中。",
+    "phenomenon": "海外用户和媒体把宽松大短裤从普通夏季单品重新解释成反精致、反束缚的穿搭态度。",
+    "spread_emotion": "传播情绪是解放、实用和轻微对抗；很多人想在炎热天气里穿得舒服，但又不想被说不够时髦或不够女性化。",
+    "people_involved": [
+      "关注夏季穿搭的海外年轻女性",
+      "对紧身热裤审美疲劳的人",
+      "追随 TikTok 和 Instagram 穿搭趋势的人"
+    ],
+    "conflict_point": "传统夏日审美期待女性露腿、显身材，现实需求是舒适、活动自由和安全感；被观看的时髦和自我舒适冲突。",
+    "fact_structure": "海外媒体把 big shorts 描述为 2026 夏季趋势，社交平台穿搭内容围绕舒适、比例和反热裤审美展开。",
+    "candidate_problem_dimensions": [
+      "女性穿搭中的身体展示压力",
+      "炎热天气下舒适需求和审美评价之间的矛盾"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "TikTok",
+      "Instagram"
+    ],
+    "platform_evidence": "Marie Claire 6 月下旬报道 big shorts trend，称其成为 summer 2026 讨论点，并将它与更舒适、实穿的短裤选择联系起来。",
+    "source_notes": [
+      "Marie Claire 报道显示，big shorts 在 2026 年夏季被作为趋势讨论，并与舒适、实穿和反超短裤审美相关。"
+    ],
+    "source_url": "https://www.marieclaire.com/fashion/summer-fashion/big-shorts-trend-summer-2026/",
+    "ugc_voice": "“今年夏天我只想穿能坐下、能走路、不会一直往上跑的短裤。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 5.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "媒体趋势不等于全平台爆火，需人工复核 TikTok/Instagram 原始 tag",
+      "该话题偏海外审美圈，中文平台承接度暂不确定"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-001",
+    "hotspot_id": "hs-20260630-ultimate-001",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "从聊天到派工：Codex 数据显示 AI 代理开始承担“半天级任务”",
+    "summary": "OpenAI 公开的 Codex 使用数据称，越来越多用户把超过 30 分钟、1 小时甚至更长的人类工作交给代理执行。讨论焦点不再是 AI 能不能回答问题，而是个人和组织如何同时调度多个 AI 代理完成任务。",
+    "why_now": "OpenAI 在 2026-06-25 左右集中披露 Codex 使用趋势，Axios 等媒体同步讨论 AI agents 是否真正进入工作流拐点。过去 7 天内，这一数据成为判断“AI 代理是否从演示走向实际生产”的核心证据。",
+    "phenomenon": "AI 从单轮对话工具变成可并行执行任务的工作单元，用户角色从提问者变成代理编排者。",
+    "spread_emotion": "技术圈兴奋于生产力跃迁，也焦虑于岗位、流程和能力评价标准会被快速重写。",
+    "people_involved": [
+      "软件工程师",
+      "知识工作者",
+      "创业团队",
+      "企业管理者",
+      "AI 产品用户"
+    ],
+    "conflict_point": "旧共识认为 AI 主要是辅助写代码和写文档；新现实是用户开始把连续任务、长任务和多代理协作交给 AI 执行。",
+    "fact_structure": "OpenAI × Codex 使用数据 × 2026-06-25 前后 × OpenAI 官方与 Axios 报道 × AI 代理从聊天助手进入真实工作流。",
+    "candidate_problem_dimensions": [
+      "个人生产力从人时转向代理时",
+      "组织流程从雇人执行转向人机编排",
+      "AI 使用能力从提示词能力升级为任务拆解和验收能力"
+    ],
+    "happened_when": "2026-06-25 至 2026-06-30",
+    "platforms": [
+      "OpenAI",
+      "Axios",
+      "X / Twitter",
+      "LinkedIn"
+    ],
+    "platform_evidence": "OpenAI 报告称，到 2026 年 5 月，80.6% 的个人 Codex 用户曾发起估算超过 30 分钟人类工作的请求，70.2% 曾发起超过 1 小时的请求；Axios 以“AI agents are here for real this time”跟进讨论。",
+    "source_notes": [
+      "来源 1：OpenAI 官方博客《How agents are transforming work》",
+      "来源 2：Axios 对 Codex agents 增长的报道"
+    ],
+    "source_url": "https://openai.com/index/how-agents-are-transforming-work/",
+    "ugc_voice": "技术用户的典型反馈是：以前是让 AI 给答案，现在是把任务切成队列，让多个代理同时跑。",
+    "scan_domain": "AI / 未来工作",
+    "paradigm_signal": "重构",
+    "paradigm_shift_summary": "AI 的核心价值正在从“回答问题”转向“承接任务并消耗代理时”。",
+    "family_education_insight": "这对家庭教育的启发是，未来孩子最稀缺的不是会不会问 AI，而是能否把复杂目标拆成任务、设定验收标准，并判断 AI 结果是否可靠。",
+    "heat_score_10": 9.5,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "OpenAI 数据来自自有平台，可能存在样本偏向",
+      "长任务估算并不等于全部任务都被高质量完成",
+      "不宜直接推导为短期大规模失业结论"
+    ],
+    "followup_signals": [
+      "Codex、Claude Code、Gemini Agent 后续日活和任务时长数据",
+      "企业是否开始把代理时纳入正式工作流和绩效口径"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-002",
+    "hotspot_id": "hs-20260630-ultimate-002",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "Gemini 把“用电脑”塞进默认模型，AI 代理从网页演示走向办公桌面",
+    "summary": "Google 宣布 Gemini 3.5 Flash 内置 Computer Use 能力，让模型可以看屏幕、推理并跨浏览器、移动端和桌面执行操作。讨论焦点从模型会不会聊天，转向模型能不能可靠地操作真实软件环境。",
+    "why_now": "Google 在 2026-06-24 发布该能力，正好接在 OpenAI、Anthropic 等公司强化代理产品之后，形成“主流模型默认具备电脑操作能力”的趋势信号。",
+    "phenomenon": "AI 模型开始从文本接口扩展到图形界面和跨软件操作，企业自动化边界被明显推宽。",
+    "spread_emotion": "开发者兴奋于自动化空间扩大，企业和普通用户担心误操作、权限、隐私和提示注入风险。",
+    "people_involved": [
+      "开发者",
+      "企业 IT 团队",
+      "办公软件用户",
+      "AI 安全研究者"
+    ],
+    "conflict_point": "旧共识把 AI 代理看成网页 Demo；新现实是大模型厂商正在把操作电脑变成默认能力。",
+    "fact_structure": "Google × Gemini 3.5 Flash Computer Use × 2026-06-24 × Google 官方博客与开发者文档 × AI 代理可跨平台操作软件。",
+    "candidate_problem_dimensions": [
+      "办公自动化从 API 集成转向屏幕级操作",
+      "企业权限管理和 AI 安全边界重写",
+      "普通员工的软件操作能力被重新定价"
+    ],
+    "happened_when": "2026-06-24",
+    "platforms": [
+      "Google Blog",
+      "Google AI for Developers",
+      "X / Twitter",
+      "开发者社区"
+    ],
+    "platform_evidence": "Google 官方称 Computer Use 已成为 Gemini 3.5 Flash 的内置工具，开发者可构建能在浏览器、移动端和桌面环境中看、推理、行动的代理，并强调敏感操作确认和提示注入防护。",
+    "source_notes": [
+      "来源 1：Google 官方博客《Introducing computer use with Gemini 3.5 Flash》",
+      "来源 2：Google AI for Developers Computer Use 文档"
+    ],
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/",
+    "ugc_voice": "开发者讨论集中在：以后很多没有 API 的旧系统，也可能被 AI 通过界面操作接管。",
+    "scan_domain": "AI / 未来工作",
+    "paradigm_signal": "天花板",
+    "paradigm_shift_summary": "大模型能力上限从语言生成扩展到真实软件环境中的连续行动。",
+    "family_education_insight": "未来孩子面对的不是单个 AI 工具，而是一整套能操作软件的代理系统；基础的信息安全、权限意识和结果核验会变成通识能力。",
+    "heat_score_10": 9,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "官方演示能力不等于所有真实场景稳定可用",
+      "电脑操作代理存在权限、误操作和间接提示注入风险",
+      "不宜忽略企业落地中的合规成本"
+    ],
+    "followup_signals": [
+      "Gemini Computer Use 的企业客户案例",
+      "主流 SaaS 是否开始主动适配或限制屏幕级 AI 代理"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-003",
+    "hotspot_id": "hs-20260630-ultimate-003",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "AI 没有先消灭所有岗位，而是先压缩第一份办公室工作",
+    "summary": "瑞士一项研究显示，AI 相关暴露度较高的职业中，初级岗位需求明显下降，而高级岗位需求上升。讨论焦点从“AI 会不会抢工作”转向“年轻人如何获得第一份可训练自己的工作”。",
+    "why_now": "Reuters 在 2026-06-24 报道该研究，给过去一年关于 AI 与就业的争论提供了更具体的结构性证据：受冲击最明显的可能不是所有岗位，而是入门级白领通道。",
+    "phenomenon": "AI 正在压缩低经验、可标准化、可被模板化的初级白领任务，同时抬高对判断力、经验和现场技能的需求。",
+    "spread_emotion": "年轻人焦虑于没有第一份工作就无法积累经验；企业则兴奋于能用 AI 减少初级任务成本。",
+    "people_involved": [
+      "应届毕业生",
+      "初级白领",
+      "企业招聘团队",
+      "高校就业部门",
+      "职业教育机构"
+    ],
+    "conflict_point": "旧共识认为学历和初级岗位是进入职场的训练场；新现实是 AI 先替代了大量原本用于训练新人的基础任务。",
+    "fact_structure": "瑞士就业研究 × 超过 730 万条招聘广告分析 × 2026-06-24 Reuters 报道 × 初级 AI 暴露岗位下降、高级岗位上升。",
+    "candidate_problem_dimensions": [
+      "第一份工作机会减少",
+      "高校教育与真实岗位能力脱节",
+      "经验、沟通、现场技能和行业判断变贵"
+    ],
+    "happened_when": "2026-06-24",
+    "platforms": [
+      "Reuters",
+      "LinkedIn",
+      "X / Twitter"
+    ],
+    "platform_evidence": "Reuters 报道称，瑞士 2025 年入门级岗位相比 2019-2022 年平均水平低 32%；AI 暴露较高领域中，高级岗位上升、初级岗位下降。",
+    "source_notes": [
+      "来源 1：Reuters《Fewer job offers for junior roles due to AI, Swiss study shows》",
+      "来源 2：瑞士就业广告研究数据"
+    ],
+    "source_url": "https://www.reuters.com/business/fewer-job-offers-junior-roles-due-ai-swiss-study-shows-2026-06-24/",
+    "ugc_voice": "年轻人的典型情绪是：公司说要有经验，但原本积累经验的初级工作正在被 AI 吃掉。",
+    "scan_domain": "未来工作 / 教育 / 民生",
+    "paradigm_signal": "稀缺性反转",
+    "paradigm_shift_summary": "AI 让基础办公室执行能力变便宜，却让真实经验、责任承担和职业入口变得更稀缺。",
+    "family_education_insight": "家庭不能再只问孩子考什么学校，还要问孩子如何尽早获得真实项目、真实客户、真实协作和可证明的能力证据。",
+    "heat_score_10": 9,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "研究基于瑞士招聘市场，不能直接外推到所有国家",
+      "岗位下降可能同时受宏观经济和行业周期影响",
+      "不宜包装成单一的 AI 失业恐慌"
+    ],
+    "followup_signals": [
+      "其他国家是否出现类似初级岗位断层",
+      "高校、职业教育和企业实习项目是否调整训练方式"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-004",
+    "hotspot_id": "hs-20260630-ultimate-004",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "中国人形机器人热潮遇到 Moravec 悖论：会表演不等于会干活",
+    "summary": "Reuters Breakingviews 讨论中国人形机器人热潮，指出补贴、企业数量和资本热度很高，但真实工业应用仍受灵巧度、智能和复杂环境适应能力限制。话题核心是机器人产业的长期方向与短期泡沫之间的冲突。",
+    "why_now": "2026-06-29 Reuters 以世界人形机器人相关活动和中国机器人产业热潮为切口，集中呈现了“热闹展示”和“真实生产力”之间的落差。",
+    "phenomenon": "人形机器人正在成为政策、资本和产业叙事的焦点，但目前大量销售仍偏向科研、教育、测试和展示场景。",
+    "spread_emotion": "公众被机器人表演吸引，产业界则在兴奋和警惕泡沫之间摇摆。",
+    "people_involved": [
+      "机器人创业公司",
+      "制造业企业",
+      "地方政府",
+      "投资机构",
+      "产业工人"
+    ],
+    "conflict_point": "旧共识期待人形机器人迅速进入工厂和家庭；新现实是简单工业机械臂仍比人形机器人更适合多数生产任务。",
+    "fact_structure": "中国机器人产业 × 人形机器人热潮与应用落差 × 2026-06-29 Reuters Breakingviews × 补贴、企业扩张、销量和技术瓶颈并存。",
+    "candidate_problem_dimensions": [
+      "硬科技叙事与商业落地周期错配",
+      "制造业自动化到底需要人形还是专用设备",
+      "资本热度与真实 ROI 的冲突"
+    ],
+    "happened_when": "2026-06-29",
+    "platforms": [
+      "Reuters",
+      "中文科技媒体",
+      "产业投资圈"
+    ],
+    "platform_evidence": "Reuters Breakingviews 提到，中国人形机器人厂商数量快速增加，但去年人形机器人销量约 1.2 万台，主要用于科研、教育和测试；同时指出灵巧操作和真实环境智能仍是瓶颈。",
+    "source_notes": [
+      "来源 1：Reuters Breakingviews《China's robot quest triggers system overload》",
+      "来源 2：人形机器人赛事与产业活动报道"
+    ],
+    "source_url": "https://www.reuters.com/commentary/breakingviews/chinas-robot-quest-triggers-system-overload-2026-06-29/",
+    "ugc_voice": "普通讨论常见分裂：一边觉得机器人马上替代工人，一边质疑它们现在更多是在跳舞和走秀。",
+    "scan_domain": "AI / 实业",
+    "paradigm_signal": "认知差",
+    "paradigm_shift_summary": "真正的物理 AI 不是会像人，而是能在复杂环境中稳定、低成本地完成有经济价值的动作。",
+    "family_education_insight": "这提醒家长和学生，未来理工能力不只是会追热点概念，而是理解真实产业约束：成本、稳定性、安全、维护和场景适配。",
+    "heat_score_10": 8.7,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "Breakingviews 带有评论属性",
+      "人形机器人长期潜力不能被短期商业化不足否定",
+      "不宜简单归结为行业骗局或全面泡沫"
+    ],
+    "followup_signals": [
+      "人形机器人在工厂、仓储、养老等场景的真实订单",
+      "地方补贴、融资和产能扩张是否继续升温"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-005",
+    "hotspot_id": "hs-20260630-ultimate-005",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "美国家长开始反 AI 进课堂：孩子需要 AI 素养，还是先保住思考肌肉？",
+    "summary": "The Guardian 报道美国多地家长和组织反对生成式 AI 快速进入 K-12 学校，有人要求暂停或设置多年缓冲期。讨论焦点从“AI 教育必须跟上时代”转向“儿童认知发展是否被过早外包”。",
+    "why_now": "2026-06-23 的报道集中呈现了纽约、俄勒冈等地家长对学校 AI 工具的反弹，正好与科技公司和政策层推动 AI 教育形成强烈对照。",
+    "phenomenon": "AI 课堂工具正在快速进入学校，同时引发家长、教师和儿童发展专家对认知卸载、数据安全和教育证据不足的质疑。",
+    "spread_emotion": "家长焦虑于孩子被迫成为教育科技试验对象，支持者则担心不用 AI 会让孩子落后。",
+    "people_involved": [
+      "K-12 学生",
+      "家长",
+      "教师",
+      "学校管理者",
+      "教育科技公司"
+    ],
+    "conflict_point": "旧共识认为越早接触 AI 越能赢在未来；新现实是越来越多家长要求先证明 AI 对儿童学习和认知发展无害。",
+    "fact_structure": "美国 K-12 学校 × 生成式 AI 进课堂争议 × 2026-06-23 The Guardian 报道 × 家长组织、请愿和暂停诉求升温。",
+    "candidate_problem_dimensions": [
+      "AI 素养与基础思考能力的优先级",
+      "儿童认知卸载风险",
+      "教育科技进入校园的证据门槛"
+    ],
+    "happened_when": "2026-06-23 至 2026-06-30",
+    "platforms": [
+      "The Guardian",
+      "家长组织",
+      "地方教育讨论",
+      "社交媒体"
+    ],
+    "platform_evidence": "报道提到纽约家长组织推动 AI 课堂工具暂停，俄勒冈 Bend 地区超过 1100 名家长请愿移除生成式 AI，Fairplay 呼吁 PreK-12 设置更长缓冲期。",
+    "source_notes": [
+      "来源 1：The Guardian《Parents fight AI in US schools》",
+      "来源 2：美国地方家长组织与教育倡议活动"
+    ],
+    "source_url": "https://www.theguardian.com/education/2026/jun/23/ai-us-schools-students",
+    "ugc_voice": "家长的核心声音是：学校不能一边承认孩子基础能力还没形成，一边让 AI 替他们完成思考。",
+    "scan_domain": "教育 / 家庭教育 / AI",
+    "paradigm_signal": "逆转",
+    "paradigm_shift_summary": "AI 教育的争议从“要不要学 AI”升级为“几岁、以什么方式、在什么证据下接触 AI”。",
+    "family_education_insight": "更成熟的家庭教育不是反 AI，也不是迷信 AI，而是区分阶段：低龄先保护阅读、表达、计算、注意力和延迟满足，高年级再训练 AI 协作和结果校验。",
+    "heat_score_10": 8.6,
+    "traffic_level": "high",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "家长运动仍在发展中，各地区政策不一致",
+      "不宜把 AI 教育简单描述为有害或必然有益",
+      "儿童认知影响仍需要更多长期研究"
+    ],
+    "followup_signals": [
+      "纽约、俄勒冈等地区是否正式出台 AI 校园暂停或限制政策",
+      "主流 AI 教育产品是否加强年龄分级和证据披露"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-006",
+    "hotspot_id": "hs-20260630-ultimate-006",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "学校 App 成家庭数据入口：教育数字化的隐性成本被审计报告拆开",
+    "summary": "澳大利亚媒体报道，新南威尔士州审计发现学校大量第三方教学和管理 App 可能涉及儿童生物识别、心理健康、家庭法院命令等敏感数据风险。讨论焦点从教育数字化便利，转向学校是否正在变成家庭数据的采集入口。",
+    "why_now": "2026-06-29 至 2026-06-30 期间，相关审计报道进入公共讨论，和 AI 进校园、教育平台化的全球趋势形成同频风险信号。",
+    "phenomenon": "学校为了教学、沟通和管理接入大量第三方软件，儿童和家庭数据被分散到复杂供应链中。",
+    "spread_emotion": "家长担心孩子隐私被动暴露，学校则面临效率、成本和合规之间的夹击。",
+    "people_involved": [
+      "学生",
+      "家长",
+      "学校管理者",
+      "教育软件供应商",
+      "数据合规人员"
+    ],
+    "conflict_point": "旧共识认为教育数字化主要提升效率；新现实是每一个便利 App 都可能成为儿童与家庭敏感数据的外泄点。",
+    "fact_structure": "新南威尔士州学校系统 × 第三方教育 App 与数据治理审计 × 2026-06-29 前后 × 澳大利亚媒体与审计材料 × 儿童隐私和学校采购治理受关注。",
+    "candidate_problem_dimensions": [
+      "儿童数据隐私",
+      "教育软件采购治理",
+      "AI 与教育平台的合规边界"
+    ],
+    "happened_when": "2026-06-29 至 2026-06-30",
+    "platforms": [
+      "The Australian",
+      "NSW Audit Office",
+      "教育行业讨论"
+    ],
+    "platform_evidence": "报道提到学校使用超过 1000 个第三方教学和行政应用，风险包括心理健康、学业表现、家庭法院命令、支付信息及生物识别数据等敏感信息。",
+    "source_notes": [
+      "来源 1：The Australian 关于 NSW school apps 审计的报道",
+      "来源 2：NSW Auditor-General 相关审计材料"
+    ],
+    "source_url": "https://www.theaustralian.com.au/education/school-apps-may-harvest-childrens-biometric-data-and-custody-orders-audit-reveals/news-story/5e0df6b82b0b97805f842e38ea995bc4",
+    "ugc_voice": "家长讨论的核心不是反对技术，而是质疑：为什么孩子上学必须交出这么多家庭数据？",
+    "scan_domain": "教育 / 民生 / 家庭教育",
+    "paradigm_signal": "重构",
+    "paradigm_shift_summary": "学校数字化不再只是教学工具升级，而是儿童数据权利和公共采购治理问题。",
+    "family_education_insight": "家长需要从“这个 App 好不好用”升级到“它收集什么、保存多久、谁能访问、能否拒绝”的数字监护意识。",
+    "heat_score_10": 8.2,
+    "traffic_level": "medium",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "部分报道存在付费墙，细节需对照审计原文",
+      "不同学校和应用风险差异很大",
+      "不宜泛化为所有教育软件都有严重问题"
+    ],
+    "followup_signals": [
+      "NSW 教育部门整改时间表",
+      "其他地区是否跟进学校 App 和 AI 工具审计"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-007",
+    "hotspot_id": "hs-20260630-ultimate-007",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "高考志愿填报从“专家服务”变成免费 AI 公共服务",
+    "summary": "人民日报海外版报道，通义千问推出高考志愿填报 Agent，面向全国考生免费开放，强调从信息差走向认知差。腾讯等平台报道显示，该类工具短时间内生成大量志愿报告，引发家长和考生关注。",
+    "why_now": "2026-06-25 至 2026-06-26 正值高考出分与志愿填报窗口，AI 志愿工具集中进入家庭决策场景，热度与刚需高度重合。",
+    "phenomenon": "原本依赖高价咨询、数据卡和规划师的志愿填报服务，被大型模型和公开数据产品改造成低成本、可规模化的家庭决策工具。",
+    "spread_emotion": "家长既兴奋于免费专业工具，也焦虑于志愿填报的责任最终仍要自己承担。",
+    "people_involved": [
+      "高考考生",
+      "考生家长",
+      "高中教师",
+      "志愿规划师",
+      "AI 产品团队"
+    ],
+    "conflict_point": "旧共识认为志愿填报专业服务稀缺且昂贵；新现实是 AI 可以把基础信息整合和方案生成快速平民化。",
+    "fact_structure": "通义千问 × 高考志愿填报 Agent × 2026-06-25 至 2026-06-26 × 人民日报海外版与腾讯新闻 × AI 进入高考家庭重大决策。",
+    "candidate_problem_dimensions": [
+      "信息差被压缩后认知差凸显",
+      "家庭重大决策中的 AI 辅助边界",
+      "教育咨询服务被重新定价"
+    ],
+    "happened_when": "2026-06-25 至 2026-06-26",
+    "platforms": [
+      "人民日报海外版",
+      "腾讯新闻",
+      "夸克 / 通义千问",
+      "家长社群"
+    ],
+    "platform_evidence": "人民日报海外版报道称，通义千问在 2026-06-10 推出高考志愿填报 Agent，并指出痛点从信息差转向认知差；腾讯新闻报道称截至 2026-06-26 上午，通义千问已提供超千万份免费志愿报告。",
+    "source_notes": [
+      "来源 1：人民日报海外版《用 AI 填志愿，靠谱吗？》",
+      "来源 2：腾讯新闻关于通义千问高考志愿报告使用量报道"
+    ],
+    "source_url": "https://paper.people.com.cn/rmrbhwb/pc/content/202606/26/content_30165009.html",
+    "ugc_voice": "普通家长的典型声音是：终于不用一上来就花几千上万买规划服务，但 AI 给的方案到底能不能信，还是心里没底。",
+    "scan_domain": "教育 / 家庭教育 / AI",
+    "paradigm_signal": "稀缺性反转",
+    "paradigm_shift_summary": "AI 让志愿填报的信息整合能力变便宜，真正稀缺的变成自我认知、家庭取舍和风险承担。",
+    "family_education_insight": "志愿填报的本质不是选一个分数最划算的学校，而是帮助孩子理解自己、行业、城市、家庭资源和长期路径；AI 可以给选项，不能替家庭完成价值排序。",
+    "heat_score_10": 8.9,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "免费 AI 报告不能替代招生章程、官方位次和专业限制核验",
+      "不同省份政策和批次规则复杂",
+      "工具方数据来源、模型假设和推荐逻辑仍需透明"
+    ],
+    "followup_signals": [
+      "各省志愿填报期间 AI 工具实际使用和投诉情况",
+      "高校、教育部门是否推出官方 AI 志愿辅助工具"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-008",
+    "hotspot_id": "hs-20260630-ultimate-008",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "志愿规划师打开 AI 现查现念：被 AI 降价的不是咨询，而是伪专业",
+    "summary": "央视相关报道曝光部分高考志愿规划服务乱象：假证书、假专家、制造恐慌式销售，以及现场用 AI 查询后包装成专业建议。事件引发家长对高价教育咨询服务可信度的质疑。",
+    "why_now": "2026-06-25 前后正值高考志愿填报焦虑高峰，央视曝光与 AI 志愿工具免费化同时出现，形成强冲突。",
+    "phenomenon": "AI 一边降低信息整合成本，一边暴露部分教育咨询行业依赖信息不透明、话术和焦虑销售获利。",
+    "spread_emotion": "家长愤怒于高价服务可能只是 AI 现查现念，也害怕自己在孩子关键节点被误导。",
+    "people_involved": [
+      "高考家长",
+      "考生",
+      "志愿规划师",
+      "教育咨询机构",
+      "监管部门"
+    ],
+    "conflict_point": "旧共识认为收费越高越专业；新现实是部分所谓专家服务被 AI 和公开信息迅速拆穿。",
+    "fact_structure": "央视调查 × 高考志愿规划服务乱象 × 2026-06-25 前后 × 央视财经及转载平台 × 教育咨询专业性被重新审视。",
+    "candidate_problem_dimensions": [
+      "教育焦虑产业化",
+      "咨询服务的证据和资质门槛",
+      "AI 降低信息不对称后的信任重建"
+    ],
+    "happened_when": "2026-06-25",
+    "platforms": [
+      "央视财经",
+      "新浪财经",
+      "微博",
+      "家长社群"
+    ],
+    "platform_evidence": "央视调查报道提到，部分机构以伪造专家身份、虚假证书和恐慌话术销售志愿服务，甚至现场打开 AI 查询后读给家长听。",
+    "source_notes": [
+      "来源 1：央视财经关于高考志愿规划师乱象的调查报道",
+      "来源 2：新浪财经等平台转载与讨论"
+    ],
+    "source_url": "https://cj.sina.com.cn/articles/view/6145283913/v16e49974902002euiu?froms=ggmp",
+    "ugc_voice": "家长讨论集中在：花钱不是不能接受，但不能接受所谓专家只是把 AI 答案换个包装卖给焦虑家庭。",
+    "scan_domain": "教育 / 家庭教育 / 民生",
+    "paradigm_signal": "认知差",
+    "paradigm_shift_summary": "AI 让伪专业的边际成本和真实含金量同时暴露，咨询行业必须从卖信息转向卖判断、责任和验证。",
+    "family_education_insight": "家庭在重大教育决策中要学会追问依据：数据来源是什么、规则是否官方、推荐逻辑是什么、最坏情况是什么，而不是被焦虑话术牵着走。",
+    "heat_score_10": 8.4,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "个案乱象不能代表全部正规志愿咨询",
+      "转载链接需继续核对央视原始报道",
+      "表达时避免攻击整个行业"
+    ],
+    "followup_signals": [
+      "地方监管是否整治高考志愿咨询机构",
+      "AI 志愿填报产品是否推出可解释和官方核验机制"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-009",
+    "hotspot_id": "hs-20260630-ultimate-009",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "最会造 AI 的人反而更贵：DeepMind 明星出走暴露“人类判断”稀缺",
+    "summary": "Axios 报道，Google DeepMind 多位高影响力研究者流向 OpenAI、Anthropic 等竞争对手，包括 Transformer 关键作者 Noam Shazeer 和 AlphaFold 相关核心人物 John Jumper。事件显示，在 AI 自动化研究加速的同时，顶级人类判断、方向选择和团队号召力更值钱。",
+    "why_now": "2026-06-23 Axios 集中报道 AI 实验室人才流动，叠加近期 OpenAI、Anthropic、Google 之间的激烈竞争，让“AI 越强，人类顶级人才越稀缺”的矛盾变得突出。",
+    "phenomenon": "AI 公司争夺的不只是工程执行力，而是能定义研究方向、调度算力、招募团队并判断技术路线的少数人。",
+    "spread_emotion": "行业羡慕顶级人才溢价，也焦虑普通技术能力被 AI 平替后，真正稀缺能力门槛更高。",
+    "people_involved": [
+      "AI 研究员",
+      "大模型公司",
+      "技术创始人",
+      "投资机构",
+      "软件工程师"
+    ],
+    "conflict_point": "旧共识认为 AI 会让技术人才整体贬值；新现实是普通执行能力可能变便宜，但顶级判断和组织能力更贵。",
+    "fact_structure": "Google DeepMind × 明星研究员流向 OpenAI、Anthropic × 2026-06-23 Axios 报道 × AI 实验室人才战争升级。",
+    "candidate_problem_dimensions": [
+      "顶级判断力变得更稀缺",
+      "技术团队壁垒从人数转向方向和算力调度",
+      "普通工程能力与研究领导力分化"
+    ],
+    "happened_when": "2026-06-23 至 2026-06-30",
+    "platforms": [
+      "Axios",
+      "Reuters",
+      "X / Twitter",
+      "AI 研究社区"
+    ],
+    "platform_evidence": "Axios 报道提到 Noam Shazeer 离开 Google 加入 OpenAI，John Jumper 离开 Google DeepMind 加入 Anthropic，并分析顶级研究者的判断、实验经验和招募能力仍是 AI 公司争夺焦点。",
+    "source_notes": [
+      "来源 1：Axios《AI lab AGI race and Google DeepMind departures》",
+      "来源 2：Reuters 关于 Noam Shazeer 加入 OpenAI 的报道"
+    ],
+    "source_url": "https://www.axios.com/2026/06/23/ai-lab-agi-google-deepmind-departures",
+    "ugc_voice": "技术圈讨论的典型说法是：AI 能写很多代码，但谁决定做什么、怎么押注、何时停止，仍然极贵。",
+    "scan_domain": "AI / 未来工作",
+    "paradigm_signal": "稀缺性反转",
+    "paradigm_shift_summary": "AI 降低执行成本后，方向判断、实验品味和组织号召力成为更稀缺的生产资料。",
+    "family_education_insight": "教育不应只训练孩子执行标准答案，还要训练问题选择、证据判断、长期专注和带队协作，因为这些更难被 AI 直接替代。",
+    "heat_score_10": 8.7,
+    "traffic_level": "high",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "人才流动原因复杂，不能只归因于薪酬或 AGI 预期",
+      "媒体报道可能放大个别明星效应",
+      "普通行业的人才结构变化不能简单照搬 AI 实验室"
+    ],
+    "followup_signals": [
+      "OpenAI、Anthropic、Google 后续核心研究员流动",
+      "AI 公司是否继续以超高薪酬和股权争夺研究负责人"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-010",
+    "hotspot_id": "hs-20260630-ultimate-010",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "纳德拉反向提醒企业：最危险的不是没有 AI，而是把学习能力外包",
+    "summary": "Business Insider 报道，微软 CEO Satya Nadella 认为每家公司都应拥有自己的 AI 模型或模型能力，因为企业本质上是学习系统。讨论焦点从“接入哪个大模型”转向“企业是否拥有自己的数据、上下文和学习闭环”。",
+    "why_now": "2026-06-27 报道发布后，正值企业普遍采购 AI 工具、接入通用大模型的阶段，纳德拉的观点直接挑战“买一个 AI 工具就完成转型”的浅层共识。",
+    "phenomenon": "企业 AI 战略从单纯购买通用模型，转向围绕自身数据、流程、反馈和上下文构建专属能力。",
+    "spread_emotion": "管理者焦虑于不能落后，也困惑于到底该买模型、训模型，还是重建业务流程。",
+    "people_involved": [
+      "企业管理者",
+      "CIO",
+      "AI 产品负责人",
+      "创业者",
+      "咨询公司"
+    ],
+    "conflict_point": "旧共识认为企业 AI 转型就是采购大模型服务；新现实是如果学习闭环被外包，企业自身护城河可能被掏空。",
+    "fact_structure": "Satya Nadella × 企业应构建自身 AI 模型能力言论 × 2026-06-27 Business Insider 报道 × 企业 AI 战略从工具采购转向学习系统建设。",
+    "candidate_problem_dimensions": [
+      "企业数据和上下文是否成为核心资产",
+      "AI 转型从工具导入转向组织学习",
+      "通用模型与行业模型的边界"
+    ],
+    "happened_when": "2026-06-27",
+    "platforms": [
+      "Business Insider",
+      "WSJ",
+      "LinkedIn",
+      "企业 AI 社群"
+    ],
+    "platform_evidence": "Business Insider 报道称，Nadella 认为企业应该围绕自己的上下文、数据和轨迹构建模型能力，并表示企业可以外包任务，但不能外包学习。",
+    "source_notes": [
+      "来源 1：Business Insider 对 Satya Nadella AI 模型观点的报道",
+      "来源 2：企业 AI 战略相关讨论"
+    ],
+    "source_url": "https://www.businessinsider.com/satya-nadella-said-every-company-should-build-own-ai-model-2026-6",
+    "ugc_voice": "创业者和管理者的常见反应是：过去问买哪个 AI，现在要问自己的业务有没有可沉淀的数据和反馈。",
+    "scan_domain": "AI / 实业 / 未来工作",
+    "paradigm_signal": "逆转",
+    "paradigm_shift_summary": "企业 AI 护城河从访问模型转向拥有持续学习的业务闭环。",
+    "family_education_insight": "对个人也是一样：不能只把学习外包给 AI，总结、复盘、形成自己的判断框架才是真正的长期资产。",
+    "heat_score_10": 8.2,
+    "traffic_level": "medium",
+    "verification_status": "confirmed",
+    "risk_level": "medium",
+    "risk_notes": [
+      "报道为媒体转述，需结合完整语境理解",
+      "中小企业不一定需要从零训练模型",
+      "不宜把自有模型简单理解为技术堆料"
+    ],
+    "followup_signals": [
+      "微软 Azure AI Foundry 和企业自有模型案例",
+      "企业是否开始把内部数据闭环作为 AI 转型 KPI"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-011",
+    "hotspot_id": "hs-20260630-ultimate-011",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "英国童军 25 年来大改技能徽章：AI 安全比生火更像生存能力",
+    "summary": "The Guardian 报道，英国 Explorer Scouts 推出内容创作、数字沟通和网络安全等新徽章，这是近 25 年来的重要更新。青少年组织把 AI、数字足迹和在线社区影响纳入生活技能，显示“生存能力”的定义正在变化。",
+    "why_now": "2026-06-25 报道发布，青少年组织的课程更新为 AI 与数字素养进入非学校教育体系提供了清晰信号。",
+    "phenomenon": "面向青少年的能力培养从户外、手工和传统社交，扩展到 AI 使用、网络安全、数字身份和内容传播。",
+    "spread_emotion": "家长和教育者既认可数字世界已成现实，也担心孩子过早被社交媒体和 AI 影响。",
+    "people_involved": [
+      "青少年",
+      "家长",
+      "童军组织",
+      "学校教师",
+      "数字安全教育者"
+    ],
+    "conflict_point": "旧共识把青少年生存技能理解为户外和生活技能；新现实是数字空间中的判断、安全和表达能力同样是生存技能。",
+    "fact_structure": "英国 Explorer Scouts × 新增数字与 AI 相关徽章 × 2026-06-25 The Guardian 报道 × 青少年能力框架更新。",
+    "candidate_problem_dimensions": [
+      "AI 素养成为通识教育",
+      "数字安全和数字身份管理",
+      "学校外教育机构补位未来技能"
+    ],
+    "happened_when": "2026-06-25",
+    "platforms": [
+      "The Guardian",
+      "The Scouts",
+      "教育社区"
+    ],
+    "platform_evidence": "The Guardian 报道称，新徽章包括内容创作、数字沟通、网络安全等方向，改革参考了约 3000 名青少年的意见，强调 AI 和数字技能将成为未来生活的一部分。",
+    "source_notes": [
+      "来源 1：The Guardian《Explorer Scouts launch badges for AI and digital age》",
+      "来源 2：英国童军组织课程更新"
+    ],
+    "source_url": "https://www.theguardian.com/society/2026/jun/25/explorer-scouts-launch-badges-ai-digital-age",
+    "ugc_voice": "青少年反馈的核心意思是：学校常讲网络危险，但他们也需要学习如何有效、负责地使用 AI 和数字工具。",
+    "scan_domain": "教育 / 家庭教育 / 未来工作",
+    "paradigm_signal": "重构",
+    "paradigm_shift_summary": "AI 与数字素养正在从技术兴趣课变成青少年基础生活能力。",
+    "family_education_insight": "家庭教育可以把 AI 安全、数字足迹、内容判断和网络表达当作日常能力来教，而不是等孩子出问题后再禁止。",
+    "heat_score_10": 7.9,
+    "traffic_level": "medium",
+    "verification_status": "confirmed",
+    "risk_level": "low",
+    "risk_notes": [
+      "英国童军案例不能直接代表全球教育体系",
+      "技能徽章更新的实际效果需要长期观察"
+    ],
+    "followup_signals": [
+      "其他青少年组织是否推出 AI 与数字安全课程",
+      "学校课程是否借鉴非正式教育体系的数字技能框架"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-012",
+    "hotspot_id": "hs-20260630-ultimate-012",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "学校说 AI 是作弊，雇主说 AI 是基本功：毕业生夹在两套规则之间",
+    "summary": "近一周多家媒体讨论毕业生面对的 AI 双重标准：学校仍常把 AI 当作作弊风险，雇主却越来越要求候选人会用 AI，同时又抱怨求职材料被 AI 写得千篇一律。真正的矛盾是 AI 能力已成基础，但人味、判断和沟通反而更难证明。",
+    "why_now": "2026-06-24 至 2026-06-30 期间，MarketWatch、The Australian 等媒体连续报道 AI 与毕业生就业、求职材料和软技能的冲突，正好对应毕业季和招聘季。",
+    "phenomenon": "AI 正在同时进入课堂、简历、求职信、筛选系统和雇主评价标准，导致学生不知道什么时候该用、怎样用、如何证明是自己在思考。",
+    "spread_emotion": "毕业生困惑于规则不一致，雇主焦虑于候选人材料同质化，学校担心评价体系失效。",
+    "people_involved": [
+      "大学生",
+      "应届毕业生",
+      "高校教师",
+      "招聘经理",
+      "雇主"
+    ],
+    "conflict_point": "旧共识认为不用 AI 才代表诚实能力；新现实是不会用 AI 可能被认为落后，但只会用 AI 又无法证明真实能力。",
+    "fact_structure": "毕业生就业市场 × AI 使用规则冲突 × 2026-06-24 至 2026-06-30 媒体报道 × 教育评价和招聘评价同时失灵。",
+    "candidate_problem_dimensions": [
+      "AI 使用边界不清",
+      "求职材料信号失真",
+      "软技能和真实能力证明变贵"
+    ],
+    "happened_when": "2026-06-24 至 2026-06-30",
+    "platforms": [
+      "MarketWatch",
+      "The Australian",
+      "LinkedIn",
+      "高校就业讨论"
+    ],
+    "platform_evidence": "MarketWatch 报道聚焦“学校禁止、雇主要求”的 AI 双重标准；The Australian 报道雇主担心毕业生过度依赖 AI，导致沟通、情商和专业性受影响，并出现大量相似的 AI 求职材料。",
+    "source_notes": [
+      "来源 1：MarketWatch 关于新毕业生 AI 双重标准的报道",
+      "来源 2：The Australian 关于雇主警告毕业生过度依赖 AI 的报道"
+    ],
+    "source_url": "https://www.marketwatch.com/story/teachers-ban-it-employers-demand-it-new-grads-face-a-frustrating-ai-double-standard-09c70f19",
+    "ugc_voice": "学生的常见困惑是：不用 AI 怕落后，用 AI 又怕被说作弊；企业的常见抱怨是，大家的简历和求职信越来越像同一个模板。",
+    "scan_domain": "教育 / 未来工作",
+    "paradigm_signal": "认知差",
+    "paradigm_shift_summary": "AI 使用能力正在变成基础能力，但真实思考、沟通和可信证明成为新的稀缺信号。",
+    "family_education_insight": "家长不能只让孩子学会用 AI 写材料，更要训练孩子能口头讲清楚自己的经历、选择、失败和判断，因为这些更难被模板化。",
+    "heat_score_10": 8.1,
+    "traffic_level": "medium",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "部分报道存在付费墙或调查样本限制",
+      "不同学校和雇主对 AI 的规则差异很大",
+      "不宜把学生使用 AI 一概定义为作弊或偷懒"
+    ],
+    "followup_signals": [
+      "高校是否发布更清晰的 AI 作业和求职使用规范",
+      "企业是否改变面试方式以验证真实能力"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-013",
+    "hotspot_id": "hs-20260630-ultimate-013",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "开源代码库里的 AI 代理被低估 30 倍：软件供应链正在无声换手",
+    "summary": "一篇 2026-06-23 发布的 arXiv 论文分析 1.8 亿个开源仓库，认为仅靠机器人账号或 Pull Request 统计会严重低估 AI 编码代理的真实渗透。研究称 Claude Code 等代理产生的提交已经大量存在，但很多是低可见度、难识别的静默采用。",
+    "why_now": "论文在过去 7 天发布，正好与 Codex、Claude Code、Gemini Computer Use 等代理化趋势相互印证，为“AI 已经进入软件供应链”提供了新的测量角度。",
+    "phenomenon": "AI 编码代理不只是个人工具，而是逐渐嵌入开源协作、配置文件、提交记录和项目维护流程。",
+    "spread_emotion": "开发者兴奋于效率提升，也担心代码来源、责任归属、审查压力和供应链安全变复杂。",
+    "people_involved": [
+      "开源维护者",
+      "软件工程师",
+      "安全团队",
+      "企业技术负责人",
+      "AI 编码工具用户"
+    ],
+    "conflict_point": "旧共识通过机器人账号或 PR 数量判断 AI 参与程度；新现实是大量 AI 代理贡献可能隐藏在普通提交和配置痕迹里。",
+    "fact_structure": "arXiv 论文 × 1.8 亿开源仓库 AI 编码代理检测 × 2026-06-23 × 多方法普查 × AI 代理在开源软件供应链中被系统性低估。",
+    "candidate_problem_dimensions": [
+      "代码责任和作者归属",
+      "软件供应链安全",
+      "开源维护者审查负担上升"
+    ],
+    "happened_when": "2026-06-23",
+    "platforms": [
+      "arXiv",
+      "GitHub",
+      "开发者社区"
+    ],
+    "platform_evidence": "论文摘要称，多方法检测在单一快照中识别出 850157 个 Claude Code 提交，而仅用机器人账号查找只能恢复 28154 个，存在约 30 倍相对召回差距。",
+    "source_notes": [
+      "来源 1：arXiv 论文《Detecting AI Coding Agents in Open Source》",
+      "来源 2：GitHub 开源仓库大规模检测研究"
+    ],
+    "source_url": "https://arxiv.org/abs/2606.24429",
+    "ugc_voice": "开发者讨论的潜台词是：以后审代码不只要看写得对不对，还要问是谁写的、怎么生成的、有没有被验证。",
+    "scan_domain": "AI / 未来工作",
+    "paradigm_signal": "认知差",
+    "paradigm_shift_summary": "AI 代理在软件生产中的真实参与度可能远高于表面可见信号，软件供应链的信任机制需要重建。",
+    "family_education_insight": "对准备学编程的孩子来说，写代码本身仍重要，但更重要的是理解系统、测试、审查和安全，因为代码生成会越来越便宜。",
+    "heat_score_10": 8.5,
+    "traffic_level": "medium",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "arXiv 论文尚需同行评审",
+      "检测方法可能存在误报或漏报",
+      "数据反映开源仓库，不等同于所有企业软件生产"
+    ],
+    "followup_signals": [
+      "GitHub、GitLab 是否推出更明确的 AI 生成代码标识机制",
+      "企业是否要求 AI 编码工具生成审计日志"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-014",
+    "hotspot_id": "hs-20260630-ultimate-014",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "当 AI 负责实现，程序员教育的核心转向验证和判断",
+    "summary": "一篇 2026 年 6 月下旬发布的 arXiv 论文讨论 agentic AI 之后的软件职业技能变化，指出随着代理承担更多实现任务，验证、确认、系统理解和人类判断的重要性上升。它呼应了行业中“写代码能力变便宜，验代码能力变贵”的趋势。",
+    "why_now": "论文在过去 7 天进入公开讨论，正好处于 AI 编码代理快速普及阶段，为高校计算机教育和企业培训提供了一个新的能力框架。",
+    "phenomenon": "软件开发的能力重心从手写实现，逐步转向需求澄清、架构判断、测试验证、风险识别和结果负责。",
+    "spread_emotion": "程序员担心基础编码能力贬值，也开始意识到会验证、会拆需求、会负责交付的人更难被替代。",
+    "people_involved": [
+      "程序员",
+      "计算机专业学生",
+      "高校教师",
+      "企业技术管理者",
+      "AI 编程工具用户"
+    ],
+    "conflict_point": "旧共识认为学编程主要是学会实现功能；新现实是 AI 可以快速生成实现，但是否正确、是否安全、是否满足业务仍要人负责。",
+    "fact_structure": "arXiv 论文 × 软件职业未来技能研究 × 2026-06 下旬 × 纽约和新加坡等圆桌讨论 × 验证与判断成为核心能力。",
+    "candidate_problem_dimensions": [
+      "编程教育课程重构",
+      "AI 生成代码的质量验收",
+      "初级程序员训练路径变化"
+    ],
+    "happened_when": "2026-06-23 至 2026-06-30",
+    "platforms": [
+      "arXiv",
+      "软件工程教育社区",
+      "开发者讨论"
+    ],
+    "platform_evidence": "论文《Skills for the future software profession: beyond agentic AI!》讨论 2026 年多地圆桌结果，强调在代理承担实现任务后，verification and validation 等能力重要性上升。",
+    "source_notes": [
+      "来源 1：arXiv 论文《Skills for the future software profession: beyond agentic AI!》",
+      "来源 2：2026 年软件工程职业技能圆桌讨论"
+    ],
+    "source_url": "https://arxiv.org/abs/2606.21894",
+    "ugc_voice": "开发者的典型感受是：AI 让代码出来更快，但真正耗人的变成看懂、测透、改对和承担后果。",
+    "scan_domain": "AI / 教育 / 未来工作",
+    "paradigm_signal": "稀缺性反转",
+    "paradigm_shift_summary": "代码实现能力被 AI 降价后，验证、抽象、架构和责任意识成为软件职业的新稀缺能力。",
+    "family_education_insight": "孩子学编程不应只追求做出一个小程序，而要学会解释需求、写测试、找漏洞、复盘错误，这些才是 AI 时代更稳定的能力。",
+    "heat_score_10": 7.8,
+    "traffic_level": "medium",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "arXiv 论文尚需同行评审",
+      "研究结论偏职业教育和专家讨论，不等于所有企业立即转型",
+      "不宜理解为基础编码不重要"
+    ],
+    "followup_signals": [
+      "高校计算机课程是否加入 AI 代码审查和验证训练",
+      "企业初级工程师面试是否从手写代码转向系统验收"
+    ]
+  },
+  {
+    "id": "hs-20260630-ultimate-015",
+    "hotspot_id": "hs-20260630-ultimate-015",
+    "date": "2026-06-30",
+    "source_skill": "ultimate-hotspot-radar-json",
+    "source_direction": "broad-ultimate-radar",
+    "scope": "broad",
+    "title": "伦敦 AI 热潮背后没有本土大模型：主权 AI 从口号变成基础设施焦虑",
+    "summary": "Financial Times 近日报导英国 AI 生态的矛盾：DeepMind 及其校友带动伦敦 AI 创业热潮，但英国仍担心关键模型、算力和基础设施依赖美国科技公司。讨论焦点从“有没有 AI 创业公司”转向“有没有主权级 AI 能力”。",
+    "why_now": "2026-06-27 前后，FT 报道把人才、创业、算力、模型和国家能力放在同一框架下讨论，正好对应各国加速布局主权 AI 的政策窗口。",
+    "phenomenon": "国家和地区不再只把 AI 看作创业赛道，而是看作算力、芯片、基础模型、数据和安全能力组成的基础设施。",
+    "spread_emotion": "创业圈兴奋于人才外溢和融资，政策圈焦虑于核心能力被少数海外平台控制。",
+    "people_involved": [
+      "AI 创业者",
+      "政府决策者",
+      "投资机构",
+      "高校研究人员",
+      "云计算和芯片企业"
+    ],
+    "conflict_point": "旧共识认为拥有 AI 人才和创业公司就代表 AI 强国；新现实是没有算力、模型和基础设施控制权，生态繁荣仍可能受制于人。",
+    "fact_structure": "英国 AI 生态 × DeepMind 校友创业与主权 AI 焦虑 × 2026-06-27 前后 Financial Times 报道 × 国家级 AI 能力被重新定义。",
+    "candidate_problem_dimensions": [
+      "主权 AI 基础设施",
+      "人才外溢与本土模型能力脱节",
+      "国家产业政策从应用扶持转向底层能力建设"
+    ],
+    "happened_when": "2026-06-27 至 2026-06-30",
+    "platforms": [
+      "Financial Times",
+      "政策圈",
+      "AI 投资社区"
+    ],
+    "platform_evidence": "FT 报道讨论伦敦 DeepMind 生态、英国 AI 创业热潮、对美国模型能力的依赖，以及英国推出主权 AI 相关资金和能力建设的背景。",
+    "source_notes": [
+      "来源 1：Financial Times 关于英国 DeepMind 生态和主权 AI 的报道",
+      "来源 2：英国主权 AI 资金和基础设施讨论"
+    ],
+    "source_url": "https://www.ft.com/content/6a3a46b9-4725-469e-a909-917768a74afb",
+    "ugc_voice": "产业讨论的核心分歧是：一个地方有很多 AI 公司，不等于它掌握了 AI 时代的底层命门。",
+    "scan_domain": "AI / 实业 / 公共政策",
+    "paradigm_signal": "认知差",
+    "paradigm_shift_summary": "AI 竞争从应用和创业数量，升级为模型、算力、芯片、数据和安全的国家级基础设施竞争。",
+    "family_education_insight": "对普通家庭来说，选专业和城市不能只看热门应用，还要看一个地区是否有真实产业链、科研机构、算力平台和长期投入。",
+    "heat_score_10": 7.7,
+    "traffic_level": "medium",
+    "verification_status": "developing",
+    "risk_level": "medium",
+    "risk_notes": [
+      "FT 报道部分内容可能存在付费墙",
+      "主权 AI 讨论带有政策和地缘竞争色彩",
+      "不宜简单套用到所有国家或地区"
+    ],
+    "followup_signals": [
+      "英国主权 AI 基金落地项目",
+      "欧洲、亚洲主要国家是否继续加码本土算力和基础模型"
+    ]
+  }
+]

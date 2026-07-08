@@ -1,0 +1,129 @@
+[
+  {
+    "id": "hs-20260623-001",
+    "hotspot_id": "hs-20260623-001",
+    "date": "2026-06-23",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "微信迎来史上最大更新",
+    "summary": "百度热搜显示“微信迎来史上最大更新”进入实时热点榜，围绕微信功能变化、社交习惯和用户体验的讨论快速扩散。",
+    "why_now": "微信是高频国民级应用，功能更新天然牵动普通用户、职场沟通、亲子沟通和数字生活习惯。",
+    "phenomenon": "一个国民级社交工具的大版本更新成为跨平台讨论话题。",
+    "spread_emotion": "好奇、担心不适应、想第一时间弄懂新功能。",
+    "people_involved": [
+      "微信用户",
+      "职场人",
+      "家长",
+      "内容创作者"
+    ],
+    "conflict_point": "工具越来越强大 vs 普通用户需要重新适应数字生活规则。",
+    "fact_structure": "国民应用更新 × 使用习惯迁移 × 数字生活适应成本。",
+    "candidate_problem_dimensions": [
+      "工具变化带来的适应压力",
+      "数字生活习惯重塑",
+      "社交边界和沟通效率"
+    ],
+    "heat_score_10": 9.0,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "微信",
+      "微博",
+      "抖音"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-23 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "公共池只记录大盘热度，不做赛道推荐判断。",
+      "具体功能细节需以后续官方更新说明为准。"
+    ]
+  },
+  {
+    "id": "hs-20260623-002",
+    "hotspot_id": "hs-20260623-002",
+    "date": "2026-06-23",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "今起多地高考成绩陆续公布",
+    "summary": "百度热搜显示“今起多地高考成绩陆续公布”进入实时热点榜，高考家庭开始集中查分、估分、准备志愿填报。",
+    "why_now": "6 月下旬是高考查分和志愿准备节点，家长、考生、学校和教育服务都进入高关注窗口。",
+    "phenomenon": "高考查分节点带动升学选择、家庭焦虑和志愿填报讨论集中爆发。",
+    "spread_emotion": "紧张、期待、怕错过信息、怕做错选择。",
+    "people_involved": [
+      "高考考生",
+      "高考家长",
+      "教育博主",
+      "志愿填报服务"
+    ],
+    "conflict_point": "分数已经出来 vs 真正困难的是把信息转成判断和选择。",
+    "fact_structure": "查分节点 × 志愿选择复杂 × 家庭决策压力。",
+    "candidate_problem_dimensions": [
+      "升学路径判断",
+      "信息差焦虑",
+      "重大选择中的家长参与",
+      "工具辅助与自主判断"
+    ],
+    "heat_score_10": 8.8,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "微博",
+      "抖音",
+      "小红书"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-23 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要提供具体志愿填报承诺。",
+      "只作为家庭决策和学习能力话题的中立原料。"
+    ]
+  },
+  {
+    "id": "hs-20260623-003",
+    "hotspot_id": "hs-20260623-003",
+    "date": "2026-06-23",
+    "source_skill": "manual-web-verified",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "复旦大学南京大学等高校宣布扩招",
+    "summary": "百度热搜显示“复旦大学南京大学等高校宣布扩招”进入实时热点榜，围绕名校扩招、专业选择和升学机会变化的讨论升温。",
+    "why_now": "高考查分和志愿填报窗口临近，高校招生计划变化会直接影响家庭对机会、专业和路径的判断。",
+    "phenomenon": "高校扩招消息在升学节点被集中讨论，家长和考生重新评估机会。",
+    "spread_emotion": "看到机会的兴奋，与害怕误判路径的谨慎并存。",
+    "people_involved": [
+      "考生",
+      "家长",
+      "高校",
+      "教育媒体"
+    ],
+    "conflict_point": "机会看起来变多了 vs 家庭仍要判断哪个机会真的适合自己。",
+    "fact_structure": "高校招生变化 × 志愿填报窗口 × 路径选择焦虑。",
+    "candidate_problem_dimensions": [
+      "机会判断",
+      "专业选择",
+      "信息筛选",
+      "家庭教育决策"
+    ],
+    "heat_score_10": 8.3,
+    "traffic_level": "high",
+    "platforms": [
+      "百度热搜",
+      "微博",
+      "教育媒体"
+    ],
+    "source_notes": [
+      "百度热搜实时榜，2026-06-23 检索"
+    ],
+    "source_url": "https://top.baidu.com/board?tab=realtime",
+    "risk_notes": [
+      "不要把扩招解读成确定性升学收益。",
+      "避免替具体院校和专业作判断。"
+    ]
+  }
+]

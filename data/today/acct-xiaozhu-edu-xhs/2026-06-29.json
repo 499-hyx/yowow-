@@ -1,0 +1,339 @@
+{
+  "account": {
+    "account_id": "acct-xiaozhu-edu-xhs",
+    "tenant_id": "tenant-xiaozhu",
+    "display_name": "小猪 · 教育小红书号",
+    "track_id": "education-yowow",
+    "platform_id": "xiaohongshu",
+    "positioning_id": "expert"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-20260629-edu-001",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "AI 志愿填报工具被高考家庭大量使用。",
+            "real_problem": "家长想借工具减少不确定性，但又担心关键选择被答案带着走。",
+            "track_relation": "这能接到家长认知升级：工具可以辅助，真正的判断要靠人提出好问题。",
+            "product_value_support": "这条路径能支撑产品价值：让孩子从小学开始练“先定义问题，再找答案”。",
+            "platform_expression": "小红书上做成“AI 志愿工具给小学家长的提醒”。",
+            "naturalness_note": "热点与产品主张高度贴合。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "志愿填报把院校、专业、城市、就业信息压缩到一个决策窗口。",
+            "real_problem": "复杂问题面前，孩子如果只等答案，就很难形成自己的选择框架。",
+            "track_relation": "这能接到 AI 时代学习能力：面对陌生场景能抓结构、问清条件。",
+            "product_value_support": "这条路径能支撑亲子提问产品，让家长日常就能练孩子的问题拆解。",
+            "platform_expression": "小红书上用“别急着问 AI 选哪个，先问孩子这 4 句”落地。",
+            "naturalness_note": "从高考场景转到家庭练习，读者能理解。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 工具能快速整合大量学校和专业资料。",
+            "real_problem": "信息变多以后，家庭更需要判断优先级。",
+            "track_relation": "这能接到人机结合：工具做资料整理，人做价值排序。",
+            "product_value_support": "这条路径能支撑产品价值中的陪孩子用 AI，而不是把孩子交给 AI。",
+            "platform_expression": "小红书上做成“工具负责资料，孩子负责说理由”的短笔记。",
+            "naturalness_note": "人和工具分工明确，适合教育账号反复讲。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 志愿填报爆火后，家长该提前训练孩子什么",
+          "title": "AI志愿填报大考：别只问工具准不准",
+          "body_or_script": "AI 志愿填报这几天很热。\n\n但我最想提醒小学家长的，不是“这个工具准不准”，而是：孩子以后会不会问工具。\n\n很多家庭一上来就问：\n“我这个分数能去哪？”\n\n可更重要的问题可能是：\n\n1. 我到底想优先满足什么？城市、专业、就业，哪个排前面？\n2. 这个建议用了哪些依据？有没有遗漏条件？\n3. 如果未来行业变化了，我还能怎么调整？\n4. 这个选择是不是我能长期承担的？\n\nAI 很适合整理资料，但不适合替人完成价值排序。\n\n所以小学阶段，别只训练孩子找答案。\n可以多训练他：看到一个复杂问题，先把问题拆成几层。\n\n这就是未来孩子真正需要的学习能力。\n不是不用 AI，而是带着自己的问题去用 AI。\n\n你家孩子现在问 AI 时，会先说清楚目标吗？"
+        },
+        "external_terms_check": true,
+        "risk_note": "不得提供任何具体志愿选择建议。",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260629-004",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "高考家庭进入志愿填报关键窗口，信息和工具一起涌来。",
+            "real_problem": "家长最怕的不是没有信息，而是信息太多却不知道怎么取舍。",
+            "track_relation": "这能接到孩子未来竞争力：真正重要的是定义目标、提出问题、做选择。",
+            "product_value_support": "这条路径能支撑产品价值：从小学开始练陌生问题里的结构化提问。",
+            "platform_expression": "小红书上用“志愿填报给小学家长的提醒”做教育观察。",
+            "naturalness_note": "高考是远期镜子，小学家长能自然前置思考。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "志愿填报让专业、城市、就业和兴趣同时摆在家庭面前。",
+            "real_problem": "孩子未来会遇到很多没有标准答案的选择题。",
+            "track_relation": "这能接到会提问比会答更重要：先问自己要什么，再看工具给什么。",
+            "product_value_support": "这条路径支撑亲子提问训练，让孩子习惯把复杂选择拆成几个问题。",
+            "platform_expression": "小红书上做成“一个选择题，先拆 4 个问题”的清单。",
+            "naturalness_note": "从升学选择转到问题拆解，连接自然。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 工具能快速列出大量院校和专业信息。",
+            "real_problem": "如果人没有判断框架，工具越快，家庭越容易被信息推着走。",
+            "track_relation": "这能接到人机结合：工具查资料，人负责目标和取舍。",
+            "product_value_support": "这条路径能支撑产品价值中的陪孩子用 AI，让家长把工具变成对话对象。",
+            "platform_expression": "小红书上用“别让 AI 替孩子做选择，先让孩子说理由”做切口。",
+            "naturalness_note": "工具与人分工清楚，适合今天发。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "高考志愿填报给小学家长的一堂提前课",
+          "title": "高考志愿填报：真正该提前练的不是选专业",
+          "body_or_script": "这几天很多家庭都在填志愿。\n\n小学家长可能会觉得：这离我家孩子还远。\n\n但我觉得，它其实提前告诉了我们一件事：未来最难的不是找信息，而是在信息很多的时候，孩子能不能说清楚自己要什么。\n\nAI 可以帮你列学校、查专业、整理就业方向。\n可有几个问题，它不能替孩子回答：\n\n- 我更在意什么？\n- 我愿意为哪个选择承担代价？\n- 这个建议背后的依据是什么？\n- 如果条件变了，我还能不能重新判断？\n\n这些能力，不是高三突然长出来的。\n\n小学阶段就可以练：\n给孩子一个陌生问题，不急着给答案，先陪他把问题拆开。\n\n比如：你为什么这样选？你还需要知道什么？如果换一种情况，答案会不会变？\n\n会用工具的孩子很多。\n真正稀缺的是：孩子能带着自己的问题去用工具。\n\n你会让孩子参与家里的小决策吗？"
+        },
+        "external_terms_check": true,
+        "risk_note": "不要写成具体志愿填报建议，保持长期能力视角。",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260629-edu-002",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "AI 生成内容真实性话题进入大众讨论。",
+            "real_problem": "孩子很容易把流畅、逼真的内容当成可信内容。",
+            "track_relation": "这能接到 AI 时代学习能力：孩子要学会看来源、看证据、看意图。",
+            "product_value_support": "这条路径能支撑产品价值中的亲子提问练习，把热点转成家庭判断训练。",
+            "platform_expression": "小红书上用“孩子刷到 AI 内容，先问这 3 句”表达。",
+            "naturalness_note": "真实判断是家长痛点，连接直接。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "用户对模板化 AI 内容产生疲劳。",
+            "real_problem": "孩子如果只模仿模板，表达会越来越像答案拼贴。",
+            "track_relation": "这能接到会提问比会答更重要：表达前先问自己观察到了什么。",
+            "product_value_support": "这条路径支撑产品价值中的独立表达训练。",
+            "platform_expression": "小红书上做“别让孩子只复制 AI 文风”的轻提醒。",
+            "naturalness_note": "从审美疲劳转到孩子表达，很自然。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 内容生产成本变低，孩子看到的内容越来越多。",
+            "real_problem": "内容越多，越需要筛选和判断。",
+            "track_relation": "这能接到人机结合：工具可以帮忙生成，人要负责辨别和选择。",
+            "product_value_support": "这条路径支撑家长陪孩子用工具时增加判断环节。",
+            "platform_expression": "小红书上用“生成前问目标，生成后问依据”做清单。",
+            "naturalness_note": "落点可操作，不是空泛评论。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "孩子刷到 AI 内容时，家长别只说少看",
+          "title": "AI脸看腻了：孩子更该学会这3个判断",
+          "body_or_script": "“AI脸看腻了”这个话题，我建议家长别只当成娱乐新闻看。\n\n孩子以后会遇到越来越多“看起来很真、说得很顺”的内容。\n\n这时候，比禁止更重要的是让孩子学会判断。\n\n可以从 3 个小问题开始：\n\n1. 这个内容有没有来源？\n如果没有来源，先别急着相信。\n\n2. 它想让我产生什么感觉？\n害怕、羡慕、冲动购买，都是信号。\n\n3. 我能不能找到另一个证据？\n别让单条内容直接变成结论。\n\n这三个问题看起来简单，其实是在训练孩子面对新工具时的基本能力。\n\nAI 不是洪水猛兽。\n但孩子如果只会接收，不会追问，就容易被内容牵着走。\n\n你会和孩子一起拆解短视频吗？"
+        },
+        "external_terms_check": true,
+        "risk_note": "避免制造对 AI 的恐慌。",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260629-edu-003",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "暑期临近，孩子使用平板、手机和 AI 工具的时间增加。",
+            "real_problem": "家长怕孩子沉迷，也怕完全不用工具会落后。",
+            "track_relation": "这能接到陪孩子用 AI：关键不是一刀切，而是先说清目的。",
+            "product_value_support": "这条路径能支撑产品价值：把工具使用变成目标感和复盘练习。",
+            "platform_expression": "小红书上做“暑期工具使用 3 条家庭规则”。",
+            "naturalness_note": "暑期场景真实，但热度略低，适合做备选。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "假期里学习、娱乐和探索常常混在同一个屏幕上。",
+            "real_problem": "孩子分不清自己是在学习、搜索还是消磨时间。",
+            "track_relation": "这能接到家长认知升级：家长要帮孩子建立工具使用分类。",
+            "product_value_support": "这条路径支撑亲子规则，把“能不能用”变成“为什么用”。",
+            "platform_expression": "小红书上用表格写“用前问目的，用后问收获”。",
+            "naturalness_note": "可操作性强，适合收藏。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 工具越来越容易被孩子接触。",
+            "real_problem": "没有问题意识时，孩子容易把工具当成答案机器。",
+            "track_relation": "这能接到会提问比会答更重要：用工具前先写下自己的问题。",
+            "product_value_support": "这条路径支撑产品价值中的提问训练。",
+            "platform_expression": "小红书上做“暑期 AI 使用前，让孩子先写一句问题”。",
+            "naturalness_note": "和产品主张贴合，但不如志愿填报当日性强。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "暑期用 AI，不如先和孩子定 3 条规则",
+          "title": "暑期快到了：别只管孩子用多久屏幕",
+          "body_or_script": "暑期一到，很多家长又会纠结：\n孩子到底能不能用平板、手机、AI 工具？\n\n我建议别只盯“用了多久”。\n更重要的是：孩子用之前，知不知道自己为什么用。\n\n可以先定 3 条家庭规则：\n\n1. 用前说目的\n是查资料、做练习、放松，还是创作？目的不同，规则不同。\n\n2. 用中留痕迹\n让孩子记一句：我今天问了什么问题？得到了什么线索？\n\n3. 用后做复盘\n这次工具帮到了哪里？哪里还需要自己想？\n\n这样一来，工具就不是单纯的屏幕时间，而是一次学习过程。\n\nAI 时代，不是孩子不用工具就安全。\n真正重要的是：孩子能不能带着目标使用工具。\n\n你家暑期会给孩子定屏幕规则吗？"
+        },
+        "external_terms_check": true,
+        "risk_note": "注意不要写成焦虑式假期管理。",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260629-003",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "AI 生成面孔和模板化视觉内容被大量讨论。",
+            "real_problem": "孩子以后看到一张图、一段视频，很容易先被“像真的”带着走。",
+            "track_relation": "这能接到 AI 时代学习能力：孩子不只要会用工具，还要会追问信息从哪里来、想影响谁。",
+            "product_value_support": "这条路径能支撑产品把亲子提问变成家庭里的日常练习，让孩子先学会问证据、问目的。",
+            "platform_expression": "小红书上做成“孩子刷到 AI 图时，家长可以问的 3 个问题”清单。",
+            "naturalness_note": "从真实信息判断切入，自然落到家长能做的提问练习。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "主流媒体开始提醒大家对 AI 生成内容产生审美疲劳。",
+            "real_problem": "家长担心孩子把模板化表达当成标准答案，慢慢失去自己的观察。",
+            "track_relation": "这能接到会提问比会答更重要：孩子要学会说出自己为什么这样判断。",
+            "product_value_support": "这条路径能支撑产品价值中的表达训练，让孩子从复述答案转向解释理由。",
+            "platform_expression": "小红书上用“别急着禁止 AI，先让孩子说出判断理由”做标题。",
+            "naturalness_note": "从工具边界转到表达理由，适合教育账号。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "AI 内容越来越容易被看见，也越来越容易被质疑。",
+            "real_problem": "孩子面对海量内容时，需要判断什么是事实、什么是包装。",
+            "track_relation": "这能接到人机结合：工具负责呈现材料，人负责判断和选择。",
+            "product_value_support": "这条路径能支撑亲子共学，让家长把热点变成一次媒介素养练习。",
+            "platform_expression": "小红书上做成亲子对话模板：看到一张图，先问来源、证据、意图。",
+            "naturalness_note": "媒介素养场景清楚，但要避免写成单纯批评 AI。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "AI 图刷屏后，教孩子判断“像真的”不等于真的",
+          "title": "AI脸看腻了：该教孩子这3个问题了",
+          "body_or_script": "很多家长看到“AI脸看腻了”这类讨论，第一反应是：那是不是要少让孩子碰 AI？\n\n我反而觉得，真正该补的是判断力。\n\n孩子以后看到一张很逼真的图、一段很流畅的视频，不能只问“这好不好看”，可以先问 3 个问题：\n\n1. 它从哪里来？\n是人拍的、AI 生成的，还是二次加工的？\n\n2. 它想让我相信什么？\n内容不是中性的，背后通常有目的。\n\n3. 我凭什么判断它可信？\n有没有来源、证据、上下文？\n\n这不是让孩子排斥工具，而是让孩子学会和工具保持距离。\n\nAI 时代，孩子真正要练的不是“马上得到答案”，而是看到一个答案后，还能继续追问。\n\n你家孩子看到 AI 图片时，会问来源吗？"
+        },
+        "external_terms_check": true,
+        "risk_note": "避免把 AI 内容一概否定，重点放在判断和提问。",
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-20260629-001",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条主要是能源和城市公共服务变化，和小学家长今天最关心的学习能力、亲子提问关系弱，先不发。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      },
+      {
+        "hotspot_id": "hs-20260629-002",
+        "track_id": "education-yowow",
+        "platform_id": "xiaohongshu",
+        "positioning_id": "expert",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条更适合跨境电商或生活消费账号，和儿童 AI 教育的主张连接不够直接，先不发。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": false,
+        "formal_approval": true,
+        "mvp_internal_only": false
+      }
+    ]
+  },
+  "meta": {
+    "hs-20260629-001": {
+      "oneLiner": "未来5年充电、供热、供暖将有大变化",
+      "reason": "这条主要是能源和城市公共服务变化，和小学家长今天最关心的学习能力、亲子提问关系弱，先不发。"
+    },
+    "hs-20260629-002": {
+      "oneLiner": "中国避暑神器在欧洲卖爆了",
+      "reason": "这条更适合跨境电商或生活消费账号，和儿童 AI 教育的主张连接不够直接，先不发。"
+    },
+    "hs-20260629-003": {
+      "oneLiner": "人民网评：AI脸，看腻了",
+      "reason": "AI 生成内容被主流讨论后，家长自然会问孩子以后怎么判断真实表达、怎么和工具分工。"
+    },
+    "hs-20260629-004": {
+      "oneLiner": "多地高考志愿填报进入关键窗口",
+      "reason": "高考志愿填报把“工具给答案”和“人要做选择”的矛盾摆到台前，正好能提醒小学家长提前培养孩子定义问题和做判断的能力。"
+    },
+    "hs-20260629-edu-001": {
+      "oneLiner": "AI 志愿填报迎来真实大考：家长到底该问工具什么",
+      "reason": "AI 志愿填报不是单纯工具新闻，它戳中的是家长对孩子未来能不能提出好问题、做出自己判断的焦虑。"
+    },
+    "hs-20260629-edu-002": {
+      "oneLiner": "“AI脸看腻了”刷屏：孩子以后怎么判断什么是真实表达",
+      "reason": "AI 生成内容让孩子每天都在接触“看起来很真”的信息，家长需要教孩子识别意图、证据和真实表达。"
+    },
+    "hs-20260629-edu-003": {
+      "oneLiner": "暑期将至，孩子的数字工具使用边界又成家长难题",
+      "reason": "暑期工具使用边界是小学家庭的真实场景，适合落到“先问目的，再用工具”的亲子规则。"
+    }
+  },
+  "mode": "live",
+  "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
+  "date": "2026-06-29",
+  "generated_at": "2026-06-30T08:29:10",
+  "needs_human_review": false,
+  "formal_approval": true,
+  "mvp_internal_only": false,
+  "review_status": {
+    "needs_human_review": false,
+    "formal_approval": true,
+    "mvp_internal_only": false,
+    "track_id": "education-yowow",
+    "track_status": "approved",
+    "account_id": "acct-xiaozhu-edu-xhs"
+  }
+}

@@ -25,7 +25,10 @@ export default function AccountsWorkbench({
     const ok = window.confirm(
       `删除「${account.display_name}」？\n\n账号会从工作台移除，账号文件和历史推荐会归档到 data/deleted/，不是直接抹掉。`,
     );
-    if (!ok) return;
+    if (!ok) {
+      setNotice("已取消删除。");
+      return;
+    }
 
     setBusyId(account.account_id);
     setNotice("");
@@ -73,7 +76,6 @@ export default function AccountsWorkbench({
                     {account.positioning_name ?? account.positioning_id}
                   </p>
                 </div>
-                <span className="rounded-full bg-[#F3F1EC] px-2 py-1 text-xs text-[#5B5852]">{account.status}</span>
               </div>
 
               <div className="mt-3 grid gap-2 text-sm md:grid-cols-2">

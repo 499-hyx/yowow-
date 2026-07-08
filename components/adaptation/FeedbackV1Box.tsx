@@ -99,11 +99,11 @@ export default function FeedbackV1Box({ accountId, date, outputRef }: Props) {
       <div className="mt-3 flex flex-wrap items-center gap-3">
         <button
           type="button"
-          disabled={!complete || !date || state === "saving"}
+          disabled={!complete || !date || state === "saving" || state === "saved"}
           onClick={() => void submit()}
           className="rounded-md bg-[#1F1F1E] px-3 py-2 text-xs font-medium text-white hover:bg-black disabled:opacity-40"
         >
-          {state === "saving" ? "保存中" : "保存反馈"}
+          {state === "saving" ? "保存中" : state === "saved" ? "已保存" : "保存反馈"}
         </button>
         {!complete ? <span className="text-xs text-[#9B9892]">三项都打分后才能保存</span> : null}
         {!date ? <span className="text-xs text-[#A0411F]">缺少日期，不能保存</span> : null}

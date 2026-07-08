@@ -206,6 +206,12 @@ export default async function DashboardPage({ searchParams }: { searchParams?: {
           </h1>
         </div>
         <div className="flex flex-wrap gap-2">
+          <Link
+            href="/ops"
+            className="rounded-md border border-[#B8B5AD] bg-white px-4 py-2 text-sm font-medium text-[#343330] no-underline hover:bg-[#F3F1EC]"
+          >
+            每日跑批台
+          </Link>
           {primaryAction.kind === "link" ? (
             <Link
               href={primaryAction.href ?? "/accounts"}

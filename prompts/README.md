@@ -1,86 +1,171 @@
-# prompts/ · 可编辑提示词层（博士 / 老板的「脑子」放这里）
+# prompts/ 提示词路由表
 
-> **这一层是给人改的，不是给程序改的。**
-> 系统所有需要 LLM 思考的环节，提示词都抽成了这个目录下的 `.md` 模板。
-> 博士、老板要调方法论、改口吻、换措辞，**只改这里的文件，不用碰任何引擎代码**。
-> 引擎（`skills/adaptation-engine/run_engine.py` 等）只负责：读模板 → 把变量填进去 → 调 LLM。
-> 引擎里**没有一句方法论、没有一条桥梁内容**——全部「脑子」只存在于本目录 + `tracks/*.json`。
+这一层只放给人改的提示词。代码负责读模板、填变量、写运行产物；不要把方法论散到脚本里。
 
+当前按用途分成 5 类：
+
+```text
+prompts/
+  公共热点/              公共池提示词，结果进入 data/hotspots/<date>.json
+  赛道热点/              赛道池搜索提示词，结果进入 data/hotspots/tracks/<track_id>/<date>.json
+  分析提示词/            match、generate、各赛道分析层
+  新增账号与赛道接入/    onboarding、新账号 JSON、新赛道母题和搜索方向起草
+  归档/                  历史提示词，只作追溯
+```
+
+## 当前主链路
+
+```text
+公共热点提示词
+  -> /ops 复制给外部 LLM
+  -> 粘回 /ops
+  -> data/hotspots/<date>.json
+
+赛道热点提示词
+  -> /ops 复制给外部 LLM
+  -> 粘回 /ops
+  -> data/hotspots/tracks/<track_id>/<date>.json
+
+scripts/make-prompt.py --step match
+  -> prompts/分析提示词/热点匹配判断.md
+  -> data/runs/<date>/<account_id>/prompts/match-*.txt
+  -> _inbox/match-*.json
+
+scripts/make-prompt.py --step generate
+  -> prompts/分析提示词/内容生成.md
+  -> prompts/分析提示词/<track_id>/赛道分析.md
+  -> data/runs/<date>/<account_id>/prompts/generate-*.txt
+  -> _inbox/generate-*.json
+
+scripts/ingest.py
+  -> data/today/<account_id>/<date>.json
+  -> data/today/<account_id>/latest.json
+```
+
+## 文件路由表
+
+| 文件 / 目录 | 当前角色 | 谁读取它 |
+|---|---|---|
+| `公共热点/来源注册/<中文名>.md` | 公共热点来源注册；`enabled:true` 会出现在 `/ops` 复制卡片 | `lib/ops-workbench.ts` |
+| `公共热点/平台原生全网热点.md` | 默认公共热点正文 | `公共热点/来源注册/平台原生全网热点.md` 通过 `source_file` 引用 |
+| `公共热点/终极雷达热点.md` | 硬核公共热点正文 | `公共热点/来源注册/终极雷达热点.md` 通过 `source_file` 引用 |
+| `赛道热点/<track_id>/热点搜索.md` | 赛道专属热点搜索 | `/ops` 优先读取 |
+| `赛道热点/通用赛道热点搜索.md` | 赛道搜索兜底模板 | 没有赛道专属搜索时读取 |
+| `分析提示词/热点匹配判断.md` | 判断热点能不能发，输出 `match-*.json` 合约 | `scripts/make-prompt.py` |
+| `分析提示词/内容生成.md` | 生成桥梁路径和内容草稿，输出 `generate-*.json` 合约 | `scripts/make-prompt.py` |
+| `分析提示词/<track_id>/赛道分析.md` | 赛道专属分析层，注入 generate prompt | `make-prompt.py` / `answer.py` |
+| `分析提示词/每日总结.md` | 可选，把 latest 翻译成老板看的三段话 | 人工 / agent |
+| `新增账号与赛道接入/新增账号与赛道JSON草稿.md` | 新账号 / 新赛道 JSON 草稿 | 人工 / agent |
+| `新增账号与赛道接入/新赛道桥梁母题.md` | 新赛道桥梁母题起草 | 人工 / agent |
+| `新增账号与赛道接入/新赛道热点搜索方向.md` | 新赛道搜索方向起草 | 人工 / agent |
+| `归档/*` | 历史提示词 | 当前主链路不读取 |
+
+## 新增公共热点来源
+
+新增文件：
+
+```text
+prompts/公共热点/来源注册/<中文名>.md
+```
+
+最小格式：
+
+```markdown
+---
+id: people-voices
+title: 人物言论雷达
+enabled: true
+description: 抓 AI / 科技 / 教育 / 商业关键人物公开言论
 ---
 
-## 1. 四个环节，四个文件
+今天是 {date}。
 
-| 文件 | 对应六步流程的哪一步 | 谁主要在这里写 | 干什么 |
-|---|---|---|---|
-| `bridge-motif.md` | **Step4 桥梁母题** | **博士**（方法论） | 给一个新赛道起草「桥梁母题」——这条赛道用什么视角把热点接到自己的产品价值上 |
-| `neutralize.md` | 热点中立化 | 博士 / 老板 | 把抓到的原始热点，抽成中立的「现象 / 情绪 / 人群 / 冲突 / 候选问题」（缺料就标待人工，绝不编） |
-| `hotspot-match.md` | **Step5 热点筛选** | 博士 / 老板 | 判断某条热点跟某赛道的相关性，分三档：高匹配 / 可尝试 / 不建议蹭 |
-| `content-generate.md` | **Step6 内容生成** | 老板 / 运营 | 出方案：切入角度、桥梁逻辑、标题、开头、结构、平台适配、风险提醒 |
+只输出可直接保存到公共热点池的 JSON 数组，不要 Markdown，不要解释。
+```
 
+如果只是给已有长 prompt 做卡片注册，可以不复制正文：
+
+```markdown
+---
+id: platform-native
+title: 平台原生全网热点
+enabled: true
+source_file: ../平台原生全网热点.md
 ---
 
-## 2. 怎么改（给博士 / 老板看）
+这里的正文只是给人看的说明；复制给 LLM 的内容来自 source_file。
+```
 
-1. 用任何文本编辑器打开对应的 `.md` 文件。
-2. 文件里有两种内容：
-   - **普通说明文字** —— 给 LLM 的指令，可以照常改。
-   - **`<<< 可编辑区 开始 >>>` … `<<< 可编辑区 结束 >>>`** —— 这是**最该由你来写**的方法论 / 口吻区。重点改这里。
-3. **变量占位**写成花括号形式，例如 `{track}`、`{hotspot}`、`{forbidden_terms}`（见下方第 3 节）。
-   系统运行时会自动把真实内容填进这些花括号。**不要删占位符**，也不要把它们翻译成别的写法，否则填不进去。
-4. 保存即可。下次系统跑这个环节，就用你改后的提示词。**不需要改代码、不需要重新部署引擎逻辑**（生产环境改完模板文件重新发布静态资源即可）。
+规则：
 
-> 小贴士：想试改的效果，让技术同学跑一句
-> `python3 skills/adaptation-engine/prompt_loader.py --preview content-generate` ——
-> 会把模板 + 一份样例变量渲染出来给你看，所见即所得。
+- 文件名尽量用中文，`id` 保持小写英文、数字、短横线，这是机器稳定标识。
+- `enabled:false` 表示临时隐藏，不删除文件。
+- `{date}` 会由系统自动替换。
+- 公共热点只提供所有赛道共享的真实原料，不做赛道判断。
 
----
+## 新增账号与赛道接入
 
-## 3. 变量占位约定（系统会自动替换；占位符大小写、拼写必须照抄）
+新增账号和新赛道先分清两件事：
 
-> 规则：模板里凡是写成 `{名字}` 且名字在下表里的，运行时会被替换成真实值。
-> **不在下表里的花括号（比如示例 JSON 里的 `{ }`）不会被动**，可以放心在示例里写 JSON。
+```text
+账号记忆：这个号卖什么、给谁、怎么说、哪些禁区不能碰
+赛道记忆：这类生意如何判断热点、搜什么热点、怎么自然连接到产品价值
+```
 
-| 占位符 | 含义 | 从哪来 | 出现在 |
-|---|---|---|---|
-| `{date}` | 当天日期 YYYY-MM-DD | 系统 | 各文件 |
-| `{track}` | 赛道名（如「儿童 AI 教育」） | `tracks/<id>.json` `track_name` | match / generate / bridge-motif |
-| `{track_json}` | 整份赛道配置（JSON） | `tracks/<id>.json` | match / generate |
-| `{business_seed}` | 新赛道的业务种子（卖什么、给谁、价值、证据、焦虑） | onboarding 7 问答案 | **bridge-motif** |
-| `{product_value}` | 这条赛道产品最大的好 | `track.product_value` | generate / bridge-motif |
-| `{proof_assets}` | 能拿出来取信于人的东西 | `track.proof_assets` | generate / bridge-motif |
-| `{anxiety_anchors}` | 客户最焦虑 / 最在意什么 | `track.anxiety_anchors` | match / generate / bridge-motif |
-| `{bridge_motifs}` | **桥梁母题**：这条赛道对外用的人话连接概念 | `track.bridge.external_vocab` + `track.example_bridges` | generate（也是 bridge-motif 的产出） |
-| `{internal_lens}` | **内部理解锚**（后台判断视角，如 far transfer） | `track.bridge.internal_lens` | match / generate（**只后台，绝不进成品**） |
-| `{external_vocab}` | 对外可用的人话词 | `track.bridge.external_vocab` | generate / bridge-motif |
-| `{forbidden_terms}` | **对外绝对禁词**（出现即不合格） | `track.bridge.forbidden_terms` + 账号 `overrides.extra_forbidden_terms` | match / generate / bridge-motif |
-| `{platform}` | 平台名（抖音 / 小红书 / 视频号） | `platforms/<id>.json` `platform_name` | generate |
-| `{platform_json}` | 整份平台配置（content_form / hook / title_logic …） | `platforms/<id>.json` | generate |
-| `{positioning}` | 人设名（老板型 / 专家型 / 工厂源头型） | `positionings/<id>.json` | generate |
-| `{positioning_voice}` | 该人设的口吻（如「直接、有主见、讲取舍」） | `positionings/<id>.json` `voice` | generate |
-| `{hotspot}` | 整条中立热点（JSON） | `neutral_hotspot` | match / generate |
-| `{hotspot_raw}` | 原始抓取候选（fetch-v1，含原料） | 抓取层 | **neutralize** |
-| `{hotspot_title}` | 热点标题 | 热点 `title` | 各文件 |
+可中文化的部分：
 
-> 维护者注：占位符的「权威清单」在 `skills/adaptation-engine/prompt_loader.py` 的 `KNOWN_PLACEHOLDERS`。
-> 加新占位符时，**先在那里登记**，再在本表补一行，并在引擎装配处（`assemble()` / 各环节）提供对应值。
+- prompt 文件名和目录名。
+- `display_name`、`track_name`、`platform_name`、`positioning_name`。
+- 文档、注释、人工交接说明。
 
----
+暂时不要中文化的部分：
 
-## 4. 三条护栏（系统会强制校验，提示词措辞由你定，但底线不可破）
+- `account_id` 和 `track_id`。
+- `data/accounts/<account_id>.json`、`config/tracks/<track_id>.json`、`data/today/<account_id>/...` 这些机器路径。
+- `prompts/赛道热点/<track_id>/...` 和 `prompts/分析提示词/<track_id>/...` 中的 `<track_id>` 目录。
 
-这三条是**系统级红线**，写进了 `adaptation-core/verify.py` 和发布前硬门。
-你在提示词里怎么措辞都行，但 LLM 的产出必须满足，否则会被自动拦下：
+原因：这些 ID 同时是脚本参数、URL 参数、今日产物目录、热点池目录和测试夹具。直接改中文会牵动全链路，不是简单重命名。
 
-1. **牵强即跳过**：热点和赛道连不上、要绕很远才搭得上，就直接判 `skip`、不出内容，绝不硬掰。
-2. **内部理解锚不外显**：`{internal_lens}`（如 far transfer / 远迁移 / OOD）只用于后台判断自然度，**绝不能出现在给用户看的成品里**。
-3. **合规不夸大 + 零禁词**：成品里不得出现 `{forbidden_terms}` 里的任何词；不编造、不夸大功效。
+新增账号 / 新赛道辅助提示词：
 
-> 这三条是「护栏」，不是「方法论」。方法论（怎样才算自然成桥、这条赛道独有的视角）由**你**写在各文件的可编辑区和 `tracks/*.json` 里。
+| 文件 | 用途 | 产物 |
+|---|---|---|
+| `新增账号与赛道接入/新增账号与赛道JSON草稿.md` | 根据问卷起草账号 JSON；新赛道时同时起草赛道 JSON 草稿 | `data/accounts/<account_id>.json` / `config/tracks/<track_id>.json` |
+| `新增账号与赛道接入/新赛道桥梁母题.md` | 给新赛道起草后台判断视角、对外人话词、禁词和桥梁样例 | 写回 `config/tracks/<track_id>.json` 的 `bridge` / `example_bridges` |
+| `新增账号与赛道接入/新赛道热点搜索方向.md` | 给新赛道起草赛道热点搜索方向 | 写回 `config/tracks/<track_id>.json` 的 `daily_search_question` / `bridge.search_directions` |
 
----
+## 新增赛道提示词
 
-## 5. 和配置文件的分工
+新增赛道最小文件：
 
-- **`tracks/<id>.json`** = 一条赛道的「档案」（卖什么、给谁、桥梁母题、内部锚、禁词、示例桥）。改一条赛道的**事实和词表**，改这里。
-- **`prompts/*.md`** = 通用的「怎么想、怎么写」模板，对所有赛道复用。改**思考方式 / 输出格式 / 口吻要求**，改这里。
-- 换一个全新赛道 = 加一份 `tracks/<新id>.json`（可用 `bridge-motif.md` 起草）+ 不改任何 `prompts/*.md`、不改任何引擎代码。
+```text
+config/tracks/<track_id>.json
+data/accounts/<account_id>.json
+prompts/赛道热点/<track_id>/热点搜索.md
+prompts/分析提示词/<track_id>/赛道分析.md
+```
+
+两种赛道提示词作用不同：
+
+| 类型 | 放哪里 | 输出到哪里 |
+|---|---|---|
+| 赛道热点搜索 | `prompts/赛道热点/<track_id>/热点搜索.md` | `data/hotspots/tracks/<track_id>/<date>.json` |
+| 赛道分析层 | `prompts/分析提示词/<track_id>/赛道分析.md` | 注入 `data/runs/<date>/<account_id>/prompts/generate-*.txt` |
+
+## 修改后怎么验
+
+| 改动 | 必跑 |
+|---|---|
+| 改 `分析提示词/热点匹配判断.md` | `python3 scripts/make-prompt.py --selftest` |
+| 改 `分析提示词/内容生成.md` | `python3 scripts/make-prompt.py --selftest` + `python3 scripts/ingest.py --selftest` |
+| 改公共热点来源 | `npm run test` 或至少跑 `test/ops-workbench.test.mjs` |
+| 改赛道热点搜索 | 刷新 `/ops` 看提示词是否出现；保存一条测试热点后跑 preflight |
+| 改赛道分析层 | 跑 `python3 scripts/make-prompt.py <account_id> --date <date> --step generate --no-print`，检查生成文件是否含新分析层 |
+
+## 红线
+
+- 牵强即 `skip`，不要硬生成。
+- 内部分析术语不能进入用户可见内容。
+- 成品不能出现赛道或账号禁词。
+- 不编造热点事实、来源、证据或效果。
+- 不绕过 `scripts/ingest.py` 写 `data/today/<account_id>/latest.json`。

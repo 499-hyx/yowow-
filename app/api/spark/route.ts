@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 import type { StoredAccount } from "@/lib/adaptation-types";
+import { tursoEnabled } from "@/lib/turso";
 
 export const dynamic = "force-dynamic";
 
@@ -78,6 +79,16 @@ export async function GET(request: Request): Promise<Response> {
 }
 
 export async function POST(request: Request): Promise<Response> {
+  if (tursoEnabled()) {
+    return Response.json(
+      {
+        ok: false,
+        error: "线上灵感收件箱暂不直接写入。当前 MVP 请把灵感保存成本地记录，下次跑批前放入热点池或账号上下文。",
+      },
+      { status: 403 },
+    );
+  }
+
   let body: { account_id?: unknown; text?: unknown };
   try {
     body = (await request.json()) as { account_id?: unknown; text?: unknown };

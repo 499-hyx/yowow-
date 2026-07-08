@@ -1,6 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { tursoEnabled } from "@/lib/turso";
+
 const DATA_DIR = path.join(process.cwd(), "data");
 
 function safeAccountId(value: string): boolean {
@@ -24,6 +26,13 @@ export async function DELETE(
   _request: Request,
   { params }: { params: { account_id: string } },
 ): Promise<Response> {
+  if (tursoEnabled()) {
+    return Response.json(
+      { ok: false, error: "线上不直接删除账号文件，请在本地归档后同步。" },
+      { status: 403 },
+    );
+  }
+
   const accountId = params.account_id;
   if (!safeAccountId(accountId)) {
     return Response.json({ ok: false, error: "账号 ID 不合法。" }, { status: 400 });
@@ -54,4 +63,3 @@ export async function DELETE(
     return Response.json({ ok: false, error: message }, { status: 500 });
   }
 }
-
