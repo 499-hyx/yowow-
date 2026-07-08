@@ -21,6 +21,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE, "data")
 
 DEFAULT_ANTHROPIC_MODEL = "claude-sonnet-4-6"
+DEFAULT_ARK_BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 
 
 def read_json(path):
@@ -41,6 +42,14 @@ def first_present(*values, default=""):
         if value is not None and value != "":
             return value
     return default
+
+
+def first_env(*names):
+    for name in names:
+        value = os.environ.get(name)
+        if value:
+            return value
+    return None
 
 
 def pick_text(pick):
@@ -144,16 +153,18 @@ def call_anthropic(system, user, transport=None):
     return "".join(block.get("text", "") for block in data.get("content", []) if block.get("type") == "text")
 
 
-def call_openai_compatible(system, user, transport=None):
+def call_openai_compatible(system, user, *, provider="openai", transport=None):
     if transport is not None:
-        return transport("openai", system, user)
-    key = os.environ.get("OPENAI_API_KEY")
+        return transport(provider, system, user)
+    key = first_env("OPENAI_API_KEY", "DOUBAO_API_KEY", "ARK_API_KEY", "LLM_API_KEY", "API_KEY")
     if not key:
-        raise SystemExit("Missing OPENAI_API_KEY")
+        raise SystemExit("Missing OPENAI_API_KEY / DOUBAO_API_KEY / ARK_API_KEY / LLM_API_KEY")
     model = os.environ.get("MODEL_NAME")
     if not model:
-        raise SystemExit("Missing MODEL_NAME for LLM_PROVIDER=openai")
-    base = os.environ.get("OPENAI_BASE_URL", "https://api.openai.com/v1").rstrip("/")
+        raise SystemExit(f"Missing MODEL_NAME for LLM_PROVIDER={provider}")
+    default_base = DEFAULT_ARK_BASE_URL if provider in ("doubao", "ark") else "https://api.openai.com/v1"
+    base = first_env("OPENAI_BASE_URL", "DOUBAO_BASE_URL", "ARK_BASE_URL") or default_base
+    base = base.rstrip("/")
     payload = {
         "model": model,
         "messages": [
@@ -180,8 +191,8 @@ def call_llm(system, user, transport=None):
     provider = os.environ.get("LLM_PROVIDER", "anthropic").strip().lower()
     if provider == "anthropic":
         return call_anthropic(system, user, transport=transport)
-    if provider in ("openai", "openai-compatible"):
-        return call_openai_compatible(system, user, transport=transport)
+    if provider in ("openai", "openai-compatible", "doubao", "ark"):
+        return call_openai_compatible(system, user, provider=provider, transport=transport)
     raise SystemExit(f"Unsupported LLM_PROVIDER: {provider}")
 
 
@@ -305,8 +316,10 @@ def selftest():
         }],
     }]
 
+    seen_providers = []
+
     def fake(provider, system, user):
-        assert provider == "anthropic"
+        seen_providers.append(provider)
         assert "最终只输出 JSON" in system
         assert "acct-demo" in user
         return '```json\n{"subject":"今日测试摘要","body_text":"1 条内容需要复核"}\n```'
@@ -317,6 +330,10 @@ def selftest():
         email = build_email("2099-01-01", boards, transport=fake)
         assert email["subject"] == "今日测试摘要"
         assert "复核" in email["body_text"]
+        os.environ["LLM_PROVIDER"] = "doubao"
+        email = build_email("2099-01-01", boards, transport=fake)
+        assert email["subject"] == "今日测试摘要"
+        assert seen_providers == ["anthropic", "doubao"], f"unexpected providers: {seen_providers}"
         fallback = build_email("2099-01-01", boards, use_llm=False)
         assert "Demo Account" in fallback["body_text"]
         assert "需人工复核" in fallback["body_text"]

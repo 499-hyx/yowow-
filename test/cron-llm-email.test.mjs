@@ -31,3 +31,17 @@ test("cron LLM email can render deterministic dry-run", () => {
   assert.match(result.stdout, /Subject:/);
   assert.match(result.stdout, /acct-xiaozhu-edu-xhs/);
 });
+
+test("cron LLM email supports doubao provider alias in selftest path", () => {
+  const result = spawnSync(PYTHON, ["scripts/cron_llm_email.py", "--selftest"], {
+    cwd: ROOT,
+    encoding: "utf8",
+    env: {
+      ...process.env,
+      LLM_PROVIDER: "doubao",
+      PYTHONIOENCODING: "utf-8",
+    },
+  });
+  assert.equal(result.status, 0, result.stderr || result.stdout);
+  assert.match(result.stdout, /selftest passed/);
+});

@@ -25,6 +25,15 @@ export OPENAI_BASE_URL=https://api.openai.com/v1
 export MODEL_NAME=...
 ```
 
+豆包/火山方舟走 OpenAI-compatible 模式：
+
+```bash
+export LLM_PROVIDER=doubao
+export DOUBAO_API_KEY=...
+export DOUBAO_BASE_URL=https://ark.cn-beijing.volces.com/api/v3
+export MODEL_NAME=doubao-seed-2-0-lite-260428
+```
+
 SMTP：
 
 ```bash
