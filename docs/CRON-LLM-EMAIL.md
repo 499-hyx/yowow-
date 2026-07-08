@@ -3,7 +3,7 @@
 目标：先用 Linux `crond` 跑一个独立任务，完成每日链路并邮件通知：
 
 ```text
-刷新热点提示词并生成热点池 → 生成 match 提示词 → LLM 回答 match → 生成 generate 提示词
+检查手动热点池 → 生成 match 提示词 → LLM 回答 match → 生成 generate 提示词
 → LLM 回答 generate → ingest 安装 → latest.json 前端数据检查 → 邮件摘要
 ```
 
@@ -43,7 +43,6 @@ LLM 超时与重试：
 
 ```bash
 export LLM_TIMEOUT_SECONDS=120       # 单次请求超时
-export HOTSPOT_LLM_TIMEOUT_SECONDS=60 # 热点池生成的单次请求超时
 export LLM_RETRY_ATTEMPTS=2          # 总尝试次数
 export LLM_RETRY_BASE_SECONDS=3      # 第一次失败后的等待秒数，之后指数退避
 export LLM_RETRY_MAX_SECONDS=20      # 单次等待上限
@@ -86,11 +85,13 @@ python3 scripts/daily_pipeline_email.py --dry-run --date 2026-07-07 --accounts a
 python3 scripts/daily_pipeline_email.py --skip-pipeline --dry-run
 ```
 
-确认 LLM 摘要和 SMTP 正常后，再跑完整链路。注意：完整链路会先用 `/ops` 同源提示词调用 LLM 生成 `data/hotspots/`，再调用 LLM 回答 match/generate，并写入 `data/runs/` 与 `data/today/`：
+确认手动热点池、LLM 摘要和 SMTP 正常后，再跑完整链路。注意：默认链路不会调用 LLM 生成热点池；它会读取已有 `data/hotspots/`，再调用 LLM 回答 match/generate，并写入 `data/runs/` 与 `data/today/`：
 
 ```bash
 python3 scripts/daily_pipeline_email.py --accounts acct-xiaozhu-edu-xhs --email-to cathy.hu.eng@gmail.com
 ```
+
+如需临时让脚本自动生成热点池，必须显式加 `--generate-hotspots`。日常 crond 不建议使用该参数。
 
 限制账号：
 
@@ -115,7 +116,7 @@ PATH=/usr/local/bin:/usr/bin:/bin
 
 - 缺 LLM key：脚本直接失败，不伪造摘要。
 - 缺 SMTP 配置：脚本直接失败，不吞错误。
-- 热点池生成失败：脚本直接失败，不进入 match/generate。优先检查 LLM key、模型、提示词 JSON 输出；临时回退可先手工补 `data/hotspots/YYYY-MM-DD.json` 或 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`，再加 `--skip-hotspot-generation` 跑后续链路。
+- 缺当天热点池：脚本直接失败，不进入 match/generate。先手工补 `data/hotspots/YYYY-MM-DD.json` 或 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`。
 - LLM 请求超时或 429/5xx：脚本会打印 provider/model/endpoint/attempt/timeout/耗时，按 `LLM_RETRY_ATTEMPTS` 自动重试；最终仍失败才退出。
 - 某账号缺 `latest.json`：邮件里会提示“今天还没有 latest.json”，不会阻断其他账号。
 - LLM 输出不是 JSON：脚本失败，避免把不可控内容发出去。

@@ -2,14 +2,15 @@
 """Run the daily local pipeline and email the resulting recommendation digest.
 
 Pipeline:
-  generate hotspot pools -> preflight -> make match prompts -> LLM answer match
+  hotspot pool check -> preflight -> make match prompts -> LLM answer match
   -> make generate prompts -> LLM answer generate -> ingest
   -> latest-file smoke check -> email.
 
-The hotspot-pool step reuses the same prompt files rendered by /ops, calls the
-configured LLM, and writes data/hotspots before the analysis pipeline starts.
-To mirror results to production Turso, pass --sync-to-db after explicitly
-authorizing that environment.
+The script assumes hotspot JSON files already exist for the target date. Hotspot
+pool generation is intentionally manual by default; pass --generate-hotspots only
+when explicitly authorizing the LLM-backed hotspot pool helper. To mirror results
+to production Turso, pass --sync-to-db after explicitly authorizing that
+environment.
 """
 import argparse
 import datetime as dt
@@ -21,6 +22,9 @@ import sys
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE, "data")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 import cron_llm_email
 import generate_hotspot_pool
@@ -98,14 +102,12 @@ def smoke_latest(account_id, date_str):
     write_line(f"front-end data check: {account_id} picks={len(picks)} skipped={len(skipped)}")
 
 
-def run_account(account_id, date_str, *, dry_run=False, skip_hotspot_generation=False):
+def run_account(account_id, date_str, *, dry_run=False, generate_hotspots=False):
     write_line(f"\n=== {account_id} / {date_str} ===")
-    if skip_hotspot_generation:
-        require_hotspot_pool(account_id, date_str)
-    else:
+    if generate_hotspots:
         generate_hotspot_pool.generate_pools(account_id, date_str, dry_run=dry_run)
-        if not dry_run:
-            require_hotspot_pool(account_id, date_str)
+    if not dry_run:
+        require_hotspot_pool(account_id, date_str)
     run_cmd([sys.executable, "scripts/status.py", "--date", date_str, "--preflight", account_id], dry_run=dry_run)
     run_cmd([sys.executable, "scripts/make-prompt.py", account_id, "--date", date_str, "--step", "match", "--no-print"], dry_run=dry_run)
     run_cmd([sys.executable, "scripts/answer.py", account_id, "--date", date_str, "--step", "match"], dry_run=dry_run)
@@ -146,7 +148,8 @@ def main():
     parser.add_argument("--email-to", help="Override EMAIL_TO for this run.")
     parser.add_argument("--dry-run", action="store_true", help="Print commands and email preview; do not call LLM or SMTP.")
     parser.add_argument("--skip-pipeline", action="store_true", help="Only build/send email from existing latest.json files.")
-    parser.add_argument("--skip-hotspot-generation", action="store_true", help="Use existing hotspot pools instead of asking LLM to generate them.")
+    parser.add_argument("--generate-hotspots", action="store_true", help="Ask LLM to generate hotspot pools before running match/generate. Manual hotspot pools are the default.")
+    parser.add_argument("--skip-hotspot-generation", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--sync-to-db", action="store_true", help="After ingest, run sync-to-db.py. Use only with authorized Turso env.")
     parser.add_argument("--selftest", action="store_true")
     args = parser.parse_args()
@@ -166,7 +169,7 @@ def main():
                 account_id,
                 args.date,
                 dry_run=args.dry_run,
-                skip_hotspot_generation=args.skip_hotspot_generation,
+                generate_hotspots=args.generate_hotspots and not args.skip_hotspot_generation,
             )
         if args.sync_to_db:
             run_cmd([sys.executable, "scripts/sync-to-db.py", "--dry-run"], dry_run=args.dry_run)
