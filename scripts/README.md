@@ -10,6 +10,7 @@
 | `make-prompt.py` | 读取账号、赛道、热点，生成 match/generate 提示词 |
 | `answer.py` | 可选：调用外部模型自动回答 prompt，写 `_inbox` |
 | `cron_llm_email.py` | 可选：给 crond 调用，读最新内容、调用 LLM 生成摘要并发邮件 |
+| `daily_pipeline_email.py` | 可选：给 crond/Codex 自动化调用，串起每日完整跑批并发邮件 |
 | `ingest.py` | 唯一安装闸门，校验回贴并写 `data/today` |
 | `sync-to-db.py` | 默认只 `--dry-run`；正式 sync 必须确认环境或负责人授权 |
 | `pull-feedback.py` | 回拉反馈 |

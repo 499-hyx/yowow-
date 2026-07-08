@@ -1,6 +1,11 @@
 # Cron LLM Email
 
-目标：先用 Linux `crond` 跑一个独立任务，读取本地 `data/today/*/latest.json`，调用 LLM 生成每日摘要，再通过 SMTP 发邮件。
+目标：先用 Linux `crond` 跑一个独立任务，完成每日链路并邮件通知：
+
+```text
+热点池检查 → 生成 match 提示词 → LLM 回答 match → 生成 generate 提示词
+→ LLM 回答 generate → ingest 安装 → latest.json 前端数据检查 → 邮件摘要
+```
 
 这个任务不放进 Vercel/Next.js，不写 Turso，不在线生成页面内容。它属于运营侧离线任务。
 
@@ -46,30 +51,40 @@ export EMAIL_FROM=ops@example.com
 export EMAIL_TO=owner@example.com,editor@example.com
 ```
 
+每日完整链路：
+
+```bash
+export DAILY_PIPELINE_ACCOUNTS=acct-xiaozhu-edu-xhs,acct-razor-douyin-boss
+```
+
+留空则跑 `data/accounts/*.json` 里的全部账号。
+
 ## 本地验证
 
 ```bash
 cd /path/to/yowow-adaptation
 python3 scripts/cron_llm_email.py --selftest
 python3 scripts/cron_llm_email.py --dry-run --no-llm
+python3 scripts/daily_pipeline_email.py --selftest
+python3 scripts/daily_pipeline_email.py --dry-run --date 2026-07-07 --accounts acct-xiaozhu-edu-xhs
 ```
 
 接入真实 LLM 后，先只 dry-run：
 
 ```bash
-python3 scripts/cron_llm_email.py --dry-run
+python3 scripts/daily_pipeline_email.py --skip-pipeline --dry-run
 ```
 
-确认标题和正文正常后再发邮件：
+确认 LLM 摘要和 SMTP 正常后，再跑完整链路。注意：完整链路会调用 LLM 回答 match/generate，并写入 `data/runs/` 与 `data/today/`：
 
 ```bash
-python3 scripts/cron_llm_email.py
+python3 scripts/daily_pipeline_email.py --accounts acct-xiaozhu-edu-xhs --email-to cathy.hu.eng@gmail.com
 ```
 
 限制账号：
 
 ```bash
-python3 scripts/cron_llm_email.py --accounts acct-xiaozhu-edu-xhs,acct-razor-douyin-boss
+python3 scripts/daily_pipeline_email.py --accounts acct-xiaozhu-edu-xhs,acct-razor-douyin-boss --email-to cathy.hu.eng@gmail.com
 ```
 
 ## crond 示例
@@ -80,7 +95,7 @@ python3 scripts/cron_llm_email.py --accounts acct-xiaozhu-edu-xhs,acct-razor-dou
 SHELL=/bin/bash
 PATH=/usr/local/bin:/usr/bin:/bin
 
-30 9 * * * cd /srv/yowow-adaptation && set -a && source /etc/yowow/cron-email.env && set +a && python3 scripts/cron_llm_email.py >> logs/cron-llm-email.log 2>&1
+0 8 * * * cd /srv/yowow-adaptation && set -a && source /etc/yowow/cron-email.env && set +a && python3 scripts/daily_pipeline_email.py --email-to cathy.hu.eng@gmail.com >> logs/daily-pipeline-email.log 2>&1
 ```
 
 注意：`logs/` 目录需要提前创建。
@@ -89,5 +104,6 @@ PATH=/usr/local/bin:/usr/bin:/bin
 
 - 缺 LLM key：脚本直接失败，不伪造摘要。
 - 缺 SMTP 配置：脚本直接失败，不吞错误。
+- 缺当天热点池：脚本直接失败，不编造热点事实。先补 `data/hotspots/YYYY-MM-DD.json` 或 `data/hotspots/tracks/<track_id>/YYYY-MM-DD.json`。
 - 某账号缺 `latest.json`：邮件里会提示“今天还没有 latest.json”，不会阻断其他账号。
 - LLM 输出不是 JSON：脚本失败，避免把不可控内容发出去。

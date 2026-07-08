@@ -39,6 +39,7 @@ sys.path.insert(0, os.path.join(REPO_ROOT, "skills", "adaptation-engine"))
 import prompt_loader as _pl  # extract_json
 
 DEFAULT_MODEL = "claude-sonnet-4-6"
+DEFAULT_ARK_BASE_URL = "https://ark.cn-beijing.volces.com/api/v3"
 
 
 def _read(path):
@@ -51,6 +52,14 @@ def write_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
         f.write("\n")
+
+
+def first_env(*names):
+    for name in names:
+        value = os.environ.get(name)
+        if value:
+            return value
+    return None
 
 
 def account_track_id(account_id):
@@ -70,6 +79,37 @@ def call_llm(system, user, *, _transport=None):
     """调 Anthropic messages API，返回纯文本。_transport 仅供自测注入。"""
     if _transport is not None:
         return _transport(system, user)
+    provider = os.environ.get("LLM_PROVIDER", "anthropic").strip().lower()
+    if provider in ("openai", "openai-compatible", "doubao", "ark"):
+        key = first_env("OPENAI_API_KEY", "DOUBAO_API_KEY", "ARK_API_KEY", "LLM_API_KEY", "API_KEY")
+        if not key:
+            raise SystemExit("⛔ 缺 OPENAI_API_KEY / DOUBAO_API_KEY / ARK_API_KEY / LLM_API_KEY，无法自动答题。")
+        model = os.environ.get("MODEL_NAME")
+        if not model:
+            raise SystemExit(f"⛔ 缺 MODEL_NAME，无法使用 LLM_PROVIDER={provider}。")
+        default_base = DEFAULT_ARK_BASE_URL if provider in ("doubao", "ark") else "https://api.openai.com/v1"
+        base = first_env("OPENAI_BASE_URL", "DOUBAO_BASE_URL", "ARK_BASE_URL") or default_base
+        body = {
+            "model": model,
+            "max_tokens": int(os.environ.get("LLM_MAX_TOKENS", "4096")),
+            "messages": [
+                {"role": "system", "content": system or ""},
+                {"role": "user", "content": user},
+            ],
+        }
+        req = urllib.request.Request(
+            base.rstrip("/") + "/chat/completions",
+            data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
+            headers={
+                "content-type": "application/json",
+                "authorization": f"Bearer {key}",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=int(os.environ.get("LLM_TIMEOUT_SECONDS", "120"))) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        return data["choices"][0]["message"]["content"]
+    if provider != "anthropic":
+        raise SystemExit(f"⛔ 不支持的 LLM_PROVIDER：{provider}")
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         raise SystemExit(
