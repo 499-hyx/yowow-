@@ -1,0 +1,273 @@
+[
+  {
+    "id": "hs-20260709-razor-001",
+    "hotspot_id": "hs-20260709-razor-001",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "敏感肌男生剃须泛红刺痛，刀头摩擦成主要诱因",
+    "summary": "大量敏感肌男生晒剃须后脸颊红肿、刺痛、起小痘，科普博主拆解根源是刀头反复拉扯、清洁藏菌，网友分享适配低摩擦剃须刀选购经验。",
+    "why_now": "夏季出汗多、皮肤屏障脆弱，剃须刺激加重，近30天集中爆发敏皮剃须踩坑UGC分享。",
+    "phenomenon": "抖音、小红书海量第一人称实拍剃须后泛红皮肤，分两派讨论手动/电动哪种对敏感肌更友好，实测不同刀头浮动结构肤感差异。",
+    "spread_emotion": "剃须后皮肤不适的烦躁、想找到温和不刺激剃须工具的刚需、踩多款产品的踩雷吐槽。",
+    "people_involved": [
+      "敏感肌男性上班族",
+      "粗硬络腮胡男生",
+      "平价理容实测博主"
+    ],
+    "conflict_point": "追求剃净不留胡茬 vs 反复刮擦造成皮肤泛红刺痛、屏障受损。",
+    "fact_structure": "夏季高温加剧面部敏感→大量男生反馈剃须烂脸→横向对比不同剃须刀刀头结构、润滑设计对皮肤的影响。",
+    "candidate_problem_dimensions": [
+      "剃须刺激损伤皮肤屏障",
+      "粗硬胡须难剃净反复摩擦",
+      "电动刀头清洁滋生细菌"
+    ],
+    "happened_when": "2026-06中旬至07上旬",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "source_hint": "抖音#敏感肌剃须避雷 短视频合集",
+    "source_notes": [
+      "2026夏季男士敏感肌剃须痛点实测短视频流量汇总"
+    ],
+    "source_url": "https://www.iesdouyin.com/share/video/7655249100786381241",
+    "hit_directions": [
+      "剃须体验相关",
+      "夏季个护"
+    ],
+    "why_natural": "话题核心围绕剃须工具刀头、摩擦、温和度，可直接关联剃须刀浮动刀网、润滑条、低拉扯参数卖点。",
+    "heat_score_10": 8.1,
+    "traffic_level": "high",
+    "risk_notes": [
+      "不夸大产品医疗修复功效，仅客观区分不同刀头对皮肤摩擦程度差异"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-002",
+    "hotspot_id": "hs-20260709-razor-002",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "男生通勤早八5分钟快速体面流程，刮胡子是核心步骤",
+    "summary": "职场男生分享夏日晨间极简打理流程，一致提到快速剃净胡须是清爽形象关键，大量用户对比不同剃须刀耗时、便携度。",
+    "why_now": "夏季高温通勤不想早起，年轻人追求高效出门形象管理，近30天通勤速打理打卡帖持续刷屏。",
+    "phenomenon": "小红书、抖音批量产出5分钟晨间理容vlog，重点对比便携电动、多层手动剃须刀的剃须速度，分享出差随身小型剃刀方案。",
+    "spread_emotion": "早高峰时间紧张的焦虑、想要低成本快速提升清爽体面感、厌烦繁琐多步骤打理。",
+    "people_involved": [
+      "通勤上班族男生",
+      "实习面试应届生",
+      "短途出差男性"
+    ],
+    "conflict_point": "晨间时间有限想快速出门 vs 胡须杂乱显油腻，需要完整剃净打理。",
+    "fact_structure": "夏季早高峰通勤时间压缩→男生分享极简形象管理流程→剃须耗时、便携性成为选购剃须刀核心评判标准。",
+    "candidate_problem_dimensions": [
+      "晨间打理时间不足",
+      "便携剃须工具续航与剃净平衡",
+      "夏日面部油腻显邋遢"
+    ],
+    "happened_when": "2026-06下旬至07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "source_hint": "小红书#男生早八5分钟变清爽 笔记合集",
+    "source_notes": [
+      "2026夏季男性通勤高效形象管理UGC盘点"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "男性生活方式",
+      "男性体面感",
+      "实用产品选择"
+    ],
+    "why_natural": "晨间体面流程核心环节为剃须，可自然切入剃须刀便携、快速剃净、长效续航等产品优势。",
+    "heat_score_10": 7.7,
+    "traffic_level": "high",
+    "risk_notes": [
+      "无明显风险，仅区分日常通勤与长途出差两种便携使用场景"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-003",
+    "hotspot_id": "hs-20260709-razor-003",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "不再只看大牌，男生横向实测剃须刀转速、浮动刀头参数",
+    "summary": "男性测评博主放弃唯品牌论，以转速、刀网层数、浮动结构、续航为标准横测多款剃须刀，网友结合自身胡须厚度对标参数选购。",
+    "why_now": "平价国产剃须刀性能提升，用户选购理性化，近30天多组20款以内全价位横测视频集中发布。",
+    "phenomenon": "抖音长视频、知乎图文详细拆解剃须刀硬件参数，按细软胡/粗硬络腮胡分组实测剃净、夹须、泛红情况，评论区晒自身胡须类型求参数推荐。",
+    "spread_emotion": "不愿为品牌溢价买单、怕选错剃须刀反复踩坑、追求高性价比实用性能。",
+    "people_involved": [
+      "理性消费男性",
+      "络腮硬胡人群",
+      "数码理容测评爱好者"
+    ],
+    "conflict_point": "传统选购只认知名品牌 vs 实测参数才决定剃须体验好坏。",
+    "fact_structure": "平价剃须刀性能普及→用户理性选购意识提升→全价位剃须刀参数横向实测内容批量产出。",
+    "candidate_problem_dimensions": [
+      "品牌溢价与实际性能不匹配",
+      "不同胡须适配不同刀头参数",
+      "选购无统一参考标准"
+    ],
+    "happened_when": "2026-06中旬至07上旬",
+    "platforms": [
+      "抖音",
+      "知乎"
+    ],
+    "source_hint": "抖音#剃须刀参数实测 测评合集",
+    "source_notes": [
+      "近30天多品牌剃须刀横向测评短视频数据"
+    ],
+    "source_url": "https://www.iesdouyin.com/share/video/7610354740723092782",
+    "hit_directions": [
+      "实用产品选择",
+      "剃须体验相关"
+    ],
+    "why_natural": "话题直接围绕剃须刀核心硬件参数、剃须实测表现，完全贴合产品选购沟通场景。",
+    "heat_score_10": 7.4,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "客观展示各产品实测结果，不刻意贬低竞品、不夸大单一型号性能"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-004",
+    "hotspot_id": "hs-20260709-razor-004",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "约会面试前必刮干净胡子，杂乱胡茬大幅拉低第一印象",
+    "summary": "大量女生、HR分享直观感受，称男生面部胡茬杂乱显邋遢，男生自发分享约会、面试前快速剃须打理技巧，讨论手动/电动哪种剃得更干净。",
+    "why_now": "暑期求职面试、线下约会频次上涨，近30天形象第一印象相关讨论持续走高。",
+    "phenomenon": "微博情感帖、抖音职场干货大量强调面部清爽是基础体面，男生晒约会面试前后剃须对比图，交流不留胡茬的剃须手法与工具选择。",
+    "spread_emotion": "重要场合形象焦虑、担心细节失分、想要低成本提升整洁观感。",
+    "people_involved": [
+      "求职应届生",
+      "准备线下约会男性",
+      "职场HR、女性分享者"
+    ],
+    "conflict_point": "自身懒得精细打理胡须 vs 社交、求职场景对干净清爽面部形象的硬性要求。",
+    "fact_structure": "暑期面试、约会场景增多→社交第一印象讨论发酵→胡须整洁度成为核心细节，延伸剃须刀剃净能力讨论。",
+    "candidate_problem_dimensions": [
+      "社交求职形象细节失分",
+      "胡须难剃干净残留短胡茬",
+      "临时快速打理需求"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "微博",
+      "抖音"
+    ],
+    "source_hint": "微博#男生第一印象干净最重要 话题",
+    "source_notes": [
+      "暑期求职约会男性形象讨论舆情汇总"
+    ],
+    "source_url": "https://m.weibo.cn/detail/5265421541574609244",
+    "hit_directions": [
+      "男性体面感",
+      "男性生活方式"
+    ],
+    "why_natural": "话题核心诉求是彻底剃净胡茬提升场合体面，可自然衔接剃须刀刀头贴合、无残留剃净等核心卖点。",
+    "heat_score_10": 7.9,
+    "traffic_level": "high",
+    "risk_notes": [
+      "不制造容貌焦虑，客观说明整洁打理仅为基础加分项"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-005",
+    "hotspot_id": "hs-20260709-razor-005",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "夏季出汗闷出内生须，选错剃须刀加重毛囊红肿",
+    "summary": "粗硬胡须男生晒剃须后皮下红肿小疙瘩，科普内生须成因是刀片拉扯、刀网贴合差，网友分享适配硬胡、减少倒须的剃须刀挑选要点。",
+    "why_now": "夏季出汗油脂堵塞毛囊，胡须生长弯折，内生须问题集中爆发，近30天大量男生晒皮肤问题求助解决方案。",
+    "phenomenon": "小红书护肤、男士理容板块集中产出内生须避坑帖，对比往复式、旋转式剃须刀对粗硬胡茬的切割效果，区分易拉扯与顺滑刀头结构。",
+    "spread_emotion": "毛囊反复发炎红肿的困扰、长期硬胡剃须踩雷的无奈、想要从工具端解决内生须问题。",
+    "people_involved": [
+      "粗硬络腮胡男性",
+      "油痘肌男生",
+      "男士理容科普博主"
+    ],
+    "conflict_point": "粗硬弯曲胡须难切断易倒生 vs 普通剃须刀刀头锋利度、提拉结构不足。",
+    "fact_structure": "夏季高温出油堵塞毛囊→粗硬胡须剃须后内生须频发→用户对比不同剃须刀切割、提拉结构寻找改善方案。",
+    "candidate_problem_dimensions": [
+      "粗硬胡须切割拉扯",
+      "内生须毛囊炎症",
+      "夏季油脂加重剃须后皮肤问题"
+    ],
+    "happened_when": "2026-06下旬至07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "source_hint": "小红书#内生须避雷剃须刀 笔记合集",
+    "source_notes": [
+      "夏季男士粗硬胡须剃须皮肤问题UGC汇总"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "剃须体验相关",
+      "夏季个护"
+    ],
+    "why_natural": "内生须根源与剃须刀刀头提拉、锋利度直接相关，可顺理引出高转速、多层浮动刀头剃须刀产品。",
+    "heat_score_10": 7.2,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "仅作日常护理工具建议，不宣称产品可根治毛囊炎症皮肤病"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-006",
+    "hotspot_id": "hs-20260709-razor-006",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-personalcare",
+    "scope": "track:razor-personalcare",
+    "title": "便携迷你剃须刀成出差通勤刚需，续航与贴合度成选购重点",
+    "summary": "短途出差、通勤男生分享口袋款迷你剃须刀使用体验，争论小体积机型是否能剃干净下巴、人中难处理区域，横向对比续航与刀头浮动设计。",
+    "why_now": "暑期出行、外勤通勤增多，便携随身理容需求上涨，近30天迷你剃须刀实测、随身收纳帖大量产出。",
+    "phenomenon": "抖音、小红书实拍口袋剃须刀随身收纳、办公室补剃场景，用户分两派讨论迷你款是否够用，整理长续航、多浮动刀头迷你机型清单。",
+    "spread_emotion": "外出随身打理的刚需、嫌弃大体积剃须刀不便携带、担心便携款剃不干净反复补刮。",
+    "people_involved": [
+      "外勤出差上班族",
+      "学生短途旅行人群",
+      "极简随身物品爱好者"
+    ],
+    "conflict_point": "追求小巧便携易收纳 vs 小机身刀头面积小、浮动层级不足难剃净死角胡茬。",
+    "fact_structure": "暑期出行通勤频次提升→随身快速剃须需求爆发→迷你便携剃须刀成为讨论焦点，对比体积、续航、刀头贴合三大核心参数。",
+    "candidate_problem_dimensions": [
+      "外出随身理容工具收纳难题",
+      "便携机型剃净死角不足",
+      "短途出行续航焦虑"
+    ],
+    "happened_when": "2026-06下旬至07上旬",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "source_hint": "抖音#口袋迷你剃须刀实测 短视频合集",
+    "source_notes": [
+      "2026夏季出行便携男士理容工具讨论数据"
+    ],
+    "source_url": "https://www.iesdouyin.com/share/video/7574621368126344474",
+    "hit_directions": [
+      "男性生活方式",
+      "实用产品选择"
+    ],
+    "why_natural": "话题聚焦便携剃须刀体积、续航、刀头贴合等核心产品参数，可直接落地产品种草与选购科普。",
+    "heat_score_10": 6.9,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "客观区分短途应急与日常家用两种使用场景，不夸大迷你款剃净性能"
+    ]
+  }
+]
