@@ -1,0 +1,355 @@
+{
+  "account": {
+    "account_id": "acct-razor-derma-douyin-boss",
+    "tenant_id": "tenant-razor-derma",
+    "display_name": "皮肤学剃须刀 · 抖音老板号",
+    "track_id": "razor-derma-pfb",
+    "platform_id": "douyin",
+    "positioning_id": "boss"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-20260709-razor-derma-001",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "男性用户在护理社区集中讨论剃须后红痛、倒生毛和工具选择。",
+            "real_problem": "很多人不是不想刮干净，而是怕刮完脸和脖子又红又痛。",
+            "track_relation": "这个问题正好落在剃须动作、刀片接触和皮肤刺激管理上。",
+            "product_value_support": "可以用刀片结构和少拉扯体验说明为什么舒服剃须比单纯刮得狠更重要。",
+            "platform_expression": "老板口吻直接提醒用户先看剃完状态，再看刮得多干净。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "用户在分享自己的剃须失败经历和护理流程。",
+            "real_problem": "同样是刮胡子，有的人刮完清爽，有的人刮完一片红，差别往往在工具和动作。",
+            "track_relation": "讨论可以自然进入剃须频率、胡须方向和反复刮擦带来的不适。",
+            "product_value_support": "用少反复刮、少拉扯的卖点回应用户的日常痛点。",
+            "platform_expression": "用反差开头做短视频：不是皮肤矫情，是剃须方式要换思路。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "男性护理讨论从刮干净延伸到剃后舒适感。",
+            "real_problem": "用户开始意识到剃须结果不只看胡茬，还要看剃完后皮肤能不能稳住。",
+            "track_relation": "这能把剃须刀从普通工具讲到日常皮肤状态管理。",
+            "product_value_support": "强调更贴合、更少拉扯、更舒服的日常剃须体验。",
+            "platform_expression": "用三句判断式口播，适合抖音老板号的直接风格。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "剃须后总红痛，先别只怪皮肤",
+          "title": "剃完脸红，问题可能在刮法",
+          "body_or_script": "开头：很多男人剃完胡子，脸和脖子一片红，还以为是自己皮肤差。\n冲突：其实你要先看一件事：是不是为了刮干净，反复在同一个地方来回刮。\n展开：胡须硬、方向乱，刀片一拉一扯，皮肤当然容易不舒服。剃须不是越狠越干净，关键是减少拉扯，少反复刺激。\n落点：我们做这类刀片，看的不是一句“锋利”就完了，而是刀片接触、贴合感和剃完后的舒适度。\n行动：如果你剃完总是红、刺、脖子起小疙瘩，先换一个思路：别只追求刮狠，先追求舒服地刮干净。"
+        },
+        "external_terms_check": true,
+        "risk_note": "社区讨论属于用户经验，发布时不要做医疗判断或效果承诺。",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-razor-derma-002",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "男性护理内容开始强调皮肤状态、温和护理和舒适体验。",
+            "real_problem": "用户不再只想把胡子刮掉，也在意剃完后脸是不是发紧、泛红或刺痛。",
+            "track_relation": "剃须是男性日常护理里最频繁的皮肤接触动作之一。",
+            "product_value_support": "可以顺势讲剃须刀也要关注少拉扯和减少反复刺激。",
+            "platform_expression": "用“刮胡子不该只看干不干净”做老板号直接判断。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "男性护理从粗放清洁转向精细化护理。",
+            "real_problem": "过去很多人把剃须当成快消耗动作，忽略了每天刮一次对皮肤的影响。",
+            "track_relation": "这正好能解释为什么剃须工具的结构和接触方式值得被认真讨论。",
+            "product_value_support": "把产品价值落到更舒服地刮干净，而不是夸大功效。",
+            "platform_expression": "用短句拆开传统观念和新选择，适合抖音完播节奏。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "男性用户开始学习保湿、舒缓和屏障相关常识。",
+            "real_problem": "护肤做得再多，如果剃须环节总在拉扯，皮肤状态还是容易反复不舒服。",
+            "track_relation": "剃须工具是男性护理流程里的基础一环。",
+            "product_value_support": "用刀片结构和用户体验反馈支撑少拉扯的选择逻辑。",
+            "platform_expression": "口播可以从“男人护肤第一步不是面霜”切入，引发评论。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "男性护理升级，剃须刀也要看舒适度",
+          "title": "男人护肤，别漏了剃须这一步",
+          "body_or_script": "开头：现在男人护理，不只是洗把脸、刮个胡子就完了。\n冲突：你面霜买得再贵，剃须时天天拉扯、来回刮，脸还是容易不舒服。\n展开：刮胡子是很多男人每天都会做的皮肤接触动作。以前只看刮得干不干净，现在更应该看剃完舒不舒服、红不红、刺不刺。\n落点：所以剃须刀不能只讲锋利，还要讲贴合、接触方式和少反复刺激。真正好用的刀，是让你更舒服地刮干净。\n行动：如果你开始在意皮肤状态，先把剃须这一步认真起来。"
+        },
+        "external_terms_check": true,
+        "risk_note": "趋势素材不等于全市场结论，标题和正文不要夸大行业变化。",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-razor-derma-003",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "夏季高温让男性理容、运动后清爽和剃须频率被更多讨论。",
+            "real_problem": "天气热、出汗多，很多人剃得更勤，但剃后刺激也更容易被放大。",
+            "track_relation": "高频剃须正是红肿、刺痛和脖颈不适更容易出现的场景。",
+            "product_value_support": "产品可以从少拉扯、少反复刮和剃完更舒服去回应夏季需求。",
+            "platform_expression": "用夏天场景开头，直接给用户一个剃须选择标准。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "男性护理媒体集中讨论夏季修剪和减少刺激。",
+            "real_problem": "用户既想清爽体面，又不想剃完脸和脖子不舒服。",
+            "track_relation": "这连接到日常剃须工具是否适合敏感、易红的人群。",
+            "product_value_support": "强调刀片接触和贴合体验，不做夸大承诺。",
+            "platform_expression": "适合做成“夏天剃须别犯这一个错”的口播。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "夏季理容内容从好看延伸到舒适和耐受。",
+            "real_problem": "很多人只在意剃完马上清爽，忽略了之后的泛红、刺感和小疙瘩。",
+            "track_relation": "剃须刺激管理是夏季男性理容里的高频痛点。",
+            "product_value_support": "把更舒服地刮干净作为产品价值落点。",
+            "platform_expression": "用老板号做取舍判断：别为了快，把脸刮得不舒服。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "夏季高频剃须，别只图快",
+          "title": "夏天剃须，别把脸刮急了",
+          "body_or_script": "开头：夏天剃须，最容易犯的错就一个字：急。\n冲突：出汗多，想清爽，很多人早上赶时间，直接来回刮。胡子是下去了，脸和脖子也开始不舒服。\n展开：天气热的时候，剃须频率更高，皮肤受到的摩擦也更多。这个时候别只看刮得快不快，要看刀片贴不贴、拉扯少不少、是不是需要反复刮。\n落点：我们做这类剃须刀，就是把“舒服地刮干净”放在前面。尤其是剃完容易红、容易刺的人，更要少一点拉扯。\n行动：夏天想清爽可以，但别拿皮肤状态换速度。"
+        },
+        "external_terms_check": true,
+        "risk_note": "素材偏媒体趋势，发布时建议配合自家刀片结构画面或真实使用反馈。",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-razor-derma-004",
+        "recommendation": "maybe",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "护肤内容开始提醒用户关注剃须后的保湿、舒缓和屏障保护。",
+            "real_problem": "用户往往把剃后不适只当成护理没做好，却忽略了剃须动作本身的刺激。",
+            "track_relation": "剃须动作和刀片接触方式会影响剃完后的舒适感。",
+            "product_value_support": "可以讲少拉扯、少反复刺激是日常护理前置的一步。",
+            "platform_expression": "用“别只会剃后补救”做克制型口播，不做医学承诺。"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "剃须后护理建议在护肤内容里变得更常见。",
+            "real_problem": "很多人愿意买护理品，却忽略剃须工具本身是否让皮肤更不舒服。",
+            "track_relation": "剃须刀是产生摩擦和拉扯的前端环节。",
+            "product_value_support": "产品可以从更温和的剃须体验说明价值。",
+            "platform_expression": "适合做成老板提醒：护理不是只在剃完之后。"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "护肤话题从强刺激转向温和和稳定。",
+            "real_problem": "对容易红、容易刺的人来说，日常小刺激累积起来也会影响体验。",
+            "track_relation": "剃须是男性最常见的日常摩擦场景。",
+            "product_value_support": "强调剃须工具设计要考虑贴合感和减少反复刮。",
+            "platform_expression": "用温和但有判断的老板口吻，适合做信任型内容。"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "剃后护理之前，先减少剃须刺激",
+          "title": "剃后舒缓，不如先少刺激",
+          "body_or_script": "开头：很多人剃完不舒服，第一反应是赶紧补救。\n冲突：但你有没有想过，问题可能从剃须那一下就开始了。\n展开：如果刀片拉扯多、同一个位置反复刮，剃完再怎么护理，也是在给前面的刺激收尾。真正该做的是把剃须这一步先变舒服。\n落点：所以我们看剃须刀，不只看锋利，也看贴合、接触方式和剃完后的感受。对容易红、容易刺的人，少拉扯就是很实际的价值。\n行动：剃后护理要做，但更好的习惯，是从剃的时候就别过度刺激。"
+        },
+        "external_terms_check": true,
+        "risk_note": "该条来源偏护肤媒体教育，建议作为备选内容，发布时不要说成强热点。",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-20260709-broad-001",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这是暑假教育安排话题，受众问题集中在亲子和学习规划，和剃须刺激、红肿、倒生毛没有自然关系。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-002",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "低消费暑假可以谈消费观，但要接到剃须舒适度会绕得太远，容易变成借题发挥。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-003",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "暑假带娃和家庭分工是关系话题，和男性剃须后的皮肤状态没有稳定连接。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-004",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "电子断舍离讨论的是注意力和数字习惯，和剃须工具、皮肤屏障或剃后不适关系弱。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-005",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "成年人学游泳有夏季身体管理场景，但热点主问题是运动和克服怕水，接剃须刺激仍然偏牵强。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-006",
+        "track_id": "razor-derma-pfb",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "周末不社交是个人边界和精力管理话题，无法自然落到剃须红肿或倒生毛困扰。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      }
+    ]
+  },
+  "meta": {
+    "hs-20260709-broad-001": {
+      "oneLiner": "暑假开始后，家长晒孩子假期安排：到底该放养还是提前卷",
+      "reason": "这是暑假教育安排话题，受众问题集中在亲子和学习规划，和剃须刺激、红肿、倒生毛没有自然关系。"
+    },
+    "hs-20260709-broad-002": {
+      "oneLiner": "年轻人开始晒‘低消费暑假’，不旅游也能过夏天",
+      "reason": "低消费暑假可以谈消费观，但要接到剃须舒适度会绕得太远，容易变成借题发挥。"
+    },
+    "hs-20260709-broad-003": {
+      "oneLiner": "‘暑假带娃到底谁更累’引发家庭分工讨论",
+      "reason": "暑假带娃和家庭分工是关系话题，和男性剃须后的皮肤状态没有稳定连接。"
+    },
+    "hs-20260709-broad-004": {
+      "oneLiner": "年轻人流行晒‘电子断舍离’，减少刷手机时间",
+      "reason": "电子断舍离讨论的是注意力和数字习惯，和剃须工具、皮肤屏障或剃后不适关系弱。"
+    },
+    "hs-20260709-broad-005": {
+      "oneLiner": "‘成年人重新学游泳’成为夏季跟风项目",
+      "reason": "成年人学游泳有夏季身体管理场景，但热点主问题是运动和克服怕水，接剃须刺激仍然偏牵强。"
+    },
+    "hs-20260709-broad-006": {
+      "oneLiner": "‘周末不社交’从自嘲变成生活选择",
+      "reason": "周末不社交是个人边界和精力管理话题，无法自然落到剃须红肿或倒生毛困扰。"
+    },
+    "hs-20260709-razor-derma-001": {
+      "oneLiner": "男性开始讨论‘剃须后脸为什么总是红和痛’，敏感剃须成为护理话题",
+      "reason": "用户讨论的就是剃须后红痛、倒生毛和工具选择，能直接接到少拉扯、减少反复刺激的产品价值。"
+    },
+    "hs-20260709-razor-derma-002": {
+      "oneLiner": "男性护理从‘刮胡子’转向‘皮肤状态管理’",
+      "reason": "男性护理从刮干净转向皮肤状态管理，正好能把剃须刀讲成关注剃后舒适度的日常护理选择。"
+    },
+    "hs-20260709-razor-derma-003": {
+      "oneLiner": "夏季男性理容讨论升温：避免剃后刺激成为关注点",
+      "reason": "夏季理容频率提高会放大剃后刺激和不舒服的问题，适合用老板口吻讲少拉扯和舒适剃须。"
+    },
+    "hs-20260709-razor-derma-004": {
+      "oneLiner": "剃须护理讨论开始关注‘不要过度刺激皮肤’",
+      "reason": "剃须后的保湿、舒缓和屏障保护可以接到剃须动作本身的刺激管理，但来源更偏媒体教育，需要克制表达。"
+    }
+  },
+  "mode": "live",
+  "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T09:13:41",
+  "needs_human_review": true,
+  "formal_approval": false,
+  "mvp_internal_only": true,
+  "review_status": {
+    "needs_human_review": true,
+    "formal_approval": false,
+    "mvp_internal_only": true,
+    "track_id": "razor-derma-pfb",
+    "track_status": "draft",
+    "reason": "track status is not formal approved/reference",
+    "account_id": "acct-razor-derma-douyin-boss"
+  }
+}

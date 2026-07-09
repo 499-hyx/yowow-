@@ -30,4 +30,5 @@
 
 - `ingest.py` 是唯一有资格安装 `data/today/<account_id>/latest.json` 的入口。
 - 不要把 `sync-to-db.py` 正式同步写成默认日常步骤。
+- `daily_pipeline_email.py --commit-to-github` 只用于 GitHub 文件部署模式；Turso 生产镜像仍需授权后 `--sync-to-db`。
 - 不要让脚本为了通过校验去改 schema 或编造热点事实。

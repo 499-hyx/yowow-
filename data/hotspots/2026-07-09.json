@@ -1,0 +1,236 @@
+[
+  {
+    "id": "hs-20260709-broad-001",
+    "hotspot_id": "hs-20260709-broad-001",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "暑假开始后，家长晒孩子假期安排：到底该放养还是提前卷",
+    "summary": "暑假开启后，小红书、抖音出现大量家长分享孩子暑假计划、时间表、旅行安排和学习打卡。评论区围绕‘快乐暑假’和‘不能输在假期’展开争论，家长之间互相比较又互相焦虑。",
+    "why_now": "7月进入暑假周期，大量家庭进入假期规划阶段，相关内容集中爆发。",
+    "phenomenon": "家长发布孩子暑假日程、阅读计划、运动记录、旅游照片，也有人分享完全不安排的‘放空式暑假’。",
+    "spread_emotion": "焦虑、比较、释然、反焦虑。",
+    "people_involved": [
+      "小学家长",
+      "学生家庭"
+    ],
+    "conflict_point": "希望孩子拥有快乐童年 vs 担心假期落后。",
+    "fact_structure": "平台大量出现暑假规划类UGC，与每年暑期节点高度相关。",
+    "candidate_problem_dimensions": [
+      "家庭时间管理压力",
+      "家长教育观念分歧"
+    ],
+    "happened_when": "2026-07-上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "可见大量‘暑假计划表’‘我的暑假安排’相关内容，评论区出现放养派和规划派争论。",
+    "source_notes": [
+      "基于平台公开内容趋势检索"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘别人家孩子暑假已经安排满了，我家是不是太佛了？’",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 8.2,
+    "traffic_level": "high",
+    "risk_notes": [
+      "具体互动量需平台后台进一步核验"
+    ]
+  },
+  {
+    "id": "hs-20260709-broad-002",
+    "hotspot_id": "hs-20260709-broad-002",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "年轻人开始晒‘低消费暑假’，不旅游也能过夏天",
+    "summary": "部分年轻用户分享不出门、不购物、低预算过暑假的生活方式，引发关于消费观的讨论。一部分人认为这是清醒生活，另一部分认为是经济压力下的自我安慰。",
+    "why_now": "暑期消费季到来，传统旅游消费预期与现实压力形成反差。",
+    "phenomenon": "用户分享宅家、附近散步、旧物利用、低成本娱乐等生活记录。",
+    "spread_emotion": "共鸣、调侃、压力释放。",
+    "people_involved": [
+      "年轻职场人",
+      "学生群体"
+    ],
+    "conflict_point": "追求体验消费 vs 控制支出。",
+    "fact_structure": "多个平台出现‘低成本生活’类内容增长。",
+    "candidate_problem_dimensions": [
+      "收入压力",
+      "消费观变化"
+    ],
+    "happened_when": "2026-06下旬至2026-07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "相关内容以个人记录形式传播，常见标题包含‘穷游失败后选择躺平’‘我的低配暑假’。",
+    "source_notes": [
+      "基于公开平台趋势观察"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘不是不想旅游，是钱包让我学会附近玩。’",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 7.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "需区分主动选择和经济压力"
+    ]
+  },
+  {
+    "id": "hs-20260709-broad-003",
+    "hotspot_id": "hs-20260709-broad-003",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "‘暑假带娃到底谁更累’引发家庭分工讨论",
+    "summary": "不少家庭分享暑假期间照顾孩子、安排活动、辅导作业的压力，夫妻和老人之间的分工问题成为评论区焦点。",
+    "why_now": "孩子放假后家庭照护任务重新分配。",
+    "phenomenon": "用户分享全天陪伴孩子的经历，也有人吐槽老人带娃方式不同。",
+    "spread_emotion": "疲惫、委屈、共情。",
+    "people_involved": [
+      "父母",
+      "祖辈家庭成员"
+    ],
+    "conflict_point": "谁承担更多家庭劳动。",
+    "fact_structure": "大量家庭经验帖围绕暑期照护展开。",
+    "candidate_problem_dimensions": [
+      "家庭责任分配",
+      "代际沟通"
+    ],
+    "happened_when": "2026-07-上旬",
+    "platforms": [
+      "小红书",
+      "微博"
+    ],
+    "platform_evidence": "家庭话题评论区大量出现个人经历分享。",
+    "source_notes": [
+      "平台公开讨论观察"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘孩子放假第一天，我感觉自己也开始上班了。’",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 7.5,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "个案不能代表整体家庭情况"
+    ]
+  },
+  {
+    "id": "hs-20260709-broad-004",
+    "hotspot_id": "hs-20260709-broad-004",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "年轻人流行晒‘电子断舍离’，减少刷手机时间",
+    "summary": "用户分享关闭通知、减少社交软件、固定不上网时间等‘数字断舍离’实践，引发关于手机依赖的讨论。",
+    "why_now": "暑期和生活节奏变化让更多人尝试调整数字习惯。",
+    "phenomenon": "大量用户记录减少屏幕时间后的变化。",
+    "spread_emotion": "自律感、焦虑、反思。",
+    "people_involved": [
+      "年轻用户",
+      "学生群体"
+    ],
+    "conflict_point": "便利连接 vs 注意力被消耗。",
+    "fact_structure": "个人实验型内容在多个平台传播。",
+    "candidate_problem_dimensions": [
+      "注意力管理",
+      "数字生活压力"
+    ],
+    "happened_when": "2026-06末至2026-07",
+    "platforms": [
+      "小红书",
+      "B站"
+    ],
+    "platform_evidence": "‘戒手机’‘数字排毒’相关经验分享持续出现。",
+    "source_notes": [
+      "公开UGC趋势"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘不是手机不好，是我发现一天被它切碎了。’",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 7.1,
+    "traffic_level": "medium",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260709-broad-005",
+    "hotspot_id": "hs-20260709-broad-005",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "‘成年人重新学游泳’成为夏季跟风项目",
+    "summary": "夏季高温推动成年人学习游泳、记录训练过程的内容增加，很多人分享克服怕水、重新开始运动的经历。",
+    "why_now": "夏季运动需求和避暑需求叠加。",
+    "phenomenon": "用户发布学习过程、训练打卡和身体变化。",
+    "spread_emotion": "成长感、挑战、自我鼓励。",
+    "people_involved": [
+      "成年人",
+      "运动爱好者"
+    ],
+    "conflict_point": "想改变自己 vs 坚持困难。",
+    "fact_structure": "运动打卡类UGC随季节升温。",
+    "candidate_problem_dimensions": [
+      "健康习惯建立",
+      "自我提升需求"
+    ],
+    "happened_when": "2026-07-上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "游泳学习记录和训练视频增加。",
+    "source_notes": [
+      "公开内容趋势"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘小时候没学会，30岁重新报名也不晚。’",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 6.9,
+    "traffic_level": "medium",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260709-broad-006",
+    "hotspot_id": "hs-20260709-broad-006",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "‘周末不社交’从自嘲变成生活选择",
+    "summary": "越来越多用户分享周末独处、拒绝无效聚会的生活方式，引发关于社交需求的讨论。",
+    "why_now": "年轻用户持续讨论精力管理和个人边界。",
+    "phenomenon": "用户晒独处日程、宅家安排和拒绝邀约经历。",
+    "spread_emotion": "释然、共鸣、争议。",
+    "people_involved": [
+      "年轻职场人",
+      "社交活跃群体"
+    ],
+    "conflict_point": "享受独处 vs 被认为不合群。",
+    "fact_structure": "独处经济和边界感话题持续存在。",
+    "candidate_problem_dimensions": [
+      "社交压力",
+      "个人空间需求"
+    ],
+    "happened_when": "2026-06末至2026-07",
+    "platforms": [
+      "小红书",
+      "微博"
+    ],
+    "platform_evidence": "相关笔记和讨论围绕‘低能量生活’展开。",
+    "source_notes": [
+      "平台公开讨论"
+    ],
+    "source_url": null,
+    "ugc_voice": "‘不是孤僻，只是不想把周末耗在人情里。’",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 6.8,
+    "traffic_level": "medium",
+    "risk_notes": []
+  }
+]

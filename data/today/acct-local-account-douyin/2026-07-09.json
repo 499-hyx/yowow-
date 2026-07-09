@@ -1,0 +1,305 @@
+{
+  "account": {
+    "account_id": "acct-local-account-douyin",
+    "tenant_id": "tenant-local",
+    "display_name": "林医生聊护肤",
+    "track_id": "skincare",
+    "platform_id": "douyin",
+    "positioning_id": "boss"
+  },
+  "board": {
+    "picks": [
+      {
+        "hotspot_id": "hs-20260709-skincare-003",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "全网热议夏季痘敏肌恶性循环，大量用户同时长痘+泛红，叠加祛痘类、修护类多款产品，反而越护理烂脸越严重",
+            "real_problem": "用户遇到痘敏同时发作的情况，完全分不清优先级，不知道先祛痘还是先修护，盲目堆产品反而加重皮肤炎症",
+            "track_relation": "这个夏季集中爆发的护肤痛点，正好是科学护肤赛道要科普纠正的典型误区，100%匹配账号受众的核心需求",
+            "product_value_support": "直接输出精简护肤逻辑，帮用户避开成分叠加的踩坑点，建立痘敏期正确的护肤认知，解决当下的皮肤问题",
+            "platform_expression": "开头直接抛反常识结论，不铺垫，3秒抓注意力，直接给可落地的成分搭配禁忌和1+1精简方案，短句输出信息密度高，符合抖音快节奏要求"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "很多痘敏肌用户夏天爆痘想刷酸，跟风用水杨酸、果酸，结果泛红刺痛直接加重屏障受损",
+            "real_problem": "用户只听别人说刷酸能祛痘，完全分不清不同酸类的适配肤质、用法用量，敏感肌乱刷酸直接把脸作坏",
+            "track_relation": "精准命中账号受众最关心的「敏感肌能不能刷酸」的核心焦虑，完全契合账号做成分解析、肤质适配科普的核心定位",
+            "product_value_support": "帮用户分清楚不同肤质、不同皮肤状态下可以选择的祛痘成分，不用瞎试错浪费钱，还能保护皮肤屏障",
+            "platform_expression": "开头直接回应争议问题，打破大家「敏感肌绝对不能刷酸」的固有认知，甩3种适配敏痘肌的低刺激酸的正确用法，搭配真实粉丝案例增强可信度"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "不少用户夏天为了同时搞定祛痘、修护、抗老，堆了七八瓶护肤往脸上涂，大几千花出去皮肤还是又红又长痘",
+            "real_problem": "用户护肤没有取舍思维，贪多求全什么功效都想占，钱花了不少反而所有成分都没法发挥作用，还给皮肤造成额外负担",
+            "track_relation": "直接呼应受众「护肤花很多钱却没效果」的普遍痛点，完全符合账号帮用户避坑、少花冤枉钱的核心卖点",
+            "product_value_support": "教用户在痘敏高发期做护肤减法，根据自己当下的皮肤需求排序选产品，不用为无关功效买单，把钱花在刀刃上",
+            "platform_expression": "开头直接戳痛点，告诉观众你夏天花的一半护肤钱都是白扔的，直接给不同痘敏程度的护肤选购优先级，引导用户留评问肤质获取专属建议，拉高互动率"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "夏季痘敏肌别乱堆产品，1套精简方案止住长痘泛红恶性循环",
+          "title": "长痘又泛红还乱叠产品？越护越烂的坑我给你堵死",
+          "body_or_script": "【0-3s 拍脸镜头 口播】别叠了！痘敏肌越涂越烂的罪魁祸首就是瞎叠加！\n【3-15s 举手机后台粉丝截图 口播】最近几十个粉丝找我，一边T区爆痘一边两颊泛红，又是涂水杨酸又是厚糊修护霜，结果闷得痘更多，红得更厉害，完全进入死循环。\n【15-38s 字幕同步打禁忌清单 口播】我今天直接给你死规则，痘敏共存期，酸类（水杨酸、果酸）别和高浓度VC、高浓度A醇同时往脸上怼，成分打架直接刺激屏障。就用1个温和抗炎祛痘的，比如壬二酸，加1个带神经酰胺的轻薄修护乳，别的全停。\n【38-52s 展示产品搭配演示 口播】油皮涂完不闷痘，干皮涂完够润，既祛痘又不加重泛红，大部分人坚持一段时间就能感觉到皮肤状态明显稳下来。\n【52s以后 对着镜头引导评论 口播】不知道自己当下肤质该选什么成分的，评论区发你的皮肤情况，我给你对应参考。"
+        },
+        "external_terms_check": true,
+        "risk_note": "需在视频简介/画面角落标注：严重痘肌、长期泛红不消的用户建议及时就医，本内容不替代医疗诊断，不承诺所有肤质使用后都能达到预期效果",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-skincare-001",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "近期全网大量早C晚A长期用户晒出入夏后用A醇泛红、反黑、爆痘的翻车实拍，大家都在骂产品没用，不知道要不要直接停用猛药",
+            "real_problem": "很多人之前好不容易建立的A醇耐受，入夏后没调整用法，硬堆高浓度猛药、忽略防晒，把原本健康的屏障作坏，钱花了还烂脸",
+            "track_relation": "我账号本身主打科学护肤科普、成分解析，刚好匹配用户当下最急的夏季猛药调整需求",
+            "product_value_support": "帮用户避开夏季用早C晚A的常见坑，建立动态调整的科学护肤认知，不用瞎浪费钱买贵价功效产品还踩雷",
+            "platform_expression": "直接甩结论开场，不铺垫，给3个可直接落地的调整方法，节奏快信息密，符合抖音短平快的内容逻辑"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "近期线下皮肤科门诊接诊量暴涨的一类人群，都是常年坚持早C晚A，入夏直接出现刺痛脱皮，以为自己买到了假货",
+            "real_problem": "绝大多数用户误以为A醇耐受是一劳永逸的，不管季节、温度、紫外线强度乱叠加功效产品，最后把自己作成敏感肌",
+            "track_relation": "我账号一直给粉丝传递「耐受是动态变化」的护肤理念，刚好借这次热点落地科普，强化专业人设",
+            "product_value_support": "纠正大家对早C晚A的错误认知，教不同肤质适配的夏季用法，帮大家用最少的投入拿到想要的抗老、抗氧化效果",
+            "platform_expression": "拿真实门诊案例开场，直接点破认知误区，分干皮、油皮、敏感肌三类人群给对应方案，观众看完直接能对号入座"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "大量用户反馈夏天涂完A醇第二天出门，直接被晒得泛红发烫，不仅没变白反而反黑，吐槽早C晚A完全是智商税",
+            "real_problem": "很多人完全不知道高温+强紫外线环境下，A醇、VC这类活性成分的刺激性会翻倍，没做好防护反而把屏障搞伤",
+            "track_relation": "我账号主打成分深度解析，刚好给粉丝讲清活性成分在夏季的作用逻辑，补全大家的知识盲区",
+            "product_value_support": "帮用户搞懂夏季选猛药的核心标准，不用盲目追高浓度高功效，既拿到护肤效果又不损伤屏障，少走弯路",
+            "platform_expression": "开头直接抛出后台几百条相关私信的真实反馈，快速拉共鸣，最后给避坑清单，引导观众评论留肤质做互动"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "夏季早C晚A翻车不用全停，3招调整稳护肤",
+          "title": "别乱停A醇！夏天用早C晚A泛红爆痘的，照这3招调",
+          "body_or_script": "【0-3s 钩子镜头拍桌】停！别再瞎骂你家A醇烂脸了！\n【3-13s 冲突】最近全网多少人冬天用早C晚A好好的，入夏直接泛红脱皮爆痘反黑，全怪你自己没根据季节改用法！气温冲到35度以上，紫外线直接翻两倍，你皮肤屏障本来就比冬天脆三成，A醇的刺激性直接放大一倍，能不烂脸吗？\n【13-38s 展开】我今天明确说3个调整方法，照着做不用停A醇照样稳：第一，浓度直接砍半，之前用0.3%A醇的现在换回0.1%，别硬扛；第二，隔天用一次别天天涂，涂完当天绝对要涂够防晒；第三，晚上用完A醇之后，后续直接叠一层含神经酰胺的修护霜，别瞎堆别的功效精华。\n【38-52s 落点】记住啊，护肤不是熬大夜猛堆猛药，懂取舍才是花最少的钱拿最好的效果，别跟自己的脸过不去。\n【52-58s 行动引导】不知道自己现在的肤质能不能继续用早C晚A的，评论区报你的肤质和目前用的A醇浓度，我给你瞅一眼。"
+        },
+        "external_terms_check": true,
+        "risk_note": "科普时不要全盘否定A醇功效，不要宣称A醇有害，仅针对夏季高温下不合理使用的人群做用法调整提醒，避免误导用户直接丢弃手里的A醇产品引发纠纷",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-skincare-002",
+        "recommendation": "strong_pick",
+        "forced_flag": false,
+        "skip_reason": null,
+        "bridge_paths": [
+          {
+            "path_id": "p1",
+            "phenomenon": "暑期出游晒伤案例暴涨，大量人群晒后立刻敷美白面膜、使用高浓度功效产品，导致屏障二次受损、泛红刺痛、色沉加深的踩坑事件扎堆出现",
+            "real_problem": "很多人晒后急于快速美白，钱花了不少反而把皮肤作得更差，既不知道踩了误区也不知道正确的补救方法",
+            "track_relation": "账号主打科学护肤避坑、屏障修护科普，刚好匹配这类晒后受损用户的迫切需求，完全符合内容定位",
+            "product_value_support": "直接给用户明确的晒后修护行为准则，避免大家乱买乱用水乳精华踩坑，帮大家用最少的步骤稳下受损肤质",
+            "platform_expression": "用老板型直接敢说的口吻开场就点破错误操作，晒真实粉丝踩坑案例，给3步零门槛可执行的修护步骤，节奏快信息密"
+          },
+          {
+            "path_id": "p2",
+            "phenomenon": "很多常年坚持早C晚A的用户，暴晒之后还照旧用高浓度VC、A醇类产品护肤，结果脸泛红痒痛大半个月好不了，反黑比普通人还严重",
+            "real_problem": "绝大多数人都不知道功效产品的使用有场景限制，只记住了要坚持用，完全忽略皮肤状态变差时要及时调整护肤方案",
+            "track_relation": "账号本身就做成分解析、护肤方案定制服务，澄清大家对热门护肤公式的场景误区是常规内容方向",
+            "product_value_support": "帮用户建立动态护肤的认知，不用死搬硬套固定流程，根据自身肤质状态调整护肤动作，减少无效消费",
+            "platform_expression": "开头直接抛灵魂拷问戳中早C晚A党，马上说错误操作的后果，给出不同晒后受损等级的护肤调整方案，引导大家自查"
+          },
+          {
+            "path_id": "p3",
+            "phenomenon": "最近不少人海边度假、户外爬山暴晒后，连着敷好几天美白面膜，结果脸部泛红发肿，敏感到碰自来水都疼，直接触发长期敏感",
+            "real_problem": "大部分普通人根本分不清普通晒黑和屏障晒伤的区别，乱敷面膜反而造成皮肤过度水合，把临时的泛红变成长期敏感肌",
+            "track_relation": "账号核心受众包含大量敏感肌、屏障受损人群，晒后屏障修护本身就是重点科普的内容板块",
+            "product_value_support": "教大家2个简单的晒后屏障自查方法，匹配对应的修护方案，不用瞎买一堆修护产品浪费钱",
+            "platform_expression": "开场放前后对比的真实粉丝案例，直接给2个10秒就能完成的自查动作，看完就能用，互动引导大家晒自己的晒后状态"
+          }
+        ],
+        "chosen_path_id": "p1",
+        "content": {
+          "topic": "暑期晒后急救避坑：别用美白功效产品作坏屏障，3步科学修护稳肤质",
+          "title": "晒完立刻敷美白面膜？你这是往烂脸的方向冲！",
+          "body_or_script": "【0-3秒 钩子】对着镜头厉声说：晒完立刻敷美白面膜的，赶紧停手！\n【3-12秒 冲突】最近多少人出去旅游晒得脸发烫，回来急着敷美白面膜、涂高浓度维C，甚至想刷酸快速褪黑，结果泛红半个月消不下去，脱皮刺痛，色沉反而比之前还重？这不叫美白，这叫给受损屏障火上浇油。\n【12-28秒 展开】皮肤科早就明确提醒，晒后72小时，所有美白、刷酸、强效抗老的功效产品全停。你现在皮肤屏障本来就处于受损泛红的状态，耐受力只有平时的三分之一，用高刺激成分百分百二次受损。\n【28-42秒 落点】我给你3步最安全的晒后修护流程：第一，拿常温生理盐水或者舒缓喷雾湿敷5分钟褪红；第二，厚涂一层含神经酰胺、积雪草成分的修护霜；第三，接下来3天所有功效类产品全停，只用温和的保湿修护款，等泛红全退了再慢慢恢复之前的护肤步骤。\n【42-52秒 行动引导】现在赶紧去翻你今晚要涂的护肤品，有美白酸类的直接收起来，不知道你手里的产品晒后能不能用的，评论区发出来我帮你看。"
+        },
+        "external_terms_check": true,
+        "risk_note": "注意仅强调晒后屏障受损阶段不建议使用高刺激功效类产品，不宣称美白产品本身有害，不承诺晒后可以完全避免色沉，全程不出现违禁词",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      }
+    ],
+    "also_ran": [],
+    "skipped": [
+      {
+        "hotspot_id": "hs-20260709-broad-001",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条热点属于育儿教育范畴，和账号所属的科学护肤赛道、核心受众关心的护肤类问题完全无关，硬接内容会非常牵强，不适合发布。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-002",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条连接像情绪硬蹭，先跳过。命中：强行",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": false,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-003",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条热点属于家庭分工类情感话题，和账号科学护肤的赛道定位、核心受众关心的护肤相关问题关联极弱，硬接内容会非常牵强，不符合账号人设和内容定位。",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": true,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-004",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条连接像情绪硬蹭，先跳过。命中：强行",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": false,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-005",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条连接像情绪硬蹭，先跳过。命中：强行",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": false,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      },
+      {
+        "hotspot_id": "hs-20260709-broad-006",
+        "track_id": "skincare",
+        "platform_id": "douyin",
+        "positioning_id": "boss",
+        "recommendation": "skip",
+        "forced_flag": true,
+        "skip_reason": "这条连接像情绪硬蹭，先跳过。命中：强行",
+        "bridge_paths": [],
+        "chosen_path_id": null,
+        "content": null,
+        "external_terms_check": false,
+        "needs_human_review": true,
+        "formal_approval": false,
+        "mvp_internal_only": true
+      }
+    ]
+  },
+  "meta": {
+    "hs-20260709-broad-001": {
+      "oneLiner": "暑假开始后，家长晒孩子假期安排：到底该放养还是提前卷",
+      "reason": "这条热点属于育儿教育范畴，和账号所属的科学护肤赛道、核心受众关心的护肤类问题完全无关，硬接内容会非常牵强，不适合发布。"
+    },
+    "hs-20260709-broad-002": {
+      "oneLiner": "年轻人开始晒‘低消费暑假’，不旅游也能过夏天",
+      "reason": "这条连接像情绪硬蹭，先跳过。命中：强行"
+    },
+    "hs-20260709-broad-003": {
+      "oneLiner": "‘暑假带娃到底谁更累’引发家庭分工讨论",
+      "reason": "这条热点属于家庭分工类情感话题，和账号科学护肤的赛道定位、核心受众关心的护肤相关问题关联极弱，硬接内容会非常牵强，不符合账号人设和内容定位。"
+    },
+    "hs-20260709-broad-004": {
+      "oneLiner": "年轻人流行晒‘电子断舍离’，减少刷手机时间",
+      "reason": "这条连接像情绪硬蹭，先跳过。命中：强行"
+    },
+    "hs-20260709-broad-005": {
+      "oneLiner": "‘成年人重新学游泳’成为夏季跟风项目",
+      "reason": "这条连接像情绪硬蹭，先跳过。命中：强行"
+    },
+    "hs-20260709-broad-006": {
+      "oneLiner": "‘周末不社交’从自嘲变成生活选择",
+      "reason": "这条连接像情绪硬蹭，先跳过。命中：强行"
+    },
+    "hs-20260709-skincare-001": {
+      "oneLiner": "夏季早C晚A大量用户翻车，高温下A醇致泛红反黑爆痘引发全网讨论",
+      "reason": "这条热点精准戳中账号核心受众夏季使用早C晚A猛药遇到的泛红反黑爆痘的真实痛点，可结合成分解析、皮肤科专业知识科普夏季猛药正确使用方法，完全匹配账号帮用户建立科学护肤认知、少踩护肤坑的核心卖点。"
+    },
+    "hs-20260709-skincare-002": {
+      "oneLiner": "暑期出游晒伤扎堆，晒后立刻美白敷面膜致屏障二次受损成高频踩坑",
+      "reason": "这条热点戳中了暑期大量用户晒后急救踩坑的真实痛点，精准匹配账号覆盖的出游人群、学生党、敏感肌等核心受众的护肤需求，能自然结合皮肤科专业知识、真实踩坑案例输出科学晒后修护方法，帮助用户避坑，完全贴合账号帮用户建立科学护肤认知的核心卖点。"
+    },
+    "hs-20260709-skincare-003": {
+      "oneLiner": "夏季痘敏肌恶性循环热议：长痘+泛红反复，祛痘修护产品叠加反而加重烂脸",
+      "reason": "这条热点戳中了盛夏痘敏肌人群盲目叠加产品反而烂脸的真实痛点，完全命中账号核心受众的护肤焦虑，能自然衔接成分解析、皮肤科专业知识、避坑指导等账号核心卖点，输出内容符合账号专业通俗的表达风格，没有违和感。"
+    }
+  },
+  "mode": "live",
+  "notice": "今日内容已由人工跑批安装；如需修改，请按 RUNBOOK 重新跑批。",
+  "date": "2026-07-09",
+  "generated_at": "2026-07-09T09:45:11",
+  "needs_human_review": true,
+  "formal_approval": false,
+  "mvp_internal_only": true,
+  "review_status": {
+    "needs_human_review": true,
+    "formal_approval": false,
+    "mvp_internal_only": true,
+    "track_id": "skincare",
+    "track_status": "active",
+    "reason": "track status is not formal approved/reference",
+    "account_id": "acct-local-account-douyin"
+  }
+}

@@ -4,13 +4,15 @@
 Pipeline:
   hotspot pool check -> preflight -> make match prompts -> LLM answer match
   -> make generate prompts -> LLM answer generate -> ingest
-  -> latest-file smoke check -> email.
+  -> latest-file smoke check -> email -> optional git commit/push
+  -> optional Turso sync.
 
 The script assumes hotspot JSON files already exist for the target date. Hotspot
 pool generation is intentionally manual by default; pass --generate-hotspots only
 when explicitly authorizing the LLM-backed hotspot pool helper. To mirror results
 to production Turso, pass --sync-to-db after explicitly authorizing that
-environment.
+environment. To trigger a Git-backed deploy, pass --commit-to-github; it stages
+only publishable file-source artifacts, never data/runs audit material.
 """
 import argparse
 import datetime as dt
@@ -87,6 +89,81 @@ def run_cmd(args, *, dry_run=False):
         raise SystemExit(result.returncode)
 
 
+def run_capture(args, *, dry_run=False):
+    write_line("$ " + " ".join(args))
+    if dry_run:
+        return ""
+    result = subprocess.run(
+        args,
+        cwd=BASE,
+        text=True,
+        encoding="utf-8",
+        errors="replace",
+        stdout=subprocess.PIPE,
+        stderr=subprocess.STDOUT,
+        env={
+            **os.environ,
+            "PYTHONIOENCODING": "utf-8",
+        },
+    )
+    if result.stdout:
+        write_line(result.stdout.rstrip())
+    if result.returncode != 0:
+        raise SystemExit(result.returncode)
+    return result.stdout or ""
+
+
+def publishable_paths(account_ids, date_str):
+    paths = [
+        os.path.join("data", "hotspots", f"{date_str}.json"),
+    ]
+    seen_tracks = set()
+    for account_id in account_ids:
+        track_id = account_track_id(account_id)
+        paths.extend([
+            os.path.join("data", "accounts", f"{account_id}.json"),
+            os.path.join("data", "today", account_id),
+        ])
+        if track_id and track_id not in seen_tracks:
+            seen_tracks.add(track_id)
+            paths.extend([
+                os.path.join("config", "tracks", f"{track_id}.json"),
+                os.path.join("data", "hotspots", "tracks", track_id, f"{date_str}.json"),
+                os.path.join("prompts", "赛道热点", track_id),
+                os.path.join("prompts", "分析提示词", track_id),
+            ])
+    return [p for p in paths if os.path.exists(os.path.join(BASE, p))]
+
+
+def git_commit_and_push(date_str, account_ids, *, remote="origin", branch=None, dry_run=False):
+    pre_staged = run_capture(["git", "diff", "--cached", "--name-only"], dry_run=dry_run).strip()
+    if pre_staged:
+        raise SystemExit(
+            "Refusing to auto-commit because staged changes already exist. "
+            "Unstage them or commit them before running --commit-to-github."
+        )
+
+    paths = publishable_paths(account_ids, date_str)
+    if not paths:
+        write_line("git publish: no publishable paths found; skip")
+        return
+
+    run_cmd(["git", "add", "--", *paths], dry_run=dry_run)
+    staged = run_capture(["git", "diff", "--cached", "--name-only"], dry_run=dry_run).strip()
+    if not staged:
+        write_line("git publish: no changes to commit; skip")
+        return
+
+    display_accounts = ",".join(account_ids)
+    message = f"chore(cron): publish daily pipeline {date_str} {display_accounts}"
+    run_cmd(["git", "commit", "-m", message], dry_run=dry_run)
+
+    target_branch = branch or run_capture(["git", "rev-parse", "--abbrev-ref", "HEAD"], dry_run=dry_run).strip()
+    if not target_branch or target_branch == "HEAD":
+        raise SystemExit("Cannot auto-push from detached HEAD; pass --git-branch explicitly.")
+    run_cmd(["git", "push", remote, target_branch], dry_run=dry_run)
+
+
 def smoke_latest(account_id, date_str):
     latest = os.path.join(DATA_DIR, "today", account_id, "latest.json")
     dated = os.path.join(DATA_DIR, "today", account_id, f"{date_str}.json")
@@ -151,6 +228,9 @@ def main():
     parser.add_argument("--generate-hotspots", action="store_true", help="Ask LLM to generate hotspot pools before running match/generate. Manual hotspot pools are the default.")
     parser.add_argument("--skip-hotspot-generation", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--sync-to-db", action="store_true", help="After ingest, run sync-to-db.py. Use only with authorized Turso env.")
+    parser.add_argument("--commit-to-github", action="store_true", help="After email succeeds, commit publishable data/config artifacts and push to GitHub.")
+    parser.add_argument("--git-remote", default=os.environ.get("DAILY_PIPELINE_GIT_REMOTE", "origin"), help="Remote for --commit-to-github. Default: DAILY_PIPELINE_GIT_REMOTE or origin.")
+    parser.add_argument("--git-branch", default=os.environ.get("DAILY_PIPELINE_GIT_BRANCH"), help="Branch for --commit-to-github. Default: DAILY_PIPELINE_GIT_BRANCH or current branch.")
     parser.add_argument("--selftest", action="store_true")
     args = parser.parse_args()
 
@@ -171,11 +251,21 @@ def main():
                 dry_run=args.dry_run,
                 generate_hotspots=args.generate_hotspots and not args.skip_hotspot_generation,
             )
-        if args.sync_to_db:
-            run_cmd([sys.executable, "scripts/sync-to-db.py", "--dry-run"], dry_run=args.dry_run)
-            run_cmd([sys.executable, "scripts/sync-to-db.py"], dry_run=args.dry_run)
 
     send_digest(args.date, account_ids, dry_run=args.dry_run)
+
+    if args.commit_to_github:
+        git_commit_and_push(
+            args.date,
+            account_ids,
+            remote=args.git_remote,
+            branch=args.git_branch,
+            dry_run=args.dry_run,
+        )
+
+    if args.sync_to_db:
+        run_cmd([sys.executable, "scripts/sync-to-db.py", "--dry-run"], dry_run=args.dry_run)
+        run_cmd([sys.executable, "scripts/sync-to-db.py"], dry_run=args.dry_run)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "hs-20260709-razor-derma-001",
+    "hotspot_id": "hs-20260709-razor-derma-001",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-derma-pfb",
+    "scope": "track:razor-derma-pfb",
+    "title": "男性开始讨论‘剃须后脸为什么总是红和痛’，敏感剃须成为护理话题",
+    "summary": "海外男性护理社区近期持续出现关于剃须后刺激、红肿、倒生毛的经验讨论，用户分享自己的剃须工具、护理流程和失败经历。讨论重点从‘刮干净’转向‘减少刺激’。",
+    "why_now": "夏季出汗、频繁整理胡须以及男性护肤意识提升，让剃须刺激问题更容易被讨论。",
+    "phenomenon": "男性用户在 Reddit 等社区分享剃须后灼热、红斑、毛发倒生等问题，并寻求刀具、护理方式建议。",
+    "spread_emotion": "困扰、求助、经验分享。",
+    "people_involved": [
+      "男性剃须用户",
+      "男性护肤爱好者"
+    ],
+    "conflict_point": "希望保持干净外观 vs 剃须过程带来的皮肤不适。",
+    "fact_structure": "男性护理讨论中，剃须工具选择逐渐与皮肤舒适度、屏障护理联系起来。",
+    "candidate_problem_dimensions": [
+      "剃须刺激管理",
+      "男性皮肤护理认知升级"
+    ],
+    "happened_when": "2026-06至2026-07",
+    "platforms": [
+      "Reddit",
+      "男性护理社区"
+    ],
+    "source_hint": "Reddit r/AskMenOver30 关于 pseudo-folliculitis/ingrown hair 的讨论",
+    "source_notes": [
+      "Reddit 用户讨论：伴侣存在粗硬卷曲毛发导致倒生毛和红肿问题，并寻求剃须建议。:contentReference[oaicite:0]{index=0}"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "须部假性毛囊炎",
+      "倒生毛/内生发",
+      "剃须刺激"
+    ],
+    "why_natural": "用户真实痛点直接围绕剃须后红肿、倒生毛和刺激感展开。",
+    "heat_score_10": 7.5,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "社区讨论属于用户经验，不代表医学诊断结论",
+      "不能表述为任何产品可治疗相关问题"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-derma-002",
+    "hotspot_id": "hs-20260709-razor-derma-002",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-derma-pfb",
+    "scope": "track:razor-derma-pfb",
+    "title": "男性护理从‘刮胡子’转向‘皮肤状态管理’",
+    "summary": "近期男性护理趋势内容持续强调皮肤屏障、温和护理和成分意识。男性用户不再只关注清洁和剃净，而开始关注剃须后的舒适感。",
+    "why_now": "男性护肤市场和社交内容持续教育用户关注皮肤状态。",
+    "phenomenon": "男性护理讨论加入保湿、屏障支持、减少刺激等关键词。",
+    "spread_emotion": "尝试、升级、改善生活品质。",
+    "people_involved": [
+      "年轻男性消费者",
+      "男性护肤内容创作者"
+    ],
+    "conflict_point": "传统男性护理简单粗放 vs 新一代精细化护理。",
+    "fact_structure": "行业观察文章指出男性护理正在从基础清洁向皮肤健康方向发展。",
+    "candidate_problem_dimensions": [
+      "男性护肤认知变化",
+      "日常护理精细化"
+    ],
+    "happened_when": "2026-06至2026-07",
+    "platforms": [
+      "男性护理媒体",
+      "社交平台"
+    ],
+    "source_hint": "男性护理趋势报道",
+    "source_notes": [
+      "关于男性护理趋势和 barrier care 的行业讨论近期增加。:contentReference[oaicite:1]{index=1}"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "男性敏感肌",
+      "皮肤屏障",
+      "男性护理升级"
+    ],
+    "why_natural": "可以自然连接男性从关注剃净效果转向关注剃须后的皮肤状态。",
+    "heat_score_10": 7.2,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "趋势报道不能替代消费者真实规模数据",
+      "避免夸大男性护理市场变化"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-derma-003",
+    "hotspot_id": "hs-20260709-razor-derma-003",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-derma-pfb",
+    "scope": "track:razor-derma-pfb",
+    "title": "夏季男性理容讨论升温：避免剃后刺激成为关注点",
+    "summary": "随着夏季高温，男性身体和面部毛发管理相关内容增加。相关讨论强调避免刮伤、刺激和不舒服的剃后状态。",
+    "why_now": "夏季短袖、运动和出汗场景增加毛发整理需求。",
+    "phenomenon": "男性护理媒体开始集中讨论夏季修剪、剃须和减少刺激的方法。",
+    "spread_emotion": "实用需求、改善体验。",
+    "people_involved": [
+      "男性运动人群",
+      "日常理容用户"
+    ],
+    "conflict_point": "保持清爽外观 vs 皮肤耐受问题。",
+    "fact_structure": "夏季理容内容与剃须舒适度话题同步出现。",
+    "candidate_problem_dimensions": [
+      "高频剃须刺激",
+      "夏季皮肤状态管理"
+    ],
+    "happened_when": "2026-07-初",
+    "platforms": [
+      "Men's Health",
+      "男性护理媒体"
+    ],
+    "source_hint": "Men's Health July 2026 grooming content",
+    "source_notes": [
+      "Men's Health 近期夏季男性理容内容讨论修剪、避免刺激等问题。:contentReference[oaicite:2]{index=2}"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "剃须刺激",
+      "男性敏感肌"
+    ],
+    "why_natural": "夏季理容场景容易引出剃须频率提高和皮肤刺激问题。",
+    "heat_score_10": 6.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "媒体内容不等同于平台热点",
+      "需补充UGC声量验证"
+    ]
+  },
+  {
+    "id": "hs-20260709-razor-derma-004",
+    "hotspot_id": "hs-20260709-razor-derma-004",
+    "date": "2026-07-09",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "razor-derma-pfb",
+    "scope": "track:razor-derma-pfb",
+    "title": "剃须护理讨论开始关注‘不要过度刺激皮肤’",
+    "summary": "近期护肤内容中，剃须后的保湿、舒缓和屏障保护成为常见建议。用户开始关注剃须动作本身对皮肤状态的影响。",
+    "why_now": "护肤领域整体从强刺激快速见效转向温和护理。",
+    "phenomenon": "护肤专家内容强调剃须可能导致干燥、刺激，需要注意护理。",
+    "spread_emotion": "谨慎、学习、改善。",
+    "people_involved": [
+      "护肤用户",
+      "男性护理消费者"
+    ],
+    "conflict_point": "追求快速清爽 vs 维护皮肤稳定。",
+    "fact_structure": "护肤媒体讨论剃须与皮肤屏障之间的关系。",
+    "candidate_problem_dimensions": [
+      "皮肤屏障保护",
+      "日常刺激累积"
+    ],
+    "happened_when": "2026-07-初",
+    "platforms": [
+      "Glamour",
+      "护肤媒体"
+    ],
+    "source_hint": "Glamour UK shaving aftercare article",
+    "source_notes": [
+      "Glamour UK 近期文章提到剃须可能导致干燥、刺激，并建议关注舒缓和屏障护理。:contentReference[oaicite:3]{index=3}"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "皮肤屏障",
+      "剃须刺激"
+    ],
+    "why_natural": "可连接消费者对剃须后舒适度和皮肤保护的关注。",
+    "heat_score_10": 6.5,
+    "traffic_level": "low",
+    "risk_notes": [
+      "来源偏媒体教育内容，非纯UGC热点"
+    ]
+  }
+]
