@@ -1,0 +1,390 @@
+[
+  {
+    "id": "hs-20260708-broad-001",
+    "hotspot_id": "hs-20260708-broad-001",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "万能旅行拍照姿势真的谁拍都出片吗",
+    "summary": "大量普通用户分享同一套旅行拍照动作并互相模仿，也有人吐槽现实效果与教程差距巨大，评论区不断晒翻车与成功案例。",
+    "why_now": "暑期旅行集中开始，相关模板被大量二创。",
+    "phenomenon": "平台持续出现同款姿势、同款机位、同款教程。",
+    "spread_emotion": "想拍好看、怕落伍、晒成果。",
+    "people_involved": [
+      "暑期旅行人群",
+      "摄影爱好者"
+    ],
+    "conflict_point": "教程万能感与普通人真实体验之间的落差。",
+    "fact_structure": "平台热门话题带动UGC持续模仿，评论区形成经验交流。",
+    "candidate_problem_dimensions": [
+      "拍照焦虑",
+      "社交展示压力"
+    ],
+    "happened_when": "2026-06下旬至2026-07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "小红书热门话题'用万能旅行拍照姿势美美出片'持续位居榜单前列，出现大量教程、模仿和翻车帖。 :contentReference[oaicite:0]{index=0}",
+    "source_notes": [
+      "平台榜单",
+      "UGC观察"
+    ],
+    "source_url": "https://nav.newrank.cn/platformTrend",
+    "ugc_voice": "照着拍怎么和博主不是一个效果？",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 9.2,
+    "traffic_level": "high",
+    "risk_notes": [
+      "属于平台趋势，具体声量持续变化"
+    ]
+  },
+  {
+    "id": "hs-20260708-broad-002",
+    "hotspot_id": "hs-20260708-broad-002",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "海鸥雨拍摄挑战",
+    "summary": "用户集中分享偶遇海鸥群飞形成'海鸥雨'的视频和照片，大量模仿拍摄与机位攻略出现。",
+    "why_now": "暑期出游叠加摄影创作热。",
+    "phenomenon": "同题材内容连续刷屏。",
+    "spread_emotion": "治愈感、分享欲。",
+    "people_involved": [
+      "旅行用户",
+      "摄影用户"
+    ],
+    "conflict_point": "真实偶遇与刻意打卡。",
+    "fact_structure": "热门标签带动持续UGC。",
+    "candidate_problem_dimensions": [
+      "旅行仪式感",
+      "内容同质化"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "话题'我拍到了海鸥雨'连续进入平台热点榜。 :contentReference[oaicite:1]{index=1}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://nav.newrank.cn/platformTrend",
+    "ugc_voice": "终于让我拍到了这一幕。",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 8.7,
+    "traffic_level": "high",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-003",
+    "hotspot_id": "hs-20260708-broad-003",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "小个子夏日穿搭到底有没有万能公式",
+    "summary": "大量普通用户分享夏季穿搭模板，同时评论区围绕身材焦虑、真实效果展开讨论。",
+    "why_now": "夏季穿搭需求集中。",
+    "phenomenon": "教程、对比、避雷持续增长。",
+    "spread_emotion": "变美焦虑与分享欲。",
+    "people_involved": [
+      "年轻女性",
+      "穿搭博主跟拍用户"
+    ],
+    "conflict_point": "模板复制与个人条件差异。",
+    "fact_structure": "热门标签驱动二创。",
+    "candidate_problem_dimensions": [
+      "身材焦虑",
+      "消费决策"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "platform_evidence": "抖音热点'小个子的夏日氛围感穿搭'持续高热。 :contentReference[oaicite:2]{index=2}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://nav.newrank.cn/platformTrend",
+    "ugc_voice": "照着买了还是不像。",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 8.8,
+    "traffic_level": "high",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-004",
+    "hotspot_id": "hs-20260708-broad-004",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "毕业长文潮",
+    "summary": "毕业生集中发布长文记录校园生活、友情和未来焦虑，引发大量共鸣转发。",
+    "why_now": "毕业季尾声。",
+    "phenomenon": "图文、视频混合表达持续增加。",
+    "spread_emotion": "怀念、不舍、迷茫。",
+    "people_involved": [
+      "毕业生",
+      "在校学生"
+    ],
+    "conflict_point": "理想未来与现实就业压力。",
+    "fact_structure": "毕业节点推动UGC集中爆发。",
+    "candidate_problem_dimensions": [
+      "就业焦虑",
+      "身份转换"
+    ],
+    "happened_when": "2026-06下旬至07上旬",
+    "platforms": [
+      "抖音",
+      "小红书",
+      "B站"
+    ],
+    "platform_evidence": "抖音热点出现'用一篇长文记录毕业季'并持续扩散。 :contentReference[oaicite:3]{index=3}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://pre-nav.newrank.cn/platformTrend",
+    "ugc_voice": "毕业以后才发现学生时代真好。",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 8.4,
+    "traffic_level": "high",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-005",
+    "hotspot_id": "hs-20260708-broad-005",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "高考志愿填报经验贴继续刷屏",
+    "summary": "考生和家长持续分享填报经历、踩坑经验及后悔故事，引发大量讨论。",
+    "why_now": "志愿填报窗口仍在持续。",
+    "phenomenon": "经验帖、求建议帖快速增长。",
+    "spread_emotion": "焦虑、求稳。",
+    "people_involved": [
+      "考生",
+      "家长"
+    ],
+    "conflict_point": "兴趣与就业现实。",
+    "fact_structure": "时间节点推动平台UGC。",
+    "candidate_problem_dimensions": [
+      "家庭决策",
+      "未来不确定性"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "抖音",
+      "知乎",
+      "小红书"
+    ],
+    "platform_evidence": "高考志愿相关持续位列平台热点。 :contentReference[oaicite:4]{index=4}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://pre-nav.newrank.cn/platformTrend",
+    "ugc_voice": "到底该听爸妈还是听自己。",
+    "scan_domain": "育儿与家庭圈热帖",
+    "heat_score_10": 9.1,
+    "traffic_level": "high",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-006",
+    "hotspot_id": "hs-20260708-broad-006",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "HYROX训练打卡潮",
+    "summary": "越来越多普通人晒训练过程和比赛体验，评论区讨论体能、坚持与花费。",
+    "why_now": "赛事曝光提升。",
+    "phenomenon": "训练记录快速增加。",
+    "spread_emotion": "挑战自我。",
+    "people_involved": [
+      "健身人群",
+      "跑步人群"
+    ],
+    "conflict_point": "健康生活与训练成本。",
+    "fact_structure": "赛事热度带动UGC。",
+    "candidate_problem_dimensions": [
+      "运动坚持",
+      "时间管理"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "platform_evidence": "成为HYROX全场最佳进入平台热点。 :contentReference[oaicite:5]{index=5}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://nav.newrank.cn/platformTrend",
+    "ugc_voice": "练完腿真的走不了路。",
+    "scan_domain": "身体与状态",
+    "heat_score_10": 7.9,
+    "traffic_level": "medium",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-007",
+    "hotspot_id": "hs-20260708-broad-007",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "旧报纸DIY改造热",
+    "summary": "B站大量普通用户分享旧物改造作品，评论区互晒成品和翻车经历。",
+    "why_now": "暑期手工内容增长。",
+    "phenomenon": "低成本DIY持续传播。",
+    "spread_emotion": "创造欲。",
+    "people_involved": [
+      "学生",
+      "手工爱好者"
+    ],
+    "conflict_point": "环保创意与实际实用性。",
+    "fact_structure": "爆款视频带动模仿。",
+    "candidate_problem_dimensions": [
+      "低成本生活",
+      "兴趣表达"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "B站"
+    ],
+    "platform_evidence": "相关DIY视频进入热门榜并引发模仿。 :contentReference[oaicite:6]{index=6}",
+    "source_notes": [
+      "B站热门"
+    ],
+    "source_url": "https://www.rddh.cn/trending",
+    "ugc_voice": "我也试了一下居然成功了。",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 7.4,
+    "traffic_level": "medium",
+    "risk_notes": []
+  },
+  {
+    "id": "hs-20260708-broad-008",
+    "hotspot_id": "hs-20260708-broad-008",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "Reddit上的数字断舍离讨论",
+    "summary": "海外用户分享减少社交媒体、减少线上消费后的体验，引发大量第一人称讨论，中文社区也出现转载讨论。",
+    "why_now": "持续出现长帖和经验分享。",
+    "phenomenon": "个人生活方式实验增加。",
+    "spread_emotion": "疲惫、寻求掌控感。",
+    "people_involved": [
+      "Reddit用户",
+      "中文转载讨论者"
+    ],
+    "conflict_point": "便利与精神压力。",
+    "fact_structure": "经验帖带动更多现身说法。",
+    "candidate_problem_dimensions": [
+      "数字疲劳",
+      "生活平衡"
+    ],
+    "happened_when": "2026-06下旬",
+    "platforms": [
+      "Reddit",
+      "X"
+    ],
+    "platform_evidence": "Reddit持续出现高互动第一人称经验帖。 :contentReference[oaicite:7]{index=7}",
+    "source_notes": [
+      "Reddit观察"
+    ],
+    "source_url": "https://www.reddit.com/r/China_irl/comments/1tr14g4/",
+    "ugc_voice": "我开始减少刷社媒以后轻松很多。",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 7.2,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "属于海外社区讨论，中文平台传播程度有限"
+    ]
+  },
+  {
+    "id": "hs-20260708-broad-009",
+    "hotspot_id": "hs-20260708-broad-009",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "网络表达越来越难的话题讨论",
+    "summary": "Reddit中文社区大量用户分享自己在不同平台发言受限或自我审查经历，引发长评论讨论。",
+    "why_now": "近两周讨论明显增加。",
+    "phenomenon": "大量第一人称经历分享。",
+    "spread_emotion": "无奈、吐槽。",
+    "people_involved": [
+      "社交平台用户",
+      "内容创作者"
+    ],
+    "conflict_point": "表达需求与平台规则。",
+    "fact_structure": "长帖引发持续跟帖分享。",
+    "candidate_problem_dimensions": [
+      "表达焦虑",
+      "平台体验"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "Reddit",
+      "X"
+    ],
+    "platform_evidence": "Reddit高互动讨论串持续增长。 :contentReference[oaicite:8]{index=8}",
+    "source_notes": [
+      "Reddit帖子"
+    ],
+    "source_url": "https://www.reddit.com/r/China_irl/comments/1unmv24/",
+    "ugc_voice": "现在说句话都怕踩线。",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 7.8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "观点具有社区样本偏差"
+    ]
+  },
+  {
+    "id": "hs-20260708-broad-010",
+    "hotspot_id": "hs-20260708-broad-010",
+    "date": "2026-07-08",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "超日常美食教程跟做潮",
+    "summary": "普通用户持续晒跟做成果、失败案例和改良版本，评论区交流食材替代方案。",
+    "why_now": "暑期居家内容增长。",
+    "phenomenon": "教程、翻车、复刻三类内容共同增长。",
+    "spread_emotion": "治愈感、成就感。",
+    "people_involved": [
+      "家庭用户",
+      "学生"
+    ],
+    "conflict_point": "教程简单与实际操作难度。",
+    "fact_structure": "热门教程推动大量UGC复刻。",
+    "candidate_problem_dimensions": [
+      "生活成本",
+      "做饭门槛"
+    ],
+    "happened_when": "2026-07上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "超日常美食教程进入平台热点榜。 :contentReference[oaicite:9]{index=9}",
+    "source_notes": [
+      "平台榜单"
+    ],
+    "source_url": "https://test.trends.zhiweidata.com/",
+    "ugc_voice": "我按教程做还是失败了。",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 8.1,
+    "traffic_level": "high",
+    "risk_notes": []
+  }
+]

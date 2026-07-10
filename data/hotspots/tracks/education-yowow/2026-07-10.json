@@ -1,0 +1,130 @@
+[
+  {
+    "id": "hs-20260710-edu-001",
+    "hotspot_id": "hs-20260710-edu-001",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "education-yowow",
+    "scope": "track:education-yowow",
+    "title": "家长讨论孩子用 AI 写作业：到底是在偷懒还是提前学习未来能力",
+    "summary": "近期家长圈围绕儿童使用 AI 辅助学习展开讨论，有家长分享孩子用 AI 查资料、修改表达、生成学习计划的经历，也有家长担心孩子跳过思考过程。讨论集中在小学阶段如何看待 AI 进入家庭学习场景。",
+    "why_now": "AI 工具普及速度加快，暑期家庭学习安排增加，家长开始重新思考孩子与智能工具的关系。",
+    "phenomenon": "家长在社交平台分享孩子接触 AI 工具后的学习体验，并讨论如何引导使用。",
+    "spread_emotion": "既期待孩子适应未来环境，又担忧孩子形成依赖、减少主动思考。",
+    "people_involved": [
+      "小学家长",
+      "教育从业者"
+    ],
+    "conflict_point": "利用工具提升效率 vs 保持独立思考能力。",
+    "fact_structure": "AI 工具进入家庭学习讨论场景，引发家长经验分享和观点分化。",
+    "candidate_problem_dimensions": [
+      "孩子如何把工具能力转化为自身能力",
+      "如何培养深层理解和迁移能力"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "小红书",
+      "知乎"
+    ],
+    "source_hint": "来源线索：小红书 AI 学习、儿童教育相关讨论；知乎 AI 与教育话题",
+    "source_notes": [
+      "基于公开家长圈讨论趋势召回",
+      "具体高热帖子需二次核验"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "过去 72 小时，中国小学家长感兴趣的热点（教育政策、考试、AI 与孩子、家长圈争议、亲子事件）"
+    ],
+    "why_natural": "家长本身就在讨论 AI 是否改变孩子思考方式，可自然连接能力迁移问题。",
+    "heat_score_10": 8,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "不要简单判断 AI 使用一定提升或损害学习能力"
+    ]
+  },
+  {
+    "id": "hs-20260710-edu-002",
+    "hotspot_id": "hs-20260710-edu-002",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "education-yowow",
+    "scope": "track:education-yowow",
+    "title": "暑假学习安排引发家长争论：到底该管还是该放",
+    "summary": "暑假开始后，家长分享孩子假期规划、学习打卡和亲子沟通经历，引发关于监督与自主之间关系的讨论。一部分家长认为需要建立规律，另一部分认为应该给孩子更多自主空间。",
+    "why_now": "暑期是家庭重新安排学习节奏的重要阶段，相关经验分享集中出现。",
+    "phenomenon": "家长发布暑假计划表、学习记录以及孩子执行情况，引发评论交流。",
+    "spread_emotion": "家长既担心孩子落后，也希望培养长期自主能力。",
+    "people_involved": [
+      "小学家长",
+      "小学生"
+    ],
+    "conflict_point": "短期学习效果管理 vs 长期自主学习能力培养。",
+    "fact_structure": "暑假学习安排成为家庭教育讨论入口，形成大量经验型内容。",
+    "candidate_problem_dimensions": [
+      "自主规划能力",
+      "从外部监督到内部驱动的转变"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "source_hint": "来源线索：暑假计划、学习打卡、亲子陪伴相关内容",
+    "source_notes": [
+      "基于暑期家长圈公开讨论整理"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "过去 72 小时，中国小学家长感兴趣的热点（教育政策、考试、AI 与孩子、家长圈争议、亲子事件）"
+    ],
+    "why_natural": "家长讨论如何让孩子逐渐学会自己管理学习，与能力迁移和长期成长直接相关。",
+    "heat_score_10": 7.6,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "不同年龄阶段和家庭环境差异较大"
+    ]
+  },
+  {
+    "id": "hs-20260710-edu-003",
+    "hotspot_id": "hs-20260710-edu-003",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-track-search",
+    "source_direction": "education-yowow",
+    "scope": "track:education-yowow",
+    "title": "家长讨论孩子看动画有没有用：兴趣能不能变成真实能力",
+    "summary": "暑期儿童观看动画、影视内容增加，部分家长分享孩子看完故事后的表达、提问和模仿行为，也有人认为娱乐内容容易占用学习时间。讨论从选择内容延伸到孩子如何从故事中获得理解能力。",
+    "why_now": "暑假期间儿童内容消费增加，家长更关注娱乐与成长之间的关系。",
+    "phenomenon": "家长分享亲子观看内容后的交流过程和孩子行为变化。",
+    "spread_emotion": "希望孩子快乐成长，同时担忧时间投入没有价值。",
+    "people_involved": [
+      "小学家长",
+      "儿童内容观众"
+    ],
+    "conflict_point": "娱乐体验价值 vs 可见学习成果。",
+    "fact_structure": "儿童影视内容成为家庭教育讨论入口。",
+    "candidate_problem_dimensions": [
+      "故事经验如何迁移到现实情境",
+      "兴趣驱动的学习机制"
+    ],
+    "happened_when": "2026-06 下旬至2026-07 上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "source_hint": "来源线索：亲子陪看、动画讨论相关内容",
+    "source_notes": [
+      "当前未锁定单一爆款作品",
+      "需要后续结合影视热榜补充具体案例"
+    ],
+    "source_url": null,
+    "hit_directions": [
+      "过去 35 天，中国小学家长感兴趣的影视剧/综艺/国漫的故事大纲或重要情节"
+    ],
+    "why_natural": "家长天然关心孩子是否能把故事中的经验迁移到现实生活。",
+    "heat_score_10": 6,
+    "traffic_level": "low",
+    "risk_notes": [
+      "缺少具体作品事件支撑，不建议作为强热点使用"
+    ]
+  }
+]

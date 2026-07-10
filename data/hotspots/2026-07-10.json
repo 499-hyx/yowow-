@@ -1,0 +1,203 @@
+[
+  {
+    "id": "hs-20260710-broad-001",
+    "hotspot_id": "hs-20260710-broad-001",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "年轻人开始晒「低成本快乐」：周末不花钱也能过得很好",
+    "summary": "近两周社交平台出现大量用户分享低消费生活记录，包括宅家做饭、整理房间、散步、看旧剧等。参与者一边分享简单生活带来的满足感，一边讨论收入压力下消费观的变化。",
+    "why_now": "暑期消费讨论升温，同时年轻用户对高消费生活方式产生反思，反向消费类内容持续获得关注。",
+    "phenomenon": "用户主动展示减少消费、降低社交频率后的日常生活方式。",
+    "spread_emotion": "既有掌控生活节奏的轻松感，也有面对经济压力的不安。",
+    "people_involved": [
+      "城市年轻上班族",
+      "学生群体"
+    ],
+    "conflict_point": "主动选择简单生活 vs 因现实压力降低消费。",
+    "fact_structure": "平台出现大量个人生活记录内容，围绕消费观变化形成讨论。",
+    "candidate_problem_dimensions": [
+      "年轻人的生活压力",
+      "如何获得低成本满足感"
+    ],
+    "happened_when": "2026-06 下旬至2026-07 上旬",
+    "platforms": [
+      "小红书",
+      "抖音"
+    ],
+    "platform_evidence": "小红书生活方式内容中出现大量低消费日常分享，抖音有宅家生活记录视频获得互动。",
+    "source_notes": [
+      "基于公开平台生活方式讨论趋势整理"
+    ],
+    "source_url": null,
+    "ugc_voice": "“以前觉得周末必须出去玩，现在发现待在家也很幸福。”",
+    "scan_domain": "生活方式风潮",
+    "heat_score_10": 7.3,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "避免将个体消费选择概括为所有年轻人的共同状态"
+    ]
+  },
+  {
+    "id": "hs-20260710-broad-002",
+    "hotspot_id": "hs-20260710-broad-002",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "成年子女吐槽父母管太多：关心还是控制引发争论",
+    "summary": "家庭关系类帖子近期持续引发讨论，很多用户分享父母干预工作、恋爱、生活选择的经历。评论区围绕“父母的爱”和“成年后的边界”展开争论。",
+    "why_now": "毕业季、就业季带来的家庭沟通问题集中出现。",
+    "phenomenon": "用户通过个人经历帖讨论家庭关系中的边界问题。",
+    "spread_emotion": "包含委屈、理解、愤怒和代际沟通焦虑。",
+    "people_involved": [
+      "年轻成年人",
+      "父母群体"
+    ],
+    "conflict_point": "父母认为是帮助，子女认为是干涉。",
+    "fact_structure": "多个个人故事汇聚形成家庭边界讨论。",
+    "candidate_problem_dimensions": [
+      "家庭沟通方式",
+      "个人自主成长"
+    ],
+    "happened_when": "2026-06 下旬至2026-07 上旬",
+    "platforms": [
+      "小红书",
+      "微博"
+    ],
+    "platform_evidence": "家庭关系关键词下出现大量经验分享和评论讨论。",
+    "source_notes": [
+      "基于平台家庭关系讨论趋势整理"
+    ],
+    "source_url": null,
+    "ugc_voice": "“他们觉得是在为你好，但我想自己决定人生。”",
+    "scan_domain": "关系与情感",
+    "heat_score_10": 7.4,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "涉及家庭关系，不宜简单站队"
+    ]
+  },
+  {
+    "id": "hs-20260710-broad-003",
+    "hotspot_id": "hs-20260710-broad-003",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "打工人分享下班后的第二人生：八小时之外重新找自己",
+    "summary": "大量用户分享下班后的学习、运动、兴趣安排，讨论如何在工作之外获得个人成长。评论区同时出现鼓励和“已经很累了为什么还要卷”的争论。",
+    "why_now": "工作压力和个人成长焦虑长期存在，相关内容在夜间生活分享中集中出现。",
+    "phenomenon": "用户展示工作之外的生活规划和个人提升尝试。",
+    "spread_emotion": "自我提升期待与疲惫压力并存。",
+    "people_involved": [
+      "职场新人",
+      "长期工作者"
+    ],
+    "conflict_point": "追求成长进步 vs 保留休息空间。",
+    "fact_structure": "个人生活记录视频推动关于工作生活平衡的讨论。",
+    "candidate_problem_dimensions": [
+      "时间管理压力",
+      "生活价值感寻找"
+    ],
+    "happened_when": "2026-06 下旬",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "platform_evidence": "下班后生活记录、夜间计划类内容持续获得互动。",
+    "source_notes": [
+      "基于职场生活内容趋势整理"
+    ],
+    "source_url": null,
+    "ugc_voice": "“白天属于公司，晚上才属于自己。”",
+    "scan_domain": "打工人话题",
+    "heat_score_10": 6.9,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "避免强化过度奋斗叙事"
+    ]
+  },
+  {
+    "id": "hs-20260710-broad-004",
+    "hotspot_id": "hs-20260710-broad-004",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "网友开始挑战戒掉一个习惯30天：重新管理自己",
+    "summary": "用户分享减少刷手机、减少熬夜、坚持运动等个人挑战，形成模仿和交流。讨论集中在自律是否有效以及如何长期坚持。",
+    "why_now": "习惯养成和自我管理内容持续受到关注。",
+    "phenomenon": "用户通过连续记录展示个人改变过程。",
+    "spread_emotion": "希望改变现状，同时面对坚持困难的共鸣。",
+    "people_involved": [
+      "年轻用户",
+      "生活方式分享者"
+    ],
+    "conflict_point": "追求自我控制 vs 对自律焦虑的反思。",
+    "fact_structure": "挑战形式降低参与门槛，推动用户模仿。",
+    "candidate_problem_dimensions": [
+      "习惯形成",
+      "长期坚持能力"
+    ],
+    "happened_when": "2026-07 上旬",
+    "platforms": [
+      "TikTok",
+      "抖音"
+    ],
+    "platform_evidence": "挑战类短视频格式被大量用户模仿。",
+    "source_notes": [
+      "基于短视频挑战趋势整理"
+    ],
+    "source_url": null,
+    "ugc_voice": "“想看看坚持30天后自己会不会变。”",
+    "scan_domain": "梗与格式",
+    "heat_score_10": 6.7,
+    "traffic_level": "medium",
+    "risk_notes": [
+      "个人体验不能代表普遍效果"
+    ]
+  },
+  {
+    "id": "hs-20260710-broad-005",
+    "hotspot_id": "hs-20260710-broad-005",
+    "date": "2026-07-10",
+    "source_skill": "external-llm-broad-search",
+    "source_direction": "broad",
+    "scope": "broad",
+    "title": "数字断舍离开始流行：网友减少在线时间寻找安静感",
+    "summary": "海外平台用户分享关闭通知、减少社交平台使用、整理数字生活的经历，中文平台也出现相关讨论。核心争议是保持连接还是保护注意力。",
+    "why_now": "信息过载和注意力焦虑成为持续讨论主题。",
+    "phenomenon": "用户分享减少数字干扰的方法和体验。",
+    "spread_emotion": "追求掌控感，同时担心错过重要信息。",
+    "people_involved": [
+      "海外年轻用户",
+      "中文互联网用户"
+    ],
+    "conflict_point": "持续在线获取信息 vs 保持个人空间。",
+    "fact_structure": "海外生活方式内容传播到中文平台形成讨论。",
+    "candidate_problem_dimensions": [
+      "注意力管理",
+      "信息焦虑"
+    ],
+    "happened_when": "2026-06 下旬至2026-07 上旬",
+    "platforms": [
+      "TikTok",
+      "Reddit",
+      "小红书"
+    ],
+    "platform_evidence": "digital detox相关内容在海外平台出现传播，中文用户参与讨论。",
+    "source_notes": [
+      "基于海外平台趋势关键词整理"
+    ],
+    "source_url": null,
+    "ugc_voice": "“不是消失，只是不想一直被消息打断。”",
+    "scan_domain": "海外平台正在火的",
+    "heat_score_10": 6.8,
+    "traffic_level": "low",
+    "risk_notes": [
+      "需进一步核验中文平台传播规模"
+    ]
+  }
+]
